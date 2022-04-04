@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.secPaginasWeb {
+
+    width: 100%;
+    height: 65vh;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5970763305322129) 100%), url('../img/FondoSecPagWeb.jpg');
+        //background-size: cover;
+        //background-position: center center;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+
+        z-index: -1;
+    }
+
+    h3, p {
+        color: v.$blanco;
+    }
+
+    small {
+        color: v.$color6;
+        margin: 1rem 0;
+    }
+
+    .spwContent {
+        height: 90%;
+        overflow: hidden;
+        @include m.mixFlex(flex,center,0,wrap,0);
+
+        .spwPortada {
+            width: 50%;
+            height: 100%;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .spwTextos {
+            width: 50%;
+            @include m.mixFlex(flex,center,0,0,column);
+            h3 {
+                text-transform: uppercase;
+            }
+            a {
+                width: 200px;
+                text-align: center;
+            }
+        }
+    }
+ 
+}

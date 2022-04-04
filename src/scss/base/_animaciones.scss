@@ -1,0 +1,292 @@
+@use 'variables'as v;
+@use 'base/mixins'as m;
+@use "sass:math";
+
+@keyframes colorSlide {
+  0% {
+    background-position: 0% 100%;
+  }
+
+  20% {
+    background-position: 0% 0%;
+  }
+
+  21% {
+    background-color: v.$colorOutFade;
+  }
+
+  29.99% {
+    background-color: v.$colorOutline;
+    background-position: 0% 0%;
+  }
+
+  30% {
+    background-color: v.$colorOutFade;
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background-position: 0% 0%;
+  }
+
+  51% {
+    background-color: v.$colorOutFade;
+  }
+
+  59% {
+    background-color: v.$colorOutline;
+    background-position: 0% 0%;
+  }
+
+  60% {
+    background-color: v.$colorOutFade;
+    background-position: 0% 100%;
+  }
+
+  80% {
+    background-position: 0% 0%;
+  }
+
+  81% {
+    background-color: v.$colorOutFade;
+  }
+
+  90%,
+  100% {
+    background-color: v.$colorOutline;
+  }
+}
+
+@keyframes trackBallSlide {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+
+  6% {
+    opacity: 1;
+    //   transform: scale(0.9) translateY(v.$posTrackball/4);
+    transform: scale(0.9) translateY(math.div(v.$posTrackball, 4));
+  }
+
+  14% {
+    opacity: 0;
+    transform: scale(v.$shrinkTrackball) translateY(v.$posTrackball*2);
+  }
+
+  15%,
+  19% {
+    opacity: 0;
+    transform: scale(v.$shrinkTrackball) translateY(-20px);
+  }
+
+  28%,
+  29.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+
+  30% {
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+
+  36% {
+    opacity: 1;
+    //   transform: scale(0.9) translateY(v.$posTrackball/4);
+    transform: scale(0.9) translateY(math.div(v.$posTrackball, 4));
+  }
+
+  44% {
+    opacity: 0;
+    transform: scale(v.$shrinkTrackball) translateY(v.$posTrackball*2);
+  }
+
+  45%,
+  49% {
+    opacity: 0;
+    transform: scale(v.$shrinkTrackball) translateY(-20px);
+  }
+
+  58%,
+  59.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+
+  66% {
+    opacity: 1;
+    //   transform: scale(0.9) translateY(v.$posTrackball / 4);
+    transform: scale(0.9) translateY(math.div(v.$posTrackball, 4));
+  }
+
+  74% {
+    opacity: 0;
+    transform: scale(v.$shrinkTrackball) translateY(v.$posTrackball*2);
+  }
+
+  75%,
+  79% {
+    opacity: 0;
+    transform: scale(v.$shrinkTrackball) translateY(-20px);
+  }
+
+  88%,
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+}
+
+@keyframes nudgeMouse {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(v.$posMouse);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(v.$posMouse);
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(v.$posMouse);
+  }
+
+  90% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes nudgeText {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(v.$posText);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(v.$posText);
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(v.$posText);
+  }
+
+  90% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorText {
+  21% {
+    color: v.$colorOutFade;
+  }
+
+  30% {
+    color: v.$colorOutline;
+  }
+
+  51% {
+    color: v.$colorOutFade;
+  }
+
+  60% {
+    color: v.$colorOutline;
+  }
+
+  81% {
+    color: v.$colorOutFade;
+  }
+
+  90% {
+    color: v.$colorOutline;
+  }
+}
+
+// Animation
+@keyframes scrollCar {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 8))
+  }
+}
+
+
+@keyframes animHero {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 70%;
+  }
+
+  100% {
+    transform: scale(1.10) translateY(15px);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes typing {
+  40%, 
+  60% {
+      left: calc(100% + 15px);
+  }
+  100% {
+      left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+      top: -270px;
+  }
+}
+
+// @keyframes typing {
+//     40%, 
+//     60% {
+//         left: calc(100% + 15px);
+//     }
+//     100% {
+//         left: 0;
+//     }
+// }
+
+// @keyframes slide {
+//     100% {
+//         top: -270px;
+//     }
+// }
+
+@keyframes pulsing {
+  to {
+      box-shadow: 0 0 0 3rem #0000;
+  }
+}

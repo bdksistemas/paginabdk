@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BDKSistemas - Software</title>
+
+    <!-- FAVICON -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="build/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="build/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- ? FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- ? BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+
+    <!-- ? LIGHTBOX: Galería -->
+    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="stylesheet" href="build/css/app.css"> 
+
+    <!-- ? METAS -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="BDKSISTEMAS, Lo mejor en informática y puntos de venta"/>
+    <meta name="keywords" content="software para restaurantes, sistema de restaurantes, programa de restaurantes, software para gimnasios, sistema para gimnasios, programa para gimnasios, software para Lavanderias, sistema para Lavanderias, programa para Lavanderias, software para salones de belleza, sistema para salones de belleza, programa para salones de belleza, software para barberias, sistema para barberias, programa para barberias, software punto de venta, sistema punto de venta, programa punto de venta, punto de venta"/>
+    <meta name="author" content="BDKSISTEMAS" />
+    <meta name="copyright" content="BDKSISTEMAS" />    
+    <meta name="robots" content="index"/>
+    
+    <!-- OpenGraph -->
+    <!-- Etiquetas para que al compartir el enlace de la página, ésta aparezca con la portada indicada y el texto indicado -->
+    <meta property="og:url" content="https://www.bdksistemas.com.mx/" />  
+    <meta property="og:title" content="BDKSISTEMAS" />
+    <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/Fondo_Hero.jpg" />
+    <meta property="og:description" content="Software Punto de Venta para todo los giros de negocios" />
+    <meta property="og:type" content="website" />
+    
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav_container"> 
+            <div class="nav_logo">
+                <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
+                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+
+            <ul class="nav_principal" id="navPrincipal">
+                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item nav_active"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+            </ul> 
+
+            <div class="nav_social">
+                <a href="#"><i class="fas fa-bars iconos botMenu" id="botApp"></i></a>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- ! HERO -->
+    <header class="heroSoftware">
+        <section class="hero_container">
+            <div class="heroSoft_Titulo">
+                <h1>Tenemos el mejor software <span>punto de venta</span> para tu negocio</h1>
+            </div>
+
+            <div class="anim-mouse-b2">
+                <div class="mouse"></div>
+            </div>
+    
+        </section>
+
+        <section class="sliderHero">
+
+            <div id="sliderSoft">
+                <div class="slidesSoft">
+                    <div class="slider">
+                        <div class="legend"></div>
+                        <div class="content">
+                            <div class="content-txt">
+                                <h2>Software para Restaurantes y Bares</h2>
+                                <p>Control de ventas y mesas, ventas por mesero, comandas, manejo de cuentas, almacén y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <picture>
+                                <source srcset="build/img/SLIDE_BDKREST.avif" type="image/avif">
+                                <source srcset="build/img/SLIDE_BDKREST.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/SLIDE_BDKREST.jpg" alt="Foto de un restaurante">
+                            </picture>            
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="legend"></div>
+                        <div class="content">
+                            <div class="content-txt">
+                                <h2>Software para Gimnasios y Estudios deportivos</h2>
+                                <p>Control de mensualidades, asistencia, ventas, clases, horarios, expediente de alumnos y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <picture>
+                                <source srcset="build/img/SLIDE_BDKGYM.avif" type="image/avif">
+                                <source srcset="build/img/SLIDE_BDKGYM.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/SLIDE_BDKGYM.jpg" alt="Foto de un restaurante">
+                            </picture>            
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="legend"></div>
+                        <div class="content">
+                            <div class="content-txt">
+                                <h2>Software para Lavanderías y Tintorerías</h2>
+                                <p>Lleva el control de tus ventas, seguimiento de pedidos, cortes de caja, control de prendas y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <picture>
+                                <source srcset="build/img/SLIDE_BDKTINT.avif" type="image/avif">
+                                <source srcset="build/img/SLIDE_BDKTINT.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/SLIDE_BDKTINT.jpg" alt="Foto de un restaurante">
+                            </picture>            
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="legend"></div>
+                        <div class="content">
+                            <div class="content-txt">
+                                <h2>Software para Salones de Belleza & SPA</h2>
+                                <p>Control de ventas, tratamientos y sesiones, agenda, almacén, comisiones y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <picture>
+                                <source srcset="build/img/SLIDE_BDKSPA.avif" type="image/avif">
+                                <source srcset="build/img/SLIDE_BDKSPA.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/SLIDE_BDKSPA.jpg" alt="Foto de un restaurante">
+                            </picture>            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="switch">
+                    <ul>
+                        <li>
+                            <div class="on"></div>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        </section>
+
+
+    </header>
+
+    <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+    <div data-include="assets/widgets.html"></div>
+
+    <main>
+
+        <!-- ! PRODUCTOS -->
+        <section class="secProductos seccionGris">
+            <div class="titulo">
+                <h2> <span>Nuestros</span> Productos</h2> 
+                <p>Estos son nuestros principales software que tenemos para tu negocio</p>
+            </div>
+
+            <div class="listaSoft seccion">
+
+                <div class="listaContent">
+
+                    <!-- ! BDKREST -->
+                    <div class="cardSoft">
+                        <div class="cardSoftImg"> 
+                            <picture>
+                                <source srcset="build/img/BDKREST/BDKREST_PDV_01.avif" type="image/avif">
+                                <source srcset="build/img/BDKREST/BDKREST_PDV_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKREST/BDKREST_PDV_01.png" alt="Imagen de un equipo de cómputo POS">
+                            </picture>                                
+                        </div>
+                        <div class="softContent">
+                            <video loading="lazy" src="build/video/CARD BDKREST_OPT.mp4" controls loop autoplay> </video>
+                            <div class="titSoft">
+                                <h4>Software para Restaurantes y Bares</h4>
+                                <p>Control de ventas y mesas, ventas por mesero, comandas, manejo de cuentas, almacén y mucho más.</p>
+                            </div>
+                            <div class="softFooter">
+                                <a href="#" class="boton acc-rest">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ! BDKGYM -->
+                    <div class="cardSoft">
+                        <div class="cardSoftImg">
+                            <picture>
+                                <source srcset="build/img/BDKGYM/BDKGYM_PDV_01.avif" type="image/avif">
+                                <source srcset="build/img/BDKGYM/BDKGYM_PDV_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/BDKGYM_PDV_01.png" alt="Imagen de un equipo de cómputo POS">
+                            </picture>                                
+                        </div>
+                        <div class="softContent">
+                            <video loading="lazy" src="build/video/CARD BDKGYM_OPT.mp4" controls loop autoplay> </video>
+                            <div class="titSoft">
+                                <h4>Software para Gimnasios y Estudios deportivos</h4>
+                                <p>Control de mensualidades, asistencia, ventas, clases, horarios, expediente de alumnos y mucho más.</p>
+                            </div>
+                            <div class="softFooter">
+                                <a href="#" class="boton acc-gym">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ! BDKTINT -->
+                    <div class="cardSoft">
+                        <div class="cardSoftImg">
+                            <picture>
+                                <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.avif" type="image/avif">
+                                <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/BDKTINT_PDV_01.png" alt="Imagen de un equipo de cómputo POS">
+                            </picture>                                
+                        </div>
+                        <div class="softContent">
+                            <video loading="lazy" src="build/video/CARD BDKTINT_OPT.mp4" controls loop autoplay muted> </video>
+                            <div class="titSoft">
+                                <h4>Software para Lavanderías y Tintorerías</h4>
+                                <p>Lleva el control de tus ventas, seguimiento de pedidos, cortes de caja, control de prendas y mucho más.</p>
+                            </div>
+                            <div class="softFooter">
+                                <a href="#" class="boton acc-tint">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ! BDKSPA -->
+                    <div class="cardSoft">
+                        <div class="cardSoftImg">
+                            <picture>
+                                <source srcset="build/img/BDKSPA/BDKSPA_PDV_01.avif" type="image/avif">
+                                <source srcset="build/img/BDKSPA/BDKSPA_PDV_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/BDKSPA_PDV_01.png" alt="Imagen de un equipo de cómputo POS">
+                            </picture>                                
+                        </div>
+                        <div class="softContent">
+                            <video loading="lazy" src="build/video/CARD BDKSPA_OPT.mp4" controls loop autoplay muted> </video>
+                            <div class="titSoft">
+                                <h4>Software para Salones de Belleza & SPA</h4>
+                                <p>Control de ventas, tratamientos y sesiones, agenda, almacén, comisiones y mucho más.</p>
+                            </div>
+                            <div class="softFooter">
+                                <a href="#" class="boton acc-spa">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ! BDKBARBER -->
+                    <div class="cardSoft">
+                        <div class="cardSoftImg">
+                            <picture>
+                                <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_01.avif" type="image/avif">
+                                <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/BDKBARBER_PDV_01.png" alt="Imagen de un equipo de cómputo POS">
+                            </picture>                                
+                        </div>
+                        <div class="softContent">
+                            <video loading="lazy" src="build/video/CARD BDKBARBER_OPT.mp4" controls loop autoplay muted> </video>
+                            <div class="titSoft">
+                                <h4>Software para barberías y peluquerías</h4>
+                                <p>Control de ventas e ingresos, sesiones, agenda, almacén, comisiones y mucho más.</p>
+                            </div>
+                            <div class="softFooter">
+                                <a href="#" class="boton acc-barber">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ! BDKPOS -->
+                    <div class="cardSoft">
+                        <div class="cardSoftImg">
+                            <picture>
+                                <source srcset="build/img/BDKPOS/BDKPOS_PDV_01.avif" type="image/avif">
+                                <source srcset="build/img/BDKPOS/BDKPOS_PDV_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/BDKPOS_PDV_01.png" alt="Imagen de un equipo de cómputo POS">
+                            </picture>                                
+                        </div>
+                        <div class="softContent">
+                            <video loading="lazy" src="build/video/CARD BDKPOS_OPT.mp4" controls loop autoplay muted> </video>
+                            <div class="titSoft">
+                                <h4>Software POS para todo tipo de comercio</h4>
+                                <p>Control de ventas e ingresos, almacén, cotizaciones, ventas a crédito, sistema de separado y mucho más.</p>
+                            </div>
+                            <div class="softFooter">
+                                <a href="#" class="boton acc-pos">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ! BDKCLOCK -->
+                    <!-- <div class="cardSoft">
+                        <div class="cardSoftImg">
+                            <picture>
+                                <source srcset="build/img/BDKCLOCK/BDKCLOCK_PDV_01.avif" type="image/avif">
+                                <source srcset="build/img/BDKCLOCK/BDKCLOCK_PDV_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKCLOCK/BDKCLOCK_PDV_01.png" alt="Imagen de un equipo de cómputo POS">
+                            </picture>                                
+                        </div>
+                        <div class="softContent">
+                            <div class="softHead">
+                                <picture>
+                                    <source srcset="build/img/BDKCLOCK/CARD_BDKCLOCK.avif" type="image/avif">
+                                    <source srcset="build/img/BDKCLOCK/CARD_BDKCLOCK.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKCLOCK/CARD_BDKCLOCK.png" alt="Imagen de un gerente de recursos humanos">
+                                </picture>                                    
+                            </div>
+                            <div class="titSoft">
+                                <h4>Software para el registro de asistencia</h4>
+                                <p>Control de entradas y salidas de empleados, retardos, ausentismos, pre-nómina, kardex de empleados y mucho más.</p>
+                            </div>
+                            <div class="softFooter">
+                                <a href="#" class="boton acc-clock">Más Información</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- ! BDKALMACEN -->
+                    <!-- <div class="cardSoft">
+                        <div class="cardSoftImg">
+                            <picture>
+                                <source srcset="build/img/BDKALMACEN/BDKALMACEN_PDV_01.avif" type="image/avif">
+                                <source srcset="build/img/BDKALMACEN/BDKALMACEN_PDV_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKALMACEN/BDKALMACEN_PDV_01.png" alt="Imagen de un equipo de cómputo POS">
+                            </picture>                                
+                        </div>
+                        <div class="softContent">
+                            <div class="softHead">
+                                <picture>
+                                    <source srcset="build/img/BDKALMACEN/CARD_BDKALMACEN.avif" type="image/avif">
+                                    <source srcset="build/img/BDKALMACEN/CARD_BDKALMACEN.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKALMACEN/CARD_BDKALMACEN.png" alt="Imagen de un gerente de recursos humanos">
+                                </picture>                                    
+                            </div>
+                            <div class="titSoft">
+                                <h4>Software para el control de inventarios</h4>
+                                <p>Control de entradas y salidas de almacén, control de multi almacenes, ordenes de compras, conteo de inventarios y mucho más.</p>
+                            </div>
+                            <div class="softFooter">
+                                <a href="#" class="boton acc-almacen">Más Información</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- ! BDKPOLL -->
+                    <!-- <div class="cardSoft">
+                        <div class="cardSoftImg">
+                            <picture>
+                                <source srcset="build/img/BDKPOLL/BDKPOLL_PDV_01.avif" type="image/avif">
+                                <source srcset="build/img/BDKPOLL/BDKPOLL_PDV_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKPOLL/BDKPOLL_PDV_01.png" alt="Imagen de un equipo de cómputo POS">
+                            </picture>                                
+                        </div>
+                        <div class="softContent">
+                            <div class="softHead">
+                                <picture>
+                                    <source srcset="build/img/BDKPOLL/CARD_BDKPOLL.avif" type="image/avif">
+                                    <source srcset="build/img/BDKPOLL/CARD_BDKPOLL.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKPOLL/CARD_BDKPOLL.png" alt="Imagen de un gerente de recursos humanos">
+                                </picture>                                    
+                            </div>
+                            <div class="titSoft">
+                                <h4>Software para creación de encuestas</h4>
+                                <p>Mide la satisfacción de tus clientes mediante encuestas digitales.</p>
+                            </div>
+                            <div class="softFooter">
+                                <a href="#" class="boton acc-poll">Más Información</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ! PAGINAS WEB -->
+        <div data-include="assets/promo_web.html"></div>
+
+        <!-- ! EQUIPO DE COMPUTO -->
+        <section class="secEquipo seccion">
+
+            <div class="titulo">
+                <h2><span>Equipo</span> de cómputo</h2>  
+                <p>Tenemos la solución completa para tu negocio</p>
+            </div>
+
+            <div class="eqContent">
+
+                <picture>
+                    <source srcset="build/img/BDKREST/BDKREST_PDV_01.avif" type="image/avif">
+                    <source srcset="build/img/BDKREST/BDKREST_PDV_01.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/BDKREST/BDKREST_PDV_01.jpg" alt="Imagen de la sección Quienes Somos">
+                </picture>   
+                
+                <div class="eqTextos">
+                    <h4>¡NO BATALLES MÁS!</h4>
+                    <p>Tenemos la solución completa para tu negocio, desde el software hasta todo el equipo de cómputo necesario para implementar un punto de venta en tu emppresa.</p>
+                </div>
+
+                <div class="hardware swiper container">
+                    <div class="swiper-wrapper"">
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_01.avif" type="image/avif">
+                                <source srcset="build/img/EQ_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_01.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_02.avif" type="image/avif">
+                                <source srcset="build/img/EQ_02.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_02.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_03.avif" type="image/avif">
+                                <source srcset="build/img/EQ_03.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_03.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_04.avif" type="image/avif">
+                                <source srcset="build/img/EQ_04.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_04.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_05.avif" type="image/avif">
+                                <source srcset="build/img/EQ_05.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_05.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_06.avif" type="image/avif">
+                                <source srcset="build/img/EQ_06.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_06.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_07.avif" type="image/avif">
+                                <source srcset="build/img/EQ_07.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_07.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_08.avif" type="image/avif">
+                                <source srcset="build/img/EQ_08.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_08.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>            
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div data-include="assets/footer.html"></div>
+
+    <!-- ! --------------------------------------------------------------------------------- -->
+    <!-- * LISTA DE SCRIPTS -->
+    <!-- ! --------------------------------------------------------------------------------- -->
+
+    <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
+    <script src="build/js/include-html.min.js"></script> 
+
+    <!-- ? JQUERY -->
+    <script src="build/js/jquery.js"></script>
+            
+    <!-- ? SWIPER : Slider del hero -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- ?ANIMACIONES CON VANILLA-TILT -->
+    <script src="build/js/vanilla-tilt.min.js"></script>
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ? LIGTHBOX PARA LA GALERÍA -->
+    <script src="build/js/lightbox.js"></script>
+
+    <script src="build/js/app.js"></script>
+
+    
+</body>
+</html>

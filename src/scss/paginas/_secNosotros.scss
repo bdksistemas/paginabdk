@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+// ! SECCIÓN NOSOTROS - QUIENES SOMOS
+
+.nosotros {
+ 
+    width: 50%;
+    text-align: center;
+
+    p {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .nos_img {
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 15px 0;
+        border-top: 2px solid v.$color2;
+        border-bottom: 2px solid v.$color2;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    small {
+        color: v.$color1;
+    }
+}

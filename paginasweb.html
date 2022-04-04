@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BDKSISTEMAS - Páginas Web</title>
+
+    <!-- FAVICON -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="build/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="build/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- ? FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- ? BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+
+    <!-- ? LIGHTBOX: Galería -->
+    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="stylesheet" href="build/css/app.css"> 
+
+    <!-- ? METAS -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="BDKSISTEMAS, Lo mejor en informática y puntos de venta"/>
+    <meta name="keywords" content="software para restaurantes, sistema de restaurantes, programa de restaurantes, software para gimnasios, sistema para gimnasios, programa para gimnasios, software para Lavanderias, sistema para Lavanderias, programa para Lavanderias, software para salones de belleza, sistema para salones de belleza, programa para salones de belleza, software para barberias, sistema para barberias, programa para barberias, software punto de venta, sistema punto de venta, programa punto de venta, punto de venta"/>
+    <meta name="author" content="BDKSISTEMAS" />
+    <meta name="copyright" content="BDKSISTEMAS" />    
+    <meta name="robots" content="index"/>
+    
+    <!-- OpenGraph -->
+    <!-- Etiquetas para que al compartir el enlace de la página, ésta aparezca con la portada indicada y el texto indicado -->
+    <meta property="og:url" content="https://www.bdksistemas.com.mx/" />  
+    <meta property="og:title" content="BDKSISTEMAS" />
+    <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/Fondo_Hero.jpg" />
+    <meta property="og:description" content="Software Punto de Venta para todo los giros de negocios" />
+    <meta property="og:type" content="website" />
+    
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav_container">
+            <div class="nav_logo">
+                <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
+                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+
+
+            <ul class="nav_principal" id="navPrincipal">
+                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item nav_active"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+            </ul> 
+
+            <div class="nav_social">
+                <a href="#"><i class="fas fa-bars iconos botMenu" id="botApp"></i></a>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- ! HERO -->
+    <header class="heroPaginas">    
+        <section class="hero_container">
+            <h1>Diseñamos <span>Páginas Web</span> modernas y profesionales</h1>
+            <p>Destaca tu presencia en la nube y sorprende a tus clientes y competidores.</p>
+        </section>
+        <div class="wrapper">
+            <ul class="dynamic-txts">
+                <li><span>Diseños Modernos y Profesionales</span></li>
+                <li><span>Diseño Responsivo</span></li>
+                <li><span>Optimizado para SEO Orgánico</span></li>
+                <li><span>Diseños acorde a tu identidad de marca</span></li>
+                <li><span>Destaca las cualidades de tu negocio</span></li>
+                <li><span>Hosting y Dominio</span></li>
+            </ul>                
+        </div>   
+
+        <div class="anim-mouse">
+            <div class="mouse"></div>
+        </div>
+
+    </header>
+
+    <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+    <div data-include="assets/widgets.html"></div>
+
+    <main class="libAOS">
+
+        <!-- ! PAGINAS WEB -->
+        <section class="seccion">
+            <div class="titulo container">
+                <h2>Sorprende a tus clientes con una <span>increíble página web</span></h2> 
+                <p>Una página web moderna y atractiva atraerá más clientes a tu negocio, permitiéndote incrementar tus ventas e ingresos.</p>
+            </div> 
+
+            <div class="pagsHeader container">
+                <div class="phImg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <picture>
+                        <source srcset="build/img/Mockup_PaginaWeb.avif" type="image/avif">
+                        <source srcset="build/img/Mockup_PaginaWeb.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/Mockup_PaginaWeb.png" alt="Logotipo de la empresa">
+                    </picture>    
+                </div>
+
+                <div class="phContent">
+                    <div class="phCElement" data-aos="fade-left"><i class="fas fa-check-circle"></i><p>Diseños modernos para que tu negocio gane más credibilidad y tenga una imagen más profesional.</p></div>
+                    <div class="phCElement" data-aos="fade-left"><i class="fas fa-check-circle"></i><p>Todos nuestros diseños son responsivos, es decir, que se pueden ver perfectamente en una computadora, laptop, tablet o celular.</p></div>
+                    <div class="phCElement" data-aos="fade-left"><i class="fas fa-check-circle"></i><p>Diseñamos tu página en base a tu identidad corporativa, con los colores institucionales de tu marca.</p></div>
+                    <div class="phCElement" data-aos="fade-left"><i class="fas fa-check-circle"></i><p>Muestra a tus clientes todos tus beneficios y cualidades para convertir tus visitantes en clientes potenciales.</p></div>
+                    <div class="phCElement" data-aos="fade-left"><i class="fas fa-check-circle"></i><p>Muestra tu catálogo de servicios, productos y promociones.</p></div>
+                    <div class="phCElement" data-aos="fade-left"><i class="fas fa-check-circle"></i><p>Enlaza tus redes sociales a tu sitio web para que tus clientes te puedan seguir en todo momento.</p></div>
+                    <div class="phCElement" data-aos="fade-left"><i class="fas fa-check-circle"></i><p>Facilita la comunicación con tus clientes enlazando tu página web con tu WhatsApp.</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- !  LISTA DE BENEFICIOS -->
+        <section class="seccionGris secBeneficiosWeb">
+            <div class="titulo container">
+                <h2>Beneficios de diseñar tu <span>página web</span></h2> 
+                <p>¡Conoce las ventajas que tenemos para ti!</p>
+            </div> 
+
+            <div class="pwBeneficios container libAOS">
+
+                <div class="beneficios_sec">
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Posicionamiento Orgánico</h3>
+                            <p>Diseñadas con SEO orgánico para que buscadores como Google encuentre rápido tu página y sea visible para tus futuros clientes.</p>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Diseño Responsivo</h3>
+                            <p>Desarrollamos tu sitio web para que sea visible correctamente en dispositivos como celulares, tablets, laptops y computadoras de escritorio.</p>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="fab fa-mixcloud"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Hosting y Dominio</h3>
+                            <p>Nuestros servidores son de los más rápidos del mercado, diseñados específicamente para alojar páginas web.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beneficios_imagen">
+                    <picture>
+                        <source srcset="build/img/PRESENTADORA_PW.avif" type="image/avif">
+                        <source srcset="build/img/PRESENTADORA_PW.webp" type="image/webp">
+                        <img loading="lazy" width="350px" src="build/img/PRESENTADORA_PW.png" alt="Mujer presentando beneficios.">
+                    </picture>    
+                </div>
+
+                <div class="beneficios_sec">
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Certificado SSL</h3>                    
+                            <p>Todos nuestros dominios cuentan con certificado de seguridad SSL, para que tu web sea segura para cualquier cliente.</p>
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Correo Electrónico</h3>
+                            <p>Al tener tu dominio con nosotros te otorgamos correo electrónico empresarial con el nombre de tu dominio, ejemplo: ventas@miempresa.com</p>
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-mail-bulk"></i>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Conexión con Whats App</h3>                    
+                            <p>Integramos a tu sitio web enlace directo a WhatsApp o Facebook Messeger para que la comunicación con tu cliente sea más eficiente.</p>
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </section>
+
+        <!-- ! PORTAFOLIO -->
+        <section class="seccion">
+            <div class="titulo container">
+                <h2>Portafolio <span>web</span></h2> 
+                <p>Conoce algunos de nuestros trabajos</p>
+                <p>Desarrolladas y diseñadas con las más nuevas tecnologías.</p>
+            </div> 
+
+            <!-- ! CARRUSEL DE TECNOLOGÍAS -->
+            <div class="carruselSoft">
+                <div class="car-track">
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT01.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT01.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT01.png" alt="HTML">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT02.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT02.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT02.png" alt="CCS3">
+                        </picture>        
+                    </div>
+    
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT03.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT03.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT03.png" alt="JavaScript">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT04.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT04.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT04.png" alt="SASS">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT05.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT05.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT05.png" alt="PHP8">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT06.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT06.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT06.png" alt="REACT">
+                        </picture>        
+                    </div>
+
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT07.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT07.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT07.png" alt="NODE">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT08.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT08.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT08.png" alt="MySQL">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT01.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT01.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT01.png" alt="HTML">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT02.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT02.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT02.png" alt="CCS3">
+                        </picture>        
+                    </div>
+    
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT03.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT03.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT03.png" alt="JavaScript">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT04.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT04.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT04.png" alt="SASS">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT05.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT05.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT05.png" alt="PHP8">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT06.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT06.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT06.png" alt="REACT">
+                        </picture>        
+                    </div>
+
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT07.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT07.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT07.png" alt="NODE">
+                        </picture>        
+                    </div>
+
+                    <div class="car-soft">
+                        <picture>
+                            <source srcset="build/img/soft/ICOSOFT08.avif" type="image/avif">
+                            <source srcset="build/img/soft/ICOSOFT08.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/soft/ICOSOFT08.png" alt="MySQL">
+                        </picture>        
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="pwDemos container">
+
+                <div class="demoCard" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="demoImg">
+                        <picture>
+                            <source srcset="build/img/MKP_REST.avif" type="image/avif">
+                            <source srcset="build/img/MKP_REST.webp" type="image/webp">
+                            <img loading="lazy" width="350px" height="350px" src="build/img/MKP_REST.png" alt="Imagen de varios dispositivos con la portada de una página web.">
+                        </picture>        
+                    </div>
+                    <div class="demoContent">
+                        <h4>Restaurantes</h4>
+                        <p>Página web demostrativa para todo tipo de restaurantes y bares.</p>
+                    </div>
+                    <div class="demoFooter">
+                        <a href="#" class="boton link-demorest">Ver Demo</a>
+                    </div>
+                </div>
+
+                <div class="demoCard" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="demoImg">
+                        <picture>
+                            <source srcset="build/img/MKP_TINT.avif" type="image/avif">
+                            <source srcset="build/img/MKP_TINT.webp" type="image/webp">
+                            <img loading="lazy" width="350px" height="350px" src="build/img/MKP_TINT.png" alt="Imagen de varios dispositivos con la portada de una página web.">
+                        </picture>        
+                    </div>
+                    <div class="demoContent">
+                        <h4>Lavanderías</h4>
+                        <p>Página web demostrativa para todo tipo de lavanderías y tintorerías.</p>
+                    </div>
+                    <div class="demoFooter">
+                        <a href="#" class="boton link-demotint">Ver Demo</a>
+                    </div>
+                </div>
+
+                <div class="demoCard" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="demoImg">
+                        <picture>
+                            <source srcset="build/img/MKP_GYM.avif" type="image/avif">
+                            <source srcset="build/img/MKP_GYM.webp" type="image/webp">
+                            <img loading="lazy" width="350px" height="350px" src="build/img/MKP_GYM.png" alt="Imagen de varios dispositivos con la portada de una página web.">
+                        </picture>        
+                    </div>
+                    <div class="demoContent">
+                        <h4>Gimnasios</h4>
+                        <p>Página web demostrativa para todo tipo de gimnasios y academias deportivas.</p>
+                    </div>
+                    <div class="demoFooter">
+                        <a href="#" class="boton link-demogym">Ver Demo</a>
+                    </div>
+                </div>
+
+                <div class="demoCard" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="demoImg">
+                        <picture>
+                            <source srcset="build/img/MKP_SPA.avif" type="image/avif">
+                            <source srcset="build/img/MKP_SPA.webp" type="image/webp">
+                            <img loading="lazy" width="350px" height="350px" src="build/img/MKP_SPA.png" alt="Imagen de varios dispositivos con la portada de una página web.">
+                        </picture>        
+                    </div>
+                    <div class="demoContent">
+                        <h4>Salones de Belleza</h4>
+                        <p>Página web demostrativa para salones de belleza, SPAs y estéticas.</p>
+                    </div>
+                    <div class="demoFooter">
+                        <a href="#" class="boton link-demospa">Ver Demo</a>
+                    </div>
+                </div>
+
+                <div class="demoCard" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="demoImg">
+                        <picture>
+                            <source srcset="build/img/MKP_BARBER.avif" type="image/avif">
+                            <source srcset="build/img/MKP_BARBER.webp" type="image/webp">
+                            <img loading="lazy" width="350px" height="350px" src="build/img/MKP_BARBER.png" alt="Imagen de varios dispositivos con la portada de una página web.">
+                        </picture>        
+                    </div>
+                    <div class="demoContent">
+                        <h4>Barber Shop</h4>
+                        <p>Página web demostrativa para barberías y peluquerías.</p>
+                    </div>
+                    <div class="demoFooter">
+                        <a href="#" class="boton link-demobarber">Ver Demo</a>
+                    </div>
+                </div>
+
+                <div class="demoCard" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="demoImg">
+                        <picture>
+                            <source srcset="build/img/MKP_POS.avif" type="image/avif">
+                            <source srcset="build/img/MKP_POS.webp" type="image/webp">
+                            <img loading="lazy" width="350px" height="350px" src="build/img/MKP_POS.png" alt="Imagen de varios dispositivos con la portada de una página web.">
+                        </picture>        
+                    </div>
+                    <div class="demoContent">
+                        <h4>Landing Page</h4>
+                        <p>Ejemplo de una landing page, sirve para todo tipo de negocio.</p>
+                    </div>
+                    <div class="demoFooter">
+                        <a href="#" class="boton link-demopos">Ver Demo</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="portaFooter">
+                <!-- <p>¿Quieres ver todo nuestro trabajo?</p>
+                <a href="#" class="boton">Portafolio Completo</a> -->
+            </div>
+
+        </section>
+
+        <!-- ! PRECIOS PAGINAS WEB -->
+        <section class="seccion secPreciosWeb">
+            <div class="pwPresentador">
+                <picture>
+                    <source srcset="build/img/PRECIOS_BOY.avif" type="image/avif">
+                    <source srcset="build/img/PRECIOS_BOY.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/PRECIOS_BOY.jpg" alt="Imagen de la sección Quienes Somos">
+                </picture>    
+            </div>
+            <div class="tituloWhite ">
+                <h2>Lista de <span>precios</span></h2> 
+                <p>Elije la versión que más se adapte a las necesidades de tu negocio</p>
+                <p>Contamos con planes de renta anual y compra definitiva</p>
+            </div> 
+
+            <div class="checkPrecios">
+                <input type="checkbox" value="0" id="slideThree" name="check"/>
+                <label for="slideThree" id="checkPreWeb"></label>
+            </div>
+
+            <section class="preciosWeb">
+
+                <div class="preciosCompra preciosAct" id="pwCompra">
+                    <div class="paqueteWeb">
+                        <div class="pwHeader">
+                            <h4>LANDING PAGE</h4>
+                            <h3>$5,500 mx</h3>
+                        </div>
+                        <div class="pwContent">
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Página Web con 1 pestaña</p></div>                                
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>De 5 a 7 secciones dentro de la pestaña inicial.</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de hosting </p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de dominio .com o .mx</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Hasta 10 correos corporativos </p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>                            
+                        </div>
+                        <div class="pwFooter">
+                            <a href="#" class="boton mnuContacto">Pedir informes</a>
+                        </div>
+                    </div>
+                    <div class="paqueteWeb">
+                        <span></span>
+                        <div class="pwHeader">
+                            <h4>PÁGINA PYME</h4>
+                            <h3>$7,500 mx</h3>
+                        </div>
+                        <div class="pwContent">
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Página Web con 5 a 7 pestaña</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Hasta 5 secciones por pestaña</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de hosting</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de dominio .com o .mx</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Correos corporativos ilimitados</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>
+                        </div>
+                        <div class="pwFooter">
+                            <a href="#" class="boton mnuContacto">Pedir informes</a>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="preciosRenta" id="pwRenta">
+                    <div class="paqueteWeb">
+                        <div class="pwHeader">
+                            <h4>LANDING PAGE</h4>
+                            <h3>$3,500 mx</h3>
+                            <small>ANUALES</small>
+                        </div>
+                        <div class="pwContent">
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Página Web con 1 pestaña</p></div>                                
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>De 5 a 7 secciones dentro de la pestaña inicial.</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de hosting </p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de dominio .com o .mx</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Hasta 10 correos corporativos </p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
+                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>                            
+                        </div>
+                        <div class="pwFooter">
+                            <a href="#" class="boton mnuContacto">Pedir informes</a>
+                        </div>
+                    </div>
+                    <div class="paqueteWeb">
+                        <span></span>
+                        <div class="pwHeader">
+                            <h4>PÁGINA PYME</h4>
+                            <h3>$5,500 mx</h3>
+                            <small>ANUALES</small>
+                        </div>
+                        <div class="pwContent">
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Página Web con 5 a 7 pestaña</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Hasta 5 secciones por pestaña</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de hosting</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de dominio .com o .mx</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Correos corporativos ilimitados</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
+                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>
+                        </div>
+                        <div class="pwFooter">
+                            <a href="#" class="boton mnuContacto">Pedir informes</a>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </section>
+
+            <div class="formasPago container">
+                <div class="fpIndicaciones">
+                    <ul>
+                        <li><i class="fas fa-circle"></i>Precios en pesos mexicanos</li>
+                        <li><i class="fas fa-circle"></i>Precios más impuestos</li>
+                        <li><i class="fas fa-circle"></i>Aceptamos transferencia electrónica</li>
+                        <li><i class="fas fa-circle"></i>Aceptamos pagos mediante liga de pago</li>
+                    </ul>
+                </div>
+                <div class="fpTarjetas">
+                    <small>Aceptamos todas las</small>
+                    <h4>Tarjetas de crédito y débito</h4>
+                    <div class="imgTarjetas">
+                        <picture>
+                            <source srcset="build/img/VisaMastercard.avif" type="image/avif">
+                            <source srcset="build/img/VisaMastercard.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/VisaMastercard.jpg" alt="Imagen de la sección Quienes Somos">
+                        </picture>                
+                    </div>
+                </div>
+                <div class="fpMSI">
+                    <small>Solicita tu compra a</small>
+                    <h4>MESES SIN INTERESES</h4>
+                    <small>con plazos de</small>
+                    <h4>3, 6 Y 9 MSI</h4>
+                    <small>Válido con tarjetas participantes.</small>
+                    <small>Aplica cargo extra por comisión MSI</small>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- ! PROMOCIONES PAGINAS WEB -->
+        <section class="secPromoWeb">
+            <h4>Pregunta por nuestras promociones</h4>
+        </section>
+
+        <!-- ! VERSUS RENTA VS COMPRA -->
+        <section class="secVersus seccion">
+            <div class="titulo container">
+                <h2>Renta vs <span>Compra</span></h2> 
+                <p>Te mostramos las diferencias entre el plan de renta y la compra definitiva.</p>
+            </div> 
+
+            <div class="vsImagen">
+                <picture>
+                    <source srcset="build/img/DiferenciasRentaCompra.avif" type="image/avif">
+                    <source srcset="build/img/DiferenciasRentaCompra.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/DiferenciasRentaCompra.jpg" alt="Diferencias entre rentar y comprar">
+                </picture>    
+            </div>
+        </section>
+
+        <!-- ! PREGUNTAS FRECUENTES -->
+        <section class="genFaqs seccion">
+            <div class="titulo container">
+                <h2><span>Preguntas</span> frecuentes</h2> 
+                <p>Sí tienes más dudas por favor ponte en contacto con nuestro departamento de ventas, quienes con mucho gusto podrán aclarar cualquier duda para que tomes la decisión que más te convenga.</p>
+            </div>
+
+            <div class="disFaqs_container container">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿Qué es un Hosting?</span><span class="iconFaq"
+                                aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>El hosting, o alojamiento web es un servicio donde podrás alojar todos los contenidos necesarios (textos, imágenes, bases de datos, emails…) para que tu web y correo sea accesible por cualquier usuario en internet en cualquier momento.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿Qué es un Dominio Web?</span><span class="iconFaq" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Un nombre de dominio (a menudo denominado simplemente dominio) es un nombre fácil de recordar asociado a una dirección IP física de Internet. Se trata del nombre único que se muestra después del signo @ en las direcciones de correo y después de www. en las direcciones web... <br> Por ejemplo: www.minegocio.com</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿Qué es una página web y para que me sirve?</span><span class="iconFaq"
+                                aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Una Página Web es conocida como un documento de tipo electrónico, el cual contiene información digital, la cual puede venir dada por datos visuales y/o sonoros, o una mezcla de ambos, a través de textos, imágenes, gráficos, audio o vídeos y otros tantos materiales dinámicos o estáticos. <br><br>
+                                Sirve para presentar tu negocio, marca o producto en internet y para que tus futuros clientes puedan encontrar tu negocio en internet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! DESPEDIDA WEB--> 
+        <section class="bkgwhite secDespedidaWeb">
+            <div class="titulo">
+                <h2><span>¡No esperes más!</span> y dale un PLUS a tu negocio</h2> 
+                <p>Realiza hoy la mejor inversión que puedes regalarle a tu negocio y comienza a disfrutar de los beneficios de contar con una increíble página web.</p>
+                <h4>Sí tu negocio no tiene página web <span>¡NO EXISTE!</span></h4>
+                <div class="despedida_contacto">
+                    <h5>Solicitar informes por:</h5>
+                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="imgDespWeb">
+                <picture>
+                    <source srcset="build/img/Presentadores.avif" type="image/avif">
+                    <source srcset="build/img/Presentadores.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/Presentadores.png" alt="Imagen de despedida">
+                </picture>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div data-include="assets/footer.html"></div>
+
+    <!-- ! --------------------------------------------------------------------------------- -->
+    <!-- * LISTA DE SCRIPTS -->
+    <!-- ! --------------------------------------------------------------------------------- -->
+
+    <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
+    <script src="build/js/include-html.min.js"></script> 
+
+    <!-- ? JQUERY -->
+    <script src="build/js/jquery.js"></script>
+            
+    <!-- ? SWIPER : Slider del hero -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- ?ANIMACIONES CON VANILLA-TILT -->
+    <script src="build/js/vanilla-tilt.min.js"></script>
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ? LIGTHBOX PARA LA GALERÍA -->
+    <script src="build/js/lightbox.js"></script>
+
+    <script src="build/js/app.js"></script>
+
+    
+</body>
+</html>

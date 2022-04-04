@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BDKSISTEMAS - Distribuidores</title>
+
+    <!-- FAVICON -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="build/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="build/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- ? FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- ? BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+
+    <!-- ? LIGHTBOX: Galería -->
+    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="stylesheet" href="build/css/app.css"> 
+
+    <!-- ? METAS -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Página Web demostrativa para todo tipo de gimnasios."/>
+    <meta name="keywords" content="Lista de palabras clave separadas por coma"/>
+    <meta name="author" content="BDKSISTEMAS" />
+    <meta name="copyright" content="BDKSISTEMAS" />    
+    <meta name="robots" content="index"/>
+    
+    <!-- OpenGraph -->
+    <!-- Etiquetas para que al compartir el enlace de la página, ésta aparezca con la portada indicada y el texto indicado -->
+    <meta property="og:url" content="https://bdkclientes.com/paginasweb/gimnasios/demo1/" />  
+    <meta property="og:title" content="Tu Gimnasio" />
+    <meta property="og:image" content="https://bdkclientes.com/paginasweb/gimnasios/demo1/build/img/PortadaCompartir.jpg" />
+    <meta property="og:description" content="Página Web demostrativa para todo tipo de gimnasios." />
+    <meta property="og:type" content="website" />
+    
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav_container">
+
+            <div class="nav_logo">
+                <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
+                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+
+            <ul class="nav_principal" id="navPrincipal">
+                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item nav_active"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+            </ul> 
+
+            <div class="nav_social">
+                <a href="#"><i class="fas fa-bars iconos botMenu" id="botApp"></i></a>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- ! HERO -->
+    <header class="heroDistribuidores">    
+        <section class="hero_container">
+            <h1>Únete a nuestro equipo de <span>Distribuidores</span> y gana comisiones de hasta <span>50%</span></h1>
+            <p>Comienza hoy a generar increíbles ganancias con nuestros sorprendentes planes de comisiones que tenemos para ti.</p>
+        </section>
+        <div class="wrapper">
+            <ul class="dynamic-txts">
+                <li><span>Comisiones de hasta 50%</span></li>
+                <li><span>Comisiones recurrentes</span></li>
+                <li><span>Vende en redes sociales</span></li>
+                <li><span>Mínima inversión</span></li>
+                <li><span>Vende a nivel nacional</span></li>
+                <li><span>Se tu propio jefe</span></li>
+            </ul>                
+        </div>   
+
+        <div class="anim-mouse">
+            <div class="mouse"></div>
+        </div>
+
+    </header>
+
+    <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+    <div data-include="assets/widgets.html"></div>
+
+    <main class="libAOS">
+
+        <!-- ! BENEFICIOS-->
+        <section class="disBeneficios seccion">
+            <div class="titulo">
+                <h2>Beneficios de ser un <span>Distribuidor Autorizado</span></h2> 
+                <p>Al ser parte de nuestro equipo de distribuidores, obtienes grandes beneficios como incrementar tus ingresos y tu cartera de clientes.</p>
+            </div>
+
+            <div class="gpoCaracteristicas container">
+                <div class="elementoCar" data-aos="flip-left" data-aos-duration="3000">
+                    <i class="fas fa-donate"></i>
+                    <h5>Increíbles ganancias y hasta 50% de comisiones</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-duration="3000">
+                    <i class="fas fa-sync-alt"></i>
+                    <h5>Comisiones recurrentes</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-duration="3000">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h5>Capacitación</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-duration="3000">
+                    <i class="fab fa-whatsapp"></i>
+                    <h5>Grupo de WhatsApp</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-duration="3000">
+                    <i class="fas fa-photo-video"></i>
+                    <h5>Material para tus redes sociales</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-duration="3000">
+                    <i class="far fa-envelope"></i>
+                    <h5>Cuenta de correo de la empresa</h5>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ! TIPOS DE CLIENTES -->
+        <section class="disProspectos seccionGris">
+            <div class="titulo container">
+                <h2>Amplia variedad de posibles <span>clientes</span></h2> 
+                <p>Nuestra amplia gama de productos te abre la posibilidad de generar ventas en un mercado de prospectos muy amplio en toda tu ciudad, por lo que nunca estarás limitado a un solo nicho de clientes.</p>
+            </div>
+
+            <div class="divFoto_lista">
+                <div class="elImagen">
+                    <picture>
+                        <source srcset="build/img/CentroComercial.avif" type="image/avif">
+                        <source srcset="build/img/CentroComercial.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/CentroComercial.jpg" alt="Imagén de un centro comercial">
+                    </picture>    
+                </div>
+                <div class="elLista" data-aos="zoom-in-left">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Todo tipo de restaurantes</li>
+                        <li><i class="fas fa-check-circle"></i> Todo tipo de gimnasios</li>
+                        <li><i class="fas fa-check-circle"></i> Salones de Belleza, SPAs, Estéticas</li>
+                        <li><i class="fas fa-check-circle"></i> Lavanderías y tintorerías</li>
+                        <li><i class="fas fa-check-circle"></i> Barberías y peluquerías</li>
+                        <li><i class="fas fa-check-circle"></i> Locales comerciales</li>
+                        <li><i class="fas fa-check-circle"></i> Abarrotes, carnicerías y muchos más</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! COMISIONES -->
+        <section class="disComisiones seccion">
+            <div class="titulo container">
+                <h2>Incrementa <span>tus ingresos</span> con el increíble plan de comisiones que tenemos para ti</h2> 
+                <p>Con nosotros, cada venta te genera comisiones y gracias a que solo manejamos licencias anuales y mensuales, las comisiones son recurrentes, así es que entre más tiempo estés con nosotros mayores serán tus ganancias.</p>
+            </div>
+
+            <div class="dcomPlanComisiones container">
+
+                <div class="dcomImagen">
+                    <picture>
+                        <source srcset="build/img/Dinero.avif" type="image/avif">
+                        <source srcset="build/img/Dinero.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/Dinero.png" alt="Dinero en abundancia">
+                    </picture>    
+                </div>
+                <div class="dcomContenido">
+                    <div class="dcomPlan" data-aos="zoom-out-up">
+                        <div class="dcomPlan_porcentaje">
+                            <h3>50%</h3>
+                        </div>
+                        <div class="dcomPlan_text">
+                            <h4>Ventas Nuevas</h4>
+                            <p>Genera comisiones de hasta un 50% sobre las ganancias generadas por la venta de cada licencia.</p>
+                        </div>
+                    </div>
+                    <div class="dcomPlan" data-aos="zoom-out-up">
+                        <div class="dcomPlan_porcentaje">
+                            <h3>25%</h3>
+                        </div>
+                        <div class="dcomPlan_text">
+                            <h4>Comisiones Recurrentes</h4>
+                            <p>Cada cliente tuyo te vuelve a dejar comisiones recurrentes de hasta un 25% al renovar la licencia de su software.</p>
+                        </div>
+                    </div>
+                    <div class="dcomPlan" data-aos="zoom-out-up">
+                        <div class="dcomPlan_porcentaje">
+                            <h3>10%</h3>
+                        </div>
+                        <div class="dcomPlan_text">
+                            <h4>Comisiones por otros servicios</h4>
+                            <p>También tenemos otros servicios como capacitación, venta de equipo, soporte vía remota, asesorías, etc, los cuales también te dejan una comisión.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ! SERVICIOS DEL DISTRIBUIDOR -->
+        <section class="disProspectos seccionGris">
+            <div class="titulo container">
+                <h2><span>¡Gana más!</span> ofreciendo tus propios servicios</h2> 
+                <p>Al ser un distribuidor activo, tu también tendrás la oportunidad de ofrecer tus propios servicios, los cuales puedes cobrar por separado con tu propia lista de precios.</p>
+            </div>
+
+            <div class="divFoto_lista">
+                <div class="elImagen">
+                    <picture>
+                        <source srcset="build/img/ReparaPC.avif" type="image/avif">
+                        <source srcset="build/img/ReparaPC.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/ReparaPC.jpg" alt="Imagén de un técnico reparando una computadora">
+                    </picture>    
+                </div>
+                <div class="elLista" data-aos="zoom-in-left">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Instalación y configuración de computaroras e impresoras</li>
+                        <li><i class="fas fa-check-circle"></i> Capacitaciones</li>
+                        <li><i class="fas fa-check-circle"></i> Soporte técnico presencial</li>
+                        <li><i class="fas fa-check-circle"></i> Instalación y configuración de redes</li>
+                        <li><i class="fas fa-check-circle"></i> Configuración de internet</li>
+                        <li><i class="fas fa-check-circle"></i> Venta de equipo de cómputo</li>
+                        <li><i class="fas fa-check-circle"></i> Y cualquier otro servicio que tu ofrezcas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ! VERSIONES DEMO -->
+        <section class="disSecDemos seccion">
+            <div class="titulo container">
+                <h2>Versiones <span>DEMO</span> ilimitadas</h2> 
+                <p>Solicita una licencia DEMO de cada uno de nuestros productos para ti y para tus prospectos</p>
+            </div>
+
+            <div class="dsdImagen">
+                <picture>
+                    <source srcset="build/img/DEMO_BDKRest.avif" type="image/avif">
+                    <source srcset="build/img/DEMO_BDKRest.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/DEMO_BDKRest.png" alt="Imagén de un técnico reparando una computadora">
+                </picture>    
+            </div>
+
+            <div class="dsdContent container">
+                    <div class="dsdTextos_parrafo">
+                        <p>Al ser un Distribuidor activo, tienes derecho a tener instalado en tu laptop o computadora personal, una licencia DEMO de cada uno de nuestros productos. <br> <br>
+                            Esta versión te servirá a ti para que puedas mostrar el sistema a cada uno de tus prospectos, ya sea de forma presencial o vía remota. <br> <br>                            
+                            Nuestro personal de soporte técnico te podrá ayudar con las configuraciones necesarias y mediante los vídeos de capacitación sabrás utilizar cada uno de los sistemas.</p>
+                    </div>
+                    <div class="dsdTextos_imagen">
+                        <picture>
+                            <source srcset="build/img/Soporteyventas.avif" type="image/avif">
+                            <source srcset="build/img/Soporteyventas.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/Soporteyventas.jpg" alt="Imagen de ayuda">
+                        </picture>        
+                    </div>
+            </div>
+        </section> 
+
+        <!-- ! LISTA DE PRECIOS -->
+        <section class="precios_software seccionGrisOscuro">
+            <div class="tituloWhite container">
+                <h2>Los mejores <span>planes</span> para distribuidores</h2> 
+                <p>Elige una categoría y recupera tu inversión en tus primeras 2 a 3 ventas</p>
+            </div>
+
+            <div class="precios_planes">
+
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlan">
+                        <h4>Bronce</h4>
+                        <h3>$2,900 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h4>Comisiones</h4>
+                            <h3>25% en ventas nuevas</h3>
+                            <h3>15% en renovaciones</h3>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en pólizas de soporte técnico</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en capacitación en línea</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en concentrador web</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en base de datos en la nube</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>5%</span> en equipo de cómputo</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>5%</span> renta de hosting</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>15%</span> en páginas web</p></div>                                
+                       </div>
+                       <div class="paqContenido_header">
+                            <h4>Descuentos</h4>
+                            <p><span>25%</span> en capacitación en línea para el distribuidor y su equipo</p>
+                        </div>
+                    </div>
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Pedir informes</a>
+                    </div>
+
+                </div>
+
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlanOro">
+                        <h4>Oro</h4>
+                        <h3>$5,800 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h4>Comisiones</h4>
+                            <h3>50% en ventas nuevas</h3>
+                            <h3>25% en renovaciones</h3>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en pólizas de soporte técnico</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en capacitación en línea</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en concentrador web</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en base de datos en la nube</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>5%</span> en equipo de cómputo</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>5%</span> renta de hosting</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>15%</span> en páginas web</p></div>                                
+                       </div>
+                       <div class="paqContenido_header">
+                            <h4>Descuentos</h4>
+                            <p><span>50%</span> en capacitación en línea para el distribuidor y su equipo</p>
+                        </div>
+                    </div>
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Pedir informes</a>
+                    </div>
+                </div>
+
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlan">
+                        <h4>Plata</h4>
+                        <h3>$4,060 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h4>Comisiones</h4>
+                            <h3>35% en ventas nuevas</h3>
+                            <h3>20% en renovaciones</h3>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en pólizas de soporte técnico</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en capacitación en línea</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en concentrador web</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>10%</span> en base de datos en la nube</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>5%</span> en equipo de cómputo</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>5%</span> renta de hosting</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> <span>15%</span> en páginas web</p></div>                                
+                       </div>
+                       <div class="paqContenido_header">
+                            <h4>Descuentos</h4>
+                            <p><span>25%</span> en capacitación en línea para el distribuidor y su equipo</p>
+                        </div>
+                    </div>
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Pedir informes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formasPago container">
+                <div class="fpIndicaciones">
+                    <ul>
+                        <li><i class="fas fa-info-circle"></i>Precios en pesos mexicanos</li>
+                        <li><i class="fas fa-info-circle"></i>Impuestos incluidos</li>
+                        <li><i class="fas fa-info-circle"></i>Aceptamos transferencia electrónica</li>
+                        <li><i class="fas fa-info-circle"></i>Aceptamos pagos mediante liga de pago</li>
+                    </ul>
+                </div>
+                <div class="fpTarjetas">
+                    <small>Aceptamos todas las</small>
+                    <h4>Tarjetas de crédito y débito</h4>
+                    <div class="imgTarjetas">
+                        <picture>
+                            <source srcset="build/img/VisaMastercard.avif" type="image/avif">
+                            <source srcset="build/img/VisaMastercard.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/VisaMastercard.jpg" alt="Imagen de la sección Quienes Somos">
+                        </picture>                
+                    </div>
+                </div>
+                <div class="fpMSI">
+                    <small>Solicita tu compra a</small>
+                    <h4>MESES SIN INTERESES</h4>
+                    <small>con plazos de</small>
+                    <h4>3, 6 Y 9 MSI</h4>
+                    <small>Válido con tarjetas participantes.</small>
+                    <small>Aplica cargo extra por comisión MSI</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! SECCIÓN DE INFORMES -->
+        <div class="seccion sec-informes">
+            <div class="tituloWhite">
+                <h2><span>Requisitos para ser Distribuidor Autorizado</span></h2> 
+                <p>Para poder ser parte de nuestro equipo de Distribuidores, debes de cumplir con ciertos requisitos que a continuación te describimos:</p>
+            </div>
+            <div class="informes_content">
+                <div class="informes_lista">
+                    <div class="pwElement"><i class="fas fa-check-circle"></i><p> Llenar la solicitud de registro **</p></div> 
+                    <div class="pwElement"><i class="fas fa-check-circle"></i><p> Cubrir la suscripción anual **</p></div> 
+                    <div class="pwElement"><i class="fas fa-check-circle"></i><p> Enviar copia del INE **</p></div> 
+                    <div class="pwElement"><i class="fas fa-check-circle"></i><p> Enviar alta de hacienda (persona física o moral)</p></div> 
+                    <div class="pwElement"><i class="fas fa-check-circle"></i><p> Logotipo de tu negocio o marca personal *</p></div>
+                    <div class="pwElement"><i class="fas fa-check-circle"></i><p> Enviar datos de cuenta bancaria para el deposito de tus comisiones. **</p></div>
+                    <small>* El logotipo debe de ser en formato PNG o JPG <br>** Requisito obligatorio</small>
+                </div>
+                <div class="informes_text">
+                    <p>Preferible dedicarse al servicio de soporte técnico, asesorías sobre informática para pequeños negocios o bien, ser distribuidor de accesorios para alguno de los diferentes giros de negocios que manejamos.</p>
+                </div>
+            </div>    
+        </div>
+
+        <!-- ! PREGUNTAS FRECUENTES -->
+        <section class="genFaqs txtM5 seccion">
+            <div class="titulo container">
+                <h2><span>Preguntas</span> frecuentes</h2> 
+                <p>Sí tienes más dudas por favor ponte en contacto con nuestro departamento de ventas, quienes con mucho gusto podrán aclarar cualquier duda para que tomes la decisión que más te convenga.</p>
+            </div>
+
+            <div class="disFaqs_container container">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿Qué tipo de
+                                software puedo comercializar?</span><span class="iconFaq"
+                                aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Puedes vender cualquiera de nuestros principales productos o servicios.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿Cómo me
+                                pagan mis comisiones?</span><span class="iconFaq" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Se te depositan a tu cuenta bancaria una vez pasados los 15 días de gracia, esto porque
+                                debemos de esperar a que el cliente no solicite una devolución.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿El cliente
+                                final me paga a mi o a BDKSISTEMAS?</span><span class="iconFaq"
+                                aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Debe de ser directo a nuestras cuentas, aunque hay ocasiones que el cliente le entregue
+                                el pago al distribuidor para que realice el pago correspondiente a licencia y servicios
+                                de la empresa o propios, en este caso deberás realizar tu mismo el pago a BDK pero la
+                                nota de venta saldrá a nombre del cliente.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-4" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿Una vez
+                                pagando la licencia del software, que prosigue?</span><span class="iconFaq"
+                                aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Deberás de coordinarte con tu ejecutivo de ventas para que puedan agendar en el
+                                departamento de soporte técnico el día y hora para realizar la instalación del sistema.
+                                NO SE REALIZAN INSTALACIONES RELAMPAGO. A menos que la instalación ya estuviera agendada
+                                con anterioridad.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-5" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿Los demos
+                                para mis clientes de cuantos días son?</span><span class="iconFaq"
+                                aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Son de 6 días, pero podemos extenderte el demo hasta 2 semana, esto con la finalidad de
+                                que tengas nuestro apoyo para el cierre exitoso de tu venta y el cliente final revise si
+                                nuestro software cumple con sus necesidades y requerimientos.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-6" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿Cuántos
+                                demos puedo solicitar para 1 mismo cliente?</span><span class="iconFaq"
+                                aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Máximo 2, tiempo suficiente para que el cliente final este seguro de su compra.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-7" aria-expanded="false" class="btnFaq"><span class="accordion-title">¿Cuántos
+                                demos puedo solicitar por mes?</span><span class="iconFaq"
+                                aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Todos los que sean necesarios, todo con la finalidad de que generes mayores ventas y
+                                ganancias para ti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! DESPEDIDA WEB-->
+        <section class="bkgwhite secDespedidaWeb">
+            <div class="titulo">
+                <h2><span>¡No esperes más!</span> Y ÚNETE HOY A NUESTRO EQUIPO DE DISTRIBUIDORES</h2> 
+                <p>Comienza hoy a generar increíbles ganancias con nuestros sorprendentes planes de comisiones que tenemos para ti.</p>
+                <h4>Gana comisiones de hasta <span>50%</span></h4>
+                <div class="despedida_contacto">
+                    <h5>Solicitar informes por:</h5>
+                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="imgDespWeb">
+                <picture>
+                    <source srcset="build/img/Presentadores.avif" type="image/avif">
+                    <source srcset="build/img/Presentadores.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/Presentadores.png" alt="Imagen de despedida">
+                </picture>
+            </div>
+        </section>        
+
+    </main>
+
+    <!-- FOOTER -->
+    <div data-include="assets/footer.html"></div>
+
+    <!-- ! --------------------------------------------------------------------------------- -->
+    <!-- * LISTA DE SCRIPTS -->
+    <!-- ! --------------------------------------------------------------------------------- -->
+
+    <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
+    <script src="build/js/include-html.min.js"></script> 
+
+    <!-- ? JQUERY -->
+    <script src="build/js/jquery.js"></script>
+            
+    <!-- ? SWIPER : Slider del hero -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- ?ANIMACIONES CON VANILLA-TILT -->
+    <script src="build/js/vanilla-tilt.min.js"></script>
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ? LIGTHBOX PARA LA GALERÍA -->
+    <script src="build/js/lightbox.js"></script>
+
+    <script src="build/js/app.js"></script>
+
+    
+</body>
+</html>

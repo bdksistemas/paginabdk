@@ -1,0 +1,273 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.sec-opiniones {
+    width: 100%;
+    padding-top: v.$sepSeccion;
+
+    .nva-resenas-container {
+        width: 90%;
+        height: 450px;
+        margin: 3rem auto 0;
+        padding: 1rem; 
+        overflow: hidden;
+        @include m.mixFlex(flex,0,0,nowrap,0);
+
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+            width: 8px;     /* Tamaño del scroll en vertical */
+            height: 8px;    /* Tamaño del scroll en horizontal */
+            /* display: none;  Ocultar scroll */
+        }
+        
+        /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+        &::-webkit-scrollbar-thumb {
+            background: v.$color1;
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+        &::-webkit-scrollbar-thumb:hover {
+            // background: #b3b3b3;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cambiamos el fondo cuando esté en active */
+        &::-webkit-scrollbar-thumb:active {
+            background: v.$color1;
+        }
+        
+        &::-webkit-scrollbar-track {
+            /* background: #e1e1e1; */
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo cuando esté en active o hover */
+        &::-webkit-scrollbar-track:hover,
+        &::-webkit-scrollbar-track:active {
+            background: #d4d4d4;
+        }        
+
+        .mode-screen {
+            flex-wrap: wrap;
+            scroll-snap-type: y mandatory;
+            background-color: #fff;
+            height: 80%;
+        }
+    
+    }
+
+
+    a {
+        display: block;
+        width: 250px;
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+
+    .resenas-container-screen {
+        width: 90%;
+        height: 90vh;
+        margin: 0 auto;
+        padding: 1rem; 
+        overflow: hidden;        
+        @include m.mixFlex(flex,space-evenly,0,wrap,0);
+
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;  
+        overflow-x: hidden;  
+
+        &::-webkit-scrollbar {
+            width: 8px;     /* Tamaño del scroll en vertical */
+            height: 8px;    /* Tamaño del scroll en horizontal */
+            /* display: none;  Ocultar scroll */
+        }
+        
+        /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+        &::-webkit-scrollbar-thumb {
+            background: v.$color1;
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+        &::-webkit-scrollbar-thumb:hover {
+            // background: #b3b3b3;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cambiamos el fondo cuando esté en active */
+        &::-webkit-scrollbar-thumb:active {
+            background: v.$color1;
+        }
+        
+        &::-webkit-scrollbar-track {
+            /* background: #e1e1e1; */
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo cuando esté en active o hover */
+        &::-webkit-scrollbar-track:hover,
+        &::-webkit-scrollbar-track:active {
+            background: #d4d4d4;
+        }        
+    
+    }
+
+}
+
+.nva-resena { 
+    @include m.mixBox(425px,415px,false,10px,false,v.$box-shadow);
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    flex-shrink: 0;
+    position: relative;
+    scroll-snap-align: center;
+    background-color: #fff;
+
+    .fa-quote-right {
+        position: absolute;
+        top: 45%; right: 1rem;
+        font-size: 3rem;
+        color: v.$color2;        
+    }
+
+    .nva-resena-header {
+        width: 100%;
+        height: 50%;
+        @include m.mixFlex(flex,0,0,nowrap,0);
+        overflow: hidden;
+
+        .nr-foto {
+            width: 45%;
+            height: 100%;
+            border-radius: 10px 0 0 0;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px 0 0 0;
+                transition: transform 0.5s ease-in-out;
+
+                &:hover {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                }
+    
+            }
+        }
+
+        .nr-cliente {
+            width: 60%;
+            height: 100%;
+            padding: 1rem;
+            overflow: hidden;
+
+            .cliente-logo {
+                height: 50%;
+                overflow: hidden;
+
+                img {
+                    object-fit: contain;
+                    height: 100%;
+                    //height: 100%;
+                    // width: 100%;
+                }
+            }
+
+            .cliente-info {
+                width: 100%;
+                height: 50%;
+                margin-top: 1rem;
+
+                .descrip {
+                    width: 100%;
+                    font-family: v.$fuente_principal;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+    
+                    span {
+                        display: inline-block;
+                        color: v.$color1;
+                    }
+    
+                }
+
+                .titdesc {
+                    font-size: 1.3rem;
+                }
+
+                small {
+                    font-size: .9rem;
+                    display: block;
+                    margin-bottom: .5rem;
+                    text-transform: uppercase;
+                }
+    
+                .stars {
+                    i {
+                        font-size: 1.2rem;
+                        color: v.$color1;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .nva-resena-comentario {
+        padding: 1.5rem;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+
+        p {
+            font-size: 1.34rem;
+        }
+    }
+}
+
+// .all-resenas {
+    // position: fixed;
+    // top: 50%; left: 50%;
+    // transform: translate(-50%, -50%);
+    // z-index: 10000;
+    // width: 90%;
+    // height: 100%;
+    // @include m.mixFlex(flex,center,center,0,0);        
+    // backdrop-filter: blur(25px);
+    // visibility: hidden;
+    // opacity: 0;
+
+    // &.active {
+    //     visibility: visible;
+    //     opacity: 1;
+    // }
+
+    // .closeResenas {
+    //     position: absolute;
+    //     top: 30px;  right: 30px;
+    //     cursor: pointer; 
+    //     max-width: 32px;
+    //     filter: invert(1);
+    // }    
+
+// } 
+
+
+.all-resenas {
+    width: 90%;    
+    margin: 4rem auto;
+    @include m.mixFlex(flex,center,center,wrap,row);
+
+    @include m.mixMQ(v.$deskXXL) {
+        width: 96%;            
+    };
+}
+

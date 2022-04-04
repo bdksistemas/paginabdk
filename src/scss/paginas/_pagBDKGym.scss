@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+#pt_gym_recepcion {
+    bottom: 140px;
+    left: 130px;
+}
+#pt_gym_asistencia {
+    top: 115px;
+    left: 85px;
+}
+
+#pt_gym_acceso { 
+    top: 80px;
+    left: 180px;
+
+    @include m.mixMQ(v.$deskXL) {
+        left: 150px;
+    };
+}
+
+#pt_gym_clientes {
+    top: 50px;
+    right: 300px;
+
+    @include m.mixMQ(v.$deskXL) {
+        right: 260px;
+    };
+
+}
+
+#pt_gym_clases {
+    bottom: 300px;
+    right: 80px;
+
+    @include m.mixMQ(v.$deskXL) {
+        bottom: 250px;
+        right: 120px;
+    };
+}
+
+#pt_gym_gimnasio {
+    bottom: 75px;
+    left: 230px;
+}
+
+#pt_gym_pos {
+    bottom: 200px;
+    left: 380px;
+
+    @include m.mixMQ(v.$deskXL) {
+        bottom: 160px;
+        // left: 270px;
+    };
+}
+
+#pt_gym_admon {
+    top: 200px;
+    left: 300px;
+
+    @include m.mixMQ(v.$deskXL) {
+        top: 160px;
+        left: 270px;
+    };
+}

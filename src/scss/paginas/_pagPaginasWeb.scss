@@ -1,0 +1,540 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.pagsHeader {
+    @include m.mixFlex(flex,0,center,wrap,0);
+
+    .phImg {
+        width: 45%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .phContent {
+        width: 50%;
+        margin-top: 5rem;
+
+        .phCElement {
+            @include m.mixFlex(flex,0,center,nowrap,0);
+
+            i {
+                color: v.$color1;
+                font-size: 2rem;
+                margin-right: 1rem;
+            }
+
+            p {
+                margin: 10px 0;
+                line-height: 1.25;
+                font-size: 1.5rem;
+                text-align: justify;
+            }
+        }
+    }    
+}
+
+// ! Seccón sobre los diferentes Beneficios que obtienen con nosotros
+.secBeneficiosWeb {
+    padding-bottom: 0;
+
+    .pwBeneficios {
+
+        @include m.mixFlex(flex,center,center,0,0);
+        width: 100%;
+        margin-top: 3rem;
+
+        .beneficios_sec {
+
+            width: 33%;
+            height: auto;
+
+            .beneficios_content {
+
+                @include m.mixFlex(flex,center,center,0,0);
+                margin: 40px 10px;
+
+                .beneficios_der {
+                    text-align: right;
+                    // width: 250px;
+                    width: 82%;
+                }           
+                .beneficios_izq {
+                    // width: 250px;
+                    width: 82%;
+                }            
+
+                h3 {
+                    font-size: 1.8rem;
+
+                    @include m.mixMQ(v.$tablet) {
+                        font-size: 1.6rem;
+                    };
+                }
+                
+                p {
+                    font-size: 1.3rem;
+                    color: v.$color1;
+
+                    @include m.mixMQ(v.$tablet) {
+                        font-size: 1.2rem;
+                    };
+                }
+                
+                .calidad_iconos {
+                    margin: 0 15px;
+                    transition: transform 0.3s ease-in-out;
+                    width: 18%;
+
+                    i {
+                        height: 6.5rem;
+                        line-height: 6.5rem;
+                        width: 6.5rem;
+                        text-align: center;
+                        font-size: 3rem;
+                        color: #fff;
+                        border-radius: 50%;
+                        background: v.$degradadoRed;
+
+                        filter: grayscale(0);
+                        transition: filter 0.3s ease-in;
+
+                        @include m.mixMQ(v.$tablet) {
+                            height: 4.5rem;
+                            line-height: 4.5rem;
+                            width: 4.5rem;
+                            font-size: 2.5rem;
+                        };
+                    }
+
+                    @include m.mixMQ(v.$tablet) {
+                        margin: 0 10px;
+                    };
+                }
+
+                &:hover .calidad_iconos {
+                    transform: scale(1.1, 1.1);
+                }
+                
+                &:hover .calidad_iconos i {
+                    filter: grayscale(1);
+                }           
+            
+                // .calidad_content
+                @include m.mixMQ(v.$tablet) {
+                    margin: 15px 10px;
+                };
+                @include m.mixMQ(v.$movil) {
+                    border-top: v.$borde;
+                    padding-top: 10px;
+                    margin: 0;
+                };
+            } 
+            
+            // .calidadSec
+            @include m.mixMQ(v.$tablet) {
+                width: 32%;
+                margin: 5px 0;
+            };
+            @include m.mixMQ(v.$movil) {
+                width: 90%;
+            };
+        }
+
+        .beneficios_imagen {
+
+            width: 30%;
+            height: 100%;
+            
+            img {
+                object-fit: cover;
+                height: 500px;
+                width: auto;
+                margin: 0 auto;
+
+                @include m.mixMQ(v.$tablet) {
+                    height: 60%
+                };
+            }
+
+            @include m.mixMQ(v.$tablet) {
+                height: 350px;
+            };
+            @include m.mixMQ(v.$movil) {
+                display: none;
+            };
+        }
+
+        // .Calidad
+        @include m.mixMQ(v.$movil) {
+            flex-direction: column;
+            margin: 15px 0;
+        };
+    }
+}
+
+.pwDemos {
+    @include m.mixFlex(flex,center,center,wrap,0);
+    margin-top: 5rem;
+
+    .demoCard {
+        @include m.mixBox(23%,325px,false,10px,false,v.$box-shadow);
+        @include m.mixFlex(flex,0,0,nowrap,column);
+        // background: v.$degradadoRed;
+        background-image: v.$degradado2;
+        background-blend-mode: lighten;
+        margin: 2rem;
+    
+
+        .demoImg {
+            width: 100%;
+            height: 40%;
+            position: relative;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: -2rem;
+                transform: scale(1.3);
+                z-index: 100;
+            }
+        }
+
+        .demoContent {
+            width: 100%;
+            height: 48%;
+            padding: 5rem 1rem 0 1rem;
+        }
+
+        .demoFooter {
+            width: 100%;
+            height: 12%;
+            @include m.mixFlex(flex,center,center,0,0);
+            background: v.$degradadoRed;
+            border-radius: 0 0 10px 10px;
+
+            a { 
+                margin: 0;
+                padding: 0;
+                background: none;
+            }
+        }
+    }
+}
+
+.portaFooter {
+    width: 25%; 
+    margin: 2rem auto;
+    @include m.mixFlex(flex,center,center,0,column);
+}
+
+// Styling
+.carruselSoft {
+	// background: v.$blanco;
+	// box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 75px;
+	margin: 3rem auto;
+	overflow:hidden;
+	position: relative;
+	width: 75%;
+	
+	&::before,
+	&::after {
+		@include m.white-gradient;
+		content: "";
+		height: 100%;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.car-track {
+		animation: scrollCar v.$animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 16);
+        height: 100%;
+	}
+	
+	.car-soft {
+		height: 100%;
+		width: 250px;
+
+        img {
+            width: auto;
+            height: 90%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+	}
+}
+
+// ! PRECIOS
+.secPreciosWeb {
+
+    width: 100%;
+    margin-top: 5rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5970763305322129) 100%), url('../img/FondoPreciosWeb.jpg');
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+
+    .pwPresentador {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        top: -13.3rem;
+        left: calc(50vw - 125px);
+        margin: 0 auto;
+    }
+
+    .tituloWhite {
+        margin-top: 2rem;
+    }
+
+    .checkPrecios {
+        width: 140px;
+        height: 26px;
+        background: #333;
+        margin: 2rem auto;
+        position: relative;
+        border-radius: 50px;
+        box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+        z-index: 1000;
+
+        &:after {
+            content: 'COMPRA';
+            color: v.$blanco;
+            position: absolute;
+            right: 10px;
+            z-index: 0;
+            font: 12px/26px Arial, sans-serif;
+            font-weight: bold;
+            // text-shadow: 1px 1px 0px rgba(255, 255, 255, .15);
+        }
+
+        &:before {
+            content: 'RENTA';
+            color: v.$blanco;
+            position: absolute;
+            left: 10px;
+            z-index: 0;
+            font: 12px/26px Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            width: 60px;
+            height: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            z-index: 1;
+            background: #fcfff4;
+            // background: linear-gradient(90deg, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+            background: linear-gradient(90deg, #ff0122 0%, #e90730 40%, #b8071f 100%);
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type=checkbox] {
+            visibility: hidden;
+
+            &:checked+label {
+                left: 75px;
+            }
+        }
+    }
+
+    .preciosWeb {
+
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        position: relative;        
+
+        .preciosCompra {
+            @include m.mixFlex(flex,center,0,wrap,0);
+            top: -55rem;
+            position: absolute;
+            transition: top 0.6s ease-in;
+            width: 100%;
+        }
+
+        .preciosRenta {
+            @include m.mixFlex(flex,center,0,wrap,0);
+            top: -55rem;
+            position: absolute;
+            transition: top 0.6s ease-in;
+            width: 100%;
+
+        }
+        
+    }
+
+    .preciosAct {
+        top: 0!important;
+    }
+}
+
+.paqueteWeb {
+
+    @include m.mixFlex(flex,0,center,0,column);
+    position: relative;
+
+    @include m.mixBox(35%,48rem,false,10px,false,v.$box-shadow);
+    margin: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(25px);
+    width: 35%;
+
+    span {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 150px;
+        height: 150px;
+        @include m.mixFlex(flex,center,center,0,0);
+        overflow: hidden;
+
+        &::before {
+            content: 'MÁS COMÚN';
+            color: v.$blanco;
+            font-weight: 600;
+            letter-spacing: 0.1em;                    
+            position: absolute;
+            width: 150%;
+            height: 40px;
+            background-color: v.$color1;
+            transform: rotate(-45deg) translateY(-20px);
+            @include m.mixFlex(flex,center,center,0,0);                    
+            box-shadow: v.$box-shadow2;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: v.$color2;
+            z-index: -1;
+            box-shadow: 140px -140px v.$color2;
+        }
+    }
+
+    .pwHeader {
+        height: 25%;
+        text-align: center;
+
+        h4 {
+            color: v.$blanco;
+            margin-top: 2rem;
+        }    
+
+        h3 {
+            font-size: v.$titulos + 2rem;
+            margin:0;
+            font-weight: 600;
+            color: v.$color1;
+            text-shadow: v.$box-shadow4;
+        }
+
+        small {
+            color: v.$blanco;
+            font-weight: bolder;
+        }
+    }
+
+    .pwContent {
+        width: 90%;
+        height: 65%;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        // border-bottom: v.$borde2;
+
+        .pwElement {
+            @include m.mixFlex(flex,0,center,nowrap,0);
+
+            i {
+                color: v.$color6;
+                font-size: 1.4rem;
+                margin-right: 1rem;
+            }
+
+            p {
+                margin: 3px 0;
+                line-height: 1.25;
+                font-size: 1.4rem;
+                text-align: justify;
+                color: v.$blanco;
+            }
+        }
+    }
+    
+    .pwFooter {
+        height: 10%;
+        
+        a {
+            margin: 0;
+        }
+    }
+}    
+
+
+// ! Seccón para poner alguna promoción para las páginas web
+.secPromoWeb {
+    background-color: v.$color1;
+    text-align: center;
+    text-transform: uppercase;
+    color: v.$blanco;
+    padding: .5rem 0;
+
+    h4 {
+        margin: 0;        
+    }
+}
+
+// ! Sección en donde se muestran las diferencias entre rentar y comprar
+.secVersus {
+    padding-bottom: 1rem;
+
+    .vsImagen {
+        width: 40%;
+        object-fit: cover;
+        margin: 2rem auto;
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+

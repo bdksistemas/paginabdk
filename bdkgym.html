@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BDKGYM</title>
+
+    <!-- FAVICON -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="build/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="build/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- ? BOOTSTRAPT
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+
+    <!-- ? FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- ? BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+
+    <!-- ? LIGHTBOX: Galería -->
+    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="stylesheet" href="build/css/app.css"> 
+
+    <!-- ? METAS -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Software para gimnasios, control y registro de inscripciones, cobro de mensualidades, registro de asistencia y mucho más."/>
+    <meta name="keywords" content="programa de gimnasio, software para gym gratis, sistema de gimnasio, programa para gym, software para gimnasio, sistema para gimnasio, control de gimnasio"/>
+    <meta name="author" content="BDKSISTEMAS" />
+    <meta name="copyright" content="BDKSISTEMAS" />    
+    <meta name="robots" content="index"/>
+    
+    <!-- OpenGraph -->
+    <!-- Etiquetas para que al compartir el enlace de la página, ésta aparezca con la portada indicada y el texto indicado -->
+    <meta property="og:url" content="https://www.bdksistemas.com.mx/bdkgym.html" />  
+    <meta property="og:title" content="BDKGYM: Software para gimnasios" />
+    <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/PortadaCompartir.jpg" />
+    <meta property="og:description" content="Control y registro de inscripciones, cobro de mensualidades, registro de asistencia y mucho más" />
+    <meta property="og:type" content="website" />
+    
+</head>
+
+<body>
+
+    <!-- ! MENU DE NAVEGACIÓN -->
+    <nav class="nav">
+        <div class="nav_container">
+
+            <div class="nav_logo">
+                <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
+                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+
+            <ul class="nav_principal" id="navPrincipal">
+                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item nav_active"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+            </ul> 
+
+            <div class="nav_social">
+                <a href="#"><i class="fas fa-bars iconos botMenu" id="botApp"></i></a>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- ! HERO -->
+    <header class="hero-sistema">
+        <div class="hero_container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/LOGO_BDKGYM_BLANCO.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/LOGO_BDKGYM_BLANCO.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/LOGO_BDKGYM_BLANCO.png" alt="Logotipo de la empresa">
+                    </picture>
+                </div>
+                <div class="hero-mockup">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/BDKGYM_PDV_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/BDKGYM_PDV_01.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/BDKGYM_PDV_01.png" alt="Terminal punto de venta">
+                    </picture>
+                </div>
+                <div class="heroSoft_Titulo">
+                    <h1>Software para <span>gimnasios</h1>
+                    <p>La solución ideal para todo tipo de gimnasios y academias deportivas</p>
+                </div>
+            </div>
+
+            <div class="anim-mouse-b2">
+                <div class="mouse"></div>
+            </div>
+    
+        </div>
+
+        <!-- ! CARROUSEL DE IMAGENES DEL LADO DERECHO DEL HEADER -->
+        <div class="hero-right">
+            <div class="slide-fondos" id="slide-fondos">
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/FONDO_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/FONDO_01.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_01.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
+                    </picture>
+                    <div class="heroR-leyenda"> 
+                        <h3>Recepción</h3>
+                        <p>Lleva un registro de las inscripciones y cobro de mensualidades. Registra la asistencia de tus clientes y controla el acceso a tus instalaciones.</p>
+                    </div>
+                </div> 
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/FONDO_02.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/FONDO_02.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_02.jpg" alt="Grupo de jovenes haciendo cardio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Clientes</h3>
+                        <p>Asigna rutinas y dietas personalizadas, control de medidas y peso, envío correos con recordatorios de pago, registro con huella y más.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/FONDO_03.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/FONDO_03.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_03.jpg" alt="Joven instructor contando productos del gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Control de almacén</h3>
+                        <p>Lleva un control de tus insumos y productos, captura tus inventarios para detectar faltantes de mercancía. Ideal si vendes suplementos alimenticios en tu gimnasio.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/FONDO_04.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/FONDO_04.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_04.jpg" alt="Hermosa joven administradora de un gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Administración</h3>
+                        <p>Evita el robo hormiga y lleva un perfecto control de tus ingresos y egresos. Obtén reportes de mensualidades vencidas y envía recordatorios de pago vía e-mail.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/FONDO_05.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/FONDO_05.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_05.jpg" alt="Instructores analizando rutinas de gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Empleados</h3>
+                        <p>Lleva un control de las clases de tus instructores, agrega clases y registra horarios. Asigna alumnos a cada clase e instructor.
+                            Asignan rutinas y dietas para sus alumnos.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/FONDO_06.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/FONDO_06.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_06.jpg" alt="Joven pareja dueños de un gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Beneficios para el dueño</h3>
+                        <p>BDKGYM te permite monitorear tu negocio y te da la tranquilidad de delegar funciones.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+    <div data-include="assets/widgets.html"></div>
+
+    <main>
+
+        <!-- ! PRINCIPALES BENEFICIOS -->
+        <section class="seccion">
+            <div class="titulo container">
+                <h2><span>¡LA SOLUCIÓN IDEAL!</span> <br> para todo tipo de gimnasios y academias deportivas</h2> 
+                <p>BDKGYM es un software para gimnasios con el que estarás protegido contra malos manejos administrativos y contra el robo hormiga.
+                    <br>Te permite llevar un control de tus inscripciones y mensualidades, así como administrar tu punto de venta, ingresos, egresos, asistencia, control de acceso, horarios, clases y mucho más.</p>
+            </div> 
+
+            <div class="gpoCaracteristicas container">
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-cash-register"></i>
+                    <h5>RECEPCIÓN</h5>
+                    <p>Lleva un registro de las inscripciones y cobro de mensualidades. Registra la asistencia de tus clientes y controla el acceso a tus instalaciones.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-users"></i>
+                    <h5>CLIENTES</h5>
+                    <p>Asigna rutinas y dietas personalizadas. Control de medidas y peso. Envía correos con recordatorios de pago. Registra su huella y más.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-tasks"></i>
+                    <h5>ALMACÉN</h5>
+                    <p>Lleva un control de tus insumos y productos, captura tus inventarios para detectar faltantes de mercancía. Ideal si vendes suplementos alimenticios y accesorios en tu gimnasio.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-chart-pie"></i>
+                    <h5>ADMINISTRACIÓN</h5>
+                    <p>Evita el robo hormiga y lleva un perfecto control de tus ingresos y egresos.
+                        Obtén reportes de mensualidades vencidas y envía recordatorios de pago vía e-mail.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-user-edit"></i>
+                    <h5>EMPLEADOS</h5>
+                    <p>Lleva un control de las clases de tus instructores, agrega clases y registra horarios.
+                        Asigna alumnos a cada clase e instructor.
+                        Asignan rutinas y dietas para sus alumnos.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-user-tie"></i>
+                    <h5>BENEFICIOS PARA TI</h5>
+                    <p>Te da la tranquilidad de delegar funciones, lo que te dará más tiempo para tu familia y para ti.</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- ! PROBLEMAS Y SOLUCIONES -->
+        <section class="secProSol">
+
+            <div class="secPS_article seccionGris">
+
+                <!-- ! PROBLEMAS -->
+                <div class="titulo">
+                    <h2>Principales <span>problemas</span> de un gimnasio</h2> 
+                    <p>En el día a día de los gimnasios, es común que tengan problemas a la hora de organizar su administración, es por eso que aquí te presentamos algunos de los principales problemas que sufren los gimnasios a diario y que se solucionan al contar con éste increíble software.</p>
+                </div>     
+
+                <div class="divFoto_lista">
+                    <div class="elImagen">
+                        <picture>
+                            <source srcset="build/img/BDKGYM/Problemas.avif" type="image/avif">
+                            <source srcset="build/img/BDKGYM/Problemas.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/Problemas.jpg" alt="Imagén de un centro comercial">
+                        </picture>    
+                    </div>
+                    <div class="elLista">
+                        <ul>
+                            <li><i class="fas fa-exclamation-triangle"></i> Robo hormiga</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Recepcionistas deshonestos</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Sobrecupo en las clases</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Accesos no autorizados</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Pierden clientes con frecuencia</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> No se tiene control de las mensualidades</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Faltantes en el corte de caja</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Mala administración</li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+            
+            <!-- ! SOLUCIÓN -->
+            <div class="secImg_fondo_gym">
+
+                <div class="tituloWhite tit_solucion" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+                    <h2>Tenemos la <span>solución ideal</span> para tus problemas</h2> 
+                    <p>Nuestro software cuenta con un sinfín de funcionalidades ideales para que lleves una excelente administración de todos los departamentos de tu negocio.</p>
+                </div>     
+
+                <div class="elLista" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+                    <ul>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Control inscripciones y mensualidades</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Registro de asistencia</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Control de acceso</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Registro de clases y horarios</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Expediente por cliente</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Facturación electrónica</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Punto de venta y cortes de caja</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Reportes diversos</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ! MAPA DEL TIPO DE NEGOCIO --> 
+        <section class="mapa_soft seccion"> 
+
+            <div class="titulo container">
+                <h2>Beneficios directos para <span>todas las áreas</span> de tu negocio</h2> 
+                <p>Con nuestro software, todas las áreas de tu negocio obtienen beneficios directa e indirectamente</p>
+                <small>Da un clic sobre los puntos informativos</small>
+                <div class="linea"></div>
+            </div>     
+
+            <div class="content_mapa container">
+
+                <div class="mapa_imagen mapa_gym">
+                    <!-- La clase mapa_gym se utiliza solo en JavaScript -->
+
+                    <picture>
+                        <source srcset="build/img/BDKGYM/MAPA.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/MAPA.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/MAPA.png" alt="Imagén de un centro comercial">
+                    </picture>    
+
+                    <i class="fas fa-circle punto_interes" id="pt_gym_recepcion"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_gym_asistencia"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_gym_acceso"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_gym_clientes"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_gym_clases"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_gym_gimnasio"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_gym_pos"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_gym_admon"></i>
+
+                </div>
+
+                <div class="mapa_funciones_gym">
+                    <div class="funcion_mapa" id="desc_gym_recepcion">
+                        <h4><i class="fas fa-circle"></i> Módulo de Recepción</h4>
+                        <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de inscripciones y el cobro de mensualidades, evita las filas en la asistencia y evita el acceso a personas con adeudos y personas no registradas.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_gym_recepcion">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_gym_asistencia">
+                        <h4><i class="fas fa-circle"></i> Módulo de asistencia</h4>
+                        <p>Permite el registro de asistencia por medio de tarjeta con código de barras, próximidad o huella digital.<br>
+                        Identifica de forma visual y sonora, si un socio tiene adeudos o está al corriente.</p>
+                        <small>* Registro con huella o próximidad disponible en la versión profesional</small>
+                        <a href="#" class="boton btnLeerMas" id="id_gym_asistencia">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_gym_acceso">
+                        <h4><i class="fas fa-circle"></i> Control de acceso</h4>
+                        <p>De la mano con el registro de asistencia, adicionalmente puedes bloquear el acceso a tus instalaciones por medio de torniquetes o electro imanes.</p>
+                        <small>* El control de acceso se encuentra disponible en la versión PLUS.</small>
+                        <a href="#" class="boton btnLeerMas" id="id_gym_acceso">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_gym_clientes">
+                        <h4><i class="fas fa-circle"></i> Beneficios para tu cliente</h4>
+                        <p>Con BDKGYM hasta tus clientes salen beneficiados ya que gracias a su expediente electrónico podrán llevar un control de su progreso, controlar sus medidas y peso y revisar rutinas y dietas generales y personalizadas.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_gym_clientes">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_gym_clases">
+                        <h4><i class="fas fa-circle"></i> Clases y horarios</h4>
+                        <p>Lleva un control de tus clases con sus diferentes horarios y asigna el instructor de cada clase.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_gym_clases">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_gym_gimnasio">
+                        <h4><i class="fas fa-circle"></i> Acceso a gimnasio</h4>
+                        <p>También puedes agregar clases con horario libre, sin control de horas como el acceso a pesas.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_gym_gimnasio">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_gym_pos">
+                        <h4><i class="fas fa-circle"></i> Punto de venta</h4>
+                        <p>Lleva un control de la venta de accesorios, suplementos y snack y registra cada una de tus ventas. Además lleva un control de almacén.</p>
+                        <small>Lleva control de productos e insumos.</small>
+                        <a href="#" class="boton btnLeerMas" id="id_gym_pos">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_gym_admon">
+                        <h4><i class="fas fa-circle"></i> Administración</h4>
+                        <p>Lleva un control de reportes muy completo. Genera facturas, envía recordatorio de pagos y promociones por correo y mucho más.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_gym_admon">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ! BLOQUES INFORMATIVOS POPUP -->
+            <div class="infoPopup">
+                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE RECEPCIÓN -->
+                <div class="info_content popup_recepcion">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKGYM/POP_01.avif" type="image/avif">
+                            <source srcset="build/img/BDKGYM/POP_01.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_01.jpg" alt="Joven recepcionista atendiendo a un cliente en el gimnasio">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Módulo de Recepción</h2> 
+                            <p>Administra perfectamente tus inscripciones y mensualidades</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de inscripciones y el cobro de mensualidades, evita las filas en la asistencia y evita el acceso a personas con adeudos y personas no registradas.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registro de inscripciones</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registro de pagos de mensualidades</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Identifica accesos no autorizados</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Autoriza acceso a visitantes y prospectos</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Consulta de expedientes de clientes</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Consulta cupo de clases</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Realiza cortes de caja</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Envío de correos masivos de publicidad</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Envío de correos con recordatorios de pago</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Consulta reporte de asistencia</li>
+                                </ul>
+                            </div>        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE ASISTENCIA -->
+                <div class="info_content popup_asistencia">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKGYM/POP_02.avif" type="image/avif">
+                            <source srcset="build/img/BDKGYM/POP_02.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_02.jpg" alt="Joven en la recepción de un gimnasio">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Módulo de asistencia</h2> 
+                            <p>Nunca más permitas accesos no autorizados</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Si en tu gimnasio no cuentas con un control de acceso, por ejemplo, torniquetes o puertas con electro imanes, tus clientes pueden registrar asistencia al entrar a tu gimnasio y por medio de un monitor y una alerta sonora puedes darte cuenta de los clientes que tienen adeudos, esto te permite restringir el acceso a tus instalaciones y/o dar recordatorios de pago.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Identifica visualmente si un socio tiene acceso libre o bloqueado por adeudos</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Alerta sonora para clientes con acceso no permitido</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Muestra en pantalla recordatorios de pago y fecha de próxima mensualidad</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Acepta diferentes métodos de registro de asistencia:</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Número de socio</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Tarjeta con código de barras</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Tarjetas de próximidad personalizadas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registro con huella digital</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Acceso entre sucursales</li>                                    
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> El acceso con huella y próximidad, disponible en la versión profesional</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> Requiere de una computadora exclusiva para asistencia</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+                
+                <!-- ! BLOQUE INFORMATIVO DEL CONTROL DE ACCESO -->
+                <div class="info_content popup_acceso">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKGYM/POP_03.avif" type="image/avif">
+                            <source srcset="build/img/BDKGYM/POP_03.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_03.jpg" alt="Imagén de unos toriniquetes de acceso">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Control de acceso</h2> 
+                            <p>Seguridad en el acceso a tu negocio</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Controla de manera eficiente el acceso a tus instalaciones mediante torniquetes o puertas con electro imanes.</p>
+
+                            <div class="elLista">
+                                <ul> 
+                                    <li><i class="fas fa-chevron-circle-right"></i> Se conecta directamente con el registro de asistencia</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Controla la entrada a tus instalaciones</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Compatible con torniquetes</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Compatible con electro imanes</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Bloqueo en caso de adeudos o socio no identificado</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registra la cantidad de comensales en una misma cuenta</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Asignación de mesas a cada mesero</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Reporte de ventas por mesero</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Reporte de cuentas pendientes de cobrar o cuentas abiertas</li>                                    
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> Compatible con la versión PLUS</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> No registramos la salida del cliente</li>                                    
+                                    <li><i class="fas fa-exclamation-triangle"></i> Contamos con la venta de torniquetes y electro imanes</li>                                    
+                                    <li><i class="fas fa-exclamation-triangle"></i> Requiere controladora de acceso la cual también tenemos a la venta</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> No realizamos instalaciones pero te ponemos en contacto con expertos</li>
+
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO CLIENTES -->
+                <div class="info_content popup_clientes">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKGYM/POP_04.avif" type="image/avif">
+                            <source srcset="build/img/BDKGYM/POP_04.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_04.jpg" alt="Foto de un grupo de jovenes tomándose una selfie">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Beneficios para tus clientes</h2> 
+                            <p>Clientes contentos, negocio lleno</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Con BDKGYM hasta tus clientes salen beneficiados ya que gracias a su expediente electrónico podrán llevar un control de su progreso, controlar sus medidas y peso y revisar rutinas y dietas generales y personalizadas.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Tu cliente siempre se mantiene informado sobre sus fechas de pago</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Asigna rutinas y dietas personalizadas y genéricas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> * Agrega una PC QUIOSCO dentro de tu gimnasio para la consulta de rutinas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Expediente electrónico con todo su historial</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control de medidas y peso</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Historial de compras y pagos</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Crédito en tu snack o tienda de accesorios</li>
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> * Disponible en la versión PLUS</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> PRÓXIMAMENTE: Agenda en línea</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> PRÓXIMAMENTE: Expediente en línea para socios</li>
+
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO CLASES Y HORARIOS -->
+                <div class="info_content popup_clases">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKGYM/POP_05.avif" type="image/avif">
+                            <source srcset="build/img/BDKGYM/POP_05.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_05.jpg" alt="Instructora impartiendo una clase de gimnasia">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Clases y horarios</h2> 
+                            <p>Control total de tus horarios</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Adiós a las clases sobre saturadas y al descontrol de horarios.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registro de clases y sus horarios</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Asigna el total de socios permitidos</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registro de instructores</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Consulta la inasistencia de socios</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Agrega tolerancia de minutos en la hora de entrada</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Consulta el límite de socios por clase</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO SOBRE ACCESO A GIMNASIO -->
+                <div class="info_content popup_gimnasio">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKGYM/POP_06.avif" type="image/avif">
+                            <source srcset="build/img/BDKGYM/POP_06.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_06.jpg" alt="Joven haciendo ejercicio con pesas">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Acceso a gimnasio</h2> 
+                            <p>Clases sin horarios</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Agrega clases sin control de horario y con acceso libre como el acceso al área de pesas y cardio.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Agrega clases sin control de horario</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Agrega rutinas en el módulo de QUIOSCO</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO SOBRE EL ALMACEN Y EL PUNTO DE VENTA-->
+                <div class="info_content popup_pos">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKGYM/POP_07.avif" type="image/avif">
+                            <source srcset="build/img/BDKGYM/POP_07.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_07.jpg" alt="Instructor de gimnasio acomodando suplementos de proteínas">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Punto de Venta</h2> 
+                            <p>Control de la venta de productos, accesorios y suplementos</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Sí en tu gimnasio tienes un snack en el que vendes suplementos alimenticios, accesorios deportivos, refrescos, agua o cualquier otro producto, BDKGYM es lo que necesitas, ya que cuenta con un módulo punto de venta en el cual puedes tener un control de tu almacén e inventario de productos.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control y registro de ventas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Ventas al contado y a crédito para socios</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Cortes de caja</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Venta de paquetes de visitas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registra la renta de lockers</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Reportes de venta de productos</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control de almacén</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registro de entradas y salidas de almacén</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Genera ordenes de compra</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registra salidas por mermas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Realiza conteos de existencias</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Identifíca si hubo faltantes o sobrantes de mercancía</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO SOBRE ADMINISTRACIÓN -->
+                <div class="info_content popup_admon">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKGYM/POP_08.avif" type="image/avif">
+                            <source srcset="build/img/BDKGYM/POP_08.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_08.jpg" alt="Encargado de gimnasio haciendo cuentas">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Administración</h2> 
+                            <p>Deja tu negocio en las manos de BDKGYM</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Evita el robo hormiga y lleva una excelente administración de tu gimnasio controlando todas las áreas del mismo.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Lleva control de las mensualidades vencidas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Reporteo general y estadísticas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Reportes de asistencia e inasistencia</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Envía recordatorios de pago vía e-mail</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Detecta clientes morosos y envía correo masivo de recordatorio</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Facturación electrónica</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Y mucho más...</li>
+
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> La facturación se encuentra disponible solo en México</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> El envío de correos disponible en la versión PROFESIONAL</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+                
+                <img src="build/img/close.png" alt="Cerrar la pantalla" class="close" id="close">
+            </div>
+
+        </section> 
+
+        <!-- ! SECCIÓN DEL VÍDEO PROMOCIONAL -->
+        <section class="video_software">
+            
+            <div class="vid_caracteristicas">
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-cash-register"></i>
+                    <h5>Punto de Ventas</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-address-card"></i>
+                    <h5>Registro de inscripciones</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h5>Control de mensualidades</h5>
+                </div>
+            </div>
+
+            <div class="vs_video">
+                <video class="video_pub" loading="lazy" src="build/video/CARD BDKGYM_OPT.mp4" controls loop autoplay> </video>
+            </div>
+
+            <div class="vid_caracteristicas">
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <!-- <i class="fas fa-receipt"></i> -->
+                    <i class="fas fa-tasks"></i>
+                    <h5>Registro de asistencia</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-hand-paper"></i>
+                    <h5>Control de acceso</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-chart-line"></i>
+                    <h5>Administración eficaz</h5>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- ! BENEFICIOS PARA EL DUEÑO -->
+        <section class="seccion secBeneficiosWeb"> 
+            <div class="titulo container">
+                <h2>Beneficios directos <span>para ti, tu familia y tu negocio</span></h2> 
+                <p>Contar con un software tan completo como BDKGYM permitirá que no solo tu negocio sea beneficiado, si no que tu y tu familia sentirán esa tranquilidad que les brinda saber que su negocio está bien cuidado y protegido.</p>
+            </div> 
+
+            <div class="pwBeneficios container libAOS">
+
+                <div class="beneficios_sec">
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="far fa-handshake"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Tranquilidad al delegar funciones</h3>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Más tiempo para tu familia</h3>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Éxito y crecimiento de tu negocio</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beneficios_imagen">
+                    <picture>
+                        <source srcset="build/img/BENEFICIOS_DUENO.avif" type="image/avif">
+                        <source srcset="build/img/BENEFICIOS_DUENO.webp" type="image/webp">
+                        <img loading="lazy" width="350px" src="build/img/BENEFICIOS_DUENO.png" alt="Dueño de negocio mostrando felicidad">
+                    </picture>    
+                </div>
+
+                <div class="beneficios_sec">
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Mejores ingresos</h3>                    
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Apertura de más sucursales</h3>
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Monitoreo a distancia de tu negocio</h3>                    
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-laptop-house"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>            
+        </section>
+
+        <!-- ! CONCENTRADOR WEB -->
+        <section class="seccionGris">
+            <div class="titulo">
+                <h2><span>Concentrador </span> Web</h2>  
+                <p>Monitorea tu negocio desde donde te encuentres</p>
+            </div>
+
+            <div class="container nosotros">
+                <p>El Concentrador Web te permite estar conectado con tu negocio, sin importar donde te encuentres, ya sea que estés en tu casa descansando o de vacaciones con tu familia, siempre estarás en línea con tu negocio, ya sea que tengas una sucursal o varias.</p>
+                <div class="nos_img">
+                    <picture>
+                        <source srcset="build/img/CONCENTRADOR_WEB.avif" type="image/avif">
+                        <source srcset="build/img/CONCENTRADOR_WEB.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/CONCENTRADOR_WEB.jpg" alt="Imagen de la sección Quienes Somos">
+                    </picture>    
+                </div>
+                <p>El CW te sirve para monitorear los diferentes tipos de movimientos que se generan día a día en tu negocio y puedes monitorearlo desde tu computadora personal, laptop, tablet o celular.</p>
+                <small>El CONCENTRADOR WEB se adquiere por separado</small>
+            </div>
+        </section> 
+
+        <!-- ! LISTA DE PRECIOS -->
+        <section class="precios_software seccionGrisOscuro">
+            <div class="tituloWhite container">
+                <h2>Los mejores <span>precios</span> del mercado</h2> 
+                <p>Elige la versión que más se adapte a tus necesidades</p>
+            </div>
+
+            <div class="precios_planes">
+
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlan">
+                        <h4>ESTÁNDAR</h4>
+                        <h3>$2,530 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h5>Incluye todas las funcionalidades básicas para la operación de tu negocio.</h5>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Registro de inscripciones</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Control de mensualidades</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Registro de clases y horarios</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Control de socios</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Reportes diversos</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Asistencia por CB o teclado</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Control de medidas y peso</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Punto de venta</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Control de almacén</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Cortes de caja</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Seguridad y permisos de usuario</p></div>
+
+                            <div class="pqElementAlert txtM2"><i class="fas fa-exclamation-triangle"></i><p> Solicita un DEMO 100% funcional antes de realizar tu compra</p></div>                            
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlanOro">
+                        <h4>PROFESIONAL</h4>
+                        <h3>$3,370 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h5>Incluye todas las funciones de la versión ESTANDAR, más:</h5>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Asistencia por huella o tarjetas de próximidad</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Envío de correos al dueño</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Envío de correo masivo a clientes</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Envío del corte de caja por correo</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Compatibilidad con el Concentrador Web</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Facturación electrónica</p></div>
+
+                            <div class="pqElementAlert txtM2"><i class="fas fa-exclamation-triangle"></i><p> El CW se vende por separado</p></div>
+                            <div class="pqElementAlert"><i class="fas fa-exclamation-triangle"></i><p> Facturación disponible solo en México</p></div>
+                            <div class="pqElementAlert"><i class="fas fa-exclamation-triangle"></i><p> La facturación funciona solo con nuestros timbres fiscales</p></div>
+                            <div class="pqElementAlert"><i class="fas fa-exclamation-triangle"></i><p> Solicita un DEMO 100% funcional antes de realizar tu compra</p></div>                            
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlan">
+                        <h4>PLUS</h4>
+                        <h3>$4,775 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h5>Incluye todas las funciones de la versión PROFESIONAL más:</h5>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Control de acceso mediante torniquetes o puertas con electro imanes</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Asignación de rutinas y dietas génericas y personalizadas</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Módulo de quisco para consulta de rutinas y dietas</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Modalidad de acceso entre sucursales</p></div>
+
+                            <div class="pqElementAlert txtM2"><i class="fas fa-exclamation-triangle"></i><p> El acceso entre sucursales requiere el CW activo en cada sucursal</p></div>
+                            <div class="pqElementAlert"><i class="fas fa-exclamation-triangle"></i><p> El acceso entre sucursales requiere la versión PLUS en cada sucursal</p></div>
+                            <div class="pqElementAlert"><i class="fas fa-exclamation-triangle"></i><p> El control de acceso requiere de comprar una controladora de acceso</p></div>
+
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
+            </div>
+
+            <div class="formasPago container">
+                <div class="fpIndicaciones">
+                    <ul>
+                        <li><i class="fas fa-info-circle"></i>Precios validos para el paquete de 100 socios activos</li>
+                        <li><i class="fas fa-info-circle"></i>Contamos con paquetes de 300, 600, 900, 1500 e ILIMITADO</li>
+                        <li><i class="fas fa-info-circle"></i>Precios en pesos mexicanos</li>
+                        <li><i class="fas fa-info-circle"></i>Impuestos incluidos</li>
+                        <li><i class="fas fa-info-circle"></i>Precios por sucursal</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye soporte técnico todo el año</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye actualizaciones gratuitas</li>
+                        <li><i class="fas fa-info-circle"></i>Precio válido para 3 equipos en la misma red</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye vídeos de auto capacitación</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye instalación vía remota</li>
+                        <li><i class="fas fa-info-circle"></i>Garantía de satisfacción</li>
+                        <li><i class="fas fa-info-circle"></i>Instalación a domicilio se cotiza por separado</li>
+                        <li><i class="fas fa-exclamation-triangle"></i>NO incluye equipo de cómputo</li>
+                        <li><i class="fas fa-exclamation-triangle"></i>NO incluye configuración de impresoras en Windows</li>                        
+                        <li><i class="fas fa-exclamation-triangle"></i>NO incluye configuración de computadoras en red</li>                        
+                        <li><i class="fas fa-exclamation-triangle"></i>La capacitación se cotiza por separado</li>                        
+                    </ul>
+                </div>
+                <div class="fpTarjetas">
+                    <small>Aceptamos</small>
+                    <h4>Transferencias SPEI</h4>
+                    <h4>Tarjetas de crédito y débito</h4>
+                    <div class="imgTarjetas">
+                        <picture>
+                            <source srcset="build/img/VisaMastercard.avif" type="image/avif">
+                            <source srcset="build/img/VisaMastercard.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/VisaMastercard.jpg" alt="Imagen de la sección Quienes Somos">
+                        </picture>                
+                    </div>
+                </div>
+                <div class="fpMSI">
+                    <small>Solicita tu compra a</small>
+                    <h4>MESES SIN INTERESES</h4>
+                    <small>con plazos de</small> 
+                    <h4>3, 6 Y 9 MSI</h4>
+                    <small>Válido con tarjetas participantes.</small>
+                    <small>Aplica cargo extra por comisión MSI</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! SECCIÓN INFORMATIVA -->
+        <section class="seccion sec-informes">
+            <div class="tituloWhite">
+                <h2><span>Solicita un DEMO 100% funcional</span></h2> 
+                <p>En BDKSISTEMAS primero te instalamos y después realizas el pago</p>
+            </div>    
+            <div class="informes_content">                
+                <p>En BDKSISTEMAS no queremos vender por vender, queremos que estés 100% seguro que nuestro producto es lo que tu negocio necesita, por lo que te recomendamos solicites a tu ejecutivo de ventas un DEMO 100% funcional antes de realizar tu compra.</p>
+                <p>De esta forma puedes probar las funcionalidades del sistema y comprobar si cumple con los requerimientos de tu negocio.</p>
+                <h5>Si lo prefieres, puedes solicitar una DEMOSTRACIÓN EN LÍNEA</h5>
+            </div>
+            <div class="informes-accion">
+                <a href="#" class="botonVerde mnuContacto">Solicitar DEMO</a>
+            </div>
+        </section>
+
+        <!-- ! ESPACIO PARA LA PROMOCIÓN ACTUAL -->
+        <div data-include="assets/promocion_actual.html"></div>
+
+        <!-- ! EQUIPO DE CÓMPUTO -->
+        <section class="secEquipo seccion">
+
+            <div class="titulo">
+                <h2><span>Equipo</span> de cómputo</h2>  
+                <p>Tenemos la solución completa para tu negocio</p>
+            </div>
+
+            <div class="eqContent">
+
+                <picture>
+                    <source srcset="build/img/BDKGYM/BDKGYM_PDV_01.avif" type="image/avif">
+                    <source srcset="build/img/BDKGYM/BDKGYM_PDV_01.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/BDKGYM_PDV_01.jpg" alt="Imagen de una terminal punto de venta">
+                </picture>   
+                
+                <div class="eqTextos">
+                    <h4>¡NO BATALLES MÁS!</h4>
+                    <p>En BDKSISTEMAS contamos con el software y también puedes adquirir todo el equipo de cómputo necesario para su implementación.</p>
+                    <p>
+                        <small><i class="fas fa-caret-right"></i> Computadoras</small>
+                        <small><i class="fas fa-caret-right"></i> Laptops</small>
+                        <small><i class="fas fa-caret-right"></i> Terminales POS</small>
+                        <small><i class="fas fa-caret-right"></i> Computadoras ALL IN ONE</small>
+                        <small><i class="fas fa-caret-right"></i> Impresoras de tickets</small>
+                        <small><i class="fas fa-caret-right"></i> Rollos de papel</small>
+                        <small><i class="fas fa-caret-right"></i> Cajón de dinero</small>
+                        <small><i class="fas fa-caret-right"></i> Torniquetes</small>
+                        <small><i class="fas fa-caret-right"></i> Controladora de acceso</small>
+                        <small><i class="fas fa-caret-right"></i> Lector de huella</small>
+                        <small><i class="fas fa-caret-right"></i> Lector de tarjetas de próximidad</small>
+                        <small><i class="fas fa-caret-right"></i> Tarjetas de próximidad personalizadas</small>
+                    </p>
+                </div>
+
+                <div class="hardware swiper container">
+                    <div class="swiper-wrapper"">
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_01.avif" type="image/avif">
+                                <source srcset="build/img/EQ_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_01.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_02.avif" type="image/avif">
+                                <source srcset="build/img/EQ_02.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_02.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_03.avif" type="image/avif">
+                                <source srcset="build/img/EQ_03.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_03.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_04.avif" type="image/avif">
+                                <source srcset="build/img/EQ_04.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_04.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_05.avif" type="image/avif">
+                                <source srcset="build/img/EQ_05.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_05.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_06.avif" type="image/avif">
+                                <source srcset="build/img/EQ_06.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_06.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_07.avif" type="image/avif">
+                                <source srcset="build/img/EQ_07.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_07.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_08.avif" type="image/avif">
+                                <source srcset="build/img/EQ_08.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_08.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- ! PROMOCIONANDO PAGINAS WEB -->
+        <div data-include="assets/promo_web.html"></div>
+
+        <!-- ! GALERÍA -->
+        <section class="seccionGris galeria">
+
+            <div class="titulo">
+                <h2>Galería de <span>fotos</span></h2> 
+                <p>Te presentamos algunas fotos que nos han compartido nuestros clientes</p>
+            </div>
+
+            <div class="galeria_content">
+                <a href="build/img/BDKGYM/GAL01.jpg" data-lightbox='galeria_content' data-title="Click a la derecha para pasar a la siguiente imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL01.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL01.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL01.jpg" alt="Fotos de la galería">
+                    </picture>    
+                </a>
+                <a href="build/img/BDKGYM/GAL02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL02.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL03.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL03.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL03.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL04.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL04.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL04.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL05.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL05.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL05.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL06.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL06.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL06.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL07.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL07.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL07.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL08.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL08.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL08.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL09.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL09.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL09.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL10.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL10.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL10.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL11.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL11.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL11.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL11.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL12.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL12.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL12.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL13.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL13.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL13.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL13.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL14.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL14.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL14.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL14.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL15.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL15.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL15.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL15.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+
+            </div>
+
+            <a href="#" class="boton mnuGal"><i class="fas fa-images"></i> Ver la galería completa</a>
+
+        </section>
+
+        <!-- ! VÍDEO EXPLICATIVO-->
+        <section class="secVideo">
+            
+            <picture>
+                <source srcset="build/img/BDKGYM/FondoVideo.avif" type="image/avif">
+                <source srcset="build/img/BDKGYM/FondoVideo.webp" type="image/webp">
+                <img loading="lazy" src="build/img/BDKGYM/FondoVideo.jpg" alt="Hombre levantando unas pesas" class="fondoSecciones">
+            </picture>                        
+
+            <div class="videoContent">
+                <div class="tituloWhite">
+                    <h2>Vídeo informativo</h2> 
+                    <p>Date unos minutos para ver más a fondo las funciones de nuestro producto</p>
+                </div>    
+                <a href="#" class="play" id="play"><img src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
+            </div>
+            <div class="videoPopup">
+                <video src="build/video/VIDEOWEB_REST.mp4" controls="true"></video>
+                <img src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
+            </div>
+    
+        </section>
+
+        <!-- ! RESEÑAS -->
+        <section class="seccion bkgwhite sec-opiniones">
+
+            <div class="titulo"> 
+                <h2>Lo que opinan nuestros <span>clientes</span></h2> 
+                <p>La mejor recomendación es tu opinión</p>
+                <small>Todas las fotos, logotipos y reseñas fueron autorizados por nuestros clientes.</small>
+            </div>
+    
+            <div class="nva-resenas-container">
+    
+                <div data-include="assets/resenas.html"></div>
+    
+            </div>
+    
+            <a href="#" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
+        
+        </section>
+
+        <!-- ! PREGUNTAS FRECUENTES -->
+        <div data-include="assets/faqs.html"></div>
+
+        <!-- ! DESPEDIDA -->
+        <section class="bkgwhite secDespedida" id="reseñas">
+
+            <div class="titulo">
+                <h2><span>¡No esperes más!</span> y dale un PLUS a tu negocio</h2> 
+                <p>Realiza hoy la mejor inversión que puedes regalarle a tu negocio y comienza a disfrutar de los beneficios de tener un excelente software de administración y página web</p>
+                <div class="despedida_contacto">
+                    <h5>Solicitar informes por:</h5>
+                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+
+            <picture>
+                <source srcset="build/img/FondoDespedidas.avif" type="image/avif">
+                <source srcset="build/img/FondoDespedidas.webp" type="image/webp">
+                <img loading="lazy" src="build/img/FondoDespedidas.jpg" alt="Imagen de una cajera frente a una terminal punto de venta">
+            </picture>
+        </section>
+
+    </main> 
+
+    <!-- ! FOOTER -->
+    <div data-include="assets/footer.html"></div>
+
+    <!-- ! --------------------------------------------------------------------------------- -->
+    <!-- * LISTA DE SCRIPTS -->
+    <!-- ! --------------------------------------------------------------------------------- -->
+
+    <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
+    <script src="build/js/include-html.min.js"></script> 
+
+    <!-- ? FONTAWESOM -->
+    <!-- <script src="https://kit.fontawesome.com/fb0e281aff.js" crossorigin="anonymous"></script>         -->
+
+    <!-- ? BOOTSTRAPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ? JQUERY -->
+    <script src="build/js/jquery.js"></script>
+            
+    <!-- ? SWIPER : Slider del hero -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- ?ANIMACIONES CON VANILLA-TILT -->
+    <script src="build/js/vanilla-tilt.min.js"></script>
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ? LIGTHBOX PARA LA GALERÍA -->
+    <script src="build/js/lightbox.js"></script>
+
+    <script src="build/js/app.js"></script>
+
+    
+</body>
+</html>

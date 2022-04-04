@@ -1,0 +1,103 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+// ! BENEFICIOS DE SER DISTRIBUIDOR
+//.disBeneficios {
+    // Sin código
+//}
+
+
+// ! SECCIÓN DE VARIEDAD DE PROSPECTOS
+// .disProspectos {
+
+// } 
+
+
+// ! SECCIÓN DE COMISIONES
+.disComisiones {
+
+    .dcomPlanComisiones {
+        @include m.mixFlex(flex,center,false,Wrap,false);
+        margin: 3rem auto;
+
+        .dcomImagen {
+            width: 30%;
+            margin-right: 2rem;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        .dcomContenido {
+            width: 65%;
+            @include m.mixFlex(flex,center,center,nowrap,column);
+
+            .dcomPlan {
+                @include m.mixFlex(flex,false,center,nowrap,row);
+                margin: 1rem;
+                width: 100%;
+
+                .dcomPlan_porcentaje {
+                    width: 100px;
+
+                    h3 {
+                        margin: 0;
+                        @include m.mixIcono(8rem, 3rem);        
+                        background: v.$degradadoRed;
+                        color: v.$blanco; 
+                    }
+
+                }
+
+                .dcomPlan_text {
+                    width: 90%;
+
+                    h4 {
+                        margin-bottom: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ! SECCIÓN DE LAS VERSIONES DEMOS
+.disSecDemos {
+    @include m.mixFlex(flex,center,center,wrap,column);
+    padding-bottom: 0;
+
+    .dsdImagen {
+        width: 350px;
+        margin: 2rem auto;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .dsdContent {
+        @include m.mixFlex(flex,center,center,wrap,column);
+
+        .dsdTextos_parrafo {
+            width: 50%;
+        }
+        .dsdTextos_imagen {
+            width: 60%;
+        }
+    }
+}
+
+
+// ! SECCIÓN LISTA DE PRECIOS
+// ? Los estilos de la sección de precios se encuentran en el archivo _pagSoftware.scss
+
+
+
+
+

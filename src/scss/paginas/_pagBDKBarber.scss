@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+#pt_bar_recepcion {
+    top: 170px;
+    left: 350px;
+}
+
+#pt_bar_empleados {
+    bottom: 135px;
+    left: 275px;
+}
+
+#pt_bar_clientes {
+    right: 145px;
+    bottom: 280px;
+}
+
+#pt_bar_pos {
+    top: 90px;
+    right: 200px;
+}
+
+#pt_bar_almacen {
+    top: 180px;
+    left: 220px;
+}
+
+#pt_bar_trats {
+    top: 50px;
+    right: 300px;
+}
+
+#pt_bar_admon {
+    bottom: 80px;
+    left: 100px;
+}
+
+#pt_bar_nots {
+    bottom: 180px;
+    left: 100px;
+}
+

@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+// ! SECCIÓN DE CONTACTO
+.secSoporte {
+
+    margin: 4rem auto;
+    @include m.mixFlex(flex,center,center,wrap,column); 
+
+    .soporte_botones {
+
+        margin: 2rem 0;
+        @include m.mixFlex(flex,center,center,wrap,column);
+    }
+
+
+}

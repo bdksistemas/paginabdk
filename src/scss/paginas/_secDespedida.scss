@@ -1,0 +1,88 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.secDespedida {
+    width: 100%;
+    position: relative;
+
+    .titulo {
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        width: 60rem;        
+
+        @include m.mixMQ(v.$deskXXL) {
+            top: 10%;
+            left: 52%;
+        };
+
+        @include m.mixMQ(v.$deskXL) {
+            top: 15%;
+            left: 50%;
+            width: 55rem;
+        };
+
+        h2 {
+            font-size: v.$titSec + 2rem;
+
+            @include m.mixMQ(v.$deskXL) {
+                font-size: v.$titSec + .8rem;                
+            };
+        }
+
+        .despedida_contacto {
+            margin-top: 2rem;
+
+            a {
+                width: 20rem;
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+.secDespedidaWeb {
+    width: 95%;
+    margin: 0 auto;
+    // height: 415px;
+
+    @include m.mixFlex(flex,center,0,wrap,0);
+
+    .titulo {
+        width: 40%;
+        margin: auto;
+
+        @include m.mixMQ(v.$deskXL) {
+            width: 50%;
+        };
+
+        h4 {
+            margin-top: 2rem;
+
+            span {
+                color: v.$color1;
+            }
+        }
+
+        .despedida_contacto {
+            margin-top: 2rem;
+
+            a {
+                width: 20rem;
+                margin: 1rem;
+            }
+        }
+
+    }
+
+    .imgDespWeb {
+        width: 40%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}

@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BDKSistemas</title>
+
+    <!-- FAVICON --> 
+
+    <link rel="apple-touch-icon" sizes="57x57" href="build/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="build/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- ? FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- ? BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+
+    <!-- ? LIGHTBOX: Galería -->
+    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="stylesheet" href="build/css/app.css"> 
+
+    <!-- ? METAS -->
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="BDKSISTEMAS, Lo mejor en informática y puntos de venta"/>
+    <meta name="keywords" content="software para restaurantes, sistema de restaurantes, programa de restaurantes, software para gimnasios, sistema para gimnasios, programa para gimnasios, software para Lavanderias, sistema para Lavanderias, programa para Lavanderias, software para salones de belleza, sistema para salones de belleza, programa para salones de belleza, software para barberias, sistema para barberias, programa para barberias, software punto de venta, sistema punto de venta, programa punto de venta, punto de venta"/>
+    <meta name="author" content="BDKSISTEMAS" />
+    <meta name="copyright" content="BDKSISTEMAS" />    
+    <meta name="robots" content="index"/>
+    
+    <!-- OpenGraph -->
+    <!-- Etiquetas para que al compartir el enlace de la página, ésta aparezca con la portada indicada y el texto indicado -->
+    <meta property="og:url" content="https://www.bdksistemas.com.mx/" />  
+    <meta property="og:title" content="BDKSISTEMAS" />
+    <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/Fondo_Hero.jpg" />
+    <meta property="og:description" content="Software Punto de Venta para todo los giros de negocios" />
+    <meta property="og:type" content="website" />
+    
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav_container">
+            <div class="nav_logo">
+                <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
+                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+
+            <ul class="nav_principal" id="navPrincipal">
+                <li class="nav_item nav_active"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+            </ul> 
+
+            <div class="nav_social">
+                <a href="#"><i class="fas fa-bars iconos botMenu" id="botApp"></i></a>                 
+            </div>
+        </div>
+    </nav>
+
+    <!-- ! HERO -->
+    <header class="hero">    
+        <section class="hero_container">
+            <h1>Tenemos el mejor software <span>punto de venta</span> para tu negocio</h1>
+            <p>Nuestros productos cuentan con un sinfín de funcionalidades ideales para que lleves una excelente administración de todas los áreas de tu negocio.</p>
+        </section>
+        <div class="wrapper">
+            <ul class="dynamic-txts">
+                <li><span>Restaurantes</span></li>
+                <li><span>Gimnasios</span></li>
+                <li><span>Salones de Belleza & SPA</span></li>
+                <li><span>Lavanderías</span></li>
+                <li><span>Barberías</span></li>
+                <li><span>Todo tipo de negocio</span></li>
+            </ul>                
+        </div>   
+
+        <div class="anim-mouse">
+            <div class="mouse"></div> 
+        </div>
+
+    </header>
+
+    <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+    <div data-include="assets/widgets.html"></div>
+
+    <main class="libAOS">
+
+        <!-- ! SECCIÓN QUIENES SOMOS -->
+        <section class="seccion">
+            <div class="titulo">
+                <h2> <span>¿Quiénes</span> Somos?</h2>  
+                <!-- <p>Conoce algo más de información sobre nosotros</p> -->
+            </div>
+
+            <div class="container nosotros">
+                <p>BDKSISTEMAS es una empresa joven con 10 años en el mercado y en constante crecimiento a nivel nacional e internacional, especializados en puntos de venta, desarrollo de software y páginas web.</p>
+                <div class="nos_img" data-aos="flip-left" data-aos-duration="1500">
+                    <picture>
+                        <source srcset="build/img/Quienes_Somos.avif" type="image/avif">
+                        <source srcset="build/img/Quienes_Somos.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/Quienes_Somos.jpg" alt="Imagen de la sección Quienes Somos">
+                    </picture>    
+                </div>
+                <p>Contamos con un equipo de analistas y programadores con más de 15 años de experiencia, enfocados en crear soluciones que se adapten 100% a las necesidades de nuestros clientes.</p>
+            </div>
+        </section> 
+
+        <!-- ! NUESTROS CLIENTES -->
+        <section class="seccionGris">
+            <div class="titulo">
+                <h2><span>Nuestros</span> Clientes</h2> 
+                <p>Contamos con productos y servicios para una gran variedad de giros</p>
+            </div>
+
+            <div class="container clientes">
+
+                <section class="clientes_content">
+                    <div class="ctes_img">
+                        <picture>
+                            <source srcset="build/img/Presentadora_clientes.avif" type="image/avif">
+                            <source srcset="build/img/Presentadora_clientes.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/Presentadora_clientes.jpg" alt="Imagen de la sección Quienes Somos">
+                        </picture>    
+                    </div>
+                    <div class="ctes_lista">
+                        <div class="giroctes" data-aos="flip-left" data-aos-duration="1500">
+                            <p><i class="fas fa-check-circle"></i> Restaurantes</p>
+                            <p><i class="fas fa-check-circle"></i> Mariscos</p>
+                            <p><i class="fas fa-check-circle"></i> Pizzerías</p>
+                            <p><i class="fas fa-check-circle"></i> Bares y Antros</p>
+                            <p><i class="fas fa-check-circle"></i> Taquerías</p>
+                        </div>
+                        <div class="giroctes" data-aos="flip-left" data-aos-duration="1500">
+                            <p><i class="fas fa-check-circle"></i> Gimnasios</p>
+                            <p><i class="fas fa-check-circle"></i> Centros de Pilates</p>
+                            <p><i class="fas fa-check-circle"></i> Estudios de Yoga</p>
+                            <p><i class="fas fa-check-circle"></i> Karate</p>
+                            <p><i class="fas fa-check-circle"></i> Escuelas deportivas</p>                            
+                        </div>
+                        <div class="giroctes" data-aos="flip-left" data-aos-duration="1500">
+                            <p><i class="fas fa-check-circle"></i> Lavanderías</p>
+                            <p><i class="fas fa-check-circle"></i> Tintorerías</p>
+                            <p><i class="fas fa-check-circle"></i> Sastrerías</p>
+                        </div>
+                        <div class="giroctes" data-aos="flip-left" data-aos-duration="1500">
+                            <p><i class="fas fa-check-circle"></i> Salones de belleza</p>
+                            <p><i class="fas fa-check-circle"></i> SPAs</p>
+                            <p><i class="fas fa-check-circle"></i> Estéticas</p>
+                            <p><i class="fas fa-check-circle"></i> Clínicas de belleza</p>
+                            <p><i class="fas fa-check-circle"></i> Salones de uñas</p>
+                        </div>
+                        <div class="giroctes" data-aos="flip-left" data-aos-duration="1500">
+                            <p><i class="fas fa-check-circle"></i> Barber Shop</p>
+                            <p><i class="fas fa-check-circle"></i> Peluquerías</p>
+                        </div>
+                        <div class="giroctes" data-aos="flip-left" data-aos-duration="1500">
+                            <p><i class="fas fa-check-circle"></i> Abarrotes</p>
+                            <p><i class="fas fa-check-circle"></i> Ferreterías</p>
+                            <p><i class="fas fa-check-circle"></i> Locales comerciales</p>
+                            <p><i class="fas fa-check-circle"></i> Boutiques</p>
+                            <p><i class="fas fa-check-circle"></i> Zapaterías</p>
+                        </div>
+                    </div>
+                </section>
+
+                <p>¡ Y MUCHOS GIROS MÁS !</p>
+                <!-- <a href="#" class="boton">Contáctanos</a> -->
+            </div>
+
+        </section>
+
+        <!-- ! CARACTERÍSTICAS -->
+        <section class="seccion secDestacados">
+            <div class="tituloWhite">
+                <h2><span>Lo que nos</span> Diferencía de los demás</h2> 
+                <p>Estas son algunas de las razones por la que los clientes nos prefieren</p>
+            </div>
+
+            <div class="container destacados">
+                <div class="destacados_card">
+                    <div class="content">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Servicios de Calidad</h4>
+                        <p>Nuestros software cumplen con los más altos estándares de calidad y cubren todas las necesidades básicas de la pequeña y mediana empresa.</p>
+                    </div>
+                </div>
+                <div class="destacados_card">
+                    <div class="content">
+                        <i class="fas fa-user-check"></i>
+                        <h4>Personal Calificado</h4>
+                        <p>Todo nuestro personal de soporte técnico está 100% calificado para atender oportunamente las necesidades de tu negocio.</p>
+                    </div>
+                </div>
+                <div class="destacados_card">
+                    <div class="content">
+                        <i class="fas fa-tools"></i>
+                        <h4>Soporte Técnico</h4>
+                        <p>Todos nuestros productos incluyen soporte técnico durante todo el tiempo que mantengas tu licencia activa, además incluyen actualizaciones gratuitas e instalación vía remota sin costo adicional.</p>
+                    </div>
+                </div>
+                <div class="destacados_card">
+                    <div class="content">
+                        <i class="fas fa-file-contract"></i>
+                        <h4>Sin Contratos</h4>
+                        <p>Nuestros sistemas no tienen un contrato forzoso, tu puedes dejar de renovar tu licencia en el momento que lo desees sin ningún tipo de penalidad.</p>
+                    </div>
+                </div>
+                <div class="destacados_card">
+                    <div class="content">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Somos Desarrolladores</h4>
+                        <p>Nuestros sistemas fueron desarrollados por personal interno, por lo que no dependemos de terceros para brindar soporte técnico o modificaciones adicionales.</p>
+                    </div>
+                </div>
+                <div class="destacados_card">
+                    <div class="content">
+                        <i class="fas fa-user-lock"></i>
+                        <h4>Seguridad en tu compra</h4>
+                        <p>Nuestro lema es "Primero te instalamos y si te gusta nos pagas". Por lo que puedes tener plena confianza en que tu compra es 100% segura</p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <!-- ! PRODUCTOS -->
+        <section class="secProductos seccionGris">
+            <div class="titulo">
+                <h2><span>Nuestros</span> Productos</h2> 
+                <p>Estos son nuestros principales software que tenemos para tu negocio</p>
+            </div>
+
+            <div class="productos container">
+
+                <!-- ! CARD BDKREST -->
+                <div class="prodCard">
+                    <div class="front">
+                        <div class="fondoCard">
+                            <picture>
+                                <source srcset="build/img/BDKREST/FRONTCARD.avif" type="image/avif">
+                                <source srcset="build/img/BDKREST/FRONTCARD.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKREST/FRONTCARD.jpg" alt="Imagén el producto BDKREST">
+                           </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <picture>
+                                <source srcset="build/img/BDKREST/LOGO_BCO.avif" type="image/avif">
+                                <source srcset="build/img/BDKREST/LOGO_BCO.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKREST/LOGO_BCO.jpg" alt="Logotipo BDKREST">
+                            </picture>
+                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_BH">
+                            <picture>
+                                <source srcset="build/img/BDKREST/CARD_HEADER.avif" type="image/avif">
+                                <source srcset="build/img/BDKREST/CARD_HEADER.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKREST/CARD_HEADER.jpg" alt="Imagén del producto BDKREST">
+                            </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <div class="titSoft">
+                                <h4>Software para Restaurantes y Bares</h4>
+                                <p>Control de ventas y mesas, ventas por mesero, comandas, manejo de cuentas, almacén y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="acciones">
+                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
+                            <a href="#" class="acc-rest"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- ! CARD BDKTINT -->                
+                <div class="prodCard">
+                    <div class="front">
+                        <div class="fondoCard">
+                            <picture>
+                                <source srcset="build/img/BDKTINT/FRONTCARD.avif" type="image/avif">
+                                <source srcset="build/img/BDKTINT/FRONTCARD.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/FRONTCARD.jpg" alt="Imagén el producto BDKTINT">
+                            </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <picture>
+                                <source srcset="build/img/BDKTINT/LOGO_BCO.avif" type="image/avif">
+                                <source srcset="build/img/BDKTINT/LOGO_BCO.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/LOGO_BCO.jpg" alt="Logotipo BDKTINT">
+                            </picture>
+                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_BH">
+                            <picture>
+                                <source srcset="build/img/BDKTINT/CARD_HEADER.avif" type="image/avif">
+                                <source srcset="build/img/BDKTINT/CARD_HEADER.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/CARD_HEADER.jpg" alt="Imagén del producto BDKTINT">
+                            </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <div class="titSoft">
+                                <h4>Software para Lavanderías y Tintorerías</h4>
+                                <p>Lleva el control de tus ventas, seguimiento de pedidos, cortes de caja, control de prendas y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="acciones">
+                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
+                            <a href="#" class="acc-tint"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CARD BDKGYM -->                
+                <div class="prodCard">
+                    <div class="front">
+                        <div class="fondoCard">
+                            <picture>
+                                <source srcset="build/img/BDKGYM/FRONTCARD.avif" type="image/avif">
+                                <source srcset="build/img/BDKGYM/FRONTCARD.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FRONTCARD.jpg" alt="Imagén el producto BDKGYM">
+                       </picture>
+                        </div>
+                <div class="cardprod_content">
+                            <picture>
+                                <source srcset="build/img/BDKGYM/LOGO_BCO.avif" type="image/avif">
+                                <source srcset="build/img/BDKGYM/LOGO_BCO.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/LOGO_BCO.jpg" alt="Logotipo BDKGYM">
+                            </picture>
+                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_BH">
+                            <picture>
+                                <source srcset="build/img/BDKGYM/CARD_HEADER.avif" type="image/avif">
+                                <source srcset="build/img/BDKGYM/CARD_HEADER.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/CARD_HEADER.jpg" alt="Imagén del producto BDKGYM">
+                            </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <div class="titSoft">
+                                <h4>Software para Gimnasios y Estudios deportivos</h4>
+                                <p>Control de mensualidades, asistencia, ventas, clases, horarios, expediente de alumnos y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="acciones">
+                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
+                            <a href="#" class="acc-gym"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CARD BDKSPA --> 
+                <div class="prodCard">
+                    <div class="front">
+                        <div class="fondoCard">
+                            <picture>
+                                <source srcset="build/img/BDKSPA/FRONTCARD.avif" type="image/avif">
+                                <source srcset="build/img/BDKSPA/FRONTCARD.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/FRONTCARD.jpg" alt="Imagén el producto BDKSPA">
+                           </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <picture>
+                                <source srcset="build/img/BDKSPA/LOGO_BCO.avif" type="image/avif">
+                                <source srcset="build/img/BDKSPA/LOGO_BCO.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/LOGO_BCO.jpg" alt="Logotipo BDKSPA">
+                            </picture>
+                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_BH">
+                            <picture>
+                                <source srcset="build/img/BDKSPA/CARD_HEADER.avif" type="image/avif">
+                                <source srcset="build/img/BDKSPA/CARD_HEADER.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/CARD_HEADER.jpg" alt="Imagén del producto BDKSPA">
+                            </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <div class="titSoft">
+                                <h4>Software para Salones de Belleza & SPA</h4>
+                                <p>Control de ventas, tratamientos y sesiones, agenda, almacén, comisiones y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="acciones">
+                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
+                            <a href="#" class="acc-spa"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CARD BDKPOS -->
+                <div class="prodCard">
+                    <div class="front">
+                        <div class="fondoCard">
+                            <picture>
+                                <source srcset="build/img/BDKPOS/FRONTCARD.avif" type="image/avif">
+                                <source srcset="build/img/BDKPOS/FRONTCARD.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/FRONTCARD.jpg" alt="Imagén del producto BDKPOS">
+                            </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <picture>
+                                <source srcset="build/img/BDKPOS/LOGO_BCO.avif" type="image/avif">
+                                <source srcset="build/img/BDKPOS/LOGO_BCO.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/LOGO_BCO.jpg" alt="Logotipo BDKPOS">
+                            </picture>
+                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_BH">
+                            <picture>
+                                <source srcset="build/img/BDKPOS/CARD_HEADER.avif" type="image/avif">
+                                <source srcset="build/img/BDKPOS/CARD_HEADER.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/CARD_HEADER.jpg" alt="Imagén del producto BDKPOS">
+                            </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <div class="titSoft">
+                                <h4>Software POS para todo tipo de comercio</h4>
+                                <p>Control de ventas e ingresos, almacén, cotizaciones, ventas a crédito, sistema de separado y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="acciones">
+                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
+                            <a href="#" class="acc-pos"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CARD BDKBARBER -->
+                <div class="prodCard">
+                    <div class="front">
+                        <div class="fondoCard">
+                            <picture>
+                                <source srcset="build/img/BDKBARBER/FRONTCARD.avif" type="image/avif">
+                                <source srcset="build/img/BDKBARBER/FRONTCARD.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/FRONTCARD.jpg" alt="Imagén del producto BDKBARBER">
+                            </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <picture>
+                                <source srcset="build/img/BDKBARBER/LOGO_BCO.avif" type="image/avif">
+                                <source srcset="build/img/BDKBARBER/LOGO_BCO.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/LOGO_BCO.jpg" alt="Logotipo BDKBARBER">
+                            </picture>
+                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_BH">
+                            <picture>
+                                <source srcset="build/img/BDKBARBER/CARD_HEADER.avif" type="image/avif">
+                                <source srcset="build/img/BDKBARBER/CARD_HEADER.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/CARD_HEADER.jpg" alt="Imagén del producto BDKBARBER">
+                            </picture>
+                        </div>
+                        <div class="cardprod_content">
+                            <div class="titSoft">
+                                <h4>Software para barberías y peluquerías</h4>
+                                <p>Control de ventas e ingresos, sesiones, agenda, almacén, comisiones y mucho más.</p>
+                            </div>
+                        </div>
+                        <div class="acciones">
+                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
+                            <a href="#" class="acc-barber"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="prodFooter">
+                <p>Consulta la lista completa de software disponibles</p>
+                <a href="#" class="boton mnuSoftware">Ver todos los productos</a>
+            </div>
+        </section>
+
+        <!-- ! EQUIPO DE COMPUTO --> 
+        <section class="secEquipo seccion">
+
+            <div class="titulo">
+                <h2><span>Equipo</span> de cómputo</h2>  
+                <p>Tenemos la solución completa para tu negocio</p>
+            </div>
+
+            <div class="eqContent">
+
+                <picture data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                    <source srcset="build/img/BDKREST/BDKREST_PDV_01.avif" type="image/avif">
+                    <source srcset="build/img/BDKREST/BDKREST_PDV_01.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/BDKREST/BDKREST_PDV_01.jpg" alt="Imagen de la sección Quienes Somos">
+                </picture>   
+                
+                <div class="eqTextos">
+                    <h4>¡NO BATALLES MÁS!</h4>
+                    <p>En BDKSISTEMAS contamos con el software y también puedes adquirir todo el equipo de cómputo necesario para su implementación.</p>
+                    <p>
+                        <small><i class="fas fa-caret-right"></i> Computadoras</small>
+                        <small><i class="fas fa-caret-right"></i> Laptops</small>
+                        <small><i class="fas fa-caret-right"></i> Terminales POS</small>
+                        <small><i class="fas fa-caret-right"></i> Tablets</small>
+                        <small><i class="fas fa-caret-right"></i> Impresoras de tickets</small>
+                        <small><i class="fas fa-caret-right"></i> Rollos de papel</small>
+                        <small><i class="fas fa-caret-right"></i> Cajón de dinero</small>
+                        <small><i class="fas fa-caret-right"></i> Torniquetes</small>
+                        <small><i class="fas fa-caret-right"></i> Lectores de huella</small>
+                        <small><i class="fas fa-caret-right"></i> Lectores de proximidad</small>
+                        <small><i class="fas fa-caret-right"></i> Tarjetas de proximidad</small>
+                    </p>
+                </div>
+
+                <div class="hardware swiper container">
+                    <div class="swiper-wrapper"">
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_01.avif" type="image/avif">
+                                <source srcset="build/img/EQ_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_01.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_02.avif" type="image/avif">
+                                <source srcset="build/img/EQ_02.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_02.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_03.avif" type="image/avif">
+                                <source srcset="build/img/EQ_03.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_03.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_04.avif" type="image/avif">
+                                <source srcset="build/img/EQ_04.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_04.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_05.avif" type="image/avif">
+                                <source srcset="build/img/EQ_05.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_05.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_06.avif" type="image/avif">
+                                <source srcset="build/img/EQ_06.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_06.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_07.avif" type="image/avif">
+                                <source srcset="build/img/EQ_07.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_07.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_08.avif" type="image/avif">
+                                <source srcset="build/img/EQ_08.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_08.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>            
+        </section>
+ 
+        <!-- ! PAGINAS WEB -->
+        <div data-include="assets/promo_web.html"></div>
+
+        <!-- ! GALERÍA -->
+        <section class="seccionGris galeria">
+
+            <div class="titulo">
+                <h2><span>Galería</span> BDKSISTEMAS</h2> 
+                <p>Te presentamos algunas de nuestras instalaciones de software a nivel nacional e internacional</p>
+            </div>
+
+            <div class="galeria_content">
+                <a href="build/img/GALERIA01.jpg" data-lightbox='galeria_content' data-title="Click a la derecha para pasar a la siguiente imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA01.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA01.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA01.jpg" alt="Fotos de la galería">
+                    </picture>    
+                </a>
+                <a href="build/img/GALERIA02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA02.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA03.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA03.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA03.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA04.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA04.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA04.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA05.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA05.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA05.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA06.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA06.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA06.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA07.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA07.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA07.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a> 
+                <a href="build/img/GALERIA08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA08.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA08.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA08.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA09.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA09.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA09.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA10.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA10.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA10.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA11.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA11.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA11.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA11.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/GALERIA12.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA12.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA12.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+            </div>
+
+            <a href="#" class="boton mnuGal"><i class="fas fa-images"></i> Ver la galería completa</a>
+
+        </section> 
+
+        <!-- ! VÍDEO -->  
+        <section class="secVideo">
+            
+            <picture>
+                <source srcset="build/img/FondoVideo.avif" type="image/avif">
+                <source srcset="build/img/FondoVideo.webp" type="image/webp">
+                <img loading="lazy" src="build/img/FondoVideo.jpg" alt="" class="fondoSecciones">
+            </picture>
+                        
+
+            <div class="videoContent">
+                <!-- <div class="tituloWhite">
+                    <h2><span>Vídeo</span> de instalaciones</h2> 
+                    <p>Te presentamos algunas de nuestras instalaciones de software a nivel nacional e internacional</p>
+                </div>     -->
+                <a href="#" class="play" id="play"><img src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
+            </div>
+            <div class="videoPopup">
+                <video src="build/video/VIDEOWEB_GYM.mp4" controls="true"></video>
+                <img src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
+            </div>
+    
+        </section>
+
+        <!-- ! RESEÑAS -->  
+        <section class="seccion bkgwhite sec-opiniones">
+
+            <div class="titulo"> 
+                <h2>Lo que opinan nuestros <span>clientes</span></h2> 
+                <p>La mejor recomendación es tu opinión</p>
+                <small>Todas las fotos, logotipos y reseñas fueron autorizados por nuestros clientes.</small>
+            </div>
+    
+            <div class="nva-resenas-container">
+    
+                <div data-include="assets/resenas.html"></div>
+    
+            </div>
+    
+            <a href="#" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas</a>
+        
+        </section>
+                 
+        <!-- ! DESPEDIDA -->
+        <section class="bkgwhite secDespedida" id="reseñas"> 
+
+            <div class="titulo">
+                <h2><span>¡No esperes más!</span> y dale un PLUS a tu negocio</h2> 
+                <p>Realiza hoy la mejor inversión que puedes regalarle a tu negocio y comienza a disfrutar de los beneficios de tener un excelente software de administración y página web</p>
+                <div class="despedida_contacto">
+                    <h5>Solicitar informes por:</h5>
+                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+
+            <picture>
+                <source srcset="build/img/FondoDespedidas.avif" type="image/avif">
+                <source srcset="build/img/FondoDespedidas.webp" type="image/webp">
+                <img loading="lazy" src="build/img/FondoDespedidas.jpg" alt="Imagen de una cajera frente a una terminal punto de venta">
+            </picture>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div data-include="assets/footer.html"></div>
+
+    <!-- ! --------------------------------------------------------------------------------- -->
+    <!-- * LISTA DE SCRIPTS -->
+    <!-- ! --------------------------------------------------------------------------------- -->
+
+    <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
+    <script src="build/js/include-html.min.js"></script> 
+
+    <!-- ? JQUERY -->
+    <script src="build/js/jquery.js"></script>
+            
+    <!-- ? SWIPER : Slider del hero -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- ?ANIMACIONES CON VANILLA-TILT -->
+    <script src="build/js/vanilla-tilt.min.js"></script>
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ? LIGTHBOX PARA LA GALERÍA -->
+    <script src="build/js/lightbox.js"></script>
+
+    <script src="build/js/app.js"></script>
+
+    
+</body>
+</html>

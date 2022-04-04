@@ -1,0 +1,809 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.tit_solucion {
+    width: 75%;
+    text-align: left; 
+    margin: auto 0;
+
+    @include m.mixMQ(v.$deskXXL) {
+        width: 80%;
+    };
+}
+
+.secProSol { 
+    @include m.mixFlex(flex,center,center,wrap,row);
+    height: 600px;
+    overflow: hidden; 
+
+    .secPS_article {
+        width: 50%;
+        padding: 5rem 3rem;
+        height: 100%;
+        border-right: 5px solid v.$color1;
+    }
+
+    .secImg_fondo {
+        width: 50%;
+        position: relative;
+        padding: 3rem;
+        height: 100%;  
+        @include m.mixFlex(flex,space-around,false,nowrap,column);
+    
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+            z-index: -1;
+        }
+
+    }
+
+    .secImg_fondo_rest {
+        @extend .secImg_fondo;
+
+        &::before {
+            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 10%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0) 55%), url('../img/BDKREST/SOLUCION.jpg');
+        }
+    }
+
+    .secImg_fondo_gym {
+        @extend .secImg_fondo;
+
+        &::before {
+            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKGYM/SOLUCION.jpg');
+        }
+    }
+
+    .secImg_fondo_tint {
+        @extend .secImg_fondo;
+
+        &::before {
+            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKTINT/SOLUCION.jpg');
+            background-size: cover;
+            background-position: center center;
+    
+            @include m.mixMQ(v.$deskXXL) {
+                background-position: left center;
+            };
+        }
+    }
+
+    .secImg_fondo_spa {
+        @extend .secImg_fondo;
+
+        &::before {
+            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKSPA/SOLUCION.jpg');
+        }
+    }
+
+    .secImg_fondo_barber {
+        @extend .secImg_fondo;
+
+        &::before {
+            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKBARBER/SOLUCION.jpg');
+        }
+    }
+
+    .secImg_fondo_pos {
+        @extend .secImg_fondo;
+
+        &::before {
+            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKPOS/SOLUCION.jpg');
+        }
+    }
+
+}
+
+.mapa_soft {
+    overflow: hidden;
+
+    .content_mapa {
+        @include m.mixFlex(flex,space-around,center,wrap,row);
+        margin: 1rem auto;
+        position: relative;
+
+        .mapa_imagen {
+            width: 50%;
+            position: relative;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .punto_interes {
+                position: absolute; 
+                cursor: pointer;
+                color: v.$color6;
+                animation: parpadeo 1.5s linear .5s infinite; 
+
+                &:hover {
+                    color: v.$color1;
+                } 
+            }
+
+            .punto_activo {
+                color: v.$color1; 
+            }
+
+            .mapa_otros {
+                position: absolute;
+                top: 2rem;
+                left: 3rem;
+            }
+        }
+
+        .mapa_funciones {
+            position: absolute;
+            width: 450px;
+
+            .funcion_mapa {
+                display: none;
+
+                h4 {
+                    i {
+                        color: v.$color1;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                p {
+                    border-top: 1px solid v.$color1;
+                    padding-top: 1rem;
+                }
+
+                small {
+                    color: v.$color1;
+                }
+                
+                a {
+                    display: block;
+                    width: 15rem;
+                    text-align: center;
+                }
+            }
+
+            .desc_activa {
+                display: inline-block; 
+            }
+    
+        }
+
+        .mapa_funciones_rest {
+            @extend .mapa_funciones;
+            left: 68%;
+            top: 28rem;
+
+            @include m.mixMQ(v.$deskXL) {
+                top: 26rem;
+                left: 63%;
+                width: 425px;
+            };
+        }
+
+        .mapa_funciones_gym {
+            @extend .mapa_funciones;
+            left: 72%;
+            top: 28rem;
+
+            @include m.mixMQ(v.$deskXXL) {
+                left: 70%;
+            };
+
+            @include m.mixMQ(v.$deskXL) {
+                left: 66%;
+                width: 400px;
+            };
+        }
+
+        .mapa_funciones_tint {
+            @extend .mapa_funciones;
+            left: 10%;
+            top: 35rem;
+        }
+
+        .mapa_funciones_spa {
+            @extend .mapa_funciones;
+            left: 71%;
+            top: 30rem;
+        }
+
+        .mapa_funciones_barber {
+            @extend .mapa_funciones;
+            left: 65%;
+            top: 28rem;
+        }
+
+        .mapa_funciones_pos {
+            @extend .mapa_funciones;
+            left: 75%;
+            top: 20rem;
+
+            @include m.mixMQ(v.$deskXXL) {
+                left: 71%;
+                top: 22rem;    
+            };
+
+        }
+
+    }
+}
+
+.video_software {
+    width: 100%;
+    height: 450px ;
+    background: v.$degradadoRed;
+    @include m.mixFlex(flex,center,center,wrap,row);
+
+
+    // ! GRUPOS DE CARACTERÍSTICAS CON ICONO CIRCULAR
+    .vid_caracteristicas {
+        width: 25%;
+        @include m.mixFlex(flex,center,0,wrap,column);
+
+        .elementoCar {
+            text-align: center;
+            margin-bottom: 1rem;
+            padding: 5px;
+
+            i {
+                @include m.mixIcono(7rem, 2rem);
+                background: v.$blanco;
+                color: v.$color1; 
+                margin-bottom: 1rem;
+                cursor: auto;
+            
+            }
+
+            h5 {
+                font-size: v.$titH5 - .5rem;
+                color: v.$blanco;
+            }
+        }
+    }
+
+    .vs_video {
+        width: 40%;
+        height: 100%;
+        padding: 1rem;
+
+        @include m.mixMQ(v.$deskXL) {
+            width: 50%;
+        };
+
+        video {
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            top: 0;
+            object-fit: cover;
+            box-shadow: v.$box-shadow2;
+            
+        }
+
+    }
+
+}
+
+
+// ! SECCIÓN LISTA DE PRECIOS
+.precios_software {
+    
+    .precios_planes {        
+        @include m.mixFlex(flex,center,center,wrap,false);
+        margin: 3rem auto;
+        width: 90%;
+
+        @include m.mixMQ(v.$deskXXL) {
+            width: 100%;
+        };
+
+        .planes_paquete {
+            @include m.mixBox(30%,600px,0,10px,v.$blanco,v.$box-shadow4);
+            margin: 1rem;
+            padding: 2rem;
+
+            .paquete_nombrePlan { 
+                @include m.mixBox(100%,20%,0,10px,v.$color5,false);
+                padding: 1rem 0;
+                text-align: center;
+                color: v.$color1;
+
+                @include m.mixMQ(v.$deskXL) {
+                    height: 17.5%;
+                };
+                
+                h3 {
+                    margin-bottom: 0;
+                }
+            }
+
+            .paquete_nombrePlanOro {
+                @extend .paquete_nombrePlan;
+                background: v.$degradadoRed;
+                color: v.$blanco;
+            }
+
+            .paquete_contenidoPlan {
+                padding: 2rem 0;
+                height: 70%;
+                overflow: hidden;
+
+                .paqContenido_header {
+                    text-align: center;
+
+                    h5 {
+                        font-size: 1.2rem;
+                        width: 85%;
+                        margin: 0 auto;
+                    }
+                    h4 {
+                        font-weight: normal;
+                    }
+                    h3 {
+                        font-size: v.$titParrafo;
+                        color: v.$color1;
+                    }
+                }
+
+                .paqContenido_main {
+                    padding: 1rem 0;
+                    margin: 1rem 0;
+            
+                    .pqElement {
+                        @include m.mixFlex(flex,0,center,nowrap,0);
+            
+                        i {
+                            color: v.$color6;
+                            font-size: 1.4rem;
+                            margin-right: 1rem;
+                        }
+
+                        .fa-exclamation-triangle {
+                            color: v.$color1;
+                        }
+            
+                        p {
+                            margin: 2px 0;
+                            line-height: 1.25;
+                            font-size: 1.4rem;
+
+                            span {
+                                font-weight: bold;
+                            }    
+                        }
+
+                    }
+
+                    .pqElementAlert {
+                        @extend .pqElement;
+                        
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }    
+
+            .paquete_footer {
+                margin-top: 1rem;
+                text-align: center;
+                height: 10%;
+            }
+        
+        }
+    }
+}
+
+// ! SECCIÓN LISTA DE PRECIOS    
+.sec-informes {
+    width: 100%;
+    background: v.$degradadoRed;
+
+    .tituloWhite {
+        h3 {
+            color: v.$negro;
+
+            span {
+                color: v.$blanco;
+            }
+        }
+    }
+
+    .informes_content {
+        @include m.mixFlex(flex,center,center,nowrap,column);
+        width: 75%;
+        margin: 2rem auto 0;
+
+        p {
+            color: v.$blanco;
+            text-align: center;
+        }
+
+        h5 {
+            color: v.$blanco;
+            margin-top: 2rem;
+        }
+
+        .informes_lista {
+            width: 45%;
+            margin: 1rem; 
+            padding: 0;
+    
+            .pwElement {
+                @include m.mixFlex(flex,0,center,nowrap,0);
+    
+                i {
+                    color: v.$color6;
+                    font-size: 1.4rem;
+                    margin-right: 1rem;
+                }
+    
+                p {
+                    margin: 3px 0;
+                    line-height: 1.25;
+                    font-size: 1.4rem;
+                    text-align: justify;
+                    color: v.$blanco;
+
+                    span {
+                        font-weight: bold;
+                    }    
+                }
+            }
+
+            small {
+                display: block;
+                margin-top: 2rem;
+                color: v.$blanco;
+            }
+        }
+
+        .informes_text {
+            width: 70%;
+
+            p {
+                color: v.$blanco;
+            }
+        }
+    }
+
+    .informes-accion {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+}
+
+// ! SECCIÓN DE PROMOCIONES 
+.promociones {
+    position: relative;
+
+    .promo_img {
+        width: 100%;
+        overflow: hidden;
+ 
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .promo_content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include m.mixFlex(flex,center,center,wrap,column);
+
+        .promocion {
+            width: 60%;
+            height: 100%;
+            padding-right: 7rem;
+            padding-left: 2rem;
+            @include m.mixFlex(flex,center,center,wrap,column);
+            text-align: center;
+
+            i {
+                color: v.$color1;
+                font-size: v.$titHero + 5rem;
+                margin-bottom: 2rem;
+            }
+
+            h2 {
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-size: v.$titHero;
+
+                span {
+                    color: v.$color1;
+                }
+            }
+
+            a {
+                margin-top: 2rem;
+            }
+
+            .promo_validoen {
+                padding: 1rem 0;
+                text-align: left;
+
+                h5 { text-align: center; }
+
+                .prElement {
+                    @include m.mixFlex(flex,0,center,nowrap,0);
+                    width: 100%;
+        
+                    i {
+                        color: v.$color6;
+                        font-size: 1.4rem;
+                        margin: 0;
+                        margin-right: 1rem;
+                    }
+        
+                    p {
+                        margin: 2px 0;
+                        line-height: 1.25;
+                        font-size: 1.4rem;
+
+                        span {
+                            font-weight: bold;
+                        }    
+                    }
+                }
+
+                small {
+                    display: inline-block;
+                    color: v.$color1;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// ! SECCIÓN DE LA PANTALLA INFORMATIVA TIPO POPUP DEL MAPA DE MESAS
+.infoPopup {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    @include m.mixFlex(flex,center,center,0,0);        
+    backdrop-filter: blur(25px);
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .info_content {
+        width: 90%;
+        height: 75vh;
+        max-width: 1200px;
+        background-color: v.$blanco;
+        border-radius: 10px;
+        box-shadow: v.$box-shadow2;
+        padding-right: 1rem;
+        overflow: hidden;
+
+        @include m.mixFlex(flex,center,center,wrap,row);
+
+        @include m.mixMQ(v.$desk) {
+            max-width: 90%;
+        };    
+
+        .info_imagen {
+            width: 40%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                // width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px 0 0 10px;
+                border-right: 1px solid v.$color5;
+
+                box-shadow: v.$box-shadow4;
+            }
+        }
+
+        .info_descrip {
+            width: 60%;
+            padding: 3rem;
+            height: 100%;
+
+            .titulo {
+                text-align: left;
+                margin-left: 0;
+
+                h2 {
+                    border-bottom: 1px solid v.$color1;
+                }
+
+                p {
+                    font-family: v.$fuente_principal;
+                }
+            }
+
+            .info_main {
+                margin-top: 2rem;
+
+                .elLista ul li {
+                    
+                    .fa-exclamation-triangle {
+                        color: v.$negro;
+                    }
+
+                    span {
+                        color: v.$color1;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .popup_visible {
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+    }
+
+    // ! POPUS BDKREST
+
+    .popup_hostess {
+        @extend .popup_visible;
+    }
+
+    .popup_movil {
+        @extend .popup_visible;
+    }
+
+    .popup_meseros {
+        @extend .popup_visible;
+    }
+
+    .popup_caja {
+        @extend .popup_visible;
+    }
+
+    .popup_cocina {
+        @extend .popup_visible;
+    }
+
+    .popup_recetas {
+        @extend .popup_visible;
+    }
+
+    .popup_almacen {
+        @extend .popup_visible;
+    }
+
+    .popup_clientes {
+        @extend .popup_visible;
+    }
+
+    .popup_comedor {
+        @extend .popup_visible;
+    }
+
+    .popup_billar {
+        @extend .popup_visible;
+    }
+
+    .close {
+        position: absolute;
+        top: 30px;  right: 30px;
+        cursor: pointer;
+        max-width: 32px;
+        filter: invert(1);
+    }    
+    
+    // ! POPUS BDKGYM
+
+    .popup_recepcion {
+        @extend .popup_visible;
+    }
+
+    .popup_asistencia {
+        @extend .popup_visible;
+    }
+
+    .popup_acceso {
+        @extend .popup_visible;
+    }
+
+    .popup_clases {
+        @extend .popup_visible;
+    }
+
+    .popup_gimnasio {
+        @extend .popup_visible;
+    }
+
+    .popup_pos {
+        @extend .popup_visible;
+    }
+
+    .popup_admon {
+        @extend .popup_visible;
+    }
+
+    // ! POPUS BDKTINT    
+
+    // .popup_recepcion {
+    //     @extend .popup_visible;
+    // }
+
+    .popup_servicios {
+        @extend .popup_visible;
+    }
+
+    .popup_inventarios {
+        @extend .popup_visible;
+    }
+
+    .popup_empleados {
+        @extend .popup_visible;
+    }
+
+    .popup_cuentas {
+        @extend .popup_visible;
+    }
+
+    // ! POPUS BDKSPA
+
+    .popup_trats {
+        @extend .popup_visible;
+    }
+
+    .popup_nots {
+        @extend .popup_visible;
+    }
+
+    // ! POPUS BDKPOS
+
+    .popup_domicilio {
+        @extend .popup_visible;
+    }
+
+} 
+
+@keyframes parpadeo {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.25);
+        opacity: .90;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: .5;
+    }
+    75% {
+        transform: scale(1.75);
+        opacity: .25;
+    }
+    100% {
+        transform: scale(2);
+        opacity: .25;
+    }
+}

@@ -1,0 +1,103 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+/* ? SECCIÓN VÍDEO */
+/* ?___________________________________________________________________________________________________________________________________________ */
+
+.secVideo {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%; 
+        height: 100%;         
+        background: rgb(225,29,5);
+        background: radial-gradient(circle, rgba(225,29,5,0.5) 0%, rgba(5,5,6,0.8) 42%);        
+        z-index: 1;
+    }
+
+    @include m.mixFlex(flex,flex-start,center,0,0);
+
+    .videoContent {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        @include m.mixFlex(flex,center,center,0,column);
+
+        .play {
+            cursor: pointer;
+            width: 80px;
+            height: 80px;
+            display: block; 
+            transition: .5s;
+            border-radius: 50%;
+            // margin-top: 7.5rem;
+        
+            -webkit-animation: ripple 2.5s linear 1s infinite;
+            animation: ripple 2.5s linear 1s infinite;
+        
+            img {
+                width: 80px;
+                transition: width 0.5s;
+            }
+            
+            &:hover {
+                background: v.$color1;
+            }            
+        }        
+    }
+
+    .videoPopup {
+        position: fixed;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10000;
+        width: 100%;
+        height: 100%;
+        @include m.mixFlex(flex,center,center,0,0);        
+        backdrop-filter: blur(25px);
+        visibility: hidden;
+        opacity: 0;
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        video {
+            max-width: 1200px;
+            outline: none;
+
+            @include m.mixMQ(v.$desk) {
+                max-width: 90%;
+            };    
+        }        
+
+        .close {
+            position: absolute;
+            top: 30px;  right: 30px;
+            cursor: pointer;
+            max-width: 32px;
+            filter: invert(1);
+        }    
+        
+    }        
+}
+
+@keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 .7rem rgba(255,255,255, 0.2),
+                  0 0 0 1.5rem rgba(255,255,255, 0.2),
+                  0 0 0 5rem rgba(255,255,255, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 1.5rem rgba(255,255,255, 0.2),
+                  0 0 0 4rem rgba(255,255,255, 0.2),
+                  0 0 0 8rem rgba(255,255,255, 0);
+    }
+}

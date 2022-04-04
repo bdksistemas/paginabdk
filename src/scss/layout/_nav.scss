@@ -1,0 +1,80 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nav {
+    height: 65px; 
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding: 0 50px;
+    background-color: rgba(0,0,0,0.6);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    box-shadow: v.$box-shadow3;    
+    z-index: 10000;
+
+    .nav_container {
+        width: 95%;
+        @include m.mixFlex(flex,space-between,center,0,0);    
+
+        .nav_logo {
+            width: 20%;
+
+            img {
+                cursor: pointer;
+                object-fit: cover;                
+            }
+        }
+
+        .nav_principal {
+            @include m.mixFlex(flex,center,center,0,row);
+            padding: 0;
+            width: 80%;
+
+            .nav_item {
+                color: v.$blanco;
+                list-style: none;
+                height: 100%;
+                padding: 1rem;
+                transition: .3s ease-out;
+
+                @include m.mixMQ(v.$tablet) {
+                    width: 100%;
+                };
+
+                &:hover {
+                    border-top: 1.5px solid v.$color1;
+                    border-bottom: 1.5px solid v.$color1;
+                }
+            }
+
+            .nav_links {
+                color: v.$blanco;
+                padding: 5px 0;
+            }
+
+            .nav_active {
+                border-top: 1.5px solid v.$color1;
+                border-bottom: 1.5px solid v.$color1;
+            }
+        }
+
+        .nav_social {
+            width: 10%;
+            @include m.mixFlex(flex,center,0,nowrap,0);
+            gap: .5em;
+
+            .botMenu {
+                display: none;
+
+                @include m.mixMQ(v.$tablet) {
+                    display: inline-block;
+                    position: fixed;
+                    z-index: 100000;
+
+                };
+            }
+        }        
+    }    
+}

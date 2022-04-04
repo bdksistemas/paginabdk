@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BDKPOS</title>
+
+    <!-- FAVICON -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="build/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="build/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- ? BOOTSTRAPT
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+
+    <!-- ? FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- ? BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+
+    <!-- ? LIGHTBOX: Galería -->
+    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="stylesheet" href="build/css/app.css"> 
+
+    <!-- ? METAS -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="BDKPOS: Software punto de venta para todo tipo de negocios">
+    <meta name="keywords" content="software punto de venta, sistema punto de venta, programa punto de venta, punto de venta, software para negocios, software de punto de venta, sistema de punto de venta, programa de puntpo de venta, software para control de ventas, sistema para control de ventas, programa para control de ventas, software pos"/>
+    <meta name="author" content="BDKSISTEMAS" />
+    <meta name="copyright" content="BDKSISTEMAS" />    
+    <meta name="robots" content="index"/>
+    
+    <!-- OpenGraph -->
+    <!-- Etiquetas para que al compartir el enlace de la página, ésta aparezca con la portada indicada y el texto indicado -->
+    <meta property="og:url" content="https://www.bdksistemas.com.mx/bdkpos.html" />  
+    <meta property="og:title" content="BDKPOS: Software punto de venta para todo tipo de negocios" />
+    <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/PortadaCompartir.jpg" />
+    <meta property="og:description" content="Registro de ventas, control de inventarios, facturación, reportes y mucho más." />
+    <meta property="og:type" content="website" />
+    
+</head>
+
+<body>
+
+    <!-- ! MENU DE NAVEGACIÓN -->
+    <nav class="nav">
+        <div class="nav_container">
+
+            <div class="nav_logo">
+                <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
+                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+
+            <ul class="nav_principal" id="navPrincipal">
+                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item nav_active"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+            </ul> 
+
+            <div class="nav_social">
+                <a href="#"><i class="fas fa-bars iconos botMenu" id="botApp"></i></a>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- ! HERO -->
+    <header class="hero-sistema">
+        <div class="hero_container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/LOGO_BDKPOS_BLANCO.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/LOGO_BDKPOS_BLANCO.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/LOGO_BDKPOS_BLANCO.png" alt="Logotipo de la empresa">
+                    </picture>
+                </div>
+                <div class="hero-mockup">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/BDKPOS_PDV_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/BDKPOS_PDV_01.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/BDKPOS_PDV_01.png" alt="Terminal punto de venta">
+                    </picture>
+                </div>
+                <div class="heroSoft_Titulo">
+                    <h1>Software <br><span>punto de venta</h1>
+                    <p>La solución ideal para todo tipo de pequeños comercios</p>
+                </div>
+            </div>
+
+            <div class="anim-mouse-b2">
+                <div class="mouse"></div>
+            </div>
+    
+        </div>
+
+        <!-- ! CARROUSEL DE IMAGENES DEL LADO DERECHO DEL HEADER -->
+        <div class="hero-right">
+            <div class="slide-fondos" id="slide-fondos">
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/FONDO_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/FONDO_01.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/FONDO_01.jpg" alt="Imagen de presentación del software BDKPOS">
+                    </picture>
+                    <div class="heroR-leyenda"> 
+                        <h3>Software punto de venta para todo tipo de comercios</h3>
+                        <p>Sin duda uno de los mejores sistemas para la administración de tu negocio.</p>
+                    </div>
+                </div> 
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/FONDO_02.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/FONDO_02.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/FONDO_02.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
+                    </picture>
+                    <div class="heroR-leyenda"> 
+                        <h3>Recepción y caja</h3>
+                        <p>Lleva registro de tus ventas e ingresos, vende al contado, a crédito o por separado, realiza cotizaciones, cortes de caja y mucho más.</p>
+                    </div>
+                </div> 
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/FONDO_03.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/FONDO_03.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/FONDO_03.jpg" alt="Grupo de jovenes haciendo cardio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Clientes</h3>
+                        <p>Otorga crédito, recompensa la lealtad de tus clientes, lleva un historial de compras y mucho más.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/FONDO_04.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/FONDO_04.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/FONDO_04.jpg" alt="Joven instructor contando productos del gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Control de almacén</h3>
+                        <p>Lleva un control de tus insumos y productos, captura tus inventarios para detectar faltantes de mercancía.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/FONDO_05.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/FONDO_05.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/FONDO_05.jpg" alt="Hermosa joven administradora de un gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Administración</h3>
+                        <p>Evita el robo hormiga y lleva un perfecto control de tus ingresos y egresos. Obtén reportes de ventas y más.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/FONDO_06.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/FONDO_06.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/FONDO_06.jpg" alt="Instructores analizando rutinas de gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Empleados</h3>
+                        <p>Registra la asistencia, programa incidencias y realiza la pre nomina</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+    <div data-include="assets/widgets.html"></div>
+
+    <main>
+
+        <!-- ! PRINCIPALES BENEFICIOS -->
+        <section class="seccion">
+            <div class="titulo container">
+                <h2><span>¡LA SOLUCIÓN IDEAL!</span> <br> para todo tipo de negocios y locales comerciales</h2> 
+                <p>BDKPOS es el software ideal para tu negocios con punto de venta, con el que estarás protegido contra malos manejos administrativos y te permite llevar un excelente control de tu administración, tus ventas y tu almacén, además obtienes grandes beneficios para cada área de tu local.</p>
+            </div> 
+
+            <div class="gpoCaracteristicas container">
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-cash-register"></i>
+                    <h5>ÁREA DE CAJA</h5>
+                    <p>Lleva registro de tus ventas e ingresos, vende al contado, a crédito o por separado, realiza cotizaciones, cortes de caja y mucho más.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-users"></i>
+                    <h5>CLIENTES</h5>
+                    <p>Otorga crédito, recompensa la lealtad de tus clientes, lleva un historial de compras y mucho más.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-tasks"></i>
+                    <h5>ALMACÉN</h5>
+                    <p>Lleva un control de tus insumos y productos, captura tus inventarios para detectar faltantes de mercancía.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-chart-pie"></i>
+                    <h5>ADMINISTRACIÓN</h5>
+                    <p>Evita el robo hormiga y lleva un perfecto control de tus ingresos y egresos.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-user-edit"></i>
+                    <h5>EMPLEADOS</h5>
+                    <p>Registra la asistencia, programa incidencias y realiza la pre nomina.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-user-tie"></i>
+                    <h5>BENEFICIOS PARA TI</h5>
+                    <p>Te da la tranquilidad de delegar funciones, lo que te dará más tiempo para tu familia y para ti.</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- ! PROBLEMAS Y SOLUCIONES -->
+        <section class="secProSol">
+
+            <div class="secPS_article seccionGris">
+
+                <!-- ! PROBLEMAS -->
+                <div class="titulo">
+                    <h2>Principales <span>problemas</span> de pequeño comercio</h2> 
+                    <p>En el día a día de los pequeños negocios, es común que tengan problemas a la hora de organizar su administración, es por eso que aquí te presentamos algunos de los principales problemas que sufren a diario y que se solucionan al contar con este increíble software.</p>
+                </div>     
+
+                <div class="divFoto_lista"> 
+                    <div class="elImagen">
+                        <picture>
+                            <source srcset="build/img/BDKPOS/Problemas.avif" type="image/avif">
+                            <source srcset="build/img/BDKPOS/Problemas.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/Problemas.jpg" alt="Imagén de un centro comercial">
+                        </picture>    
+                    </div>
+                    <div class="elLista">
+                        <ul>
+                            <li><i class="fas fa-exclamation-triangle"></i> Robo hormiga</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Faltantes de mercancía</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Cajeros deshonestos</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Créditos olvidados</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Pierden clientes con frecuencia</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Salidas de efectivo no reportadas</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Faltantes en las ventas del día</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Mala administración</li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+            
+            <!-- ! SOLUCIÓN -->
+            <div class="secImg_fondo_pos">
+
+                <div class="tituloWhite tit_solucion" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+                    <h2>Tenemos la <span>solución ideal</span> para tu negocio</h2> 
+                    <p>Nuestro software cuenta con un sinfín de funcionalidades ideales para que lleves una excelente administración de todos los departamentos de tu negocio.</p>
+                </div>     
+
+                <div class="elLista" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+                    <ul>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Registro y control de ventas</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Ventas a crédito y sistema de separado</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Control de servicio a domicilio</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Control de almacén e inventarios</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Módulo de cotizaciones</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Control tallas y colores</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Cortes de caja</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Facturación electrónica</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Monedero electrónico</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Reportes diversos</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ! MAPA DEL TIPO DE NEGOCIO --> 
+        <section class="mapa_soft seccion"> 
+
+            <div class="titulo container">
+                <h2>Beneficios directos para <span>todas las áreas</span> de tu negocio</h2> 
+                <p>Con nuestro software, todas las áreas de tu negocio obtienen beneficios directa e indirectamente</p>
+                <small>Da un clic sobre los puntos informativos</small>
+                <div class="linea"></div>
+            </div>     
+
+            <div class="content_mapa container">
+
+                <div class="mapa_imagen mapa_pos">
+                    <!-- ? La clase mapa_gym se utiliza solo en JavaScript -->
+
+                    <picture>
+                        <source srcset="build/img/BDKPOS/MAPA.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/MAPA.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/MAPA.png" alt="Dibujo de una barbería">
+                    </picture>    
+
+                    <i class="fas fa-circle punto_interes" id="pt_pos_recepcion"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_pos_almacen"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_pos_empleados"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_pos_admon"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_pos_domicilio"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_pos_clientes"></i>
+
+                </div>
+
+                <div class="mapa_funciones_pos"> 
+                    <div class="funcion_mapa" id="desc_pos_recepcion">
+                        <h4><i class="fas fa-circle"></i> Módulo de Caja</h4>
+                        <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de cobro a tus clientes, controla las ventas en sitio y hasta el servicio a domicilio. Protege en todo momento tus ingresos y egresos de caja.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_pos_recepcion">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_pos_almacen">
+                        <h4><i class="fas fa-circle"></i> Almacén</h4>
+                        <p>Lleva un buen control de tu inventario, controla las entradas y salidas de almacén y mucho más.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_pos_almacen">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_pos_clientes">
+                        <h4><i class="fas fa-circle"></i> Clientes</h4>
+                        <p>Agiliza el proceso de cobro al cliente, registra los productos rápidamente, recompensa su lealtad con dinero electrónico, ofrece crédito y lleva el control en el sistema y además, implementa el sistema de separado y administra los pagos desde el software.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_pos_clientes">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_pos_admon">
+                        <h4><i class="fas fa-circle"></i> Administración</h4>
+                        <p>Lleva una buena administración de tu negocio, control de ingresos y egresos, reporteo general, consulta ventas a crédito y mucho más.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_pos_admon">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_pos_domicilio">
+                        <h4><i class="fas fa-circle"></i> Servicio a domicilio</h4>
+                        <p>Lleva un buen control de las ventas con servicio a domicilio.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_pos_domicilio">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_pos_empleados">
+                        <h4><i class="fas fa-circle"></i> Control de empleados</h4>
+                        <p>Lleva un control de tus empleados.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_pos_empleados">Leer más</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ! BLOQUES INFORMATIVOS POPUP -->
+            <div class="infoPopup">
+
+                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE RECEPCIÓN -->
+                <div class="info_content popup_recepcion">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKPOS/POP_01.avif" type="image/avif">
+                            <source srcset="build/img/BDKPOS/POP_01.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_01.jpg" alt="Joven cajera al frente de un negocio">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Caja y Recepción</h2> 
+                            <p>Lleva un estricto control de tus ventas</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de cobro a tus clientes, controla las ventas en sitio y hasta el servicio a domicilio. Protege en todo momento tus ingresos y egresos de caja.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control y registro de ventas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control de ventas a domicilio</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Maneja ventas a crédito y sistema de separado</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Descuenta de almacén automáticamente</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control de salidas de efectivo</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control en la cancelación de tickets</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Módulo de cotizaciones (*)</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Manejo de tallas, medidas y colores (*)</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Acepta 2 formas de pago</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Facturación electrónica (**)</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Cortes de caja</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Y mucho más</li>
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> (**) Disponible solo en México</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> (*) Disponoble en la versión PROFESIONAL</li>
+
+                                </ul>
+                            </div>        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO ALMACÉN -->
+                <div class="info_content popup_almacen">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKPOS/POP_02.avif" type="image/avif">
+                            <source srcset="build/img/BDKPOS/POP_02.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_02.jpg" alt="Joven realizando un conteo de inventarios">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Control de almacén</h2> 
+                            <p>Evita el robo hormiga y reduce tus mermas</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Sí en tu negocio deseas llevar un buen control de tu almacén y tener perfectamente controlados tus inventarios, BDKPOS es para ti.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control de entradas y salidas de almacén</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Genera órdenes de compra a proveedores</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Genera órdenes de compra en base a mínimos y máximos</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Realiza conteos de existencias</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registra las salidas por merma</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control de insumos</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Salidas de almacén en base a registro de ventas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Identifica si hubo faltantes o sobrantes de mercancía</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Entre muchas funciones más</li>
+
+                                    <!-- <li><i class="fas fa-exclamation-triangle txtM2"></i> (*) Disponible en la versión PLUS</li> -->
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO EMPLEADOS -->
+                <div class="info_content popup_empleados">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKPOS/POP_06.avif" type="image/avif">
+                            <source srcset="build/img/BDKPOS/POP_06.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_06.jpg" alt="Jovenes disfrutando una bebida en un SPA">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Empleados</h2> 
+                            <p>Lleva un buen control de tu nómina y empleados.</p>
+                        </div>
+                        <div class="info_main">
+                            <p>BDKPOS también te ayuda a llevar un registro de la asistencia de tus empleados y a pagar correctamente la nómina.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Asistencia de empleados</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registro de incidencias de nómina</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control de préstamos a empleados</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Pre Nómina</li>
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> Disponible en la versión PLUS</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                 <!-- ! BLOQUE INFORMATIVO ADMINISTRACIÓN -->
+                 <div class="info_content popup_admon">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKPOS/POP_04.avif" type="image/avif">
+                            <source srcset="build/img/BDKPOS/POP_04.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_04.jpg" alt="Dueña de negocio haciendo cuentas y registrando gastos">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Administración</h2> 
+                            <p>La administración de un negocio nunca fue tan fácil</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Olvídate de que las cuentas no te cuadren, con BDKPOS podrás llevar una perfecta administración de tu negocio.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Reporteo general</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control de gastos</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (**) Facturación electrónica</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Estadísticas diversas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (*) Envío de correos promocionales al cliente</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (*) Envío por correo de corte de caja al dueño</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (*) Envío por correo de recordatorios de pago</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Entre muchas funciones más</li>
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> (*) Disponible en la versión PROFESIONAL</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> (**) Disponible solo en México</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                 <!-- ! BLOQUE INFORMATIVO SERVICIO A DOMICILIO -->
+                 <div class="info_content popup_domicilio">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKPOS/POP_05.avif" type="image/avif">
+                            <source srcset="build/img/BDKPOS/POP_05.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_05.jpg" alt="Joven cajera tomando una orden por teléfono">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Servicio a domicilio</h2> 
+                            <p>Nunca más vuelvas a confundir los pedidos</p>
+                        </div>
+                        <div class="info_main">
+                            <p>BDKPOS te permite llevar un buen control sobre los pedidos con servicio a domicilio.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Toma el pedido</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Regístralo en el sistema</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Indica el repartidor</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registra la venta completa cuando el repartidor regrese con el pago</li>
+                                </ul> 
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO CLIENTES -->
+                <div class="info_content popup_clientes">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKPOS/POP_03.avif" type="image/avif">
+                            <source srcset="build/img/BDKPOS/POP_03.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_03.jpg" alt="Hermosa mujer cliente de un negocio recibiendo su mercancía">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Clientes</h2> 
+                            <p>Cliente feliz, negocio lleno</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Agiliza el proceso de cobro al cliente, registra los productos rápidamente, recompensa su lealtad con dinero electrónico, ofrece crédito y lleva el control en el sistema y además, implementa el sistema de separado y administra los pagos desde el software.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Otorga crédito a tus clientes y lleva el control en el sistema (*)</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Implementa el control de ventas con sistema de separado (*)</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Realiza cotizaciones y envíalas por correo (*)</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Lleva control del Monedero electrónico (*)</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Ofrece descuentos a productos seleccionados</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Imprime tickets de venta y comprobantes de pago</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Envía recordatorios de pago (*)</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Envía correos promocionales masivos (*)</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Lleva un historial de las compras de cada cliente</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Entre muchas funciones más</li>
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> (*) Disponible en la versión PROFESIONAL</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+ 
+                <img src="build/img/close.png" alt="Cerrar la pantalla" class="close" id="close">
+            </div>
+
+        </section> 
+
+        <!-- ! SECCIÓN DEL VÍDEO PROMOCIONAL -->
+        <section class="video_software">
+            
+            <div class="vid_caracteristicas">
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-cash-register"></i>
+                    <h5>Punto de Ventas</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-funnel-dollar"></i>
+                    <h5>Ventas a crédito y por separado</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h5>Cotizaciones</h5>
+                </div>
+            </div>
+
+            <div class="vs_video">
+                <video class="video_pub" loading="lazy" src="build/video/CARD BDKPOS_OPT.mp4" controls loop autoplay muted> </video>
+            </div>
+
+            <div class="vid_caracteristicas">
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h5>Control de almacén</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-check-double"></i>
+                    <h5>Notificaciones al cliente</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-chart-line"></i>
+                    <h5>Administración eficaz</h5>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- ! BENEFICIOS PARA EL DUEÑO -->
+        <section class="seccion secBeneficiosWeb"> 
+            <div class="titulo container">
+                <h2>Beneficios directos <span>para ti, tu familia y tu negocio</span></h2> 
+                <p>Contar con un software tan completo como BDKPOS permitirá que no solo tu negocio sea beneficiado, si no que tu y tu familia sentirán esa tranquilidad que les brinda saber que su negocio está bien cuidado y protegido.</p>
+            </div> 
+
+            <div class="pwBeneficios container libAOS">
+
+                <div class="beneficios_sec">
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="far fa-handshake"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Tranquilidad al delegar funciones</h3>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Más tiempo para tu familia</h3>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Éxito y crecimiento de tu negocio</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beneficios_imagen">
+                    <picture>
+                        <source srcset="build/img/BENEFICIOS_DUENO.avif" type="image/avif">
+                        <source srcset="build/img/BENEFICIOS_DUENO.webp" type="image/webp">
+                        <img loading="lazy" width="350px" src="build/img/BENEFICIOS_DUENO.png" alt="Dueño de negocio mostrando felicidad">
+                    </picture>    
+                </div>
+
+                <div class="beneficios_sec">
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Mejores ingresos</h3>                    
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Apertura de más sucursales</h3>
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Monitoreo a distancia de tu negocio</h3>                    
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-laptop-house"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>            
+        </section>
+
+        <!-- ! CONCENTRADOR WEB -->
+        <section class="seccionGris">
+            <div class="titulo">
+                <h2><span>Concentrador </span> Web</h2>  
+                <p>Monitorea tu negocio desde donde te encuentres</p>
+            </div>
+
+            <div class="container nosotros">
+                <p>El Concentrador Web te permite estar conectado con tu negocio, sin importar donde te encuentres, ya sea que estés en tu casa descansando o de vacaciones con tu familia, siempre estarás en línea con tu negocio, ya sea que tengas una sucursal o varias.</p>
+                <div class="nos_img">
+                    <picture>
+                        <source srcset="build/img/CONCENTRADOR_WEB.avif" type="image/avif">
+                        <source srcset="build/img/CONCENTRADOR_WEB.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/CONCENTRADOR_WEB.jpg" alt="Imagen de la sección Quienes Somos">
+                    </picture>    
+                </div>
+                <p>El CW te sirve para monitorear los diferentes tipos de movimientos que se generan día a día en tu negocio y puedes monitorearlo desde tu computadora personal, laptop, tablet o celular.</p>
+                <small>El CONCENTRADOR WEB se adquiere por separado</small>
+            </div>
+        </section> 
+
+        <!-- ! LISTA DE PRECIOS -->
+        <section class="precios_software seccionGrisOscuro">
+            <div class="tituloWhite container">
+                <h2>Los mejores <span>precios</span> del mercado</h2> 
+                <p>Elige la versión que más se adapte a tus necesidades</p>
+            </div>
+
+            <div class="precios_planes">
+
+                <!-- ! VERSIÓN ESTÁNDAR -->
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlan">
+                        <h4>ESTÁNDAR</h4>
+                        <h3>$1,755 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h5>Incluye todas las funcionalidades básicas para la operación de tu negocio.</h5>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Registro de ventas</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Alta de productos y combos</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Control de almacén</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Clientes</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Control de gastos</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Reportes y estadísticas</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Salidas de efectivo</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Cortes de caja</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Facturación electrónica (*)</p></div>
+
+                            <div class="pqElement txtM2"><i class="fas fa-exclamation-triangle"></i><p> (*) Solo en México</p></div>
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
+                <!-- ! VERSIÓN PROFESIONAL -->
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlanOro">
+                        <h4>PROFESIONAL</h4>
+                        <h3>$3,160 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h5>Incluye todas las funciones de la versión ESTÁNDAR, más:</h5>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Monedero electrónico</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Envío de cortes de caja por correo al dueño</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Envío de reportes por correo</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Notificaciones por correo</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Control de ventas a crédito</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Ventas con sistema de separado</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Módulo de cotizaciones</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Manejo de tallas, medidas y colores por producto</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Compatibilidad con el Concentrador Web</p></div>
+
+                            <div class="pqElement txtM2"><i class="fas fa-exclamation-triangle"></i><p> El CW se vende por separado</p></div>
+
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
+                <!-- ! VERSIÓN PLUS -->
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlan">
+                        <h4>PLUS</h4>
+                        <h3>$4,560 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h5>Incluye todas las funciones de la versión PROFESIONAL, más:</h5>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Asistencia de empleados</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Incidencias de nómina</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Préstamos a empleados</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Pre Nómina</p></div>
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
+            </div>
+
+            <div class="formasPago container">
+                <div class="fpIndicaciones">
+                    <ul>
+                        <li><i class="fas fa-info-circle"></i>Precios en pesos mexicanos</li>
+                        <li><i class="fas fa-info-circle"></i>Impuestos incluidos</li>
+                        <li><i class="fas fa-info-circle"></i>Precios por sucursal</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye soporte técnico todo el año</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye actualizaciones gratuitas</li>
+                        <li><i class="fas fa-info-circle"></i>Precio válido para 3 equipos en la misma red</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye vídeos de auto capacitación</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye instalación vía remota</li>
+                        <li><i class="fas fa-info-circle"></i>Garantía de satisfacción</li>
+                        <li><i class="fas fa-info-circle"></i>Instalación a domicilio se cotiza por separado</li>
+                        <li><i class="fas fa-exclamation-triangle"></i>NO incluye equipo de cómputo</li>
+                        <li><i class="fas fa-exclamation-triangle"></i>NO incluye configuración de impresoras en Windows</li>                        
+                        <li><i class="fas fa-exclamation-triangle"></i>NO incluye configuración de computadoras en red</li>                        
+                        <li><i class="fas fa-exclamation-triangle"></i>La capacitación se cotiza por separado</li>                        
+                    </ul>
+                </div>
+                <div class="fpTarjetas">
+                    <small>Aceptamos</small>
+                    <h4>Transferencias SPEI</h4>
+                    <h4>Tarjetas de crédito y débito</h4>
+                    <div class="imgTarjetas">
+                        <picture>
+                            <source srcset="build/img/VisaMastercard.avif" type="image/avif">
+                            <source srcset="build/img/VisaMastercard.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/VisaMastercard.jpg" alt="Imagen de la sección Quienes Somos">
+                        </picture>                
+                    </div>
+                </div>
+                <div class="fpMSI">
+                    <small>Solicita tu compra a</small>
+                    <h4>MESES SIN INTERESES</h4>
+                    <small>con plazos de</small> 
+                    <h4>3, 6 Y 9 MSI</h4>
+                    <small>Válido con tarjetas participantes.</small>
+                    <small>Aplica cargo extra por comisión MSI</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! SECCIÓN INFORMATIVA -->
+        <section class="seccion sec-informes">
+            <div class="tituloWhite">
+                <h2><span>Solicita un DEMO 100% funcional</span></h2> 
+                <p>En BDKSISTEMAS primero te instalamos y después realizas el pago</p>
+            </div>    
+            <div class="informes_content">                
+                <p>En BDKSISTEMAS no queremos vender por vender, queremos que estés 100% seguro que nuestro producto es lo que tu negocio necesita, por lo que te recomendamos solicites a tu ejecutivo de ventas un DEMO 100% funcional antes de realizar tu compra.</p>
+                <p>De esta forma puedes probar las funcionalidades del sistema y comprobar si cumple con los requerimientos de tu negocio.</p>
+                <h5>Si lo prefieres, puedes solicitar una DEMOSTRACIÓN EN LÍNEA</h5>
+            </div>
+            <div class="informes-accion">
+                <a href="#" class="botonVerde mnuContacto">Solicitar DEMO</a>
+            </div>
+        </section>
+
+        <!-- ! ESPACIO PARA LA PROMOCIÓN ACTUAL -->
+        <div data-include="assets/promocion_actual.html"></div>
+
+        <!-- ! EQUIPO DE CÓMPUTO -->
+        <section class="secEquipo seccion">
+
+            <div class="titulo">
+                <h2><span>Equipo</span> de cómputo</h2>  
+                <p>Tenemos la solución completa para tu negocio</p>
+            </div>
+
+            <div class="eqContent">
+
+                <picture>
+                    <source srcset="build/img/BDKPOS/BDKPOS_PDV_01.avif" type="image/avif">
+                    <source srcset="build/img/BDKPOS/BDKPOS_PDV_01.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/BDKPOS_PDV_01.jpg" alt="Imagen de una terminal punto de venta">
+                </picture>   
+                
+                <div class="eqTextos">
+                    <h4>¡NO BATALLES MÁS!</h4>
+                    <p>En BDKSISTEMAS contamos con el software y también puedes adquirir todo el equipo de cómputo necesario para su implementación.</p>
+                    <p>
+                        <small><i class="fas fa-caret-right"></i> Computadoras</small>
+                        <small><i class="fas fa-caret-right"></i> Laptops</small>
+                        <small><i class="fas fa-caret-right"></i> Terminales POS</small>
+                        <small><i class="fas fa-caret-right"></i> Computadoras ALL IN ONE</small>
+                        <small><i class="fas fa-caret-right"></i> Impresoras de tickets</small>
+                        <small><i class="fas fa-caret-right"></i> Rollos de papel</small>
+                        <small><i class="fas fa-caret-right"></i> Cajón de dinero</small>
+                    </p>
+                </div>
+
+                <div class="hardware swiper container">
+                    <div class="swiper-wrapper"">
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_01.avif" type="image/avif">
+                                <source srcset="build/img/EQ_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_01.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_02.avif" type="image/avif">
+                                <source srcset="build/img/EQ_02.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_02.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_03.avif" type="image/avif">
+                                <source srcset="build/img/EQ_03.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_03.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_04.avif" type="image/avif">
+                                <source srcset="build/img/EQ_04.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_04.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_05.avif" type="image/avif">
+                                <source srcset="build/img/EQ_05.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_05.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_06.avif" type="image/avif">
+                                <source srcset="build/img/EQ_06.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_06.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_07.avif" type="image/avif">
+                                <source srcset="build/img/EQ_07.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_07.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_08.avif" type="image/avif">
+                                <source srcset="build/img/EQ_08.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_08.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- ! PROMOCIONANDO PAGINAS WEB -->
+        <div data-include="assets/promo_web.html"></div>
+
+        <!-- ! GALERÍA -->
+        <section class="seccionGris galeria">
+
+            <div class="titulo">
+                <h2>Galería de <span>fotos</span></h2> 
+                <p>Te presentamos algunas fotos que nos han compartido nuestros clientes</p>
+            </div>
+
+            <div class="galeria_content">
+                <a href="build/img/BDKPOS/GAL_01.jpg" data-lightbox='galeria_content' data-title="Click a la derecha para pasar a la siguiente imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_01.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_01.jpg" alt="Fotos de la galería">
+                    </picture>    
+                </a>
+                <a href="build/img/BDKPOS/GAL_02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_02.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_03.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_03.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_03.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_04.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_04.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_04.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_05.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_05.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_05.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_06.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_06.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_06.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_07.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_07.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_07.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_08.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_08.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_08.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_09.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_09.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_09.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_10.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_10.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_10.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_11.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_11.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_11.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_11.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_12.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_12.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_12.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+            </div>
+
+            <a href="#" class="boton mnuGal"><i class="fas fa-images"></i> Ver la galería completa</a>
+
+        </section>
+
+        <!-- ! VÍDEO EXPLICATIVO-->
+        <section class="secVideo">
+            
+            <picture>
+                <source srcset="build/img/BDKPOS/FondoVideo.avif" type="image/avif">
+                <source srcset="build/img/BDKPOS/FondoVideo.webp" type="image/webp">
+                <img loading="lazy" src="build/img/BDKPOS/FondoVideo.jpg" alt="" class="fondoSecciones">
+            </picture>                        
+
+            <div class="videoContent">
+                <div class="tituloWhite">
+                    <h2>Vídeo informativo</h2> 
+                    <p>Date unos minutos para ver más a fondo las funciones de nuestro producto</p>
+                </div>    
+                <a href="#" class="play" id="play"><img src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
+            </div>
+            <div class="videoPopup">
+                <video src="build/video/VIDEOWEB_REST.mp4" controls="true"></video>
+                <img src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
+            </div>
+    
+        </section>
+
+        <!-- ! RESEÑAS -->
+        <section class="seccion bkgwhite sec-opiniones">
+
+            <div class="titulo"> 
+                <h2>Lo que opinan nuestros <span>clientes</span></h2> 
+                <p>La mejor recomendación es tu opinión</p>
+                <small>Todas las fotos, logotipos y reseñas fueron autorizados por nuestros clientes.</small>
+            </div>
+    
+            <div class="nva-resenas-container">
+    
+                <div data-include="assets/resenas.html"></div>
+    
+            </div>
+    
+            <a href="#" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas</a>
+        
+        </section>
+
+        <!-- ! PREGUNTAS FRECUENTES -->
+        <div data-include="assets/faqs.html"></div>
+
+        <!-- ! DESPEDIDA -->
+        <section class="bkgwhite secDespedida" id="reseñas">
+
+            <div class="titulo">
+                <h2><span>¡No esperes más!</span> y dale un PLUS a tu negocio</h2> 
+                <p>Realiza hoy la mejor inversión que puedes regalarle a tu negocio y comienza a disfrutar de los beneficios de tener un excelente software de administración y página web</p>
+                <div class="despedida_contacto">
+                    <h5>Solicitar informes por:</h5>
+                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+
+            <picture>
+                <source srcset="build/img/FondoDespedidas.avif" type="image/avif">
+                <source srcset="build/img/FondoDespedidas.webp" type="image/webp">
+                <img loading="lazy" src="build/img/FondoDespedidas.jpg" alt="Imagen de una cajera frente a una terminal punto de venta">
+            </picture>
+        </section>
+
+    </main> 
+
+    <!-- ! FOOTER -->
+    <div data-include="assets/footer.html"></div>
+
+    <!-- ! --------------------------------------------------------------------------------- -->
+    <!-- * LISTA DE SCRIPTS -->
+    <!-- ! --------------------------------------------------------------------------------- -->
+
+    <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
+    <script src="build/js/include-html.min.js"></script> 
+
+    <!-- ? FONTAWESOM -->
+    <!-- <script src="https://kit.fontawesome.com/fb0e281aff.js" crossorigin="anonymous"></script>         -->
+
+    <!-- ? BOOTSTRAPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ? JQUERY -->
+    <script src="build/js/jquery.js"></script>
+            
+    <!-- ? SWIPER : Slider del hero -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- ?ANIMACIONES CON VANILLA-TILT -->
+    <script src="build/js/vanilla-tilt.min.js"></script>
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ? LIGTHBOX PARA LA GALERÍA -->
+    <script src="build/js/lightbox.js"></script>
+
+    <script src="build/js/app.js"></script>
+
+    
+</body>
+</html>

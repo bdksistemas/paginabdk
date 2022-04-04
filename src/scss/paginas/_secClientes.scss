@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.clientes {
+
+    @include m.mixFlex(flex,center,center,0,column);
+    width: 100%;
+
+    .clientes_content {
+        padding: 4rem; 
+        width: 100%;
+
+        @include m.mixFlex(flex,center,center,wrap-reverse,0);
+
+        .ctes_img {
+            width: 25%;
+        }
+
+        .ctes_lista {
+            width: 75%;
+
+            @include m.mixFlex(flex,center,0,wrap,0);
+            gap: 2rem;
+
+            .giroctes {
+                @include m.mixFlex(flex,center,0,wrap,column);
+                @include m.mixBox(25%,false,false,10px,v.$degradadoRed,v.$box-shadow);
+                padding: 15px;
+
+                p {
+                    color: v.$blanco;
+                    font-size: v.$descCon - .15rem;
+                }
+                
+                i {
+                    margin-right: 5px;
+                }
+
+            }
+        }
+
+    }
+
+    p {
+        font-weight: 800;
+    }
+
+}

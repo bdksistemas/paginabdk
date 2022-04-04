@@ -1,0 +1,98 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* ? DESTACADOS */
+/* ?___________________________________________________________________________________________________________________________________________ */
+
+.secDestacados {
+
+    width: 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5970763305322129) 100%), url('../img/Fondo_Destacados.jpg');
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+
+    h3, p {
+        color: v.$blanco;
+    }
+
+    .destacados { 
+
+        @include m.mixFlex(flex,center,center,wrap,0);
+        position: relative;
+        margin-top: v.$sepSeccion - 2rem;
+        z-index: 1;
+
+        .destacados_card {
+
+            @include m.mixFlex(flex,center,center,0,0);
+            position: relative;
+
+            @include m.mixBox(28%,260px,false,15px,false,v.$box-shadow);
+            margin: 1.5rem;
+            overflow: hidden;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(25px);
+        
+            .content {
+                padding: 20px;
+                transition: 0.5s;
+
+                i {
+                    position: absolute;
+                    top: 10px;
+                    right: 30px;
+                    font-size: 5em;
+                    color: rgba(255, 255, 255, 0.5);
+                    pointer-events: none;
+                    transition: 0.5s;    
+                    z-index: -1;
+                }
+                
+                h4 {
+                    z-index: 1000;
+                    margin-bottom: 1.5rem;
+                    color: v.$color1;
+                    text-shadow: v.$box-shadow2;
+                }
+
+                p {
+                    font-size: v.$descCon - .2rem;
+                    color: v.$blanco;
+
+                    @include m.mixMQ(v.$tablet) {
+                        font-size: 1.2rem;
+                    };
+                }                        
+            }
+
+
+            // .destacados_card
+            @include m.mixMQ(v.$movil) {
+                width: 42%;
+                height: 200px;
+            };
+            @include m.mixMQ(v.$movilSM) {
+                width: 95%;
+                height: 120px;
+            };
+
+        }    
+    }
+
+    @include m.mixMQ(v.$tablet) {
+        padding: 20px 0 30px 0;
+    };
+
+}

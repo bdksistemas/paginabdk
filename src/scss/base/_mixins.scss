@@ -1,0 +1,86 @@
+@use 'variables' as v; 
+
+// MIXIN para los MediaQueries
+@mixin mixMQ($mxMedida) {
+    @media screen and (max-width: $mxMedida) {    
+        @content;
+    }
+} 
+  
+@mixin grid($columnas, $espaciado) {
+    display: grid;   
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado; 
+}
+  
+@mixin resetear-lista{   
+    margin: 0;
+    padding:0;     
+    list-style: none;  
+}
+
+// MIXIN para agregar FLEXBOX a las cajas 
+// Si el parámetrio es igual a 0 no aplica el código
+// PARAMETROS:
+//      $fxDs = Display  
+//      $fxJt = Justify-content 
+//      $fxAi = Align-items   
+//      $fxWr = Flex-wrap
+//      $fxFd = Flex-direction 
+@mixin mixFlex ($fxDs, $fxJt, $fxAi, $fxWr, $fxFd) {
+    @if $fxDs != 0 {
+        display: $fxDs;
+    }
+    @if $fxJt != 0 {
+        justify-content: $fxJt;
+    }  
+    @if $fxAi != 0 {
+        align-items: $fxAi;
+    }
+    @if $fxWr != 0 {
+        flex-wrap: $fxWr;
+    }
+    @if $fxFd != 0 {
+        flex-direction: $fxFd;  
+    }
+} 
+
+// MIXIN PARA DARLE FORMATO REDONDO A LOS ICONOS 
+@mixin  mixIcono($icoArea, $icoFont) {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: $icoArea;
+    line-height: $icoArea;
+    width: $icoArea;
+    text-align: center; 
+    font-size: $icoFont;    
+    border-radius: 50%;
+}
+
+@mixin mixBox ($anc, $lar, $br, $borR, $bgc, $bxs ) {
+    @if $anc { width: $anc; }
+    @if $lar { height: $lar; }
+    @if $br { border: $br; }
+    @if $borR { border-radius: $borR; }
+    @if $bgc { background: $bgc; }
+    @if $bxs { box-shadow: $bxs; }
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+
+// MIXIN PARA LA ANIMACIÓN DEL MOUSE
+
+@mixin bgGradient {
+    background:
+      v.$colorOutFade
+      linear-gradient(
+        transparent 0%,
+        transparent 50%,
+        v.$colorOutline 50%,
+        v.$colorOutline 100%
+      );
+  }
+  

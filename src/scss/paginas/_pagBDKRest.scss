@@ -1,0 +1,85 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.hero-Rest {
+    width: 100vw;
+    height: 100vh; 
+
+} 
+
+#pt_rest_hostess {
+    bottom: 70px;
+    left: 100px;
+
+    @include m.mixMQ(v.$deskXL) {
+        left: 80px;
+        bottom: 60px;
+    };
+}
+#pt_rest_comMovil {
+    bottom: 100px;
+    left: 220px;
+
+    @include m.mixMQ(v.$deskXL) {
+        left: 200px;
+    };
+
+}
+#pt_rest_comDesk {
+    top: 70px;
+    left: 200px;
+}
+
+#pt_rest_caja {
+    bottom: 220px;
+    left: 380px;
+
+    @include m.mixMQ(v.$deskXL) {
+        left: 340px;
+        // bottom: 60px;
+    };
+}
+
+#pt_rest_cocina {
+    bottom: 220px;
+    right: 90px;
+
+    @include m.mixMQ(v.$deskXL) {
+        right: 80px;
+        bottom: 200px;
+    };
+}
+
+#pt_rest_recetas {
+    bottom: 330px;
+    right: 125px;
+
+    @include m.mixMQ(v.$deskXL) {
+        right: 110px;
+        bottom: 270px;
+    };
+}
+
+#pt_rest_almacen {
+    top: 20px;
+    right: 280px;
+}
+
+#pt_rest_clientes {
+    bottom: 160px;
+    left: 330px;
+
+    @include m.mixMQ(v.$deskXL) {
+        left: 290px;
+        bottom: 140px;
+    };
+}
+
+#pt_rest_comedor {
+    top: 2rem;
+    left: 0;
+}
+#pt_rest_billar {
+    top: 5rem;
+    left: 0;
+}

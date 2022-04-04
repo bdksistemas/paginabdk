@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BDKSISTEMAS - Reseñas</title>
+
+    <!-- FAVICON -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="build/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="build/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- ? BOOTSTRAPT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- ? FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- ? BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+
+    <!-- ? LIGHTBOX: Galería -->
+    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="stylesheet" href="build/css/app.css"> 
+
+    <!-- ? METAS --> 
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="BDKSISTEMAS, Lo mejor en informática y puntos de venta"/>
+    <meta name="keywords" content="software para restaurantes, sistema de restaurantes, programa de restaurantes, software para gimnasios, sistema para gimnasios, programa para gimnasios, software para Lavanderias, sistema para Lavanderias, programa para Lavanderias, software para salones de belleza, sistema para salones de belleza, programa para salones de belleza, software para barberias, sistema para barberias, programa para barberias, software punto de venta, sistema punto de venta, programa punto de venta, punto de venta"/>
+    <meta name="author" content="BDKSISTEMAS" />
+    <meta name="copyright" content="BDKSISTEMAS" />    
+    <meta name="robots" content="index"/>
+    
+    <!-- OpenGraph -->
+    <!-- Etiquetas para que al compartir el enlace de la página, ésta aparezca con la portada indicada y el texto indicado -->
+    <meta property="og:url" content="https://www.bdksistemas.com.mx/" />  
+    <meta property="og:title" content="BDKSISTEMAS" />
+    <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/Fondo_Hero.jpg" />
+    <meta property="og:description" content="Software Punto de Venta para todo los giros de negocios" />
+    <meta property="og:type" content="website" />
+    
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav_container">
+
+            <div class="nav_logo">
+                <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
+                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+
+            <ul class="nav_principal" id="navPrincipal">
+                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item nav_active"><a href="#" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+            </ul> 
+
+            <div class="nav_social">
+                <a href="#"><i class="fas fa-bars iconos botMenu" id="botApp"></i></a>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- ! HERO --> 
+    <header class="heroGaleria">
+        <section class="hero_container">
+            <h1><span>¡MUCHAS GRACIAS!</span> a nuestros clientes por su confianza</h1>
+            <p>Te compartimos algunas fotos que nos han proporcionado nuestros clientes.</p>
+        </section>
+        <div class="wrapper">
+            <ul class="dynamic-txts">
+                <li><span><i class="fab fa-whatsapp"></i> +52 813 281 4080</span></li>
+                <li><span><i class="fas fa-phone"></i> +52 813 281 4080</span></li>
+                <li><span><i class="fas fa-envelope"></i> ventas@bdksistemas.com.mx</span></li>
+                <li><span><i class="fab fa-facebook-square"></i> @bdksistemas</span></li>
+                <li><span><i class="fab fa-youtube"></i> @bdksistemas</span></li>
+                <li><span><i class="fas fa-globe"></i> www.bdksistemas.com.mx</span></li>
+            </ul>                 
+        </div>   
+
+        <div class="anim-mouse">
+            <div class="mouse"></div>
+        </div>
+
+    </header>
+
+    <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+    <div data-include="assets/widgets.html"></div>
+
+    <main>
+
+        <section class="galeria seccion">
+
+            <div class="titulo"> 
+                <h2>Galería de <span>fotos</span></h2> 
+                <p>Te presentamos algunas fotos de nuestros clientes utilizando nuestros productos</p>
+                <small>Todas las fotos fueron autorizadas por nuestros clientes.</small>
+            </div>
+
+            <!-- ! BDKREST -->
+            <div class="galeria_content">
+                <a href="build/img/BDKREST/GAL01.jpg" data-lightbox='galeria_content' data-title="Click a la derecha para pasar a la siguiente imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL01.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL01.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL01.jpg" alt="Fotos de la galería">
+                    </picture>    
+                </a>
+                <a href="build/img/BDKREST/GAL02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL02.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL03.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL03.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL03.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL04.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL04.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL04.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL05.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL05.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL05.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL06.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL06.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL06.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL07.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL07.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL07.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL08.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL08.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL08.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL09.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL09.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL09.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL10.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL10.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL10.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL11.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL11.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL11.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL11.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL12.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL12.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL12.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKREST/GAL13.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKREST/GAL13.avif" type="image/avif">
+                        <source srcset="build/img/BDKREST/GAL13.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKREST/GAL13.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+
+                <!-- ! BDKGYM -->
+
+                <a href="build/img/BDKGYM/GAL01.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL01.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL01.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL01.jpg" alt="Fotos de la galería">
+                    </picture>    
+                </a>
+                <a href="build/img/BDKGYM/GAL02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL02.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL03.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL03.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL03.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL04.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL04.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL04.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL05.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL05.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL05.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL06.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL06.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL06.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL07.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL07.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL07.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL08.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL08.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL08.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL09.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL09.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL09.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL10.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL10.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL10.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL13.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL13.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL13.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL13.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL14.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL14.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL14.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL14.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKGYM/GAL15.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/BDKGYM/GAL15.avif" type="image/avif">
+                        <source srcset="build/img/BDKGYM/GAL15.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKGYM/GAL15.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+
+                <!-- ! BDKTINT -->
+
+                <a href="build/img/BDKTINT/GAL_01.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_01.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_01.jpg" alt="Fotos de la galería">
+                    </picture>    
+                </a>
+                <a href="build/img/BDKTINT/GAL_02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_02.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_03.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_03.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_03.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_04.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_04.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_04.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_05.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_05.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_05.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_06.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_06.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_06.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_07.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_07.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_07.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_08.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_08.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_08.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_09.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_09.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_09.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_10.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_10.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_10.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_12.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_12.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_12.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>                
+                
+                <!-- ! BDKSPA -->
+
+                <a href="build/img/BDKSPA/GAL_01.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKSPA/GAL_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKSPA/GAL_01.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKSPA/GAL_01.jpg" alt="Fotos de la galería">
+                    </picture>    
+                </a>
+                <a href="build/img/BDKSPA/GAL_02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKSPA/GAL_02.avif" type="image/avif">
+                        <source srcset="build/img/BDKSPA/GAL_02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKSPA/GAL_02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKSPA/GAL_08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKSPA/GAL_08.avif" type="image/avif">
+                        <source srcset="build/img/BDKSPA/GAL_08.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKSPA/GAL_08.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKSPA/GAL_12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKSPA/GAL_12.avif" type="image/avif">
+                        <source srcset="build/img/BDKSPA/GAL_12.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKSPA/GAL_12.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+
+                <!-- ! BDKPOS -->
+
+                <a href="build/img/BDKPOS/GAL_02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_02.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_05.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_05.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_05.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_07.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_07.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_07.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_09.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_09.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_09.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_10.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_10.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_10.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKPOS/GAL_11.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKPOS/GAL_11.avif" type="image/avif">
+                        <source srcset="build/img/BDKPOS/GAL_11.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKPOS/GAL_11.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+
+                <!-- ! FOTOS DE BDK -->
+
+                <a href="build/img/GALERIA01.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA01.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA01.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA01.jpg" alt="Fotos de la galería">
+                    </picture>    
+                </a>
+                <a href="build/img/GALERIA02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA02.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA03.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA03.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA03.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA04.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA04.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA04.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA05.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA05.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA05.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA06.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA06.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA06.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA07.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA07.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA07.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a> 
+                <a href="build/img/GALERIA08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA08.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA08.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA08.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA09.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA09.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA09.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA10.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA10.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA10.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA11.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/GALERIA11.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA11.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA11.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/GALERIA12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/GALERIA12.avif" type="image/avif">
+                        <source srcset="build/img/GALERIA12.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/GALERIA12.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                
+            </div>
+
+            <div class="regresar">
+                <a href="#" class="boton" id="regresar"><i class="fas fa-chevron-left"></i> Regresar</a>            
+            </div>
+
+        </section>
+
+    </main> 
+
+    <!-- FOOTER -->
+    <div data-include="assets/footer.html"></div>
+
+    <!-- ! --------------------------------------------------------------------------------- -->
+    <!-- * LISTA DE SCRIPTS -->
+    <!-- ! --------------------------------------------------------------------------------- -->
+
+    <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
+    <script src="build/js/include-html.min.js"></script> 
+
+    <!-- ? BOOTSTRAPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ? JQUERY -->
+    <script src="build/js/jquery.js"></script>
+            
+    <!-- ? SWIPER : Slider del hero -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- ?ANIMACIONES CON VANILLA-TILT -->
+    <script src="build/js/vanilla-tilt.min.js"></script>
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ? LIGTHBOX PARA LA GALERÍA -->
+    <script src="build/js/lightbox.js"></script>
+
+    <script src="build/js/app.js"></script>
+
+    
+</body>
+</html>

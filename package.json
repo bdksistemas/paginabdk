@@ -1,0 +1,28 @@
+{
+  "name": "bdksistemas",
+  "version": "1.0.0",
+  "description": "* Copiar la carpeta BASE y ponerle el nombre del proyectpo\r * Instalar todas las dependencias que se van a necesitar, esto se hace automáticamente ejecutando el comando: npm i en la terminal.\r * Ejecutar el monitor de GULP: gulp dev",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "author": "Alejandro Rdz",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.10",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser-js": "^5.2.2",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.3.11",
+    "sass": "^1.43.4"
+  }
+}

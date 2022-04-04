@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BDKTINT</title>
+
+    <!-- FAVICON -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="build/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="build/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- ? BOOTSTRAPT
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+
+    <!-- ? FONTAWESOM -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- ? BOXICON -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+
+    <!-- ? LIGHTBOX: Galería -->
+    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="stylesheet" href="build/css/app.css"> 
+
+    <!-- ? METAS -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="BDKTINT: Software para lavanderías y tintorerías">
+    <meta name="keywords" content="software lavanderías, punto de venta lavandería, sistema lavandería, punto de venta para lavanderías, sistema para lavanderías, software para lavanderías, software de lavandería, sistema de lavandería"/>
+    <meta name="author" content="BDKSISTEMAS" />
+    <meta name="copyright" content="BDKSISTEMAS" />    
+    <meta name="robots" content="index"/>
+    
+    <!-- OpenGraph -->
+    <!-- Etiquetas para que al compartir el enlace de la página, ésta aparezca con la portada indicada y el texto indicado -->
+    <meta property="og:url" content="https://www.bdksistemas.com.mx/bdktint.html" />  
+    <meta property="og:title" content="BDKTINT: Software para lavanderías" />
+    <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/PortadaCompartir.jpg" />
+    <meta property="og:description" content="Control de servicios, registro de ventas, seguimiento a servicios y mucho más." />
+    <meta property="og:type" content="website" />
+    
+</head>
+
+<body>
+
+    <!-- ! MENU DE NAVEGACIÓN -->
+    <nav class="nav">
+        <div class="nav_container">
+
+            <div class="nav_logo">
+                <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
+                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+
+            <ul class="nav_principal" id="navPrincipal">
+                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item nav_active"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+            </ul> 
+
+            <div class="nav_social">
+                <a href="#"><i class="fas fa-bars iconos botMenu" id="botApp"></i></a>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- ! HERO -->
+    <header class="hero-sistema">
+        <div class="hero_container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.png" alt="Logotipo de la empresa">
+                    </picture>
+                </div>
+                <div class="hero-mockup">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/BDKTINT_PDV_01.png" alt="Terminal punto de venta">
+                    </picture>
+                </div>
+                <div class="heroSoft_Titulo">
+                    <h1>Software para <span>lavanderías</h1>
+                    <p>La solución ideal para todo tipo de lavanderías y tintorerías</p>
+                </div>
+            </div>
+
+            <div class="anim-mouse-b2">
+                <div class="mouse"></div>
+            </div>
+    
+        </div>
+
+        <!-- ! CARROUSEL DE IMAGENES DEL LADO DERECHO DEL HEADER -->
+        <div class="hero-right">
+            <div class="slide-fondos" id="slide-fondos">
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/FONDO_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/FONDO_01.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/FONDO_01.jpg" alt="Imagen de presentación del software BDKTINT">
+                    </picture>
+                    <div class="heroR-leyenda"> 
+                        <h3>Punto de venta para lavanderías y tintorerías</h3>
+                        <p>Sin duda uno de los mejores sistemas para lavandería que puedes encontrar en el mercado.</p>
+                    </div>
+                </div> 
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/FONDO_02.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/FONDO_02.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/FONDO_02.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
+                    </picture>
+                    <div class="heroR-leyenda"> 
+                        <h3>Recepción y caja</h3>
+                        <p>Te permite llevar un control de tus ventas y llevar un seguimiento de cada uno de tus servicios. Identifica tus servicios en proceso, pendientes de entregar y terminados.</p>
+                    </div>
+                </div> 
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/FONDO_03.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/FONDO_03.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/FONDO_03.jpg" alt="Grupo de jovenes haciendo cardio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Clientes</h3>
+                        <p>Brinda seguridad, comodidad y satisfacción para tus clientes, además mantenlos informados sobre el progreso de su servicio.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/FONDO_04.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/FONDO_04.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/FONDO_04.jpg" alt="Joven instructor contando productos del gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Control de almacén</h3>
+                        <p>Lleva un buen control de tu almacén, tanto de tus productos como las prendas de tus clientes. Nunca más vuelvas a perder una prenda.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/FONDO_05.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/FONDO_05.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/FONDO_05.jpg" alt="Hermosa joven administradora de un gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Administración</h3>
+                        <p>Evita el robo hormiga y lleva un perfecto control de tus ingresos y egresos. Obtén diversos reportes de ventas y de servicios en proceso.</p>
+                    </div>
+                </div>
+                <div class="heroR-fondo">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/FONDO_06.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/FONDO_06.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/FONDO_06.jpg" alt="Instructores analizando rutinas de gimnasio">
+                    </picture>
+                    <div class="heroR-leyenda">
+                        <h3>Empleados</h3>
+                        <p>Identifica la carga de trabajo de cada empleado, asigna servicios equitativamente y lleva un registro de sus servicios en proceso y terminados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+    <div data-include="assets/widgets.html"></div>
+
+    <main>
+
+        <!-- ! PRINCIPALES BENEFICIOS -->
+        <section class="seccion">
+            <div class="titulo container">
+                <h2><span>¡LA SOLUCIÓN IDEAL!</span> <br> para lavanderías y tintorerías</h2> 
+                <p>BDKTINT es el software para lavanderías con el que estarás protegido contra malos manejos administrativos, lleva un control de tus ventas y un buen seguimiento a cada uno de tus servicios en proceso, mejora cada área de tu negocio y obtén grandes beneficios.</p>
+            </div> 
+
+            <div class="gpoCaracteristicas container">
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-cash-register"></i>
+                    <h5>RECEPCIÓN Y CAJA</h5>
+                    <p>Te permite llevar un control de tus ventas y llevar un seguimiento de cada uno de tus servicios. Identifica tus servicios en proceso, pendientes de entregar y terminados.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-users"></i>
+                    <h5>CLIENTES</h5>
+                    <p>Brinda seguridad, comodidad y satisfacción para tus clientes, además mantenlos informados sobre el progreso de su servicio.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-tasks"></i>
+                    <h5>ALMACÉN</h5>
+                    <p>Lleva un buen control de tu almacén, tanto de tus productos como las prendas de tus clientes. Nunca más vuelvas a perder una prenda.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-chart-pie"></i>
+                    <h5>ADMINISTRACIÓN</h5>
+                    <p>Evita el robo hormiga y lleva un perfecto control de tus ingresos y egresos.
+                        Obtén diversos reportes de ventas y de servicios en proceso.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-user-edit"></i>
+                    <h5>EMPLEADOS</h5>
+                    <p>Identifica la carga de trabajo de cada empleado, asigna servicios equitativamente y lleva un registro de sus servicios en proceso y terminados.</p>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-user-tie"></i>
+                    <h5>BENEFICIOS PARA TI</h5>
+                    <p>Te da la tranquilidad de delegar funciones, lo que te dará más tiempo para tu familia y para ti.</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- ! PROBLEMAS Y SOLUCIONES -->
+        <section class="secProSol">
+
+            <div class="secPS_article seccionGris">
+
+                <!-- ! PROBLEMAS -->
+                <div class="titulo">
+                    <h2>Principales <span>problemas</span> de una lavandería</h2> 
+                    <p>En el día a día de las lavanderías, es común que tengan problemas a la hora de organizar su administración, es por eso que aquí te presentamos algunos de los principales problemas que sufren a diario y que se solucionan al contar con este increíble software.</p>
+                </div>     
+
+                <div class="divFoto_lista">
+                    <div class="elImagen">
+                        <picture>
+                            <source srcset="build/img/BDKTINT/Problemas.avif" type="image/avif">
+                            <source srcset="build/img/BDKTINT/Problemas.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/Problemas.jpg" alt="Imagén de un centro comercial">
+                        </picture>    
+                    </div>
+                    <div class="elLista">
+                        <ul>
+                            <li><i class="fas fa-exclamation-triangle"></i> Robo hormiga</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Prendas extraviadas</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Confusiones en los servicios de cada cliente</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Recibir prendas en mal estado y no registrarlas</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Acumulaciones de ropa no recogida</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Confusiones al entregar y cobrar el servicio</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Exceder la carga de trabajo del empleado</li>
+                            <li><i class="fas fa-exclamation-triangle"></i> Mala administración y faltantes en el corte</li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+            
+            <!-- ! SOLUCIÓN --> 
+            <div class="secImg_fondo_tint">
+
+                <div class="tituloWhite tit_solucion" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+                    <h2>Tenemos la <span>solución ideal</span> para tu lavandería</h2> 
+                    <p>Nuestro software cuenta con un sinfín de funcionalidades ideales para que lleves una excelente administración de todos los departamentos de tu negocio.</p>
+                </div>     
+
+                <div class="elLista" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1500">
+                    <ul>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Registro y control de ventas</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Seguimiento de servicios en proceso</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Conciliación de inventario de servicios</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Asignación de servicios a empleados</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Notificaciones por correo o SMS al cliente</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Facturación electrónica</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Cortes de caja</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Captura de detalles de prendas</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Venta por kilo o por prenda</li>
+                        <li class="txtWhite"><i class="fas fa-check-circle"></i> Reportes diversos y mucho más</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ! MAPA DEL TIPO DE NEGOCIO --> 
+        <section class="mapa_soft seccion"> 
+
+            <div class="titulo container">
+                <h2>Beneficios directos para <span>todas las áreas</span> de tu negocio</h2> 
+                <p>Con nuestro software, todas las áreas de tu negocio obtienen beneficios directa e indirectamente</p>
+                <small>Da un clic sobre los puntos informativos</small>
+                <div class="linea"></div>
+            </div>     
+
+            <div class="content_mapa container">
+
+                <div class="mapa_imagen mapa_gym">
+                    <!-- La clase mapa_gym se utiliza solo en JavaScript -->
+
+                    <picture>
+                        <source srcset="build/img/BDKTINT/MAPA.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/MAPA.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/MAPA.png" alt="Mapa de una lavandería">
+                    </picture>    
+
+                    <i class="fas fa-circle punto_interes" id="pt_tint_recepcion"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_tint_servicios"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_tint_inventarios"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_tint_empleados"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_tint_clientes"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_tint_admon"></i>
+                    <i class="fas fa-circle punto_interes" id="pt_tint_cuentas"></i>
+
+                </div>
+
+                <div class="mapa_funciones_tint"> 
+                    <div class="funcion_mapa" id="desc_tint_recepcion">
+                        <h4><i class="fas fa-circle"></i> Módulo de Recepción</h4>
+                        <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de recepción y entrega de prendas, cobra al recibir o entregar el servicio y realiza el corte de caja del día.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_tin_recepcion">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_tint_servicios">
+                        <h4><i class="fas fa-circle"></i> Asignación de servicios</h4>
+                        <p>Asigna equitativamente los servicios a tus empleados y evita la sobre carga de trabajo.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_tin_servicios">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_tint_inventarios">
+                        <h4><i class="fas fa-circle"></i> Inventario de prendas</h4>
+                        <p>Nunca más vuelvas a perder una prenda o servicio de tu cliente. Identifica fácilmente todos tus servicios, administra tus productos y lleva un control de tu inventario.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_tin_inventarios">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_tint_empleados">
+                        <h4><i class="fas fa-circle"></i> Carga de trabajo por empleado</h4>
+                        <p>Identifica la carga de trabajo de cada uno de tus empleados.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_tin_empleados">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_tint_clientes">
+                        <h4><i class="fas fa-circle"></i> Clientes</h4>
+                        <p>BDKTINT cuenta con funcionalidades que mantendrán a tus clientes contentos con tus servicios, tanto que harán que regresen una y otra ves a tu negocio, además te da la posibilidad de recompensar su lealtad.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_tin_clientes">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_tint_admon">
+                        <h4><i class="fas fa-circle"></i> Administración</h4>
+                        <p>Lleva una administración eficiente de tu negocio.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_tin_admon">Leer más</a>
+                    </div>
+                    <div class="funcion_mapa" id="desc_tint_cuentas">
+                        <h4><i class="fas fa-circle"></i> Cuentas abiertas</h4>
+                        <p>Abre una cuenta a tu cliente y agrega productos y servicios conforme los vaya necesitando.</p>
+                        <a href="#" class="boton btnLeerMas" id="id_tin_cuentas">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ! BLOQUES INFORMATIVOS POPUP -->
+            <div class="infoPopup">
+
+                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE RECEPCIÓN -->
+                <div class="info_content popup_recepcion">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKTINT/POP_01.avif" type="image/avif">
+                            <source srcset="build/img/BDKTINT/POP_01.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/POP_01.jpg" alt="Joven recepcionista atendiendo a un cliente de una lavandería">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Módulo de Recepción</h2> 
+                            <p>Lleva un control estricto de tus ventas</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de recepción y entrega de prendas, cobra al recibir o entregar el servicio y realiza el corte de caja del día.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Control y registro de ventas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Cobra por kilo, prenda o por servicio</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Recibe las prendas y registra sus características</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Imprime ticket de venta y etiquetas por servicio</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Busca fácilmente el servicio por entregar</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Consulta el expediente de cada cliente</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Notifica al cliente por correo o SMS al estar listo su servicio</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Consulta el reporte de ventas del día</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Cobra al recibir las prendas o al entregarlas al cliente</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Manejo de Cuentas Abiertas para negocios con auto lavado</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Realiza el Corte de Caja</li>
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> CUENTAS ABIERTAS disponible en la versión profesional</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> El envío de SMS o correo disponible en la versión profesional</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> Los SMS se venden por separado en paquetes de 1000 sms</li>
+
+                                </ul>
+                            </div>        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO ASIGNACIÓN DE SERVICIOS -->
+                <div class="info_content popup_servicios">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKTINT/POP_02.avif" type="image/avif">
+                            <source srcset="build/img/BDKTINT/POP_02.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/POP_02.jpg" alt="Joven mujer asignando prendas a sus compañeros">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Asignación de servicios</h2> 
+                            <p>Asigna equitativamente los servicios entre tus empleados</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Mantén una carga de trabajo equilibrada entre todos tus empleados y evita la sobre carga de trabajo.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Identifica la carga de trabajo de tus empleados</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Identifica los servicios asignados a cada uno</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Divide los servicios y las prendas entre los empleados</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Al capturar un nuevo servicio, obtén un reporte de carga de trabajo para asignar correctamente las prendas.</li>
+
+                                    <!-- <li><i class="fas fa-exclamation-triangle txtM2"></i> El acceso con huella y próximidad, disponible en la versión profesional</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> Requiere de una computadora exclusiva para asistencia</li> -->
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+                
+                <!-- ! BLOQUE INFORMATIVO INVENTARIOS -->
+                <div class="info_content popup_inventarios">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKTINT/POP_03.avif" type="image/avif">
+                            <source srcset="build/img/BDKTINT/POP_03.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/POP_03.jpg" alt="Joven mujer realizando un conteo de prendas">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Control de inventarios</h2> 
+                            <p>Identifica la ubicación de las prendas y servicios</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Nunca más vuelvas a perder una prenda o servicio de tu cliente. Identifica fácilmente todos tus servicios, administra tus productos y lleva un control de tu inventario.</p>
+
+                            <div class="elLista">
+                                <ul> 
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registra las entradas de productos e insumos</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Captura las salidas de producto a utilizar</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Salidas de almacén en base a registro de ventas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registra los conteos de existencias</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Realiza conciliaciones de servicios y compáralos contra el sistema</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registra la ubicación de tus prendas</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO EMPLEADOS -->
+                <div class="info_content popup_empleados">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKTINT/POP_05.avif" type="image/avif">
+                            <source srcset="build/img/BDKTINT/POP_05.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/POP_05.jpg" alt="Empleada de lavandería planchando ropa">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Empleados</h2> 
+                            <p>Equilibrio en la carga de trabajo</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Mantén una carga de trabajo equitativa entre tus empleados.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Asigna servicios a cada empleado</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Identifica la carga de trabajo por empleado</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Obtén reportes de servicios terminados</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Registran en sistema el avance de sus servicios y notifican al cliente</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO CLIENTES -->
+                <div class="info_content popup_clientes">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKTINT/POP_06.avif" type="image/avif">
+                            <source srcset="build/img/BDKTINT/POP_06.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/POP_06.jpg" alt="Foto de un grupo de jovenes tomándose una selfie">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Beneficios para tus clientes</h2> 
+                            <p>Clientes contentos, negocio lleno</p>
+                        </div>
+                        <div class="info_main">
+                            <p>BDKTINT cuenta con funcionalidades que mantendrán a tus clientes contentos con tus servicios, tanto que harán que regresen una y otra ves a tu negocio, además te da la posibilidad de recompensar su lealtad.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> El cliente puede pagar al entregar sus prendas o al recogerlas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Pueden dar pagos parciales</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (*) Se les puede notificar vía e-mail o SMS cuando sus prendas estén terminadas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (*) Recompensa su lealtad con el monedero electrónico</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (*) Se cuenta con un programa de recompensas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Historial de compras</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (*) (**) CUENTAS ABIERTAS: El cliente llega a tu negocio, abre una cuenta y puede estar agregando servicios y pagar hasta al final de su proceso.</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Garantías de prendas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Entre muchas funciones más.</li>
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> (*) Función disponible en la versión PROFESIONAL</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> (**) Ideal para lavanderías de auto servicio</li>
+
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- ! BLOQUE INFORMATIVO SOBRE ADMINISTRACIÓN -->
+                <div class="info_content popup_admon">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKTINT/POP_04.avif" type="image/avif">
+                            <source srcset="build/img/BDKTINT/POP_04.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/POP_04.jpg" alt="Encargado de gimnasio haciendo cuentas">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Administración</h2> 
+                            <p>Deja tu negocio en las manos de BDKTINT</p>
+                        </div>
+                        <div class="info_main">
+                            <p>Evita el robo hormiga y lleva una excelente administración de tu lavandería controlando todas las áreas del mismo.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Lleva control de las ventas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Reporteo general y estadísticas</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Obtén reportes por estatus de servicios</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (*) Envía correos masivos a tus clientes</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> (**) Facturación electrónica</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Y mucho más...</li>
+
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> (*) Disponible en la versión PROFESIONAL</li>
+                                    <li><i class="fas fa-exclamation-triangle"></i> (**) Disponible solo en México con nuestros timbres</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+                
+                <!-- ! BLOQUE INFORMATIVO SOBRE CUENTAS ABIERTAS -->
+                <div class="info_content popup_cuentas">
+                    <div class="info_imagen">
+                        <picture>
+                            <source srcset="build/img/BDKTINT/POP_07.avif" type="image/avif">
+                            <source srcset="build/img/BDKTINT/POP_07.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/POP_07.jpg" alt="Encargado de gimnasio haciendo cuentas">
+                        </picture>        
+                    </div>
+                    <div class="info_descrip">
+                        <div class="titulo">
+                            <h2>Cuentas abiertas</h2> 
+                            <p>Ideal para lavanderías de auto servicio</p>
+                        </div>
+                        <div class="info_main">
+                            <p>¿Tienes una lavandería de auto servicio?</p>
+                            <p>BDKTINT te permite abrir una cuenta provisional al cliente e irle agregando productos y servicios conforme los vaya necesitando.</p>
+
+                            <div class="elLista">
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Apertura de cuentas provisionales</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Agrega productos y servicios conforme se vayan requiriendo</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i> Realiza el cobro de la cuenta cuando tu cliente haya terminado de lavar.</li>
+
+                                    <li><i class="fas fa-exclamation-triangle txtM2"></i> (*) Disponible en la versión PROFESIONAL</li>
+                                </ul>
+                            </div>
+        
+                        </div>            
+                    </div>
+                </div>
+
+                <img src="build/img/close.png" alt="Cerrar la pantalla" class="close" id="close">
+            </div>
+
+        </section> 
+
+        <!-- ! SECCIÓN DEL VÍDEO PROMOCIONAL -->
+        <section class="video_software">
+            
+            <div class="vid_caracteristicas">
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-cash-register"></i>
+                    <h5>Punto de Ventas</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-tasks"></i>
+                    <h5>Seguimiento de servicios</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h5>Cobra por kilo, prenda o servicio</h5>
+                </div>
+            </div>
+
+            <div class="vs_video">
+                <video class="video_pub" loading="lazy" src="build/video/CARD BDKTINT_OPT.mp4" controls loop autoplay muted> </video>
+            </div>
+
+            <div class="vid_caracteristicas">
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-search-location"></i>
+                    <h5>Conciliación de inventarios</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-check-double"></i>
+                    <h5>Notificaciones al cliente</h5>
+                </div>
+                <div class="elementoCar" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <i class="fas fa-chart-line"></i>
+                    <h5>Administración eficaz</h5>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- ! BENEFICIOS PARA EL DUEÑO -->
+        <section class="seccion secBeneficiosWeb"> 
+            <div class="titulo container">
+                <h2>Beneficios directos <span>para ti, tu familia y tu negocio</span></h2> 
+                <p>Contar con un software tan completo como BDKTINT permitirá que no solo tu negocio sea beneficiado, si no que tu y tu familia sentirán esa tranquilidad que les brinda saber que su negocio está bien cuidado y protegido.</p>
+            </div> 
+
+            <div class="pwBeneficios container libAOS">
+
+                <div class="beneficios_sec">
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="far fa-handshake"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Tranquilidad al delegar funciones</h3>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Más tiempo para tu familia</h3>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-left" data-aos-duration="1500">
+                        <div class="calidad_iconos">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="beneficios_izq">
+                            <h3>Éxito y crecimiento de tu negocio</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beneficios_imagen">
+                    <picture>
+                        <source srcset="build/img/BENEFICIOS_DUENO.avif" type="image/avif">
+                        <source srcset="build/img/BENEFICIOS_DUENO.webp" type="image/webp">
+                        <img loading="lazy" width="350px" src="build/img/BENEFICIOS_DUENO.png" alt="Dueño de negocio mostrando felicidad">
+                    </picture>    
+                </div>
+
+                <div class="beneficios_sec">
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Mejores ingresos</h3>                    
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Apertura de más sucursales</h3>
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="beneficios_content" data-aos="zoom-in-right" data-aos-duration="1500">
+                        <div class="beneficios_der">
+                            <h3>Monitoreo a distancia de tu negocio</h3>                    
+                        </div>
+                        <div class="calidad_iconos">
+                            <i class="fas fa-laptop-house"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>            
+        </section>
+
+        <!-- ! CONCENTRADOR WEB -->
+        <section class="seccionGris">
+            <div class="titulo">
+                <h2><span>Concentrador </span> Web</h2>  
+                <p>Monitorea tu negocio desde donde te encuentres</p>
+            </div>
+
+            <div class="container nosotros">
+                <p>El Concentrador Web te permite estar conectado con tu negocio, sin importar donde te encuentres, ya sea que estés en tu casa descansando o de vacaciones con tu familia, siempre estarás en línea con tu negocio, ya sea que tengas una sucursal o varias.</p>
+                <div class="nos_img">
+                    <picture>
+                        <source srcset="build/img/CONCENTRADOR_WEB.avif" type="image/avif">
+                        <source srcset="build/img/CONCENTRADOR_WEB.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/CONCENTRADOR_WEB.jpg" alt="Imagen de la sección Quienes Somos">
+                    </picture>    
+                </div>
+                <p>El CW te sirve para monitorear los diferentes tipos de movimientos que se generan día a día en tu negocio y puedes monitorearlo desde tu computadora personal, laptop, tablet o celular.</p>
+                <small>El CONCENTRADOR WEB se adquiere por separado</small>
+            </div>
+        </section> 
+
+        <!-- ! LISTA DE PRECIOS -->
+        <section class="precios_software seccionGrisOscuro">
+            <div class="tituloWhite container">
+                <h2>Los mejores <span>precios</span> del mercado</h2> 
+                <p>Elige la versión que más se adapte a tus necesidades</p>
+            </div>
+
+            <div class="precios_planes">
+
+                <!-- ! VERSIÓN ESTÁNDAR -->
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlan">
+                        <h4>ESTÁNDAR</h4>
+                        <h3>$2,265 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h5>Incluye todas las funcionalidades básicas para la operación de tu negocio.</h5>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Registro de ventas</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Seguimiento de servicios</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Almacén e inventarios</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> (*) Facturación electrónica</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Registro de prendas y sus características</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Reporteo general</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Registro de garantías</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Conciliación de inventarios</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Tickets por tipo de servicio</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Cortes de caja</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Impresión de etiquetas por prenda o servicio</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Carga de trabajo por empleado</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Reimpresión de notas</p></div>
+
+                            <div class="pqElement txtM2"><i class="fas fa-exclamation-triangle"></i><p> (*) Solo en México</p></div>
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
+                <!-- ! VERSIÓN PROFESIONAL -->
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlanOro">
+                        <h4>PROFESIONAL</h4>
+                        <h3>$3,425 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h5>Incluye todas las funciones de la versión ESTÁNDAR, más:</h5>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Monedero electrónico</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Control de recomendados</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Envío de cortes de caja por correo al dueño</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Manejo de cuentas abiertas</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Notificaciones por SMS y correo</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p> Compatibilidad con el Concentrador Web</p></div>
+
+                            <div class="pqElement txtM2"><i class="fas fa-exclamation-triangle"></i><p> El CW se vende por separado</p></div>
+                            <div class="pqElement"><i class="fas fa-exclamation-triangle"></i><p> Los SMS se venden por separado en paquetes de 1,000</p></div>                            
+                            <div class="pqElement"><i class="fas fa-exclamation-triangle"></i><p> Solicita un DEMO 100% funcional antes de realizar tu compra</p></div>                            
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
+            </div>
+
+            <div class="formasPago container">
+                <div class="fpIndicaciones">
+                    <ul>
+                        <li><i class="fas fa-info-circle"></i>Precios en pesos mexicanos</li>
+                        <li><i class="fas fa-info-circle"></i>Impuestos incluidos</li>
+                        <li><i class="fas fa-info-circle"></i>Precios por sucursal</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye soporte técnico todo el año</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye actualizaciones gratuitas</li>
+                        <li><i class="fas fa-info-circle"></i>Precio válido para 3 equipos en la misma red</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye vídeos de auto capacitación</li>
+                        <li><i class="fas fa-info-circle"></i>Incluye instalación vía remota</li>
+                        <li><i class="fas fa-info-circle"></i>Garantía de satisfacción</li>
+                        <li><i class="fas fa-info-circle"></i>Instalación a domicilio se cotiza por separado</li>
+                        <li><i class="fas fa-exclamation-triangle"></i>NO incluye equipo de cómputo</li>
+                        <li><i class="fas fa-exclamation-triangle"></i>NO incluye configuración de impresoras en Windows</li>                        
+                        <li><i class="fas fa-exclamation-triangle"></i>NO incluye configuración de computadoras en red</li>                        
+                        <li><i class="fas fa-exclamation-triangle"></i>La capacitación se cotiza por separado</li>                        
+                    </ul>
+                </div>
+                <div class="fpTarjetas">
+                    <small>Aceptamos</small>
+                    <h4>Transferencias SPEI</h4>
+                    <h4>Tarjetas de crédito y débito</h4>
+                    <div class="imgTarjetas">
+                        <picture>
+                            <source srcset="build/img/VisaMastercard.avif" type="image/avif">
+                            <source srcset="build/img/VisaMastercard.webp" type="image/webp">
+                            <img loading="lazy" width="350" height="150" src="build/img/VisaMastercard.jpg" alt="Imagen de la sección Quienes Somos">
+                        </picture>                
+                    </div>
+                </div>
+                <div class="fpMSI">
+                    <small>Solicita tu compra a</small>
+                    <h4>MESES SIN INTERESES</h4>
+                    <small>con plazos de</small> 
+                    <h4>3, 6 Y 9 MSI</h4>
+                    <small>Válido con tarjetas participantes.</small>
+                    <small>Aplica cargo extra por comisión MSI</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- ! SECCIÓN INFORMATIVA -->
+        <section class="seccion sec-informes">
+            <div class="tituloWhite">
+                <h2><span>Solicita una DEMOSTRACIÓN EN LÍNEA</span></h2> 
+                <p>En BDKSISTEMAS queremos que estés seguro de nuestro producto</p>
+            </div>    
+            <div class="informes_content">                
+                <p>En BDKSISTEMAS no queremos vender por vender, queremos que estés 100% seguro que nuestro producto es lo que tu negocio necesita, por lo que te recomendamos solicites a tu ejecutivo de ventas una demostración en línea de 30 minutos.</p>
+                <p>De esta forma puedes conocer todas las funcionalidades del sistema y comprobar si cumple con los requerimientos de tu negocio.</p>
+                <h5>DI NO A LA PIRATERÍA</h5>
+            </div>
+            <div class="informes-accion">
+                <a href="#" class="botonVerde mnuContacto">Solicitar Demostración</a>
+            </div>
+        </section>
+
+        <!-- ! ESPACIO PARA LA PROMOCIÓN ACTUAL -->
+        <div data-include="assets/promocion_actual.html"></div>
+
+        <!-- ! EQUIPO DE CÓMPUTO -->
+        <section class="secEquipo seccion">
+
+            <div class="titulo">
+                <h2><span>Equipo</span> de cómputo</h2>  
+                <p>Tenemos la solución completa para tu negocio</p>
+            </div>
+
+            <div class="eqContent">
+
+                <picture>
+                    <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/BDKTINT_PDV_01.jpg" alt="Imagen de una terminal punto de venta">
+                </picture>   
+                
+                <div class="eqTextos">
+                    <h4>¡NO BATALLES MÁS!</h4>
+                    <p>En BDKSISTEMAS contamos con el software y también puedes adquirir todo el equipo de cómputo necesario para su implementación.</p>
+                    <p>
+                        <small><i class="fas fa-caret-right"></i> Computadoras</small>
+                        <small><i class="fas fa-caret-right"></i> Laptops</small>
+                        <small><i class="fas fa-caret-right"></i> Terminales POS</small>
+                        <small><i class="fas fa-caret-right"></i> Computadoras ALL IN ONE</small>
+                        <small><i class="fas fa-caret-right"></i> Impresoras de tickets</small>
+                        <small><i class="fas fa-caret-right"></i> Rollos de papel</small>
+                        <small><i class="fas fa-caret-right"></i> Cajón de dinero</small>
+                    </p>
+                </div>
+
+                <div class="hardware swiper container">
+                    <div class="swiper-wrapper"">
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_01.avif" type="image/avif">
+                                <source srcset="build/img/EQ_01.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_01.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_02.avif" type="image/avif">
+                                <source srcset="build/img/EQ_02.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_02.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_03.avif" type="image/avif">
+                                <source srcset="build/img/EQ_03.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_03.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_04.avif" type="image/avif">
+                                <source srcset="build/img/EQ_04.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_04.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_05.avif" type="image/avif">
+                                <source srcset="build/img/EQ_05.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_05.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_06.avif" type="image/avif">
+                                <source srcset="build/img/EQ_06.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_06.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_07.avif" type="image/avif">
+                                <source srcset="build/img/EQ_07.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_07.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                        <div class="element swiper-slide">
+                            <picture>
+                                <source srcset="build/img/EQ_08.avif" type="image/avif">
+                                <source srcset="build/img/EQ_08.webp" type="image/webp">
+                                <img loading="lazy" width="350" height="150" src="build/img/EQ_08.jpg" alt="Imagen de la sección Quienes Somos">
+                            </picture>        
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- ! PROMOCIONANDO PAGINAS WEB -->
+        <div data-include="assets/promo_web.html"></div>
+
+        <!-- ! GALERÍA -->
+        <section class="seccionGris galeria">
+
+            <div class="titulo">
+                <h2>Galería de <span>fotos</span></h2> 
+                <p>Te presentamos algunas fotos que nos han compartido nuestros clientes</p>
+            </div>
+
+            <div class="galeria_content">
+                <a href="build/img/BDKTINT/GAL_01.jpg" data-lightbox='galeria_content' data-title="Click a la derecha para pasar a la siguiente imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_01.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_01.jpg" alt="Fotos de la galería">
+                    </picture>    
+                </a>
+                <a href="build/img/BDKTINT/GAL_02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_02.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_02.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_02.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_03.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_03.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_03.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_04.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_04.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_04.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_05.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_05.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_05.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_06.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_06.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_06.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_07.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_07.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_07.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_08.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_08.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_08.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_09.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_09.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_09.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_10.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_10.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_10.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_11.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_11.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_11.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_11.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+                <a href="build/img/BDKTINT/GAL_12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_12.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_12.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_12.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
+            </div>
+
+            <a href="#" class="boton mnuGal"><i class="fas fa-images"></i> Ver la galería completa</a>
+            
+        </section>
+
+        <!-- ! VÍDEO EXPLICATIVO-->
+        <section class="secVideo">
+            
+            <picture>
+                <source srcset="build/img/BDKTINT/FondoVideo.avif" type="image/avif">
+                <source srcset="build/img/BDKTINT/FondoVideo.webp" type="image/webp">
+                <img loading="lazy" src="build/img/BDKTINT/FondoVideo.jpg" alt="" class="fondoSecciones">
+            </picture>                        
+
+            <div class="videoContent">
+                <div class="tituloWhite">
+                    <h2>Vídeo informativo</h2> 
+                    <p>Date unos minutos para ver más a fondo las funciones de nuestro producto</p>
+                </div>    
+                <a href="#" class="play" id="play"><img src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
+            </div>
+            <!-- <div class="videoPopup">
+                <video src="build/video/VIDEOWEB_REST.mp4" controls="true"></video>
+                <img src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
+            </div> -->
+    
+        </section>
+
+        <!-- ! RESEÑAS -->
+        <section class="seccion bkgwhite sec-opiniones">
+
+            <div class="titulo"> 
+                <h2>Lo que opinan nuestros <span>clientes</span></h2> 
+                <p>La mejor recomendación es tu opinión</p>
+                <small>Todas las fotos, logotipos y reseñas fueron autorizados por nuestros clientes.</small>
+            </div>
+    
+            <div class="nva-resenas-container">
+    
+                <div data-include="assets/resenas.html"></div>
+    
+            </div>
+    
+            <a href="#" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
+    
+    
+        </section>
+
+        <!-- ! PREGUNTAS FRECUENTES -->
+        <div data-include="assets/faqs.html"></div>
+
+        <!-- ! DESPEDIDA -->
+        <section class="bkgwhite secDespedida" id="reseñas">
+
+            <div class="titulo">
+                <h2><span>¡No esperes más!</span> y dale un PLUS a tu negocio</h2> 
+                <p>Realiza hoy la mejor inversión que puedes regalarle a tu negocio y comienza a disfrutar de los beneficios de tener un excelente software de administración y página web</p>
+                <div class="despedida_contacto">
+                    <h5>Solicitar informes por:</h5>
+                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+
+            <picture>
+                <source srcset="build/img/FondoDespedidas.avif" type="image/avif">
+                <source srcset="build/img/FondoDespedidas.webp" type="image/webp">
+                <img loading="lazy" src="build/img/FondoDespedidas.jpg" alt="Imagen de una cajera frente a una terminal punto de venta">
+            </picture>
+        </section>
+
+    </main> 
+
+    <!-- ! FOOTER -->
+    <div data-include="assets/footer.html"></div>
+
+    <!-- ! --------------------------------------------------------------------------------- -->
+    <!-- * LISTA DE SCRIPTS -->
+    <!-- ! --------------------------------------------------------------------------------- -->
+
+    <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
+    <script src="build/js/include-html.min.js"></script> 
+
+    <!-- ? FONTAWESOM -->
+    <!-- <script src="https://kit.fontawesome.com/fb0e281aff.js" crossorigin="anonymous"></script>         -->
+
+    <!-- ? BOOTSTRAPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ? JQUERY -->
+    <script src="build/js/jquery.js"></script>
+            
+    <!-- ? SWIPER : Slider del hero -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- ?ANIMACIONES CON VANILLA-TILT -->
+    <script src="build/js/vanilla-tilt.min.js"></script>
+
+    <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ? LIGTHBOX PARA LA GALERÍA -->
+    <script src="build/js/lightbox.js"></script>
+
+    <script src="build/js/app.js"></script>
+
+    
+</body>
+</html>

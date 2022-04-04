@@ -1,0 +1,286 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.secProductos {
+    @include m.mixFlex(flex,center,center,0,column);
+
+    .productos {
+        @include m.mixFlex(flex,center,0,Wrap,0);
+        z-index: 1000;
+
+        .prodCard {
+            @include m.mixBox(28%,380px,0,10px,0,0);
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 500px;
+            margin: 4rem 1rem;
+            z-index: 2000;
+        
+            .front {
+                @include m.mixFlex(flex,center,0,0,0);
+                transform-style: preserve-3d;
+                transition: 1s;
+                backface-visibility: hidden;
+                width: 100%;
+                height: 100%;
+               
+                .fondoCard {
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+
+                    img {
+                        border-radius: 10px;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .cardprod_content {
+                    position: absolute;
+                    top: 0;
+                    width: 80%;
+                    height: 100%;
+                    //padding: 0 auto;
+                    @include m.mixFlex(flex,center,center,0,column);
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    i {
+                        position: absolute;
+                        bottom: 5rem;
+                        color: v.$blanco;
+                        font-size: 2.5rem;
+                        // padding: 40px 150px;
+                        cursor: pointer;
+                        transition: .5s;
+                        border-radius: 50%;
+                        
+                        -webkit-animation: ripple 2.5s linear 1s infinite;
+                        animation: ripple 2.5s linear 1s infinite;
+            
+                        &:active {
+                            transform: scale(0.95);
+                        }
+
+                        &:hover {
+                            color: v.$color1;
+                        }
+                    }
+                    
+                }
+            }
+
+            .back {
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: 1s;
+                backface-visibility: hidden;
+                position: absolute;
+                top: 0;
+
+                .card_BH img {
+                    border-radius: 10px 10px 0 0;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .cardprod_content {
+                    position: absolute;
+                    top: 38%;
+                    left: 0;
+                    background: linear-gradient(0deg, rgba(141,0,18,1) 28%, rgba(205,0,26,1) 83%, rgba(205,0,26,0) 100%);
+                    //background: linear-gradient(180deg, rgba(18,18,19,0) 0%, rgba(18,18,18,1) 25%, rgba(18,18,18,1) 100%);                    
+                    width: 100%;
+                    height: 60%;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    padding: 1rem 2rem;
+
+                    .titSoft {
+                        height: 80%;
+                        overflow: hidden;
+
+                        h4 {
+                            font-size: v.$titParrafo - 0.2rem;
+                            color: v.$blanco;
+                            margin: 2.5rem 0 0.8rem 0;
+                            
+                        }
+
+                        p {
+                            color: v.$blanco;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .acciones {
+                    position: absolute;
+                    top: 90%;
+                    height: 10%;
+                    width: 100%;
+                    border-radius: 0 0 10px 10px;
+                    @include m.mixFlex(flex,space-between,center,0,0);
+                    background-color: v.$negro;
+                    padding: 0 2.5rem;
+
+                    i {
+                        display: block;
+                        color: v.$blanco;
+                        font-size: 2rem;
+                        cursor: pointer;
+                        padding: 8px 8px;
+                    
+                        &:active {
+                            transform: scale(0.95);
+                        }    
+
+                        &:hover {
+                            color: v.$color1;
+                        }
+
+                    }
+                }                
+            }
+        }
+    }
+
+    .prodFooter {
+        text-align: center;
+    }
+
+    .listaSoft {
+    
+        @include m.mixFlex(flex,center,center,wrap,column);
+    
+        .listaContent {
+            @include m.mixFlex(flex,center,center,wrap,0);
+            width: 100%;
+
+            @include m.mixMQ(v.$deskXL) {
+                width: 90%;
+            };
+
+            .cardSoft {
+                @include m.mixBox(28%,390px,false,6px,false,v.$box-shadow);
+                @include m.mixFlex(flex,0,0,nowrap,0);
+                padding: 0;
+                background-color: v.$blanco;
+                margin: 1.5rem;
+
+                @include m.mixMQ(v.$deskXL) {
+                    width: 45%;
+                    height: 350px;
+                };
+        
+                .cardSoftImg {
+                    width: 40%;
+                    height: 100%;
+                    @include m.mixFlex(flex,center,center,0,0);
+                    padding: 1rem;
+                    position: relative;
+                    overflow: hidden;
+        
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px 0 0 5px;
+                        background-image: url('../img/FONDO_ROJO.png'); 
+                        background-size: cover;
+                        background-position: center center;
+                        // z-index: -1;
+                    }
+        
+                    img {
+                        position: absolute;
+                        width: 85%;
+                        object-fit: cover;
+                        top: 35%;
+                        left: 7%;
+                    }
+                }
+        
+                .softContent {
+                    width: 60%;
+                    height: 100%;
+                    overflow: hidden;
+        
+                    video {
+                        width: 100.05%;
+                        height: 40%;
+                        border-radius: 0 5px 0 0;
+                        top: 0;
+                        object-fit: cover;
+                    }
+        
+                    .softHead {
+                        height: 40%;
+                        width: 100%;
+        
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                            border-radius: 0 5px 0 0;
+        
+                        }
+                    }
+        
+                    .titSoft {
+                        padding: 1rem;
+                        height: 45%;
+                        overflow: hidden;
+        
+                        h4 {
+                            font-size: v.$titParrafo - 0.4rem;
+
+                            @include m.mixMQ(v.$deskXL) {
+                                font-size: v.$titParrafo - 0.6rem;                                
+                            };
+                        }
+
+                        p {
+                            @include m.mixMQ(v.$deskXL) {
+                                // font-size: v.$titParrafo - 0.6rem;                                
+                            };
+                        }
+                    }
+        
+                    .softFooter {
+                        height: 10%;
+                        @include m.mixFlex(flex,center,center,0,0);
+                    }
+                }
+            }
+        }
+    }
+
+    .softPub {
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 6px ;
+            cursor: pointer;
+        }
+    
+    }
+    
+}
+
+
+.rotar {
+    transform: rotateY(180deg);
+}
+.rotar360 {
+    transform: rotateY(360deg);
+}
