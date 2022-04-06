@@ -38,15 +38,23 @@
     .spwContent {
         height: 90%;
         overflow: hidden;
-        @include m.mixFlex(flex,center,0,wrap,0);
+        @include m.mixFlex(flex,center,center,wrap,0);
 
         .spwPortada {
             width: 50%;
             height: 100%;
+            padding: 2rem;
+            @include m.mixFlex(flex,center,center,0,0);
+
+            @include m.mixMQ(v.$tablet) {
+                padding: 1rem;                
+            };
 
             img {
-                height: 100%;
+                // height: 100%;
+                width: 100%;
                 object-fit: cover;
+
             }
         }
 

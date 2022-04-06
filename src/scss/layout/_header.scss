@@ -36,6 +36,11 @@
         width: 75rem;        
     };
 
+    @include m.mixMQ(v.$tablet) {
+        width: 70%;
+        top: 60%;
+    };
+
     h1 {
         text-transform: uppercase;    
         margin-bottom: 10px ;
@@ -44,7 +49,7 @@
         
         span {
             color: v.$color1;
-            font-weight: 800;
+            font-weight: 800; 
             text-shadow: v.$box-shadow2;
         }    
     }
@@ -54,6 +59,10 @@
         color: v.$blanco;
         font-size: v.$titParrafo;
         margin-top: 0; 
+
+        @include m.mixMQ(v.$tablet) {
+            font-size: v.$titParrafo - .5rem;            
+        };
     }
 }
 
@@ -62,6 +71,10 @@
 .hero {
 
     @extend .formatoHero;
+
+    @include m.mixMQ(v.$tablet) {
+        height: 70vh;
+    };
 
     &::before {
         @extend .clsBefore;
@@ -73,6 +86,10 @@
         @include m.mixMQ(v.$deskXL) {
             background-image: linear-gradient(287deg, rgba(0,0,0,.1) 45%, rgba(0,0,0,1) 100%), url('../img/Fondo_Hero.jpg');
             background-position: left center;
+        };
+
+        @include m.mixMQ(v.$desk) {
+            background-position: center center;            
         };
     }
     
@@ -171,6 +188,11 @@
             background-image: linear-gradient(270deg, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%), url('../img/FondoPaginasWeb.jpg');
             background-position: left center;            
         };
+
+        @include m.mixMQ(v.$deskXL) {
+            background-position: 70%;            
+        };
+
     }
     
     .hero_container {
@@ -225,6 +247,10 @@
         background-size: cover;
         background-position: top top;
         // animation: animHero 8s cubic-bezier(0.11, 0, 0.5, 0) 0s infinite alternate both;        
+
+        @include m.mixMQ(v.$desk) {
+            background-position: 85%;            
+        };
     }
     
     .hero_container {
@@ -302,6 +328,10 @@
         background-size: cover;
         background-position: top top;
         // animation: animHero 8s cubic-bezier(0.11, 0, 0.5, 0) 0s infinite alternate both;        
+
+        @include m.mixMQ(v.$desk) {
+            background-position: 75%;            
+        };
     }
     
     .hero_container {
@@ -320,28 +350,27 @@
 
     @extend .formatoHero;
     justify-content: space-between;
-    
-    // &::before {
-    //     @extend .clsBefore;
-    //     content: "";
-    //     // background-image: url('../img/FONDO_ROJO.png');
-    //     // background-size: cover;
-    //     // background-position: bottom center;
-    // }
-    
+        
     flex-direction: row;
     
+    @include m.mixMQ(v.$deskXL) {
+        height: 68vh;
+    };
 
     .hero_container {
         @extend .formatoHero_Container;
         width: 40%;
         background-image: v.$degradadoRed;
-        height: 100%;
+        height: 100vh;
         z-index: 100;
 
         top: 0;
         left: 0;
 
+        @include m.mixMQ(v.$deskXL) {
+            height: 68vh;
+        };
+            
         .hero-content {
 
             height: 80%;
@@ -351,6 +380,10 @@
             .hero-logo {
                 width: 50%;
                 margin-bottom: 3rem;
+
+                @include m.mixMQ(v.$deskXL) {
+                    width: 40%;
+                };
 
                 img {
                     width: 100%;
@@ -362,6 +395,10 @@
                 width: 50%;
                 margin-bottom: 3rem;
 
+                @include m.mixMQ(v.$deskXL) {
+                    width: 40%;
+                };
+
                 img {
                     width: 100%;
                     object-fit: cover;
@@ -369,11 +406,15 @@
             }
 
             .heroSoft_Titulo {
-                width: 85%;
+                width: 90%;
                 text-align: center;
 
                 h1 {
                     text-align: center;
+
+                    @include m.mixMQ(v.$deskXL) {
+                        font-size: v.$titHero - 1.5rem;  
+                    };
 
                     span {
                         color: v.$blanco;
@@ -384,6 +425,7 @@
                 p {
                     width: 70%;
                     margin: 0 auto;
+                    font-size: v.$titParrafo - .5rem;
                 }
             }
         }
@@ -403,6 +445,10 @@
         display: flex;
         flex-direction: column;
 
+        @include m.mixMQ(v.$deskXL) {
+            height: 68vh;
+        };
+
         .slide-fondos {
             position: absolute;
             top: 0px;
@@ -413,9 +459,13 @@
                 height: 100vh;
                 position: relative;
 
+                @include m.mixMQ(v.$deskXL) {
+                    height: 68vh;                    
+                };
+
                 img {
                     object-fit: cover;
-                    height: 100vh; 
+                    height: 100%; 
                 }
 
                 .heroR-leyenda {
@@ -436,6 +486,14 @@
                         color: v.$blanco;
                         font-size: 2rem;
                         width: 80%;
+
+                        @include m.mixMQ(v.$deskXL) {
+                            width: 100%;
+                        };
+
+                        @include m.mixMQ(v.$desk) {
+                            font-size: 1.6rem;
+                        };
                     }
                 }
             }

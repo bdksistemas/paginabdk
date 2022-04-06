@@ -14,6 +14,10 @@ footer {
         min-height: 40vh;
         padding: 0;
 
+        @include m.mixMQ(v.$desk) {
+            min-height: 30vh;            
+        };
+
         &::before {
             content: "";
             position: absolute;
@@ -34,9 +38,20 @@ footer {
             margin: 25px auto;
             @include m.mixFlex(flex,space-between,0,0,0);        
 
+            @include m.mixMQ(v.$tablet) {
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+            };
+
             .footer_Box {
                 @include m.mixFlex(flex,0,center,0,column);        
                 width: 33%;
+                padding: .5rem;
+
+                @include m.mixMQ(v.$tablet) {
+                    width: 40%;
+                };
 
                 h3 {
                     padding: .5rem 0;
@@ -49,6 +64,10 @@ footer {
                     padding: .5rem 0;
                     margin-bottom: 0;
                     color: v.$blanco;
+
+                    @include m.mixMQ(v.$desk) {
+                        font-size: 1.3rem;
+                    };
                 }
 
                 .fas, .fab {
@@ -56,18 +75,28 @@ footer {
                     margin-right: 1rem;
                 }
                                 
-                a {
-                    display: block;
-                    padding: .5rem 0;
-                    font-size: 1.5rem;
-                    color: v.$blanco;
-                    transition: color 0.3s ease;
+                .menu_footer {
 
-                    &:hover {
-                        color: v.$color1;
-                        text-decoration: underline;
-                    }                    
-                }    
+                    width: 50%;
+                    
+                    @include m.mixMQ(v.$tablet) {
+                        width: 90%;
+                        padding: 0 2rem;
+                    };
+
+                    a {
+                        display: block;
+                        padding: .5rem 0;
+                        font-size: 1.5rem;
+                        color: v.$blanco;
+                        transition: color 0.3s ease;
+
+                        &:hover {
+                            color: v.$color1;
+                            text-decoration: underline;
+                        }                    
+                    }    
+                }
                 
                 // footer_Box
                 @include m.mixMQ(v.$movil) {

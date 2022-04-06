@@ -224,13 +224,22 @@
     .nva-resena-comentario {
         padding: 1.5rem;
         width: 100%;
-        height: 50%;
+        height: 45%;
         overflow: hidden;
-
+        overflow-y: auto;
         p {
             font-size: 1.34rem;
         }
     }
+}
+
+.nva-resena-index {
+    @extend .nva-resena;
+
+    @include m.mixMQ(v.$desk) {
+        width: 380px;
+    };
+
 }
 
 // .all-resenas {

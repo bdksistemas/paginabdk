@@ -4,6 +4,10 @@
     // ! Esta variable se utiliza en las páginas de los sistemas y sirve para saber que imagen es la que se está mostrando
     let sliderAct = 0;
 
+    // ? VARIABLES 
+    var cerrado     = true;
+    var menuLat     = false;
+
     document.addEventListener('DOMContentLoaded', function(){
         iniciarApp();
     });
@@ -80,10 +84,10 @@
                     slidesPerView: 1,
                 },
                 640: {
-                    slidesPerView: 2,
+                    slidesPerView: 5,
                 },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                 },
                 1024: {
                     slidesPerView: 5,
@@ -383,7 +387,43 @@
             window.history.back();
         } 
 
+        // ? ICONO DEL MENÚ HAMBURGUESA
+        if ( objetoDom.matches('#botApp')) { 
+            
+            menuLat = true;
+            apertura();
+        }
+
+
     }
+
+    // ! FUNCIÓN PARA ABRIR EL MENÚ CUANDO EL TAMAÑO SEA TABLET O MÓVIL
+    function apertura() {
+        let menu    = document.getElementById('navPrincipal');
+        let botSubir = document.getElementById('botInicio');
+        let botAccWP	 = document.getElementById('botWP');
+        
+        if (cerrado) {
+            menu.style.width = '100vw!important';
+            cerrado = false;
+            
+            if (botSubir) {
+                botSubir.style.visibility = 'hidden';
+                botAccWP.style.visibility = 'hidden';
+            }
+
+        } else {
+            menu.style.width = '0%';
+            menu.style.overflow = 'hidden';
+            cerrado = true;
+            menuLat = false;
+            if (botSubir) {
+                botSubir.style.visibility = 'visible';
+                botAccWP.style.visibility = 'visible';
+            }
+        }
+        menu.classList.toggle('menu2');
+    };   
 
     function mapaNegocio(elem) {
 

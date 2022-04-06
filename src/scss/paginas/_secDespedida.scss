@@ -22,11 +22,34 @@
             width: 55rem;
         };
 
+        @include m.mixMQ(v.$desk) {
+            width: 48%;
+        };
+
+        @include m.mixMQ(v.$tablet) {
+            top: 5%;
+        };
+
         h2 {
             font-size: v.$titSec + 2rem;
 
             @include m.mixMQ(v.$deskXL) {
                 font-size: v.$titSec + .8rem;                
+            };
+
+            @include m.mixMQ(v.$desk) {
+                font-size: v.$titSec
+            };
+    
+            @include m.mixMQ(v.$tablet) {
+                font-size: v.$titSec - .8rem;
+            };
+        }
+
+        p {
+
+            @include m.mixMQ(v.$tablet) {
+                font-size: 1.5rem;
             };
         }
 
@@ -36,6 +59,10 @@
             a {
                 width: 20rem;
                 margin: 1rem;
+
+                @include m.mixMQ(v.$tablet) {
+                    width: 15rem;
+                };
             }
         }
     }
@@ -55,6 +82,9 @@
         @include m.mixMQ(v.$deskXL) {
             width: 50%;
         };
+        @include m.mixMQ(v.$desk) {
+            width: 55%;            
+        };
 
         h4 {
             margin-top: 2rem;
@@ -62,6 +92,12 @@
             span {
                 color: v.$color1;
             }
+        }
+
+        p {
+            @include m.mixMQ(v.$desk) {
+                font-size: 1.6rem;
+            };
         }
 
         .despedida_contacto {

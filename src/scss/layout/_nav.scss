@@ -14,16 +14,37 @@
     box-shadow: v.$box-shadow3;    
     z-index: 10000;
 
+    @include m.mixMQ(v.$desk) {
+        padding: 0 30px;
+    };
+
+
     .nav_container {
         width: 95%;
-        @include m.mixFlex(flex,space-between,center,0,0);    
+        @include m.mixFlex(flex,space-between,center,0,0);   
+        
+        @include m.mixMQ(v.$desk) {
+            justify-content: space-around;
+        };
+
+        @include m.mixMQ(v.$tablet) {
+            height: 80%;
+            justify-content: space-between;
+        };
 
         .nav_logo {
             width: 20%;
+            
+            @include m.mixMQ(v.$tablet) {
+                width: 30%;
+                position: absolute;
+                left: 8rem;
+            };
 
             img {
+                width: 100%;
                 cursor: pointer;
-                object-fit: cover;                
+                object-fit: cover;
             }
         }
 
@@ -31,6 +52,7 @@
             @include m.mixFlex(flex,center,center,0,row);
             padding: 0;
             width: 80%;
+            margin: 0;
 
             .nav_item {
                 color: v.$blanco;
@@ -41,6 +63,8 @@
 
                 @include m.mixMQ(v.$tablet) {
                     width: 100%;
+
+                    @include m.mixFlex(flex,center,center,nowrap,0);
                 };
 
                 &:hover {
@@ -52,16 +76,47 @@
             .nav_links {
                 color: v.$blanco;
                 padding: 5px 0;
+
+                @include m.mixMQ(v.$desk) {
+                    font-size: 1.5rem;
+                };
             }
 
             .nav_active {
+                background: v.$degradadoRed;
                 border-top: 1.5px solid v.$color1;
                 border-bottom: 1.5px solid v.$color1;
             }
+
+            @include m.mixMQ(v.$tablet) {
+                position: fixed;
+                flex-direction: column;
+                top: 0px !important;
+                left:0px;
+                width: 50% !important;
+                height: 100vh;
+                // background: linear-gradient(180deg, rgba(18,18,19,0) 0%, rgba(18,18,18,1) 25%, rgba(18,18,18,1) 100%);
+                background: rgba(5,5,6,1);
+
+                // clip-path: circle(0.0% at 100% 0);
+                clip-path: circle(0% at 0% 0%);
+                overflow: hidden; 
+                transition: clip-path 0.8s ease-in-out;
+            };
+
         }
 
+        .menu2 {
+            // -webkit-clip-path: circle(150% at 100% 0);
+            // clip-path: circle(150% at 100% 0);
+
+            -webkit-clip-path: circle(150% at 100% 100%);
+            clip-path: circle(150% at 100% 100%);
+
+        }        
+
         .nav_social {
-            width: 10%;
+            // width: 10%;
             @include m.mixFlex(flex,center,0,nowrap,0);
             gap: .5em;
 
@@ -69,8 +124,10 @@
                 display: none;
 
                 @include m.mixMQ(v.$tablet) {
-                    display: inline-block;
+                    display: block;
                     position: fixed;
+                    top: 1.2rem;
+                    left: 1rem;
                     z-index: 100000;
 
                 };

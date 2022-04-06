@@ -3,12 +3,16 @@
 
 
 .tit_solucion {
-    width: 75%;
+    width: 75%; 
     text-align: left; 
-    margin: auto 0;
+    margin: auto 0; 
 
     @include m.mixMQ(v.$deskXXL) {
-        width: 80%;
+        width: 80%; 
+    };
+
+    @include m.mixMQ(v.$desk) {
+        width: 90%;
     };
 }
 
@@ -22,6 +26,70 @@
         padding: 5rem 3rem;
         height: 100%;
         border-right: 5px solid v.$color1;
+
+        .titulo {
+
+            p {
+                @include m.mixMQ(v.$desk) {
+                    font-size: 1.4rem;
+                };
+            }
+        }
+
+        .lista_problemas {
+            width: 60%;
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 10px;
+            position: relative;
+            margin-top: 1.5rem;
+
+            @include m.mixMQ(v.$deskXL) {
+                width: 70%;
+            };
+
+            @include m.mixMQ(v.$desk) {
+                width: 90%;
+            };
+
+            .problema_fondo {
+                width: 100%;
+                height: 310px;
+                overflow: hidden;
+                position: relative;
+
+                @include m.mixMQ(v.$deskXL) {
+                    height: 280px;
+                };
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0,0,0,.45);
+                }
+        
+                img {
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+
+            .elLista {
+                position: absolute;
+                top: 5rem;
+                left: 2rem;
+
+                @include m.mixMQ(v.$deskXL) {
+                    top: 2.5rem;
+                };
+            }
+        }
+
     }
 
     .secImg_fondo {
@@ -72,13 +140,17 @@
             @include m.mixMQ(v.$deskXXL) {
                 background-position: left center;
             };
+
+            @include m.mixMQ(v.$desk) {
+                background-position: 40%;
+            };
         }
     }
 
     .secImg_fondo_spa {
         @extend .secImg_fondo;
 
-        &::before {
+        &::before { 
             background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKSPA/SOLUCION.jpg');
         }
     }
@@ -96,6 +168,10 @@
 
         &::before {
             background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKPOS/SOLUCION.jpg');
+
+            @include m.mixMQ(v.$desk) {
+                background-position: 75%;
+            };    
         }
     }
 
@@ -157,10 +233,18 @@
                 p {
                     border-top: 1px solid v.$color1;
                     padding-top: 1rem;
+
+                    @include m.mixMQ(v.$desk) {
+                        font-size: 1.3rem;
+                    };
                 }
 
                 small {
                     color: v.$color1;
+
+                    @include m.mixMQ(v.$desk) {
+                        font-size: 1.2rem;
+                    };
                 }
                 
                 a {
@@ -186,6 +270,12 @@
                 left: 63%;
                 width: 425px;
             };
+
+            @include m.mixMQ(v.$desk) {
+                top: 21rem;
+                width: 360px;
+            };
+        
         }
 
         .mapa_funciones_gym {
@@ -201,24 +291,59 @@
                 left: 66%;
                 width: 400px;
             };
+
+            @include m.mixMQ(v.$desk) {
+                top: 22rem;
+                left: 0;
+                width: 380px;
+            };
+        
         }
 
         .mapa_funciones_tint {
             @extend .mapa_funciones;
             left: 10%;
-            top: 35rem;
+            top: 32rem;
+
+            @include m.mixMQ(v.$desk) {
+                top: 28rem;
+                width: 400px;
+            };
+        
         }
 
         .mapa_funciones_spa {
             @extend .mapa_funciones;
             left: 71%;
             top: 30rem;
+
+            @include m.mixMQ(v.$deskXL) {
+                left: 66%;
+                width: 415px;
+            };
+
+            @include m.mixMQ(v.$desk) {
+                left: 0;
+                top: 24rem;
+                width: 360px;
+            };
+        
         }
 
         .mapa_funciones_barber {
             @extend .mapa_funciones;
             left: 65%;
             top: 28rem;
+
+            @include m.mixMQ(v.$deskXL) {
+                left: 60%;
+            };
+
+            @include m.mixMQ(v.$desk) {
+                top: 24rem;
+                left: 58%;
+                width: 400px;
+            };        
         }
 
         .mapa_funciones_pos {
@@ -228,9 +353,20 @@
 
             @include m.mixMQ(v.$deskXXL) {
                 left: 71%;
-                top: 22rem;    
+                top: 22rem; 
             };
 
+            @include m.mixMQ(v.$deskXL) {
+                left: 66%;
+                width: 420px;
+            };
+        
+            @include m.mixMQ(v.$desk) {
+                top: 15rem;
+                left: 0;
+                width: 300px;
+            };
+        
         }
 
     }
@@ -310,6 +446,10 @@
             margin: 1rem;
             padding: 2rem;
 
+            @include m.mixMQ(v.$desk) {
+                padding: 1rem;                
+            };
+
             .paquete_nombrePlan { 
                 @include m.mixBox(100%,20%,0,10px,v.$color5,false);
                 padding: 1rem 0;
@@ -335,6 +475,10 @@
                 padding: 2rem 0;
                 height: 70%;
                 overflow: hidden;
+
+                @include m.mixMQ(v.$desk) {
+                    height: 72%; 
+                };
 
                 .paqContenido_header {
                     text-align: center;
@@ -374,6 +518,10 @@
                             margin: 2px 0;
                             line-height: 1.25;
                             font-size: 1.4rem;
+
+                            @include m.mixMQ(v.$desk) {
+                                font-size: 1.3rem;
+                            };
 
                             span {
                                 font-weight: bold;
@@ -517,12 +665,20 @@
                 color: v.$color1;
                 font-size: v.$titHero + 5rem;
                 margin-bottom: 2rem;
+
+                @include m.mixMQ(v.$desk) {
+                    font-size: v.$titHero + 3rem;
+                };
             }
 
             h2 {
                 text-transform: uppercase;
                 font-weight: bolder;
                 font-size: v.$titHero;
+
+                @include m.mixMQ(v.$desk) {
+                    font-size: v.$titHero - .3rem;
+                };
 
                 span {
                     color: v.$color1;
@@ -531,6 +687,10 @@
 
             a {
                 margin-top: 2rem;
+
+                @include m.mixMQ(v.$desk) {
+                    margin-top: 1.5rem;
+                };
             }
 
             .promo_validoen {
@@ -601,17 +761,16 @@
 
         @include m.mixFlex(flex,center,center,wrap,row);
 
-        @include m.mixMQ(v.$desk) {
-            max-width: 90%;
-        };    
-
         .info_imagen {
             width: 40%;
             height: 100%;
             overflow: hidden;
 
+            @include m.mixMQ(v.$desk) {
+                width: 45%;
+            };
+
             img {
-                // width: 100%;
                 height: 100%;
                 object-fit: cover;
                 border-radius: 10px 0 0 10px;
@@ -625,6 +784,11 @@
             width: 60%;
             padding: 3rem;
             height: 100%;
+
+            @include m.mixMQ(v.$desk) {
+                width: 55%;
+                padding: 2rem 0 2rem 2rem;
+            };
 
             .titulo {
                 text-align: left;
@@ -644,6 +808,12 @@
 
                 .elLista ul li {
                     
+                    @include m.mixMQ(v.$desk) {
+                        font-size: 1.3rem;
+                        line-height : 20px;
+                        margin-bottom: .5rem;
+                    };
+
                     .fa-exclamation-triangle {
                         color: v.$negro;
                     }

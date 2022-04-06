@@ -187,6 +187,9 @@
         background-blend-mode: lighten;
         margin: 2rem;
     
+        @include m.mixMQ(v.$desk) {
+            width: 28%;
+        };
 
         .demoImg {
             width: 100%;
@@ -413,7 +416,10 @@
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(25px);
-    width: 35%;
+
+    @include m.mixMQ(v.$desk) {
+        width: 40%;
+    };
 
     span {
         position: absolute;
@@ -529,11 +535,15 @@
 
     .vsImagen {
         width: 40%;
-        object-fit: cover;
         margin: 2rem auto;
+
+        @include m.mixMQ(v.$desk) {
+            width: 60%;
+        };
         
         img {
             width: 100%;
+            object-fit: cover;
         }
     }
 }

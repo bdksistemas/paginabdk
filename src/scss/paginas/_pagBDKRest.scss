@@ -15,6 +15,11 @@
         left: 80px;
         bottom: 60px;
     };
+
+    @include m.mixMQ(v.$desk) {
+        left: 65px;
+    };
+
 }
 #pt_rest_comMovil {
     bottom: 100px;
@@ -24,10 +29,22 @@
         left: 200px;
     };
 
+    @include m.mixMQ(v.$desk) {
+        left: 160px;
+        bottom: 85px;
+    };
+
 }
+
 #pt_rest_comDesk {
     top: 70px;
     left: 200px;
+
+    @include m.mixMQ(v.$desk) {
+        left: 130px;
+        top: 80px;
+    };
+
 }
 
 #pt_rest_caja {
@@ -36,7 +53,11 @@
 
     @include m.mixMQ(v.$deskXL) {
         left: 340px;
-        // bottom: 60px;
+    };
+
+    @include m.mixMQ(v.$desk) {
+        left: 280px;
+        bottom: 150px;
     };
 }
 
@@ -48,6 +69,12 @@
         right: 80px;
         bottom: 200px;
     };
+
+    @include m.mixMQ(v.$desk) {
+        right: 90px;
+        bottom: 160px;
+    };
+
 }
 
 #pt_rest_recetas {
@@ -58,11 +85,20 @@
         right: 110px;
         bottom: 270px;
     };
+
+    @include m.mixMQ(v.$desk) {
+        bottom: 230px;
+    };
 }
 
 #pt_rest_almacen {
     top: 20px;
     right: 280px;
+
+    @include m.mixMQ(v.$desk) {
+        right: 220px;
+    };
+
 }
 
 #pt_rest_clientes {
@@ -73,6 +109,12 @@
         left: 290px;
         bottom: 140px;
     };
+
+    @include m.mixMQ(v.$desk) {
+        left: 230px;
+        bottom: 120px;
+    };
+
 }
 
 #pt_rest_comedor {

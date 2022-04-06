@@ -8,6 +8,10 @@
     width: 50%;
     text-align: center;
 
+    @include m.mixMQ(v.$tablet) {
+        width: 70%;
+    };
+
     p {
         padding: 15px;
         margin: 0;

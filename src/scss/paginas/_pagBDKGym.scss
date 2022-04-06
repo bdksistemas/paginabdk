@@ -5,7 +5,13 @@
 #pt_gym_recepcion {
     bottom: 140px;
     left: 130px;
+
+    @include m.mixMQ(v.$desk) {
+        left: 80px;
+        bottom: 120px;
+    };
 }
+
 #pt_gym_asistencia {
     top: 115px;
     left: 85px;
@@ -28,6 +34,10 @@
         right: 260px;
     };
 
+    @include m.mixMQ(v.$desk) {
+        right: 220px;
+    };
+
 }
 
 #pt_gym_clases {
@@ -38,6 +48,11 @@
         bottom: 250px;
         right: 120px;
     };
+
+    @include m.mixMQ(v.$desk) {
+        bottom: 180px;
+    };
+
 }
 
 #pt_gym_gimnasio {
@@ -51,8 +66,13 @@
 
     @include m.mixMQ(v.$deskXL) {
         bottom: 160px;
-        // left: 270px;
     };
+
+    @include m.mixMQ(v.$desk) {
+        left: 320px;
+        bottom: 120px;
+    };
+
 }
 
 #pt_gym_admon {
@@ -63,4 +83,10 @@
         top: 160px;
         left: 270px;
     };
+
+    @include m.mixMQ(v.$desk) {
+        top: 120px;
+        left: 210px;
+    };
+
 }

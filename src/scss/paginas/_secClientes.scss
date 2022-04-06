@@ -27,9 +27,17 @@
                 @include m.mixBox(25%,false,false,10px,v.$degradadoRed,v.$box-shadow);
                 padding: 15px;
 
+                @include m.mixMQ(v.$desk) {
+                    width: 30%;
+                };                
+
                 p {
                     color: v.$blanco;
                     font-size: v.$descCon - .15rem;
+
+                    @include m.mixMQ(v.$desk) {
+                        font-size: v.$descCon - .35rem;
+                    };                    
                 }
                 
                 i {

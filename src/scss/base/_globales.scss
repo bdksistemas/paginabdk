@@ -101,6 +101,31 @@ h5 {
     }
 };
 
+
+@include m.mixMQ(v.$tablet) {
+
+    h1 {
+        font-size: v.$titHero - 2rem;  
+    }
+    
+    h2 {
+        font-size: v.$titSec - 1rem;
+    }
+    
+    h3 {
+        font-size: v.$titulos - 1rem;
+    }
+    h4 {
+        font-size: v.$titParrafo - .5rem;
+    }
+    h5 {
+        font-size: v.$titH5 - .3rem;
+    }
+    p {
+        font-size: v.$descCon - 0.1rem;
+    }
+};
+
 img {
     max-width: 100%;
     width: 100%;
@@ -275,8 +300,12 @@ img {
 
 }
 
-.tit-enorme {
+.tit-enorme {    
     font-size: 100px;
+
+    @include m.mixMQ(v.$desk) {
+        font-size: 80px;        
+    };
 }
 
 .font-bold {
@@ -294,6 +323,10 @@ img {
     display: flex;
     justify-content: center;
     padding-right: 3rem;
+
+    @include m.mixMQ(v.$tablet) {
+        justify-content: flex-end;
+    };
 
     .mouse {
         @include m.bgGradient;
@@ -321,7 +354,7 @@ img {
         }
         &:after {
         background-color: v.$colorOutline;
-        width: v.$sizeTrackball;
+        width: v.$sizeTrackball; 
         height: v.$sizeTrackball;
         border-radius: 100%;
         animation: trackBallSlide v.$animDuration linear infinite;
@@ -334,15 +367,30 @@ img {
     bottom: 2rem;
 }
 
+.anim-mouse-b3 {
+    @extend .anim-mouse;
+    justify-content: flex-end;
+    bottom: 2rem;
+    right: -4rem;
+}
+
 .formasPago {    
     margin: 0 auto;
     margin-top: 2rem;
     width: 95%;
     @include m.mixFlex(flex,center,center,wrap,0);
     text-align: center;
+
+    @include m.mixMQ(v.$desk) {
+        width: 97%;
+    };
     
     .fpIndicaciones {
         width: 32%;
+
+        @include m.mixMQ(v.$desk) {
+            width: 34%;
+        };
 
         ul {
             @include m.resetear-lista;
@@ -371,6 +419,10 @@ img {
     .fpTarjetas {
         color: v.$blanco;
         width: 32%;
+
+        @include m.mixMQ(v.$desk) {
+            width: 30%;
+        };
 
         h4 {
             margin: 0;
@@ -545,10 +597,8 @@ img {
 // ! CLASE PARA DAR FORMATO A UN DIV QUE CONTENGA UNA FOTO Y UNA LISTA
 .divFoto_lista {
     @include m.mixFlex(flex,center,center,nowrap,0);
-    // margin: 0;
     margin-top: 3rem;
-    // width: 95%;
-
+    
     .elImagen {
         width: 300px;
         height: 250px; 

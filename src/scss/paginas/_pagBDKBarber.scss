@@ -5,40 +5,93 @@
 #pt_bar_recepcion {
     top: 170px;
     left: 350px;
+
+    @include m.mixMQ(v.$desk) {
+        top: 120px;
+        left: 280px;
+    };
+
 }
 
 #pt_bar_empleados {
     bottom: 135px;
     left: 275px;
+
+    @include m.mixMQ(v.$desk) {
+        left: 200px;
+        bottom: 100px;
+    };
+
 }
 
 #pt_bar_clientes {
     right: 145px;
     bottom: 280px;
+
+    @include m.mixMQ(v.$deskXL) {
+        bottom: 250px;
+        right: 130px;
+    };
+
+    @include m.mixMQ(v.$desk) {
+        bottom: 200px;
+        right: 100px;
+    };
+
 }
 
 #pt_bar_pos {
     top: 90px;
     right: 200px;
+
+    @include m.mixMQ(v.$desk) {
+        right: 150px;
+    };
+
 }
 
 #pt_bar_almacen {
     top: 180px;
     left: 220px;
+
+    @include m.mixMQ(v.$deskXL) {
+        top: 160px;
+        left: 200px;
+    };
+
+    @include m.mixMQ(v.$desk) {
+        top: 100px;
+        left: 160px;
+    };
+
 }
 
 #pt_bar_trats {
     top: 50px;
     right: 300px;
+
+    @include m.mixMQ(v.$desk) {
+        right: 220px;
+    };
+
 }
 
 #pt_bar_admon {
     bottom: 80px;
     left: 100px;
+
+    @include m.mixMQ(v.$desk) {
+        left: 80px;
+        bottom: 60px;
+    };
 }
 
 #pt_bar_nots {
     bottom: 180px;
     left: 100px;
+
+    @include m.mixMQ(v.$desk) {
+        left: 80px;
+    };
 }
 

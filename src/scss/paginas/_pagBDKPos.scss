@@ -15,19 +15,46 @@
 #pt_pos_empleados {
     top: 25px;
     left: 220px;
+
+    @include m.mixMQ(v.$desk) {
+        top: 15px;
+        left: 180px;
+    };
+
 }
 
 #pt_pos_admon {
     top: 50px;
     right: 210px;
+
+    @include m.mixMQ(v.$desk) {
+        right: 160px;
+    };
+
 }
 
 #pt_pos_domicilio {
     bottom: 120px;
     right: 120px;
+
+    @include m.mixMQ(v.$desk) {
+        right: 90px;
+    };
+
 }
 
 #pt_pos_clientes {
     bottom: 140px;
     right: 250px;
+
+    @include m.mixMQ(v.$deskXL) {
+        bottom: 100px;
+        right: 230px;
+    };
+
+    @include m.mixMQ(v.$desk) {
+        bottom: 70px;
+        right: 200px;
+    };
+
 }

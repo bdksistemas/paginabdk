@@ -7,10 +7,19 @@
         width: 70%;
         margin: 3rem auto;
         @include m.mixFlex(flex,0,center,0,column);
+
         img {
             width: 350px;
             object-fit: cover;
+
+            @include m.mixMQ(v.$desk) {
+                width: 280px;
+            };
         }
+
+        @include m.mixMQ(v.$desk) {
+            width: 90%;
+        };
 
         .eqTextos {
             width: 60%;

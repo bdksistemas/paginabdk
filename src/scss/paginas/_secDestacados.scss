@@ -30,20 +30,29 @@
 
         @include m.mixFlex(flex,center,center,wrap,0);
         position: relative;
-        margin-top: v.$sepSeccion - 2rem;
         z-index: 1;
+        width: 80%;
+        margin: 2rem auto;
+
+        @include m.mixMQ(v.$desk) {
+            width: 95%;
+        };
 
         .destacados_card {
 
             @include m.mixFlex(flex,center,center,0,0);
             position: relative;
 
-            @include m.mixBox(28%,260px,false,15px,false,v.$box-shadow);
+            @include m.mixBox(28%,220px,false,15px,false,v.$box-shadow);
             margin: 1.5rem;
             overflow: hidden;
             border-top: 1px solid rgba(255, 255, 255, 0.5);
             border-left: 1px solid rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(25px);
+
+            @include m.mixMQ(v.$tablet) {
+                width: 29%;
+            };
         
             .content {
                 padding: 20px;
@@ -90,9 +99,5 @@
 
         }    
     }
-
-    @include m.mixMQ(v.$tablet) {
-        padding: 20px 0 30px 0;
-    };
 
 }
