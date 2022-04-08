@@ -24,7 +24,7 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center center; 
+    background-position: center center;
     z-index: -1;
 }
 
@@ -389,10 +389,6 @@
     flex-direction: row;
     
     @include m.mixMQ(v.$deskXL) {
-        height: 75vh;
-    };
-
-    @include m.mixMQ(v.$desk) {
         height: 68vh;
     };
 
@@ -404,14 +400,18 @@
         @extend .formatoHero_Container;
         width: 40%;
         background-image: v.$degradadoRed;
-        height: 100%;
+        height: 100vh;
         z-index: 100;
 
         top: 0;
         left: 0;
 
+        @include m.mixMQ(v.$deskXL) {
+            height: 68vh;
+        };
+
         @include m.mixMQ(v.$tablet) {
-            height: 40%;
+            height: 40vh;
             width: 100%;
             top: 60%;
         };
@@ -422,22 +422,12 @@
             @include m.mixFlex(flex,center,center,no-wrap,column);
             padding-top: 10rem;
 
-            @include m.mixMQ(v.$tablet) {
-                flex-direction: row;
-                padding: 2rem;
-            };
-
             .hero-logo {
                 width: 50%;
                 margin-bottom: 3rem;
 
                 @include m.mixMQ(v.$deskXL) {
                     width: 40%;
-                };
-
-                @include m.mixMQ(v.$tablet) {
-                    display: none;
-                    // visibility: hidden;
                 };
 
                 img {
@@ -454,11 +444,6 @@
                     width: 40%;
                 };
 
-                @include m.mixMQ(v.$tablet) {
-                    margin-right: 2rem;
-                    width: 35%;
-                };
-
                 img {
                     width: 100%;
                     object-fit: cover;
@@ -469,20 +454,11 @@
                 width: 90%;
                 text-align: center;
 
-                @include m.mixMQ(v.$tablet) {
-                    width: 50%;
-                    text-align: left;
-                };
-
                 h1 {
                     text-align: center;
 
                     @include m.mixMQ(v.$deskXL) {
                         font-size: v.$titHero - 1.5rem;  
-                    };
-
-                    @include m.mixMQ(v.$tablet) {
-                        // text-align: left;
                     };
 
                     span {
@@ -494,21 +470,7 @@
                 p {
                     width: 70%;
                     margin: 0 auto;
-                    font-size: v.$titParrafo + .5rem;
-
-                    @include m.mixMQ(v.$deskXL) {
-                        font-size: v.$titParrafo - .2rem;
-                    };
-
-                    @include m.mixMQ(v.$desk) {
-                        font-size: v.$titParrafo - .5rem;
-                    };
-
-                    @include m.mixMQ(v.$tablet) {
-                        text-align: center;
-                        width: auto;
-                    };
-
+                    font-size: v.$titParrafo - .5rem;
                 }
             }
         }
@@ -522,14 +484,18 @@
     .hero-right {
         overflow: hidden;
         width: 60%;
-        height: 100%;
+        height: 100vh;
         position: absolute;
         left: 40%;
         display: flex;
         flex-direction: column;
 
+        @include m.mixMQ(v.$deskXL) {
+            height: 68vh;
+        };
+
         @include m.mixMQ(v.$tablet) {
-            height: 60%;
+            height: 60vh;
             width: 100%;
             top: 0;
             left: 0;
@@ -539,36 +505,15 @@
             position: absolute;
             top: 0px;
             transition: transform .5s ease-in-out;
-            height: 100%;
 
             .heroR-fondo {
                 width: 100%;
-                height: 100%;
+                height: 100vh;
                 position: relative;
 
-                    
-                &::before {
-                    position: absolute;
-                    content: "";
-
-                    @include m.mixMQ(v.$tablet) {
-                        // background: linear-gradient(270deg, rgba(0,0,0,0) 45%, rgba(0,0,0,1) 100%);
-                        background: linear-gradient(0deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,.9) 100%);
-                        width: 100%;
-                        height: 15%;
-                        z-index: 100;
-                    };
-                } 
-            
-        
                 img {
-                    height: 100%; 
-
-                    @include m.mixMQ(v.$tablet) {
-                        width: 100%;
-                    };
-                    
                     object-fit: cover;
+                    height: 100%; 
                 }
 
                 .heroR-leyenda {
@@ -577,15 +522,9 @@
                     bottom: 0;
                     color: v.$blanco;
                     width: 100%;
-                    background: linear-gradient(270deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 100%);
+                    background-image: linear-gradient(270deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 100%);
                     padding: 3rem;
                     border-top: 1px solid v.$color1;
-                    z-index: 200;
-
-                    @include m.mixMQ(v.$tablet) {
-                        border-top: none;
-                        background: linear-gradient(180deg, rgba(0,0,0,0.0) 5%, rgba(0,0,0,0.5) 30%,rgba(0,0,0,1) 100%);
-                    };
 
                     h3 {
                         font-weight: bold;

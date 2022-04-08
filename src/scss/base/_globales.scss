@@ -1,8 +1,8 @@
 @use 'variables' as v;
 @use 'mixins' as m; 
 
-html {
-    font-size: 62.5%;
+html { 
+    font-size: 62.5%; 
     box-sizing: border-box;
     scroll-padding-top: 0rem; 
     scroll-behavior: smooth;
@@ -19,7 +19,7 @@ body {
     font-family: v.$fuente_principal;  
     font-size: 1.6rem;
 
-    &::-webkit-scrollbar {
+    &::-webkit-scrollbar { 
         width: 8px;
         height: 8px;
     }
@@ -195,6 +195,10 @@ img {
     p {
         font-size: v.$descSec;
         font-weight: bold;
+
+        @include m.mixMQ(v.$tablet) {
+            font-size: v.$descSec - .4rem;
+        };
     }
 
     small {
@@ -306,6 +310,10 @@ img {
     @include m.mixMQ(v.$desk) {
         font-size: 80px;        
     };
+
+    @include m.mixMQ(v.$tablet) {
+        font-size: 60px;
+    };
 }
 
 .font-bold {
@@ -324,9 +332,9 @@ img {
     justify-content: center;
     padding-right: 3rem;
 
-    @include m.mixMQ(v.$tablet) {
-        justify-content: flex-end;
-    };
+    // @include m.mixMQ(v.$tablet) {
+    //     justify-content: flex-end;
+    // };
 
     .mouse {
         @include m.bgGradient;
@@ -338,26 +346,36 @@ img {
         animation: 
         colorSlide v.$animDuration linear infinite,
         nudgeMouse v.$animDuration ease-out infinite;
+
+        @include m.mixMQ(v.$tablet) {
+            width: v.$widthMouseSM;
+            height: v.$heightMouseSM;                
+        };
         
         &:before,
         &:after {
-        content: "";
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        margin: auto;
+            content: "";
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            margin: auto;
         }
         &:before {
-        width: v.$widthMouse - v.$borderMouse;
-        height: v.$heightMouse - v.$borderMouse;
-        background-color: v.$colorBg;
-        border-radius: 100px;
+            width: v.$widthMouse - v.$borderMouse;
+            height: v.$heightMouse - v.$borderMouse;
+            background-color: v.$colorBg;
+            border-radius: 100px;
+
+            @include m.mixMQ(v.$tablet) {
+                width: v.$widthMouseSM - v.$borderMouseSM;
+                height: v.$heightMouseSM - v.$borderMouseSM;                    
+            };
         }
         &:after {
-        background-color: v.$colorOutline;
-        width: v.$sizeTrackball; 
-        height: v.$sizeTrackball;
-        border-radius: 100%;
-        animation: trackBallSlide v.$animDuration linear infinite;
+            background-color: v.$colorOutline;
+            width: v.$sizeTrackball; 
+            height: v.$sizeTrackball;
+            border-radius: 100%;
+            animation: trackBallSlide v.$animDuration linear infinite;
         }
     }
 }
@@ -375,8 +393,7 @@ img {
 }
 
 .formasPago {    
-    margin: 0 auto;
-    margin-top: 2rem;
+    margin: 2rem auto 0;
     width: 95%;
     @include m.mixFlex(flex,center,center,wrap,0);
     text-align: center;
@@ -386,10 +403,14 @@ img {
     };
     
     .fpIndicaciones {
-        width: 32%;
+        width: 30%;
 
         @include m.mixMQ(v.$desk) {
             width: 34%;
+        };
+
+        @include m.mixMQ(v.$tablet) {
+            width: 45%;
         };
 
         ul {
@@ -416,35 +437,54 @@ img {
         }        
     }
 
-    .fpTarjetas {
-        color: v.$blanco;
-        width: 32%;
+    .fpTiposTar {
+
+        width: 50%;
+        @include m.mixFlex(flex,center,center,wrap,row);
 
         @include m.mixMQ(v.$desk) {
-            width: 30%;
+            width: 62%;
         };
 
-        h4 {
-            margin: 0;
-        }
+        @include m.mixMQ(v.$tablet) {
+            width: 48%;
+        };
 
-        .imgTarjetas {
-            width: 200px;
-            margin: 0 auto;
-        }
-    }    
+        .fpTarjetas {
+            color: v.$blanco;
+            width: 48%;
 
-    .fpMSI {
-        color: v.$blanco;
-        width: 32%;
+            @include m.mixMQ(v.$tablet) {
+                width: 80%;
+                margin-bottom: 2rem;
+            };
 
-        h4 {
-            margin-bottom: 0;
-        }
+            h4 {
+                margin: 0;
+            }
 
-        small {
-            display: block;
-            margin-top: .5rem;
+            .imgTarjetas {
+                width: 200px;
+                margin: 0 auto;
+            }
+        }    
+
+        .fpMSI {
+            color: v.$blanco;
+            width: 48%;
+
+            @include m.mixMQ(v.$tablet) {
+                width: 80%;
+            };
+
+            h4 {
+                margin-bottom: 0;
+            }
+
+            small {
+                display: block;
+                margin-top: .5rem;
+            }
         }
     }
 }
@@ -578,6 +618,10 @@ img {
         margin-bottom: 2rem;
         padding: 10px;
 
+        @include m.mixMQ(v.$tablet) {
+            width: 32%;
+        };
+
         i {
             @include m.mixIcono(8rem, 3rem);
             background: v.$degradadoRed;
@@ -589,6 +633,13 @@ img {
 
         h5 {
             font-weight: bold;
+        }
+
+        p {
+
+            @include m.mixMQ(v.$tablet) {
+                font-size: 1.3rem;
+            };
         }
     }
 }

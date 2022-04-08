@@ -2,9 +2,9 @@
 @use 'base/mixins' as m;
 
 
-.tit_solucion {
+.tit_solucion { 
     width: 75%; 
-    text-align: left; 
+    text-align: left;   
     margin: auto 0; 
 
     @include m.mixMQ(v.$deskXXL) {
@@ -12,14 +12,19 @@
     };
 
     @include m.mixMQ(v.$desk) {
-        width: 90%;
-    };
+        width: 90%; 
+    }; 
 }
 
 .secProSol { 
-    @include m.mixFlex(flex,center,center,wrap,row);
+    @include m.mixFlex(flex,center,center,0,row);
     height: 600px;
     overflow: hidden; 
+    
+    @include m.mixMQ(v.$tablet) {
+        flex-direction: column;
+        height: auto;
+    };
 
     .secPS_article {
         width: 50%;
@@ -27,8 +32,14 @@
         height: 100%;
         border-right: 5px solid v.$color1;
 
-        .titulo {
+        @include m.mixMQ(v.$tablet) {
+            width: 100%;
+            border-right: none;
+            border-bottom: 5px solid v.$color1;
+        };
 
+        .titulo {
+ 
             p {
                 @include m.mixMQ(v.$desk) {
                     font-size: 1.4rem;
@@ -98,6 +109,10 @@
         padding: 3rem;
         height: 100%;  
         @include m.mixFlex(flex,space-around,false,nowrap,column);
+
+        @include m.mixMQ(v.$tablet) {
+            width: 100%;
+        };
     
         &::before {
             content: "";
@@ -213,12 +228,21 @@
                 position: absolute;
                 top: 2rem;
                 left: 3rem;
+
+                @include m.mixMQ(v.$tablet) {
+                    left: -5rem;
+                    top: 3rem;
+                };
             }
         }
 
         .mapa_funciones {
             position: absolute;
             width: 450px;
+
+            @include m.mixMQ(v.$tablet) {
+                position: relative; 
+            };
 
             .funcion_mapa {
                 display: none;
@@ -275,6 +299,12 @@
                 top: 21rem;
                 width: 360px;
             };
+
+            @include m.mixMQ(v.$tablet) {
+                top: 2rem;
+                left: 0;
+                width: 100%;
+            };
         
         }
 
@@ -297,6 +327,12 @@
                 left: 0;
                 width: 380px;
             };
+
+            @include m.mixMQ(v.$tablet) {
+                top: 2rem;
+                left: 0;
+                width: 100%;
+            };
         
         }
 
@@ -310,6 +346,12 @@
                 width: 400px;
             };
         
+            @include m.mixMQ(v.$tablet) {
+                top: 2rem;
+                left: 0;
+                width: 100%;
+            };
+
         }
 
         .mapa_funciones_spa {
@@ -328,6 +370,12 @@
                 width: 360px;
             };
         
+            @include m.mixMQ(v.$tablet) {
+                top: 2rem;
+                left: 0;
+                width: 100%;
+            };
+
         }
 
         .mapa_funciones_barber {
@@ -344,6 +392,13 @@
                 left: 58%;
                 width: 400px;
             };        
+
+            @include m.mixMQ(v.$tablet) {
+                top: 2rem;
+                left: 0;
+                width: 100%;
+            };
+
         }
 
         .mapa_funciones_pos {
@@ -367,6 +422,12 @@
                 width: 300px;
             };
         
+            @include m.mixMQ(v.$tablet) {
+                top: 2rem;
+                left: 0;
+                width: 100%;
+            };
+
         }
 
     }
@@ -377,12 +438,19 @@
     height: 450px ;
     background: v.$degradadoRed;
     @include m.mixFlex(flex,center,center,wrap,row);
-
+  
+    @include m.mixMQ(v.$tablet) {
+        height: 350px;
+    };
 
     // ! GRUPOS DE CARACTERÍSTICAS CON ICONO CIRCULAR
     .vid_caracteristicas {
         width: 25%;
         @include m.mixFlex(flex,center,0,wrap,column);
+
+        @include m.mixMQ(v.$tablet) {
+            width: 20%;
+        };
 
         .elementoCar {
             text-align: center;
@@ -395,12 +463,19 @@
                 color: v.$color1; 
                 margin-bottom: 1rem;
                 cursor: auto;
-            
+
+                @include m.mixMQ(v.$tablet) {
+                    @include m.mixIcono(5rem, 2rem);                    
+                };
             }
 
             h5 {
                 font-size: v.$titH5 - .5rem;
                 color: v.$blanco;
+
+                @include m.mixMQ(v.$tablet) {
+                    font-size: v.$titH5 - .8rem;                    
+                };
             }
         }
     }
@@ -412,6 +487,10 @@
 
         @include m.mixMQ(v.$deskXL) {
             width: 50%;
+        };
+
+        @include m.mixMQ(v.$tablet) {
+            width: 60%;
         };
 
         video {
@@ -433,7 +512,7 @@
 .precios_software {
     
     .precios_planes {        
-        @include m.mixFlex(flex,center,center,wrap,false);
+        @include m.mixFlex(flex,center,center,wrap,0);
         margin: 3rem auto;
         width: 90%;
 
@@ -447,7 +526,12 @@
             padding: 2rem;
 
             @include m.mixMQ(v.$desk) {
-                padding: 1rem;                
+                padding: 1rem;
+            };
+
+            @include m.mixMQ(v.$tablet) {
+                width: 90%;
+                height: auto;
             };
 
             .paquete_nombrePlan { 
@@ -490,16 +574,30 @@
                     }
                     h4 {
                         font-weight: normal;
+
+                        @include m.mixMQ(v.$tablet) {
+                            margin-bottom: .5rem;
+                        };
+
                     }
                     h3 {
                         font-size: v.$titParrafo;
                         color: v.$color1;
+
+                        @include m.mixMQ(v.$tablet) {
+                            font-size: v.$titParrafo - .5rem; 
+                            margin-bottom: .3rem;                           
+                        };
                     }
                 }
 
                 .paqContenido_main {
                     padding: 1rem 0;
                     margin: 1rem 0;
+
+                    @include m.mixMQ(v.$tablet) {
+                        padding: 0 2rem;
+                    };
             
                     .pqElement {
                         @include m.mixFlex(flex,0,center,nowrap,0);
@@ -544,6 +642,11 @@
                 margin-top: 1rem;
                 text-align: center;
                 height: 10%;
+
+                @include m.mixMQ(v.$tablet) {
+                    margin: 0;
+                    height: auto;
+                };
             }
         
         }
@@ -584,6 +687,10 @@
             width: 45%;
             margin: 1rem; 
             padding: 0;
+
+            @include m.mixMQ(v.$tablet) {
+                width: 90%;
+            };
     
             .pwElement {
                 @include m.mixFlex(flex,0,center,nowrap,0);
@@ -660,7 +767,7 @@
             padding-left: 2rem;
             @include m.mixFlex(flex,center,center,wrap,column);
             text-align: center;
-
+            
             i {
                 color: v.$color1;
                 font-size: v.$titHero + 5rem;
@@ -668,6 +775,11 @@
 
                 @include m.mixMQ(v.$desk) {
                     font-size: v.$titHero + 3rem;
+                };
+
+                @include m.mixMQ(v.$tablet) {
+                    font-size: v.$titSec;
+                    margin-bottom: .5rem;
                 };
             }
 
@@ -678,6 +790,11 @@
 
                 @include m.mixMQ(v.$desk) {
                     font-size: v.$titHero - .3rem;
+                };
+
+                @include m.mixMQ(v.$tablet) {
+                    font-size: v.$titHero - 2rem;                    
+                    margin-bottom: .5rem;
                 };
 
                 span {
@@ -691,13 +808,23 @@
                 @include m.mixMQ(v.$desk) {
                     margin-top: 1.5rem;
                 };
+
+                @include m.mixMQ(v.$tablet) {
+                    margin-top: 1rem;
+                };
             }
 
             .promo_validoen {
                 padding: 1rem 0;
                 text-align: left;
 
-                h5 { text-align: center; }
+                h5 { 
+                    text-align: center;
+
+                    @include m.mixMQ(v.$tablet) {
+                        font-size: v.$titH5 - .5rem;
+                    };
+                }
 
                 .prElement {
                     @include m.mixFlex(flex,0,center,nowrap,0);
@@ -715,6 +842,10 @@
                         line-height: 1.25;
                         font-size: 1.4rem;
 
+                        @include m.mixMQ(v.$tablet) {
+                            font-size: 1.2rem;
+                        };
+
                         span {
                             font-weight: bold;
                         }    
@@ -725,6 +856,10 @@
                     display: inline-block;
                     color: v.$color1;
                     margin-top: 1rem;
+
+                    @include m.mixMQ(v.$tablet) {
+                        font-size: 1rem;
+                    };
                 }
             }
         }
@@ -760,6 +895,11 @@
         overflow: hidden;
 
         @include m.mixFlex(flex,center,center,wrap,row);
+
+        @include m.mixMQ(v.$tablet) {
+            width: 95%;
+            height: 80vh;
+        };
 
         .info_imagen {
             width: 40%;
@@ -806,21 +946,34 @@
             .info_main {
                 margin-top: 2rem;
 
-                .elLista ul li {
-                    
-                    @include m.mixMQ(v.$desk) {
-                        font-size: 1.3rem;
-                        line-height : 20px;
-                        margin-bottom: .5rem;
+                .elLista {
+                
+                    @include m.mixMQ(v.$tablet) {
+                        padding-left: 0;
                     };
+                    
+                    ul li {
+                        
+                        @include m.mixMQ(v.$desk) {
+                            font-size: 1.3rem;
+                            line-height : 20px;
+                            margin-bottom: .5rem;
+                        };
 
-                    .fa-exclamation-triangle {
-                        color: v.$negro;
-                    }
+                        @include m.mixMQ(v.$tablet) {
+                            font-size: 1.2rem;                            
+                            margin-bottom: .25rem;
+                        };
 
-                    span {
-                        color: v.$color1;
-                        font-size: 1.2rem;
+
+                        .fa-exclamation-triangle {
+                            color: v.$negro;
+                        }
+
+                        span {
+                            color: v.$color1;
+                            font-size: 1.2rem;
+                        }
                     }
                 }
             }

@@ -13,6 +13,11 @@
         width: 95%;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        flex-direction: column;
+        width: 90%;
+    };
+
     .secDatosContacto {
         width: 40%;
         // height: 100%;
@@ -20,6 +25,11 @@
 
         @include m.mixFlex(flex,center,center,wrap,column);
         color: v.$blanco;
+
+        @include m.mixMQ(v.$tablet) {
+            width: 100%;
+            padding: 3rem;
+        };
 
         .sdcImagen {
             @include m.mixBox(150px,150px,false,50%,v.$blanco,v.$box-shadow);
@@ -72,6 +82,11 @@
             // -webkit-backdrop-filter: blur(10px);
             z-index: -1;
         }
+
+        @include m.mixMQ(v.$tablet) {
+            width: 100%;
+        };
+
 
         .formulario {
 

@@ -37,6 +37,11 @@
             e.preventDefault();
             clicksWeb(e.target);
         });
+
+        window.addEventListener('scroll', function() {
+            navBackground();
+        })
+        navBackground();
         
         if (document.querySelector(".heroR-fondo")) {
             setInterval(cambiaSlideFondo, 6000);
@@ -579,14 +584,23 @@
         const sliderHeight = sliderContainer.clientHeight;
         const topActual = sliderFondo.style.top;
         const slidersTotal = document.querySelectorAll('.heroR-fondo').length;
+        let ancho_screen = window.innerWidth;
     
         if (sliderAct === slidersTotal-1) {
             sliderAct = 0;
         } else {
             sliderAct++;
         }
-        sliderFondo.style.transform = `translateY(-${(sliderHeight-1) * sliderAct}px)`;
 
+        if (ancho_screen > 768 ) {
+            sliderFondo.style.transform = `translateY(-${(sliderHeight-1) * sliderAct}px)`;
+        } else {
+            sliderFondo.style.transform = `translateY(-${(sliderHeight+.2) * sliderAct}px)`;
+        }
+
+
+        // sliderFondo.style.transform = `translateY(-${(sliderHeight-1) * sliderAct}px)`;
+        // sliderFondo.style.transform = `translateY(-${(sliderHeight-.5) * sliderAct}px)`;
 
         // console.log(sliderAct + ' : TOP= ' + sliderHeight * sliderAct) ;
         
@@ -624,6 +638,34 @@
         const body = document.querySelector('body');
         body.classList.add('body-noscroll');
         
+    }
+
+    function navBackground() {
+
+        // let nav     = document.getElementById('nav');
+        let nav = document.querySelector('.nav');
+        let desp_actual = window.pageYOffset;
+        let ancho_screen = window.innerWidth;        
+
+        if ( desp_actual <= 300 ) {
+
+            nav.style.borderBottom = '';
+
+            if (ancho_screen > 768 ) {
+                nav.style.background = 'rgba(0,0,0,0.5)';
+            } else {
+                nav.style.background = '';
+            }
+
+        } else {
+            // nav.style.background = 'rgba(0,0,0,1)';
+            // nav.style.background = '#0A0B0D';
+            nav.style.background = '#1F2022';
+            nav.style.borderBottom = '2px solid #cb001a';
+        }
+        nav.style.transition = '.5s';
+
+
     }
     
 

@@ -12,13 +12,13 @@ $descCon: 1.6rem;
  
 
 // Colores  
-$negro: #000000;
+$negro: #000000; 
 $blanco: #FFFFFF;    
 $color1: #cb001a;   
 $color2: #8d0012;   
 $color3: #7d7d7d;    
 $color4: #414141; 
-$color5: #d1d1d1;  
+$color5: #d1d1d1;   
 // $color6: #1BCC00; 
 $color6: #00BB2D;  
 $degradadoRed: linear-gradient(0deg, rgba(141,0,18,1) 35%, rgba(203,0,26,1) 100%);
@@ -61,6 +61,10 @@ $colorOutFade: #4e5559;
 $widthMouse: 21px;
 $heightMouse: 44px; 
 $borderMouse: 3px;
+
+$widthMouseSM: 15px;
+$heightMouseSM: 38px; 
+$borderMouseSM: 2px;
 
 $posMouse: 4px;
 $posText: 2px;

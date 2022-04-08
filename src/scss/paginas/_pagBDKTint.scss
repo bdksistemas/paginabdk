@@ -11,6 +11,11 @@
         bottom: 180px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        left: 100px;
+        bottom: 140px;
+    };
+
 }
 
 #pt_tint_servicios {
@@ -27,6 +32,11 @@
         right: 185px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        bottom: 140px;
+        right: 120px;
+    };
+
 }
 
 #pt_tint_inventarios {
@@ -36,6 +46,10 @@
     @include m.mixMQ(v.$desk) {
         top: 180px;
     };
+
+    @include m.mixMQ(v.$tablet) {
+        top: 140px;
+    };
 }
 
 #pt_tint_empleados {
@@ -44,6 +58,11 @@
 
     @include m.mixMQ(v.$desk) {
         bottom: 210px;
+    };
+
+    @include m.mixMQ(v.$tablet) {
+        right: 90px;
+        bottom: 160px;
     };
 
 }
@@ -61,6 +80,11 @@
         bottom: 60px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        left: 280px;
+        bottom: 50px;
+    };
+
 }
 
 #pt_tint_admon {
@@ -75,6 +99,11 @@
         right: 220px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        top: 50px;
+        right: 170px;
+    };
+
 }
 
 #pt_tint_cuentas {
@@ -85,4 +114,10 @@
         top: 110px;
         left: 100px;
     };
+
+    @include m.mixMQ(v.$tablet) {
+        top: 85px;
+        left: 70px;
+    };
+
 }

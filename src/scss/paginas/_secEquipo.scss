@@ -26,6 +26,14 @@
             text-align: center;
             margin: 3rem 0;
 
+            @include m.mixMQ(v.$tablet) {
+                width: 90%;
+            };
+
+            .eqLista {
+                margin-top: 1rem;
+            }
+
             p small {
                 color: v.$color1;
                 margin: 0 .2rem;

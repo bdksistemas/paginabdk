@@ -58,19 +58,26 @@
 
                 .beneficios_der {
                     text-align: right;
-                    // width: 250px;
                     width: 82%;
+
+                    @include m.mixMQ(v.$tablet) {
+                        margin-right: 1rem;
+                    };
+
                 }           
                 .beneficios_izq {
-                    // width: 250px;
                     width: 82%;
+
+                    @include m.mixMQ(v.$tablet) {
+                        margin-left: 1rem;
+                    };
                 }            
 
                 h3 {
                     font-size: 1.8rem;
 
                     @include m.mixMQ(v.$tablet) {
-                        font-size: 1.6rem;
+                        font-size: 1.5rem;
                     };
                 }
                 
@@ -147,6 +154,7 @@
 
             width: 30%;
             height: 100%;
+            overflow: hidden;
             
             img {
                 object-fit: cover;
@@ -155,7 +163,7 @@
                 margin: 0 auto;
 
                 @include m.mixMQ(v.$tablet) {
-                    height: 60%
+                    height: 100%;
                 };
             }
 
@@ -189,6 +197,9 @@
     
         @include m.mixMQ(v.$desk) {
             width: 28%;
+        };
+        @include m.mixMQ(v.$tablet) {
+            width: 40%;
         };
 
         .demoImg {
@@ -420,6 +431,9 @@
     @include m.mixMQ(v.$desk) {
         width: 40%;
     };
+    @include m.mixMQ(v.$tablet) {
+        width: 44%;
+    };
 
     span {
         position: absolute;
@@ -429,6 +443,13 @@
         height: 150px;
         @include m.mixFlex(flex,center,center,0,0);
         overflow: hidden;
+
+        @include m.mixMQ(v.$tablet) {
+            top: -5px;
+            left: -5px;                
+            width: 125px;
+            height: 125px;    
+        };
 
         &::before {
             content: 'MÁS COMÚN';
@@ -442,6 +463,10 @@
             transform: rotate(-45deg) translateY(-20px);
             @include m.mixFlex(flex,center,center,0,0);                    
             box-shadow: v.$box-shadow2;
+
+            @include m.mixMQ(v.$tablet) {
+                font-size: 1.3rem;
+            };
         }
 
         &::after {
@@ -454,6 +479,12 @@
             background-color: v.$color2;
             z-index: -1;
             box-shadow: 140px -140px v.$color2;
+
+            @include m.mixMQ(v.$tablet) {
+                width: 5px;
+                height: 5px;
+            };
+    
         }
     }
 
@@ -472,6 +503,10 @@
             font-weight: 600;
             color: v.$color1;
             text-shadow: v.$box-shadow4;
+
+            @include m.mixMQ(v.$tablet) {
+                font-size: v.$titulos + .8rem;                
+            };
         }
 
         small {
@@ -539,6 +574,9 @@
 
         @include m.mixMQ(v.$desk) {
             width: 60%;
+        };
+        @include m.mixMQ(v.$tablet) {
+            width: 85%;
         };
         
         img {

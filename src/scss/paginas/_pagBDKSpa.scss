@@ -22,6 +22,10 @@
         left: 80px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        top: 80px;
+        left: 50px;
+    };
 }
 
 #pt_spa_clientes {
@@ -33,11 +37,21 @@
         left: 200px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        left: 130px;
+    };
+
 }
 
 #pt_spa_pos {
     top: 120px;
     right: 85px;
+
+    @include m.mixMQ(v.$tablet) {
+        top: 80px;
+        right: 50px;
+    };
+
 }
 
 #pt_spa_almacen {
@@ -46,6 +60,11 @@
 
     @include m.mixMQ(v.$desk) {
         bottom: 150px;
+    };
+
+    @include m.mixMQ(v.$tablet) {
+        bottom: 100px;
+        right: 80px;
     };
 
 }
@@ -58,6 +77,10 @@
         left: 250px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        left: 220px;
+    };
+
 }
 
 #pt_spa_admon {
@@ -67,6 +90,11 @@
     @include m.mixMQ(v.$desk) {
         top: 130px;
         left: 180px;
+    };
+
+    @include m.mixMQ(v.$tablet) {
+        top: 100px;
+        left: 110px;
     };
 
 }
@@ -83,6 +111,11 @@
     @include m.mixMQ(v.$desk) {
         top: 100px;
         left: 250px;
+    };
+
+    @include m.mixMQ(v.$tablet) {
+        top: 80px;
+        left: 180px;
     };
 
 }

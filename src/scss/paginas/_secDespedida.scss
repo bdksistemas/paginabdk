@@ -85,6 +85,10 @@
         @include m.mixMQ(v.$desk) {
             width: 55%;            
         };
+        @include m.mixMQ(v.$desk) {
+            width: 60%;
+            padding: 1rem;
+        };
 
         h4 {
             margin-top: 2rem;
@@ -98,6 +102,11 @@
             @include m.mixMQ(v.$desk) {
                 font-size: 1.6rem;
             };
+
+            @include m.mixMQ(v.$tablet) {
+                font-size: 1.4rem;
+            };
+
         }
 
         .despedida_contacto {
@@ -106,6 +115,10 @@
             a {
                 width: 20rem;
                 margin: 1rem;
+
+                @include m.mixMQ(v.$tablet) {
+                    width: 15rem;
+                };
             }
         }
 
@@ -113,11 +126,17 @@
 
     .imgDespWeb {
         width: 40%;
+        z-index: 2000;
+
+        @include m.mixMQ(v.$tablet) {
+            width: 35%;
+            @include m.mixFlex(flex,center,flex-end,0,0);
+        };
 
         img {
             height: 100%;
-            width: 100%;
-            object-fit: cover;
+            // width: 100%;
+            object-fit: contain;
         }
     }
 

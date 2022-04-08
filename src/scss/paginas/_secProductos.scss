@@ -176,6 +176,9 @@
             @include m.mixMQ(v.$deskXL) {
                 width: 90%;
             };
+            @include m.mixMQ(v.$tablet) {
+                width: 95%;                
+            };
 
             .cardSoft {
                 @include m.mixBox(28%,390px,false,6px,false,v.$box-shadow);
@@ -256,11 +259,14 @@
                             @include m.mixMQ(v.$deskXL) {
                                 font-size: v.$titParrafo - 0.6rem;                                
                             };
+                            @include m.mixMQ(v.$tablet) {
+                                font-size: v.$titParrafo - 0.7rem;
+                            };
                         }
 
                         p {
-                            @include m.mixMQ(v.$deskXL) {
-                                // font-size: v.$titParrafo - 0.6rem;                                
+                            @include m.mixMQ(v.$tablet) {
+                                font-size: v.$titParrafo - .95rem;
                             };
                         }
                     }

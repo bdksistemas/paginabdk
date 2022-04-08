@@ -5,11 +5,21 @@
 #pt_pos_recepcion {
     bottom: 60px;
     left: 130px;
+
+    @include m.mixMQ(v.$tablet) {
+        left: 100px;
+    };
 }
 
 #pt_pos_almacen {
     top: 70px;
     left: 90px;
+
+    @include m.mixMQ(v.$tablet) {
+        top: 50px;
+        left: 70px;
+    };
+
 }
 
 #pt_pos_empleados {
@@ -19,6 +29,11 @@
     @include m.mixMQ(v.$desk) {
         top: 15px;
         left: 180px;
+    };
+
+    @include m.mixMQ(v.$tablet) {
+        left: 120px;
+        top: 10px;
     };
 
 }
@@ -31,6 +46,11 @@
         right: 160px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        top: 40px;
+        right: 120px;
+    };
+
 }
 
 #pt_pos_domicilio {
@@ -39,6 +59,11 @@
 
     @include m.mixMQ(v.$desk) {
         right: 90px;
+    };
+
+    @include m.mixMQ(v.$tablet) {
+        bottom: 80px;
+        right: 60px;
     };
 
 }
@@ -55,6 +80,11 @@
     @include m.mixMQ(v.$desk) {
         bottom: 70px;
         right: 200px;
+    };
+
+    @include m.mixMQ(v.$tablet) {
+        bottom: 60px;
+        right: 110px;
     };
 
 }

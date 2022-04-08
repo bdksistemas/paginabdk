@@ -20,6 +20,11 @@
         left: 65px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        left: 35px;
+        bottom: 25px;
+    };
+
 }
 #pt_rest_comMovil {
     bottom: 100px;
@@ -34,6 +39,11 @@
         bottom: 85px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        left: 120px;
+        bottom: 50px;
+    };
+
 }
 
 #pt_rest_comDesk {
@@ -43,6 +53,11 @@
     @include m.mixMQ(v.$desk) {
         left: 130px;
         top: 80px;
+    };
+
+    @include m.mixMQ(v.$tablet) {
+        top: 70px;
+        left: 100px;
     };
 
 }
@@ -59,6 +74,12 @@
         left: 280px;
         bottom: 150px;
     };
+
+    @include m.mixMQ(v.$tablet) {
+        left: 210px;
+        bottom: 120px;
+    };
+
 }
 
 #pt_rest_cocina {
@@ -75,6 +96,11 @@
         bottom: 160px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        right: 60px;
+        bottom: 110px;
+    };
+
 }
 
 #pt_rest_recetas {
@@ -89,6 +115,12 @@
     @include m.mixMQ(v.$desk) {
         bottom: 230px;
     };
+
+    @include m.mixMQ(v.$tablet) {
+        bottom: 170px;
+        right: 70px;
+    };
+
 }
 
 #pt_rest_almacen {
@@ -97,6 +129,10 @@
 
     @include m.mixMQ(v.$desk) {
         right: 220px;
+    };
+
+    @include m.mixMQ(v.$tablet) {
+        right: 150px;
     };
 
 }
@@ -115,13 +151,30 @@
         bottom: 120px;
     };
 
+    @include m.mixMQ(v.$tablet) {
+        left: 180px;
+        bottom: 80px;
+    };
+
 }
 
 #pt_rest_comedor {
     top: 2rem;
     left: 0;
+
+    @include m.mixMQ(v.$tablet) {
+        top: 3.2rem;
+        left: -7rem;
+    };
+
 }
 #pt_rest_billar {
     top: 5rem;
     left: 0;
+
+    @include m.mixMQ(v.$tablet) {
+        top: 5.5rem;
+        left: -7rem;
+    };
+
 }

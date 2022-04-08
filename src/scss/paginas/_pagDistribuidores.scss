@@ -18,7 +18,7 @@
 .disComisiones {
 
     .dcomPlanComisiones {
-        @include m.mixFlex(flex,center,false,Wrap,false);
+        @include m.mixFlex(flex,center,center,wrap,false);
         margin: 3rem auto;
 
         .dcomImagen {
@@ -43,6 +43,7 @@
 
                 .dcomPlan_porcentaje {
                     width: 100px;
+                    margin-right: 1rem;
 
                     h3 {
                         margin: 0;
@@ -86,9 +87,17 @@
 
         .dsdTextos_parrafo {
             width: 50%;
+
+            @include m.mixMQ(v.$tablet) {
+                width: 80%;
+            };
         }
         .dsdTextos_imagen {
             width: 60%;
+
+            @include m.mixMQ(v.$tablet) {
+                width: 80%;
+            };
         }
     }
 }
