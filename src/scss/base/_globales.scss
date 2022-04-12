@@ -5,14 +5,14 @@ html {
     font-size: 62.5%; 
     box-sizing: border-box;
     scroll-padding-top: 0rem; 
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 } 
 
 *,    
 *:before,  
 *:after {   
     box-sizing: inherit;   
-    margin: 0;  
+    margin: 0;   
 }
  
 body {
@@ -126,6 +126,27 @@ h5 {
     }
 };
 
+@include m.mixMQ(v.$movil) {
+
+    h1 {
+        font-size: v.$titHero - 2.5rem;  
+    }
+    
+    h2 {
+        font-size: v.$titSec - 1.3rem;
+    }
+    
+    h3 {
+        font-size: v.$titulos - 1.3rem;
+    }
+    h4 {
+        font-size: v.$titParrafo - .5rem;
+    }
+    h5 {
+        font-size: v.$titH5 - .6rem;
+    }
+};
+
 img {
     max-width: 100%;
     width: 100%;
@@ -199,6 +220,10 @@ img {
         @include m.mixMQ(v.$tablet) {
             font-size: v.$descSec - .4rem;
         };
+        @include m.mixMQ(v.$movil) {
+            font-size: v.$descSec - .6rem;
+        };
+
     }
 
     small {
@@ -241,7 +266,7 @@ img {
 }
 
 .boton {
-    margin-top: 1rem;
+    margin: 1rem;
     display: inline-block;
     font-size: v.$descCon;
     color: v.$blanco;
@@ -249,14 +274,14 @@ img {
     cursor: pointer;
     padding: .8rem 3rem;
     background: v.$color1;
-    transition: background 0.3s ease-in;
-    border: none;
+    transition: all 0.4s ease-in;
+    border: 2px solid v.$color1;
 
     &:hover {
-        background: v.$negro;
-        color: v.$blanco;
+        box-shadow: inset -10em 0 0 0 v.$color4, inset 10em 0 0 0 v.$color4;
+        border: 2px solid v.$color1;
     }
-
+    
     &:active {
         transform: scale(0.98);
     }    
@@ -268,7 +293,14 @@ img {
 
 .botonVerde {
     @extend .boton;
-    background: v.$color6;    
+    background: v.$color6;
+    border: 2px solid v.$color6;
+
+    &:hover {
+        color: v.$color6;
+        border: 2px solid v.$color6;
+    }
+
 }
 
 // Clase del botón que moverse al inicio de la pantalla
@@ -313,6 +345,9 @@ img {
 
     @include m.mixMQ(v.$tablet) {
         font-size: 60px;
+    };
+    @include m.mixMQ(v.$movilSM) {
+        font-size: 45px;
     };
 }
 
@@ -390,6 +425,12 @@ img {
     justify-content: flex-end;
     bottom: 2rem;
     right: -4rem;
+
+    @include m.mixMQ(v.$tablet) {
+        justify-content: center;
+        right: 0;
+        padding-right: 0;
+    };
 }
 
 .formasPago {    
@@ -401,40 +442,74 @@ img {
     @include m.mixMQ(v.$desk) {
         width: 97%;
     };
+
+    @include m.mixMQ(v.$tablet) {
+        flex-direction: column;
+    };
     
     .fpIndicaciones {
-        width: 30%;
+        width: 50%;
+        padding: 2rem;
+        @include m.mixFlex(flex,center,center,wrap,0);
 
         @include m.mixMQ(v.$desk) {
-            width: 34%;
+            width: 95%;
         };
 
-        @include m.mixMQ(v.$tablet) {
-            width: 45%;
+        @include m.mixMQ(v.$movil) {
+            width: 98%;
+            padding-top: 0;
         };
 
-        ul {
-            @include m.resetear-lista;
+        p small {
             color: v.$blanco;
-            text-align: left;
-            
-            li {
+            margin: 0 .3rem;
+            font-size: 1.3rem;
+
+            @include m.mixMQ(v.$tablet) {
+                font-size: 1.5rem;
+            };
+
+            @include m.mixMQ(v.$movil) {
                 font-size: 1.2rem;
+            };
+
+            // i {
+            //     color: v.$color6;
+            // }
+
+            .fa-caret-right {
+                font-size: 1.6rem;
+                color: v.$color6;
             }
 
-            li i {
-                padding: .5rem 1rem;
-                background-color: v.$blanco;
-                width: 3.2rem;
-
+            .fa-exclamation-triangle {
                 color: v.$color1;
-                margin-right: 5px;
             }
+        }
 
-            li .fa-exclamation-triangle {
-                color: v.$negro;
-            }
-        }        
+        // ul {
+        //     @include m.resetear-lista;
+        //     color: v.$blanco;
+        //     text-align: left;
+            
+        //     li {
+        //         font-size: 1.2rem;
+        //     }
+
+        //     li i {
+        //         padding: .5rem 1rem;
+        //         background-color: v.$blanco;
+        //         width: 3.2rem;
+
+        //         color: v.$color1;
+        //         margin-right: 5px;
+        //     }
+
+        //     li .fa-exclamation-triangle {
+        //         color: v.$negro;
+        //     }
+        // }        
     }
 
     .fpTiposTar {
@@ -447,7 +522,7 @@ img {
         };
 
         @include m.mixMQ(v.$tablet) {
-            width: 48%;
+            width: 90%;
         };
 
         .fpTarjetas {
@@ -455,7 +530,10 @@ img {
             width: 48%;
 
             @include m.mixMQ(v.$tablet) {
-                width: 80%;
+                width: 45%;
+            };
+            @include m.mixMQ(v.$movil) {
+                width: 90%;
                 margin-bottom: 2rem;
             };
 
@@ -474,7 +552,10 @@ img {
             width: 48%;
 
             @include m.mixMQ(v.$tablet) {
-                width: 80%;
+                width: 45%;
+            };
+            @include m.mixMQ(v.$movil) {
+                width: 90%;
             };
 
             h4 {
@@ -497,6 +578,10 @@ img {
     .disFaqs_container { 
         margin: 2rem auto;
         padding: 2rem;
+
+        @include m.mixMQ(v.$movilSM) {
+            padding: 2rem 0;
+        };
     }
 
     .accordion {
@@ -521,6 +606,10 @@ img {
             background: none;
             outline: none;
             font-family: v.$fuente_principal;
+
+            @include m.mixMQ(v.$movil) {
+                font-size: 1.3rem;
+            };
 
             &:hover,
             &:focus {
@@ -587,6 +676,10 @@ img {
                 max-height: 9em;
                 transition: all 200ms linear;
                 will-change: opacity, max-height;
+
+                @include m.mixMQ(v.$movilSM) {
+                    max-height: 12em;
+                };
             }
         }
 
@@ -601,6 +694,10 @@ img {
                 font-size: 1.5rem;
                 font-weight: 300;
                 margin: 2em 0;
+
+                @include m.mixMQ(v.$movil) {
+                    font-size: 1.2rem;
+                };
             }
         }
     }
@@ -619,7 +716,15 @@ img {
         padding: 10px;
 
         @include m.mixMQ(v.$tablet) {
-            width: 32%;
+            width: 33%;
+        };
+
+        @include m.mixMQ(v.$movil) {
+            margin-bottom: 0;
+        };
+
+        @include m.mixMQ(v.$movilSM) {
+            width: 45%;
         };
 
         i {
@@ -629,16 +734,27 @@ img {
             margin-bottom: 1rem;
             cursor: auto;
         
+            @include m.mixMQ(v.$movilSM) {
+                @include m.mixIcono(6rem, 2rem);
+            };
         }
 
         h5 {
             font-weight: bold;
+
+            @include m.mixMQ(v.$movilSM) {
+                font-size: v.$titH5 - 1rem;
+            };
         }
 
         p {
 
             @include m.mixMQ(v.$tablet) {
                 font-size: 1.3rem;
+            };
+
+            @include m.mixMQ(v.$movil) {
+                font-size: 1.2rem;
             };
         }
     }
@@ -649,11 +765,21 @@ img {
 .divFoto_lista {
     @include m.mixFlex(flex,center,center,nowrap,0);
     margin-top: 3rem;
+
+    @include m.mixMQ(v.$movil) {
+        flex-direction: column;
+        align-items: baseline;
+    };
     
     .elImagen {
         width: 300px;
         height: 250px; 
-        margin: auto 0;
+        margin: auto 0;        
+
+        @include m.mixMQ(v.$movil) {
+            margin: auto; 
+            width: 85%;
+        };
 
         img {
             width: 100%;
@@ -667,6 +793,10 @@ img {
 
 .elLista {
     padding: 2rem;
+
+    @include m.mixMQ(v.$movil) {
+        margin-left: 2rem;        
+    };
 
     ul {
         @include m.resetear-lista;
@@ -695,6 +825,6 @@ img {
 // }
 
 .regresar {
-    width: 150px;
+    width: 200px;
     margin: 0 auto;
 }

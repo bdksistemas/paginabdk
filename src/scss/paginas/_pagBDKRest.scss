@@ -167,6 +167,15 @@
         left: -7rem;
     };
 
+    @include m.mixMQ(v.$movil) {
+        left: 185px;
+        top: 210px;
+    };
+
+    @include m.mixMQ(v.$movilSM) {
+        left: 160px;
+        top: 205px;
+    };
 }
 #pt_rest_billar {
     top: 5rem;
@@ -175,6 +184,16 @@
     @include m.mixMQ(v.$tablet) {
         top: 5.5rem;
         left: -7rem;
+    };
+
+    @include m.mixMQ(v.$movil) {
+        left: 185px;
+        top: 230px;
+    };
+
+    @include m.mixMQ(v.$movilSM) {
+        left: 160px;
+        top: 230px;
     };
 
 }

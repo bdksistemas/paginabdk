@@ -4,8 +4,16 @@
 .pagsHeader {
     @include m.mixFlex(flex,0,center,wrap,0);
 
+    @include m.mixMQ(v.$movil) {
+        flex-direction: column;
+    };
+
     .phImg {
         width: 45%;
+
+        @include m.mixMQ(v.$movil) {
+            width: 70%;
+        };
 
         img {
             width: 100%;
@@ -16,6 +24,11 @@
     .phContent {
         width: 50%;
         margin-top: 5rem;
+
+        @include m.mixMQ(v.$movil) {
+            width: 90%;
+            margin-top: 1rem;
+        };
 
         .phCElement {
             @include m.mixFlex(flex,0,center,nowrap,0);
@@ -39,6 +52,10 @@
 // ! Seccón sobre los diferentes Beneficios que obtienen con nosotros
 .secBeneficiosWeb {
     padding-bottom: 0;
+
+    @include m.mixMQ(v.$tablet) {
+        padding-bottom: 5rem;
+    };
 
     .pwBeneficios {
 
@@ -134,7 +151,7 @@
                     margin: 15px 10px;
                 };
                 @include m.mixMQ(v.$movil) {
-                    border-top: v.$borde;
+                    // border-top: v.$borde;
                     padding-top: 10px;
                     margin: 0;
                 };
@@ -201,6 +218,14 @@
         @include m.mixMQ(v.$tablet) {
             width: 40%;
         };
+        @include m.mixMQ(v.$movil) {
+            width: 80%;
+            height: 380px;
+        };
+        @include m.mixMQ(v.$movilSM) {
+            width: 90%;
+            height: 320px;
+        };
 
         .demoImg {
             width: 100%;
@@ -221,6 +246,14 @@
             width: 100%;
             height: 48%;
             padding: 5rem 1rem 0 1rem;
+
+            @include m.mixMQ(v.$movil) {
+                padding-top: 8rem;
+            };
+
+            @include m.mixMQ(v.$movilSM) {
+                padding-top: 6rem;                
+            };
         }
 
         .demoFooter {
@@ -232,8 +265,13 @@
 
             a { 
                 margin: 0;
-                padding: 0;
+                padding: 1rem 10rem;
                 background: none;
+                color: v.$blanco;
+
+                @include m.mixMQ(v.$movilSM) {
+                    padding: 1rem 7rem;
+                };
             }
         }
     }
@@ -391,29 +429,49 @@
         width: 100%;
         height: 60vh;
         overflow: hidden;
-        position: relative;        
+        position: relative;
+
+        @include m.mixMQ(v.$movil) {
+            height: 1020px;
+        };
 
         .preciosCompra {
             @include m.mixFlex(flex,center,0,wrap,0);
             top: -55rem;
             position: absolute;
-            transition: top 0.6s ease-in;
+            transition: all 0.6s ease-in;
             width: 100%;
+
+            @include m.mixMQ(v.$movil) {
+                top: 0;
+                left: -100rem;
+                flex-direction: column;
+            };
         }
 
         .preciosRenta {
             @include m.mixFlex(flex,center,0,wrap,0);
             top: -55rem;
             position: absolute;
-            transition: top 0.6s ease-in;
+            transition: all 0.6s ease-in;
             width: 100%;
 
+            @include m.mixMQ(v.$movil) {
+                top: 0;
+                left: -100rem;
+                flex-direction: column;
+            };
         }
         
     }
 
     .preciosAct {
         top: 0!important;
+
+        @include m.mixMQ(v.$movil) {
+            left: 0!important;
+            align-items: center;
+        };
     }
 }
 
@@ -426,13 +484,20 @@
     margin: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(25px);
+    background: rgba(0,0,0, 0.70);
+    // backdrop-filter: blur(25px);
 
     @include m.mixMQ(v.$desk) {
         width: 40%;
     };
     @include m.mixMQ(v.$tablet) {
         width: 44%;
+    };
+    @include m.mixMQ(v.$movil) {
+        width: 80%;
+    };
+    @include m.mixMQ(v.$movilSM) {
+        width: 90%;
     };
 
     span {
@@ -542,7 +607,7 @@
     }
     
     .pwFooter {
-        height: 10%;
+        height: 12%;
         
         a {
             margin: 0;
@@ -561,6 +626,10 @@
 
     h4 {
         margin: 0;        
+
+        @include m.mixMQ(v.$movilSM) {
+            font-size: 1.3rem;
+        };
     }
 }
 
@@ -577,6 +646,9 @@
         };
         @include m.mixMQ(v.$tablet) {
             width: 85%;
+        };
+        @include m.mixMQ(v.$movil) {
+            width: 95%;
         };
         
         img {

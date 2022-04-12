@@ -10,10 +10,18 @@
         padding: 4rem; 
         width: 100%;
 
+        @include m.mixMQ(v.$movil) {
+            padding: 3rem;
+        };
+
         @include m.mixFlex(flex,center,center,wrap-reverse,0);
 
         .ctes_img {
             width: 25%;
+
+            @include m.mixMQ(v.$movil) {
+                display: none;
+            };
         }
 
         .ctes_lista {
@@ -22,6 +30,10 @@
             @include m.mixFlex(flex,center,0,wrap,0);
             gap: 2rem;
 
+            @include m.mixMQ(v.$movil) {
+                width: 100%;
+            };
+
             .giroctes {
                 @include m.mixFlex(flex,center,0,wrap,column);
                 @include m.mixBox(25%,false,false,10px,v.$degradadoRed,v.$box-shadow);
@@ -29,7 +41,11 @@
 
                 @include m.mixMQ(v.$desk) {
                     width: 30%;
-                };                
+                };
+
+                @include m.mixMQ(v.$movil) {
+                    width: 45%;
+                };
 
                 p {
                     color: v.$blanco;

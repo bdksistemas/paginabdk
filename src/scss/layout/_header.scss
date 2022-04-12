@@ -1,7 +1,7 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.formatoHero {
+.formatoHero { 
     width: 100%; 
     height: 100vh;
     min-height: 57rem;
@@ -12,7 +12,12 @@
     @include m.mixFlex(flex,center,0,0,column);
 
     @include m.mixMQ(v.$tablet) {
-        height: 70vh;
+        height: 70vh; 
+    };
+
+    @include m.mixMQ(v.$movil) {
+        height: 60vh;
+        min-height: 20rem; 
     };
 
 }
@@ -45,11 +50,25 @@
         top: 60%;
     };
 
+    @include m.mixMQ(v.$movil) {
+        width: 85%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center
+    };
+
     h1 {
         text-transform: uppercase;    
         margin-bottom: 10px ;
         text-shadow: v.$box-shadow;
         text-align: left;
+
+        @include m.mixMQ(v.$movil) {
+            text-align: center;            
+        };
         
         span {
             color: v.$color1;
@@ -91,6 +110,12 @@
         @include m.mixMQ(v.$desk) {
             background-position: center center;            
         };
+
+        @include m.mixMQ(v.$movil) {
+            background-image: linear-gradient(287deg, rgba(0,0,0,.1) 10%, rgba(0,0,0,1) 100%), url('../img/Fondo_Hero.jpg');
+            background-position: center;
+        };
+
     }
     
     .hero_container {
@@ -109,6 +134,7 @@
 
     @include m.mixMQ(v.$tablet) {
         height: 100vh;
+        width: 100%;
     };
 
     .hero_container {
@@ -119,6 +145,7 @@
         top: 0;
         left: 0;
         @include m.mixFlex(flex,center,center,0,column);
+        // z-index: 10000;
 
         @include m.mixMQ(v.$deskXL) {
             width: 40%;
@@ -127,6 +154,10 @@
             width: 100%;
             height: 40%;
             top: 60%;
+        };
+        @include m.mixMQ(v.$movil) {
+            height: 50%;
+            top: 50%;
         };
 
         .heroSoft_Titulo {
@@ -140,6 +171,10 @@
 
                 @include m.mixMQ(v.$deskXL) {
                     font-size: v.$titHero - 2rem;                    
+                };
+
+                @include m.mixMQ(v.$movilSM) {
+                    font-size: v.$titHero - 2.5rem;
                 };
 
                 span {
@@ -185,12 +220,16 @@
         };
 
         @include m.mixMQ(v.$tablet) {
-            width: 100%;
-            height: 60%;
             left: 0;
             top: 0;
+            width: 100%;
+            height: 60%;
         };
 
+        @include m.mixMQ(v.$movil) {
+            height: 50%;
+            margin: 0;
+        };
 
         &::before {
             @extend .clsBefore;
@@ -228,11 +267,20 @@
             background-position: 70%;            
         };
 
+        @include m.mixMQ(v.$movil) {
+            background-image: linear-gradient(270deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,1) 100%), url('../img/FondoPaginasWeb.jpg');            
+            background-position: 80%;
+        };
+
     }
     
     .hero_container {
         @extend .formatoHero_Container;
         top: 70%;
+
+        @include m.mixMQ(v.$movil) {
+            top: 0%;
+        };
 
         p {
             text-shadow: v.$box-shadow2;
@@ -264,6 +312,10 @@
         @extend .formatoHero_Container;
         top: 40%;
 
+        @include m.mixMQ(v.$movil) {
+            top: 0%;
+        };
+
         p {
             text-shadow: v.$box-shadow2;
         }
@@ -286,11 +338,19 @@
         @include m.mixMQ(v.$desk) {
             background-position: 85%;            
         };
+
+        @include m.mixMQ(v.$movil) {
+            background-image: linear-gradient(270deg, rgba(0,0,0,0.2) 30%, rgba(0,0,0,1) 100%), url('../img/PaginaContacto.jpg');
+        };
     }
     
     .hero_container {
         @extend .formatoHero_Container;
         top: 40%;
+
+        @include m.mixMQ(v.$movil) {
+            top: 0;
+        };
 
         p {
             text-shadow: v.$box-shadow2;
@@ -338,12 +398,20 @@
             background-position: 70%;
         };
 
+        @include m.mixMQ(v.$movil) {
+            background-image: linear-gradient(270deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,1) 100%), url('../img/FONDO_RESENAS2.jpg');            
+            background-position: 80%;            
+        };
         // animation: animHero 8s cubic-bezier(0.11, 0, 0.5, 0) 0s infinite alternate both;        
     }
     
     .hero_container {
         @extend .formatoHero_Container;
         top: 40%;
+
+        @include m.mixMQ(v.$movil) {
+            top: 0;
+        };
 
         p {
             text-shadow: v.$box-shadow2;
@@ -372,6 +440,10 @@
     .hero_container {
         @extend .formatoHero_Container;
         top: 40%;
+
+        @include m.mixMQ(v.$movil) {
+            top: 0;
+        };
 
         p {
             text-shadow: v.$box-shadow2;
@@ -415,6 +487,11 @@
             width: 100%;
             top: 60%;
         };
+
+        @include m.mixMQ(v.$movil) {
+            height: 50%;
+            top: 50%;
+        };
             
         .hero-content {
 
@@ -425,6 +502,10 @@
             @include m.mixMQ(v.$tablet) {
                 flex-direction: row;
                 padding: 2rem;
+            };
+
+            @include m.mixMQ(v.$movil) {
+                flex-direction: column;
             };
 
             .hero-logo {
@@ -459,6 +540,11 @@
                     width: 35%;
                 };
 
+                @include m.mixMQ(v.$movil) {
+                    width: 45%;
+                    margin: 0 0 2rem 0;
+                };
+
                 img {
                     width: 100%;
                     object-fit: cover;
@@ -474,6 +560,10 @@
                     text-align: left;
                 };
 
+                @include m.mixMQ(v.$movil) {
+                    width: 80%;
+                };
+
                 h1 {
                     text-align: center;
 
@@ -481,8 +571,8 @@
                         font-size: v.$titHero - 1.5rem;  
                     };
 
-                    @include m.mixMQ(v.$tablet) {
-                        // text-align: left;
+                    @include m.mixMQ(v.$movilSM) {
+                        font-size: v.$titHero - 2rem;                          
                     };
 
                     span {
@@ -535,6 +625,10 @@
             left: 0;
         };
 
+        @include m.mixMQ(v.$movil) {
+            height: 50%;
+        };
+
         .slide-fondos {
             position: absolute;
             top: 0px;
@@ -567,7 +661,7 @@
                     @include m.mixMQ(v.$tablet) {
                         width: 100%;
                     };
-                    
+
                     object-fit: cover;
                 }
 
@@ -632,12 +726,15 @@
             color: v.$blanco;
             font-size: v.$titParrafo;
             font-weight: 600;
-            //font-style: italic;
             top: 0;
             position: relative;
 
             padding: 0 15px;
             animation: slide 18s steps(6) infinite;
+
+            @include m.mixMQ(v.$movil) {
+                font-size: v.$titParrafo - 1rem;
+            };
 
             &::after {
                 content: "";

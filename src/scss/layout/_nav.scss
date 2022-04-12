@@ -41,6 +41,10 @@
                 position: absolute;
                 left: 8rem;
             };
+            @include m.mixMQ(v.$movil) {
+                width: 45%;
+                left: 7rem;
+            };
 
             img {
                 width: 100%;

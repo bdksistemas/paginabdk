@@ -18,10 +18,15 @@
         width: 90%;
     };
 
+    @include m.mixMQ(v.$movil) {
+        width: 95%;
+    };
+
     .secDatosContacto {
         width: 40%;
         // height: 100%;
         background: linear-gradient(0deg, rgba(141,0,18,1) 35%, rgba(203,0,26,1) 100%);
+        padding: 2rem;
 
         @include m.mixFlex(flex,center,center,wrap,column);
         color: v.$blanco;

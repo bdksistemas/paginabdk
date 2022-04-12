@@ -7,19 +7,19 @@
     text-align: left;   
     margin: auto 0; 
 
-    @include m.mixMQ(v.$deskXXL) {
+    @include m.mixMQ(v.$deskXXL) { 
         width: 80%; 
     };
 
     @include m.mixMQ(v.$desk) {
-        width: 90%; 
+        width: 90%;  
     }; 
 }
 
 .secProSol { 
     @include m.mixFlex(flex,center,center,0,row);
     height: 600px;
-    overflow: hidden; 
+    overflow: hidden;  
     
     @include m.mixMQ(v.$tablet) {
         flex-direction: column;
@@ -36,6 +36,10 @@
             width: 100%;
             border-right: none;
             border-bottom: 5px solid v.$color1;
+        };
+
+        @include m.mixMQ(v.$movilSM) {
+            padding: 5rem 2rem;
         };
 
         .titulo {
@@ -98,6 +102,11 @@
                 @include m.mixMQ(v.$deskXL) {
                     top: 2.5rem;
                 };
+
+                @include m.mixMQ(v.$movilSM) {
+                    top: 1rem;
+                    left: -2rem;
+                };
             }
         }
 
@@ -126,6 +135,13 @@
             z-index: -1;
         }
 
+        .elLista {
+
+            @include m.mixMQ(v.$movilSM) {
+                padding: 2rem 0;
+                margin-left: 0;
+            };
+        }
     }
 
     .secImg_fondo_rest {
@@ -133,6 +149,16 @@
 
         &::before {
             background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 10%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0) 55%), url('../img/BDKREST/SOLUCION.jpg');
+
+            @include m.mixMQ(v.$movil) {
+                background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 40%, rgba(0,0,0,.2) 100%), url('../img/BDKREST/SOLUCION.jpg');
+            };
+        }
+
+        .tituloWhite {
+            @include m.mixMQ(v.$movil) {
+                text-align: center;
+            };
         }
     }
 
@@ -193,7 +219,7 @@
 }
 
 .mapa_soft {
-    overflow: hidden;
+    overflow: hidden; 
 
     .content_mapa {
         @include m.mixFlex(flex,space-around,center,wrap,row);
@@ -203,6 +229,13 @@
         .mapa_imagen {
             width: 50%;
             position: relative;
+
+            @include m.mixMQ(v.$movil) {
+                width: 80%;
+            };
+            @include m.mixMQ(v.$movilSM) {
+                width: 100%;
+            };
 
             img {
                 width: 100%;
@@ -232,6 +265,16 @@
                 @include m.mixMQ(v.$tablet) {
                     left: -5rem;
                     top: 3rem;
+                };
+
+                @include m.mixMQ(v.$movil) {
+                    left: 60%;
+                    top: 85%;
+                };
+
+                @include m.mixMQ(v.$movilSM) {
+                    left: 55%;
+                    top: 87%;
                 };
             }
         }
@@ -443,6 +486,11 @@
         height: 350px;
     };
 
+    @include m.mixMQ(v.$movil) {
+        flex-direction: column;
+        height: auto;
+    };
+
     // ! GRUPOS DE CARACTERÍSTICAS CON ICONO CIRCULAR
     .vid_caracteristicas {
         width: 25%;
@@ -452,10 +500,21 @@
             width: 20%;
         };
 
+        @include m.mixMQ(v.$movil) {
+            flex-direction: row;
+            width: 100%;
+            margin: 2rem 0;
+
+        };
+
         .elementoCar {
             text-align: center;
             margin-bottom: 1rem;
             padding: 5px;
+
+            @include m.mixMQ(v.$movil) {
+                width: 32%;
+            };
 
             i {
                 @include m.mixIcono(7rem, 2rem);
@@ -493,6 +552,10 @@
             width: 60%;
         };
 
+        @include m.mixMQ(v.$movil) {
+            width: 100%;
+        };
+
         video {
             width: 100%;
             height: 100%;
@@ -500,6 +563,7 @@
             top: 0;
             object-fit: cover;
             box-shadow: v.$box-shadow2;
+            border: 2px solid v.$blanco;
             
         }
 
@@ -530,8 +594,12 @@
             };
 
             @include m.mixMQ(v.$tablet) {
-                width: 90%;
+                width: 85%;
                 height: auto;
+            };
+
+            @include m.mixMQ(v.$movilSM) {
+                width: 90%;
             };
 
             .paquete_nombrePlan { 
@@ -566,6 +634,12 @@
 
                 .paqContenido_header {
                     text-align: center;
+                    margin: 0 auto;
+
+                    @include m.mixMQ(v.$movil) {
+                        width: 90%;
+                        margin-top: 2rem;
+                    };
 
                     h5 {
                         font-size: 1.2rem;
@@ -597,6 +671,9 @@
 
                     @include m.mixMQ(v.$tablet) {
                         padding: 0 2rem;
+                    };
+                    @include m.mixMQ(v.$movilSM) {
+                        padding: 0 1rem;
                     };
             
                     .pqElement {
@@ -673,6 +750,10 @@
         width: 75%;
         margin: 2rem auto 0;
 
+        @include m.mixMQ(v.$movil) {
+            width: 90%;
+        };
+
         p {
             color: v.$blanco;
             text-align: center;
@@ -718,6 +799,7 @@
                 display: block;
                 margin-top: 2rem;
                 color: v.$blanco;
+                text-align: center;
             }
         }
 
@@ -745,6 +827,13 @@
     .promo_img {
         width: 100%;
         overflow: hidden;
+
+        @include m.mixMQ(v.$movil) {
+            height: 245px;
+        };
+        @include m.mixMQ(v.$movilSM) {
+            height: 200px;
+        };
  
         img {
             height: 100%;
@@ -767,6 +856,11 @@
             padding-left: 2rem;
             @include m.mixFlex(flex,center,center,wrap,column);
             text-align: center;
+
+            @include m.mixMQ(v.$movilSM) {
+                width: 80%;
+                padding-right: 3rem;
+            };
             
             i {
                 color: v.$color1;
@@ -780,6 +874,14 @@
                 @include m.mixMQ(v.$tablet) {
                     font-size: v.$titSec;
                     margin-bottom: .5rem;
+                };
+
+                @include m.mixMQ(v.$movil) {
+                    font-size: v.$titSec - 1rem;
+                };
+
+                @include m.mixMQ(v.$movilSM) {
+                    font-size: v.$titSec - 1.5rem;                    
                 };
             }
 
@@ -797,9 +899,28 @@
                     margin-bottom: .5rem;
                 };
 
+                @include m.mixMQ(v.$movil) {
+                    font-size: v.$titHero - 3rem;
+                    margin-bottom: 0;
+                };
+
+                @include m.mixMQ(v.$movilSM) {
+                    font-size: v.$titHero - 3.2rem;
+                };
+
                 span {
                     color: v.$color1;
                 }
+            }
+
+            h4 {
+                @include m.mixMQ(v.$movil) {
+                    font-size: v.$titParrafo - 1rem;
+                };
+                @include m.mixMQ(v.$movilSM) {
+                    font-size: v.$titParrafo - 1.2rem;
+                    margin-bottom: .5rem; 
+                };
             }
 
             a {
@@ -811,6 +932,11 @@
 
                 @include m.mixMQ(v.$tablet) {
                     margin-top: 1rem;
+                };
+
+                @include m.mixMQ(v.$movil) {
+                    width: 100%;
+                    margin: 0;
                 };
             }
 
@@ -824,6 +950,10 @@
                     @include m.mixMQ(v.$tablet) {
                         font-size: v.$titH5 - .5rem;
                     };
+
+                    @include m.mixMQ(v.$movil) {
+                        font-size: v.$titH5 - 1rem;                        
+                    };
                 }
 
                 .prElement {
@@ -835,6 +965,10 @@
                         font-size: 1.4rem;
                         margin: 0;
                         margin-right: 1rem;
+
+                        @include m.mixMQ(v.$movilSM) {
+                            font-size: 1.2rem;                            
+                        };
                     }
         
                     p {
@@ -844,6 +978,10 @@
 
                         @include m.mixMQ(v.$tablet) {
                             font-size: 1.2rem;
+                        };
+
+                        @include m.mixMQ(v.$movilSM) {
+                            margin: 0;
                         };
 
                         span {
@@ -860,7 +998,19 @@
                     @include m.mixMQ(v.$tablet) {
                         font-size: 1rem;
                     };
+                    @include m.mixMQ(v.$movilSM) {
+                        margin-top: .5rem;
+                    };
+
                 }
+            }
+
+            .boton {
+                @include m.mixMQ(v.$movilSM) {
+                    font-size: 1rem;
+                    padding: .5rem 2rem;
+                    width: 70%;
+                };
             }
         }
     }
@@ -869,20 +1019,34 @@
 // ! SECCIÓN DE LA PANTALLA INFORMATIVA TIPO POPUP DEL MAPA DE MESAS
 .infoPopup {
     position: fixed;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(180deg);
+    background: v.$degradadoRed;
     z-index: 10000;
     width: 100%;
     height: 100%;
-    @include m.mixFlex(flex,center,center,0,0);        
-    backdrop-filter: blur(25px);
-    visibility: hidden;
-    opacity: 0;
+    @include m.mixFlex(flex,center,center,0,0);
+    transition: 0.3s;
 
     &.active {
-        visibility: visible;
-        opacity: 1;
+        transition-delay: 0.1s;
+        transform: translate(-50%, -50%) scale(1) rotate(0);
     }
+    
+    // transform: translate(-50%, -50%);
+    // z-index: 10000;
+    // width: 100%;
+    // height: 100%;
+    // @include m.mixFlex(flex,center,center,0,0);        
+    // backdrop-filter: blur(25px);
+    // visibility: hidden;
+    // opacity: 0;
+
+    // &.active {
+    //     visibility: visible;
+    //     opacity: 1;
+    // }
     
     .info_content {
         width: 90%;
@@ -901,6 +1065,12 @@
             height: 80vh;
         };
 
+        @include m.mixMQ(v.$movil) {
+            flex-direction: column;
+            padding-right: 0;
+            height: 95vh;
+        };
+
         .info_imagen {
             width: 40%;
             height: 100%;
@@ -910,13 +1080,23 @@
                 width: 45%;
             };
 
-            img {
+            @include m.mixMQ(v.$movil) {
+                width: 100%;
+                height: 35%;
+            };
+
+            img { 
                 height: 100%;
                 object-fit: cover;
                 border-radius: 10px 0 0 10px;
                 border-right: 1px solid v.$color5;
 
                 box-shadow: v.$box-shadow4;
+
+                @include m.mixMQ(v.$movil) {
+                    border-radius: 10px 10px 0 0;
+                };
+
             }
         }
 
@@ -930,12 +1110,25 @@
                 padding: 2rem 0 2rem 2rem;
             };
 
+            @include m.mixMQ(v.$movil) {
+                width: 100%;
+                height: 65%;
+                padding: 2rem;
+            };
+            @include m.mixMQ(v.$movilSM) {
+                padding: 1rem;
+            };
+
             .titulo {
                 text-align: left;
                 margin-left: 0;
 
                 h2 {
                     border-bottom: 1px solid v.$color1;
+
+                    @include m.mixMQ(v.$movilSM) {
+                        font-size: 1.8rem;
+                    };
                 }
 
                 p {
@@ -946,10 +1139,29 @@
             .info_main {
                 margin-top: 2rem;
 
+                @include m.mixMQ(v.$movil) {
+                    margin-top: 1rem;
+                    width: 100%;
+                };
+
+                p {
+                    @include m.mixMQ(v.$movil) {
+                        font-size: 1.4rem;
+                    };
+                    @include m.mixMQ(v.$movil) {
+                        font-size: 1.2rem;
+                    };
+                }
+
                 .elLista {
                 
                     @include m.mixMQ(v.$tablet) {
                         padding-left: 0;
+                    };
+
+                    @include m.mixMQ(v.$movil) {
+                        padding: 0;
+                        margin: 1rem 0;
                     };
                     
                     ul li {
@@ -963,6 +1175,10 @@
                         @include m.mixMQ(v.$tablet) {
                             font-size: 1.2rem;                            
                             margin-bottom: .25rem;
+                        };
+
+                        @include m.mixMQ(v.$movilSM) {
+                            font-size: 1.1rem;
                         };
 
 
@@ -1036,6 +1252,15 @@
         cursor: pointer;
         max-width: 32px;
         filter: invert(1);
+
+        @include m.mixMQ(v.$movil) {
+            filter: none;
+            background: v.$blanco;
+            border-radius: 50%;
+            padding: .8rem;
+            color: v.$blanco;
+            border: 1px solid v.$color1;
+        };
     }    
     
     // ! POPUS BDKGYM

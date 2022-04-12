@@ -18,12 +18,21 @@
 .disComisiones {
 
     .dcomPlanComisiones {
-        @include m.mixFlex(flex,center,center,wrap,false);
+        @include m.mixFlex(flex,center,center,wrap,0);
         margin: 3rem auto;
+
+        @include m.mixMQ(v.$movil) {
+            flex-direction: column;
+            margin-bottom: 0;
+        };
 
         .dcomImagen {
             width: 30%;
             margin-right: 2rem;
+
+            @include m.mixMQ(v.$movil) {
+                width: 60%;
+            };
 
             img {
                 width: 100%;
@@ -35,6 +44,11 @@
         .dcomContenido {
             width: 65%;
             @include m.mixFlex(flex,center,center,nowrap,column);
+
+            @include m.mixMQ(v.$movil) {
+                width: 90%;
+                margin-top: 2rem;
+            };
 
             .dcomPlan {
                 @include m.mixFlex(flex,false,center,nowrap,row);
@@ -91,12 +105,20 @@
             @include m.mixMQ(v.$tablet) {
                 width: 80%;
             };
+
+            @include m.mixMQ(v.$movil) {
+                width: 95%;
+            };
         }
         .dsdTextos_imagen {
             width: 60%;
 
             @include m.mixMQ(v.$tablet) {
                 width: 80%;
+            };
+
+            @include m.mixMQ(v.$movil) {
+                width: 105%;
             };
         }
     }

@@ -7,23 +7,50 @@
     .productos {
         @include m.mixFlex(flex,center,0,Wrap,0);
         z-index: 1000;
+        width: 80%;
+        margin-top: 2rem;
+
+        @include m.mixMQ(v.$deskXXL) {
+            width: 90%;
+        };
+
+        @include m.mixMQ(v.$movil) {
+            width: 95%;
+        };
 
         .prodCard {
-            @include m.mixBox(28%,380px,0,10px,0,0);
+            @include m.mixBox(378px,473px,0,10px,0,0);
             position: relative;
             transform-style: preserve-3d;
             perspective: 500px;
-            margin: 4rem 1rem;
+            margin: 2rem 1rem;
             z-index: 2000;
 
+            @include m.mixMQ(v.$deskXL) {
+                width: 324px;
+                height: 405px;
+            };
+
             @include m.mixMQ(v.$desk) {
-                width: 30%;
+                width: 270px;
+                height: 338px;
             };
 
             @include m.mixMQ(v.$tablet) {
                 width: 45%;
             };
-        
+
+            @include m.mixMQ(v.$movil) {
+                width: 200px;
+                height: 260px;
+                margin: 1rem;
+            };
+
+            @include m.mixMQ(v.$movilSM) {
+                width: 250px;                
+                height: 280px;
+            };
+            
             .front {
                 @include m.mixFlex(flex,center,0,0,0);
                 transform-style: preserve-3d;
@@ -49,7 +76,7 @@
                     top: 0;
                     width: 80%;
                     height: 100%;
-                    //padding: 0 auto;
+                    overflow: hidden;
                     @include m.mixFlex(flex,center,center,0,column);
 
                     img {
@@ -62,10 +89,13 @@
                         bottom: 5rem;
                         color: v.$blanco;
                         font-size: 2.5rem;
-                        // padding: 40px 150px;
                         cursor: pointer;
                         transition: .5s;
                         border-radius: 50%;
+
+                        @include m.mixMQ(v.$movil) {
+                            bottom: 3rem;
+                        };
                         
                         -webkit-animation: ripple 2.5s linear 1s infinite;
                         animation: ripple 2.5s linear 1s infinite;
@@ -109,9 +139,23 @@
                     border-bottom-right-radius: 10px;
                     padding: 1rem 2rem;
 
+                    @include m.mixMQ(v.$movil) {
+                        top: 38%;
+                        height: 60%;
+                        padding: 1rem;
+                    };
+
                     .titSoft {
                         height: 80%;
+                        margin-top: 3rem;
                         overflow: hidden;
+
+                        @include m.mixMQ(v.$desk) {
+                            margin-top: .8rem;                            
+                        };
+                        @include m.mixMQ(v.$movil) {
+                            margin-top: 0;
+                        };
 
                         h4 {
                             font-size: v.$titParrafo - 0.2rem;
@@ -121,11 +165,21 @@
                             @include m.mixMQ(v.$desk) {
                                 font-size: v.$titParrafo - 0.5rem;                                
                             };
+
+                            @include m.mixMQ(v.$movil) {
+                                font-size: v.$titParrafo - 1rem;
+                                margin-bottom: .5rem;
+                            };
                         }
 
                         p {
                             color: v.$blanco;
                             margin: 0;
+
+                            @include m.mixMQ(v.$movil) {
+                                font-size: 1.1rem;
+                            };
+
                         }
                     }
                 }
@@ -163,11 +217,19 @@
 
     .prodFooter {
         text-align: center;
+
+        @include m.mixMQ(v.$movilSM) {
+            width: 80%;
+        };
     }
 
     .listaSoft {
     
         @include m.mixFlex(flex,center,center,wrap,column);
+
+        @include m.mixMQ(v.$movil) {
+            padding-top: 3rem;
+        };
     
         .listaContent {
             @include m.mixFlex(flex,center,center,wrap,0);
@@ -190,6 +252,13 @@
                 @include m.mixMQ(v.$deskXL) {
                     width: 45%;
                     height: 350px;
+                };
+
+                @include m.mixMQ(v.$movil) {
+                    width: 90%;
+                };
+                @include m.mixMQ(v.$movilSM) {
+                    width: 95%;
                 };
         
                 .cardSoftImg {
@@ -268,12 +337,21 @@
                             @include m.mixMQ(v.$tablet) {
                                 font-size: v.$titParrafo - .95rem;
                             };
+                            @include m.mixMQ(v.$movilSM) {
+                                font-size: v.$titParrafo - 1rem;
+                            };
                         }
                     }
         
                     .softFooter {
                         height: 10%;
                         @include m.mixFlex(flex,center,center,0,0);
+
+                        a {
+                            @include m.mixMQ(v.$movilSM) {
+                                font-size: 1rem;
+                            };
+                        }
                     }
                 }
             }

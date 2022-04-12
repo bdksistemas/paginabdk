@@ -66,6 +66,13 @@
                     @include m.mixMQ(v.$tablet) {
                         top: 340px;
                     };
+                    @include m.mixMQ(v.$movil) {
+                        top: 50%;
+                        width: 380px;
+                    };
+                    @include m.mixMQ(v.$movilSM) {
+                        width: 325px;
+                    };
 
                     h2 {
                         text-transform: uppercase;

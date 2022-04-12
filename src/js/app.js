@@ -86,7 +86,13 @@
             loop: true,
             breakpoints: {
                 0: {
-                    slidesPerView: 1,
+                    slidesPerView: 3,
+                },
+                375: {
+                    slidesPerView: 3,
+                },
+                480: {
+                    slidesPerView: 3,
                 },
                 640: {
                     slidesPerView: 5,
@@ -595,7 +601,11 @@
         if (ancho_screen > 768 ) {
             sliderFondo.style.transform = `translateY(-${(sliderHeight-1) * sliderAct}px)`;
         } else {
-            sliderFondo.style.transform = `translateY(-${(sliderHeight+.2) * sliderAct}px)`;
+            if (ancho_screen > 480 ) {
+                sliderFondo.style.transform = `translateY(-${(sliderHeight+.2) * sliderAct}px)`;
+            } else {
+                sliderFondo.style.transform = `translateY(-${(sliderHeight-1) * sliderAct}px)`;
+            }
         }
 
 

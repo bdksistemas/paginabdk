@@ -7,6 +7,13 @@
     height: 65vh;
     position: relative;
 
+    @include m.mixMQ(v.$movil) {
+        height: 90vh;
+    };
+    @include m.mixMQ(v.$movilSM) {
+        height: auto;
+    };
+
     &::before {
         content: "";
         position: absolute;
@@ -40,6 +47,11 @@
         overflow: hidden;
         @include m.mixFlex(flex,center,center,wrap,0);
 
+        @include m.mixMQ(v.$movil) {
+            flex-direction: column;
+            height: auto;
+        };
+
         .spwPortada {
             width: 50%;
             height: 100%;
@@ -50,8 +62,12 @@
                 padding: 1rem;                
             };
 
+            @include m.mixMQ(v.$movil) {
+                width: 80%;
+                height: auto;
+            };
+
             img {
-                // height: 100%;
                 width: 100%;
                 object-fit: cover;
 
@@ -61,6 +77,12 @@
         .spwTextos {
             width: 50%;
             @include m.mixFlex(flex,center,0,0,column);
+
+            @include m.mixMQ(v.$movil) {
+                width: 100%;
+                height: auto;
+            };
+
             h3 {
                 text-transform: uppercase;
             }

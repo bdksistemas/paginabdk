@@ -135,6 +135,10 @@
         height: auto;
     };
 
+    @include m.mixMQ(v.$movil) {
+        width: 95%;
+    };
+
     .fa-quote-right {
         position: absolute;
         top: 45%; right: 1rem;
@@ -143,6 +147,9 @@
 
         @include m.mixMQ(v.$tablet) {
             top: 215px;
+        };
+        @include m.mixMQ(v.$movilSM) {
+            top: 170px;
         };
     }
 
@@ -154,6 +161,9 @@
 
         @include m.mixMQ(v.$tablet) {
             height: 225px;
+        };
+        @include m.mixMQ(v.$movilSM) {
+            height: 180px;
         };
 
         .nr-foto {
@@ -177,7 +187,7 @@
         }
 
         .nr-cliente {
-            width: 60%;
+            width: 55%;
             height: 100%;
             padding: 1rem;
             overflow: hidden;
@@ -202,6 +212,10 @@
                     font-family: v.$fuente_principal;
                     font-size: 1.2rem;
                     font-weight: bold;
+
+                    @include m.mixMQ(v.$movilSM) {
+                        font-size: 1rem;
+                    };
     
                     span {
                         display: inline-block;
@@ -212,6 +226,11 @@
 
                 .titdesc {
                     font-size: 1.3rem;
+
+                    @include m.mixMQ(v.$movilSM) {
+                        font-size: 1.1rem;                        
+                        margin-top: 0;
+                    };
                 }
 
                 small {
@@ -225,6 +244,10 @@
                     i {
                         font-size: 1.2rem;
                         color: v.$color1;
+
+                        @include m.mixMQ(v.$movilSM) {
+                            font-size: 1rem;
+                        };
                     }
                 }
 
@@ -293,10 +316,17 @@
         margin-right: 2rem;
     };
 
+    @include m.mixMQ(v.$movilSM) {
+        width: 300px;
+    };
+
     .fa-quote-right {
 
         @include m.mixMQ(v.$tablet) {
             top: 45%;
+        };
+        @include m.mixMQ(v.$movilSM) {
+            top: 50%;
         };
     }
 
