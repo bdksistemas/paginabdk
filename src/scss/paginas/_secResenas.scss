@@ -316,6 +316,9 @@
         margin-right: 2rem;
     };
 
+    @include m.mixMQ(v.$movil) {
+        width: 350px;
+    };
     @include m.mixMQ(v.$movilSM) {
         width: 300px;
     };

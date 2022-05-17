@@ -8,9 +8,6 @@
     position: relative;
 
     @include m.mixMQ(v.$movil) {
-        height: 90vh;
-    };
-    @include m.mixMQ(v.$movilSM) {
         height: auto;
     };
 

@@ -63,6 +63,14 @@
                     -moz-animation: content-s 7.5s infinite;
                     animation: content-s 7.5s infinite;
 
+                    // @include m.mixMQ(v.$deskSuper) {
+                    //     top: 90%;
+                    //     border: 3px solid violet;
+                    // };
+
+                    @include m.mixMQ(v.$deskXXL) {
+                        top: 60%;
+                    };
                     @include m.mixMQ(v.$tablet) {
                         top: 340px;
                     };

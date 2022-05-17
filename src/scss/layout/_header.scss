@@ -6,13 +6,13 @@
     height: 100vh;
     min-height: 57rem;
     max-height: 95rem; 
-    position: relative;
+    position: relative; 
     color: #fff;
     overflow: hidden; 
     @include m.mixFlex(flex,center,0,0,column);
 
     @include m.mixMQ(v.$tablet) {
-        height: 70vh; 
+        height: 70vh;  
     };
 
     @include m.mixMQ(v.$movil) {
@@ -173,8 +173,12 @@
                     font-size: v.$titHero - 2rem;                    
                 };
 
-                @include m.mixMQ(v.$movilSM) {
+                @include m.mixMQ(v.$movil414) {
                     font-size: v.$titHero - 2.5rem;
+                };
+
+                @include m.mixMQ(v.$movilSM) {
+                    font-size: v.$titHero - 2.8rem;
                 };
 
                 span {

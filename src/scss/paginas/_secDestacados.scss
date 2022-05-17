@@ -37,6 +37,9 @@
         @include m.mixMQ(v.$desk) {
             width: 95%;
         };
+        @include m.mixMQ(v.$movil) {
+            width: 98%;
+        };
 
         .destacados_card {
 
@@ -54,6 +57,17 @@
             @include m.mixMQ(v.$tablet) {
                 width: 29%;
             };
+
+            @include m.mixMQ(v.$movil) {
+                width: 42%;
+                height: 250px;
+                margin: 1rem;
+            };
+            @include m.mixMQ(v.$movilSM) {
+                width: 95%;
+                height: 120px;
+            };
+
         
             .content {
                 padding: 20px;
@@ -68,6 +82,10 @@
                     pointer-events: none;
                     transition: 0.5s;    
                     z-index: -1;
+
+                    @include m.mixMQ(v.$movil) {
+                        font-size: 3.5em;
+                    };
                 }
                 
                 h4 {
@@ -86,18 +104,6 @@
                     };
                 }                        
             }
-
-
-            // .destacados_card
-            @include m.mixMQ(v.$movil) {
-                width: 42%;
-                height: 200px;
-            };
-            @include m.mixMQ(v.$movilSM) {
-                width: 95%;
-                height: 120px;
-            };
-
         }    
     }
 

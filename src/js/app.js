@@ -22,16 +22,6 @@
         if (document.querySelector(".secEquipo")) {                                    
             activaSliderEq();
         }
-
-        // * CÓDIGO PARA ACTIVAR LA LIBRERÍA VANILLATILT, ANIMACIONES EN LAS CARD DEL INDEX.HTML
-        if (document.querySelector(".secDestacados")) {
-            activaReflejo();
-        };
-
-        // * Activando el SLIDE de las reseñas
-        // if (document.querySelector("#reseñas")) {            
-            // activaSliderReseñas();
-        // }
         
         document.addEventListener('click', (e) => {
             e.preventDefault();
@@ -146,16 +136,6 @@
         });    
     };
 
-
-    // ! FUNCION PARA ACTIVAR LA LIBRERÍA QUE HACE EL EFECTO DE UN REFLEJO EN UN VIDRIO
-    function activaReflejo() {
-        VanillaTilt.init(document.querySelectorAll(".destacados_card"), {
-            max: 20,
-            speed: 400,
-            glare: true,
-            "max-glare": 1,
-        });       
-    }
 
     // ! FUNCIÓN PARA ACTIVAR EL VIDEO Y REPRODUCIRLO AL ESTAR LA PANTALLA ACTIVA
     function toggleVideo() {
@@ -316,6 +296,7 @@
 
         // ? LINK A WHATSAPP DE VENTAS
         if ( objetoDom.matches('.botWP')) {
+            gtag_report_conversion();
             let url = 'https://api.whatsapp.com/send?phone=528132814080&text=Hola,%20buen%20día,%20%20quiero%20pedir%20informes%20sobre%20';
             window.open(url, '_blank');
         } 
@@ -406,6 +387,20 @@
         }
 
 
+    }
+
+    // ! FUNCIÓN PARA MEDIR LAS CONVERSIONES Y CLICS EN LOS BOTONES DE CONTACTO - CÓDIGO DE GOOGLE ADS
+    function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-1011948451/dVALCJDYqr4DEKO3xOID',
+            'event_callback': callback
+        });
+        return false;
     }
 
     // ! FUNCIÓN PARA ABRIR EL MENÚ CUANDO EL TAMAÑO SEA TABLET O MÓVIL

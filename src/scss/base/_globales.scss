@@ -12,10 +12,10 @@ html {
 *:before,  
 *:after {   
     box-sizing: inherit;   
-    margin: 0;   
+    margin: 0;     
 }
  
-body {
+body { 
     font-family: v.$fuente_principal;  
     font-size: 1.6rem;
 
@@ -472,11 +472,7 @@ img {
 
             @include m.mixMQ(v.$movil) {
                 font-size: 1.2rem;
-            };
-
-            // i {
-            //     color: v.$color6;
-            // }
+            }; 
 
             .fa-caret-right {
                 font-size: 1.6rem;
@@ -487,29 +483,6 @@ img {
                 color: v.$color1;
             }
         }
-
-        // ul {
-        //     @include m.resetear-lista;
-        //     color: v.$blanco;
-        //     text-align: left;
-            
-        //     li {
-        //         font-size: 1.2rem;
-        //     }
-
-        //     li i {
-        //         padding: .5rem 1rem;
-        //         background-color: v.$blanco;
-        //         width: 3.2rem;
-
-        //         color: v.$color1;
-        //         margin-right: 5px;
-        //     }
-
-        //     li .fa-exclamation-triangle {
-        //         color: v.$negro;
-        //     }
-        // }        
     }
 
     .fpTiposTar {
@@ -723,7 +696,7 @@ img {
             margin-bottom: 0;
         };
 
-        @include m.mixMQ(v.$movilSM) {
+        @include m.mixMQ(v.$movil414) {
             width: 45%;
         };
 

@@ -25,14 +25,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <!-- ? BOOTSTRAPT
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
-
     <!-- ? FONTAWESOM -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-    <!-- ? BOXICON -->
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -64,6 +58,27 @@
     <meta property="og:description" content="Control de servicios, registro de ventas, seguimiento a servicios y mucho más." />
     <meta property="og:type" content="website" />
     
+
+    <!-- ? Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9FG8EFFN81');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-1011948451');
+    </script>
+
 </head>
 
 <body>
@@ -311,7 +326,7 @@
         </section>
 
         <!-- ! MAPA DEL TIPO DE NEGOCIO --> 
-        <section class="mapa_soft seccion"> 
+        <section class="mapa_soft seccion" id="mapaTint"> 
 
             <div class="titulo container">
                 <h2>Beneficios directos para <span>todas las áreas</span> de tu negocio</h2> 
@@ -766,7 +781,7 @@
         </section> 
 
         <!-- ! LISTA DE PRECIOS -->
-        <section class="precios_software seccionGrisOscuro">
+        <section class="precios_software seccionGrisOscuro" id="preciosTint">
             <div class="tituloWhite container">
                 <h2>Los mejores <span>precios</span> del mercado</h2> 
                 <p>Elige la versión que más se adapte a tus necesidades</p>
@@ -843,7 +858,7 @@
 
             </div>
 
-            <div class="formasPago container"> 
+            <div class="formasPago"> 
                 <div class="fpIndicaciones">
                         <p>
                             <small><i class="fas fa-caret-right"></i> Precios en pesos mexicanos</small>
@@ -1098,17 +1113,24 @@
                         <img loading="lazy" src="build/img/BDKTINT/GAL_12.jpg" alt="Fotos de la galería">
                     </picture>
                 </a>
-                <a href="build/img/BDKTINT/GAL_13.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                <a href="build/img/BDKTINT/GAL_13.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
                     <picture>
                         <source srcset="build/img/BDKTINT/GAL_13.avif" type="image/avif">
                         <source srcset="build/img/BDKTINT/GAL_13.webp" type="image/webp">
                         <img loading="lazy" src="build/img/BDKTINT/GAL_13.jpg" alt="Fotos de la galería">
                     </picture>
                 </a>
+                <a href="build/img/BDKTINT/GAL_14.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/GAL_14.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/GAL_14.webp" type="image/webp">
+                        <img loading="lazy" src="build/img/BDKTINT/GAL_14.jpg" alt="Fotos de la galería">
+                    </picture>
+                </a>
 
             </div>
 
-            <a href="#" class="boton mnuGal"><i class="fas fa-images"></i> Ver la galería completa</a>
+            <a href="#" class="boton mnuGal"><i class="fas fa-images"></i> Galería completa</a>
             
         </section>
 
@@ -1190,20 +1212,11 @@
     <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
     <script src="build/js/include-html.min.js"></script> 
 
-    <!-- ? FONTAWESOM -->
-    <!-- <script src="https://kit.fontawesome.com/fb0e281aff.js" crossorigin="anonymous"></script>         -->
-
-    <!-- ? BOOTSTRAPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <!-- ? JQUERY -->
     <script src="build/js/jquery.js"></script>
             
     <!-- ? SWIPER : Slider del hero -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <!-- ?ANIMACIONES CON VANILLA-TILT -->
-    <script src="build/js/vanilla-tilt.min.js"></script>
 
     <!-- ? LIBRERÍA PARA LAS ANIMACIONES EN CSS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1211,7 +1224,7 @@
     <!-- ? LIGTHBOX PARA LA GALERÍA -->
     <script src="build/js/lightbox.js"></script>
 
-    <script src="build/js/app.js"></script>
+    <script aysnc src="build/js/app.js"></script>
 
     
 </body>

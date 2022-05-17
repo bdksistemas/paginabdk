@@ -19,7 +19,7 @@
 .secProSol { 
     @include m.mixFlex(flex,center,center,0,row);
     height: 600px;
-    overflow: hidden;  
+    overflow: hidden;   
     
     @include m.mixMQ(v.$tablet) {
         flex-direction: column;
@@ -28,13 +28,13 @@
 
     .secPS_article {
         width: 50%;
-        padding: 5rem 3rem;
+        padding: 5rem 3rem; 
         height: 100%;
         border-right: 5px solid v.$color1;
 
         @include m.mixMQ(v.$tablet) {
             width: 100%;
-            border-right: none;
+            border-right: none; 
             border-bottom: 5px solid v.$color1;
         };
 
@@ -103,7 +103,7 @@
                     top: 2.5rem;
                 };
 
-                @include m.mixMQ(v.$movilSM) {
+                @include m.mixMQ(v.$movil414) {
                     top: 1rem;
                     left: -2rem;
                 };
@@ -137,7 +137,7 @@
 
         .elLista {
 
-            @include m.mixMQ(v.$movilSM) {
+            @include m.mixMQ(v.$movil414) {
                 padding: 2rem 0;
                 margin-left: 0;
             };
@@ -233,6 +233,9 @@
             @include m.mixMQ(v.$movil) {
                 width: 80%;
             };
+            @include m.mixMQ(v.$movil414) {
+                width: 90%;
+            };
             @include m.mixMQ(v.$movilSM) {
                 width: 100%;
             };
@@ -272,7 +275,12 @@
                     top: 85%;
                 };
 
-                @include m.mixMQ(v.$movilSM) {
+                // @include m.mixMQ(v.$movil) {
+                //     left: 60%;
+                //     top: 85%;
+                // };
+
+                @include m.mixMQ(v.$movil414) {
                     left: 55%;
                     top: 87%;
                 };
@@ -831,7 +839,7 @@
         @include m.mixMQ(v.$movil) {
             height: 245px;
         };
-        @include m.mixMQ(v.$movilSM) {
+        @include m.mixMQ(v.$movil414) {
             height: 200px;
         };
  
@@ -857,7 +865,7 @@
             @include m.mixFlex(flex,center,center,wrap,column);
             text-align: center;
 
-            @include m.mixMQ(v.$movilSM) {
+            @include m.mixMQ(v.$movil414) {
                 width: 80%;
                 padding-right: 3rem;
             };
@@ -935,8 +943,7 @@
                 };
 
                 @include m.mixMQ(v.$movil) {
-                    width: 100%;
-                    margin: 0;
+                    display: none;
                 };
             }
 
@@ -1068,7 +1075,7 @@
         @include m.mixMQ(v.$movil) {
             flex-direction: column;
             padding-right: 0;
-            height: 95vh;
+            height: 90vh;
         };
 
         .info_imagen {
@@ -1138,7 +1145,44 @@
 
             .info_main {
                 margin-top: 2rem;
+                height: 85%;
+                overflow: hidden;
+                overflow-y: auto;
 
+                &::-webkit-scrollbar {
+                    width: 8px;     /* Tamaño del scroll en vertical */
+                    height: 8px;    /* Tamaño del scroll en horizontal */
+                    /* display: none;  Ocultar scroll */
+                }
+                
+                /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+                &::-webkit-scrollbar-thumb {
+                    background: v.$color1;
+                    border-radius: 4px;
+                }
+        
+                /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    // background: #b3b3b3;
+                    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+                }
+        
+                /* Cambiamos el fondo cuando esté en active */
+                &::-webkit-scrollbar-thumb:active {
+                    background: v.$color1;
+                }
+                
+                &::-webkit-scrollbar-track {
+                    /* background: #e1e1e1; */
+                    border-radius: 4px;
+                }
+        
+                /* Cambiamos el fondo cuando esté en active o hover */
+                &::-webkit-scrollbar-track:hover,
+                &::-webkit-scrollbar-track:active {
+                    background: #d4d4d4;
+                }        
+        
                 @include m.mixMQ(v.$movil) {
                     margin-top: 1rem;
                     width: 100%;

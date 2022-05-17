@@ -430,8 +430,14 @@
         height: 60vh;
         overflow: hidden;
         position: relative;
+        max-height: 525px;
+
+        // @include m.mixMQ(v.$deskXXL) {
+        //     height: 500px;
+        // };
 
         @include m.mixMQ(v.$movil) {
+            max-height: 1020px;
             height: 1020px;
         };
 

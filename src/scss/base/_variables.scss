@@ -7,7 +7,7 @@ $titSec: 3.6rem;
 $titulos: 3rem;  
 $titParrafo: 2.3rem;
 $titH5: 2rem;
-$descSec: 1.8rem;   
+$descSec: 1.8rem;    
 $descCon: 1.6rem;
  
 
@@ -17,10 +17,8 @@ $blanco: #FFFFFF;
 $color1: #cb001a;   
 $color2: #8d0012;   
 $color3: #7d7d7d;    
-// $color4: #414141; 
-$color4: #1F2022;  
-$color5: #d1d1d1;   
-// $color6: #1BCC00; 
+$color4: #1F2022;     
+$color5: #d1d1d1;    
 $color6: #00BB2D;  
 $degradadoRed: linear-gradient(0deg, rgba(141,0,18,1) 35%, rgba(203,0,26,1) 100%);
 $degradado2: linear-gradient(180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
@@ -29,11 +27,13 @@ $degradado4: linear-gradient(0deg, rgba(3,106,28,1) 12%, rgba(0,187,45,1) 62%);
 
 // Tamaños de Media Queries 
 $movilSM: 375px;  
+$movil414: 414px;
 $movil: 480px;
 $tablet: 768px; 
 $desk: 992px;
-$deskXL: 1200px;   
+$deskXL: 1200px;    
 $deskXXL: 1445px;
+$deskSuper: 1900px;
 
 // Bordes
 $box-shadow: .5rem .5rem 1.5rem rgba(0, 0, 0, .3);
