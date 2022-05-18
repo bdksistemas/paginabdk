@@ -14,10 +14,6 @@
 
     function iniciarApp() {
     
-        if (document.querySelector(".libAOS")) {
-            AOS.init(); 
-        }
-
         // * Activando el SLIDE de las ofertas
         if (document.querySelector(".secEquipo")) {                                    
             activaSliderEq();
@@ -49,12 +45,6 @@
         
         let card = {};
         card = elem.parentNode.parentNode.parentNode.childNodes;
-
-        // if (faceCard===1) {
-        //     card = elem.parentNode.parentNode.parentNode.childNodes;
-        // } else {
-        //     card = elem.parentNode.parentNode.parentNode.parentNode.childNodes;
-        // };
 
         const front = card[1];
         const back = card[3];
@@ -103,39 +93,6 @@
         });    
     };
 
-    // ! CÓDIGO PARA ACTIVAR EL SLIDER DE LAS RESEÑAS    
-    function activaSliderReseñas() {
-        var swiper = new Swiper(".reseñas_slider", {
-            spaceBetween: 20,
-            centeredSlides: true,
-            autoplay: {
-                delay: 3500,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                640: {
-                    slidesPerView: 2,
-                },
-                768: {
-                    slidesPerView: 3,
-                },
-                992: {
-                    slidesPerView: 3,
-                },                
-                1024: {
-                    slidesPerView: 3,
-                },                
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                },
-        });    
-    };
-
 
     // ! FUNCIÓN PARA ACTIVAR EL VIDEO Y REPRODUCIRLO AL ESTAR LA PANTALLA ACTIVA
     function toggleVideo() {
@@ -158,7 +115,6 @@
         // console.log(objetoDom);
 
         if ( objetoDom.matches('#opCard') || objetoDom.matches('#clCard')) {
-            //const face = objetoDom.matches('#opCard') ? 1 : 2;                
             rotarCard(objetoDom);
         }
 
@@ -279,19 +235,6 @@
                 e.classList.remove('active');
             })
             
-        }
-
-        // ? BOTÓN PARA CERRAR LA PANTALLA DE LAS RESEÑAS EN MODO PANTALLA COMPLETA
-        if (objetoDom.matches('#closeResenas')) {
-            const popupResenas = document.querySelector('.all-resenas');
-            popupResenas.classList.toggle('active');
-
-            // const contenedorResenas = document.getElementById('container-resenas')            
-            // contenedorResenas.classList.remove('mode-screen')
-
-            const body = document.querySelector('body');
-            body.classList.remove('body-noscroll');
-                    
         }
 
         // ? LINK A WHATSAPP DE VENTAS
@@ -431,6 +374,7 @@
         menu.classList.toggle('menu2');
     };   
 
+    // ! FUNCIÓN PARA MARCAR EN ROJO O EN VERDE LOS PUNTOS DE INTERES DEL MAPA DE FUNCIONES
     function mapaNegocio(elem) {
 
         const tipoMapa = elem.substring(0,6);
@@ -601,20 +545,7 @@
             } else {
                 sliderFondo.style.transform = `translateY(-${(sliderHeight-1) * sliderAct}px)`;
             }
-        }
-
-
-        // sliderFondo.style.transform = `translateY(-${(sliderHeight-1) * sliderAct}px)`;
-        // sliderFondo.style.transform = `translateY(-${(sliderHeight-.5) * sliderAct}px)`;
-
-        // console.log(sliderAct + ' : TOP= ' + sliderHeight * sliderAct) ;
-        
-        // sliderFondo.style.top = topActual - sliderHeight;
-
-        // console.log('altura: ' + sliderHeight);        
-        // console.log('top actual: ' + topActual + ' px');
-        // console.log('nuevo top: ' + topActual - sliderHeight);
-                
+        }                
     }
 
     // ! POPUP INFORMATIVO MÓDULO DE HOSTESS
@@ -625,29 +556,13 @@
         let txtSeccion = elem.id.substring(6);
         let txtBloqueInfo = '.popup' + txtSeccion;
         let bloqueInfo = document.querySelector(`${txtBloqueInfo}`);
-
-        // console.log(bloqueInfo);
         
         bloqueInfo.classList.add('active');
         
     }
     
-    function muestraResenas() {
-
-        const popupResenas = document.querySelector('.all-resenas');
-        popupResenas.classList.toggle('active');
-
-        // const contenedorResenas = document.getElementById('container-resenas')
-        // contenedorResenas.classList.add('mode-screen')
-
-        const body = document.querySelector('body');
-        body.classList.add('body-noscroll');
-        
-    }
-
     function navBackground() {
 
-        // let nav     = document.getElementById('nav');
         let nav = document.querySelector('.nav');
         let desp_actual = window.pageYOffset;
         let ancho_screen = window.innerWidth;        
