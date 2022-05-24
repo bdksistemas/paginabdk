@@ -10,3 +10,15 @@
 ## RAMA OptimizaV2
 
 * En esta rama se eliminan las animaciones de todas las páginas para optimizar la carga del HTML
+
+## RAMA RESP19MAY
+
+* Hice esta rama para dejar un respaldo de la página antes de afectar por completo el HEADER de las paginas de los sistemas. 
+
+## RAMA OptimizaV3
+### Optimización de la página web para tratar de que sea más rápida en los dispositivos móviles
+
+* Se cambian las imagenes de FONDO para que en celulares se muetre una imagen más pequeña
+* Se eliminan algunas animaciones
+* Se agregan imagenes para la versión MOVIL
+

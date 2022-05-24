@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>BDKSPA</title>
+
+    <!-- ! CONFIGURACIONES DE GOOGLE -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1011948451');
+    </script>
+
+    <!-- ? Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9FG8EFFN81');
+    </script>
+
+    <!-- ! ----------------------------------------- -->
+
+    <title>BDKSPA Software Belleza </title>
 
     <!-- FAVICON -->
 
@@ -26,13 +51,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- ? FONTAWESOM -->
+    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- ? LIGHTBOX: Galería -->
+    <link rel="preload" href="build/css/lightbox.css" as="style">
     <link rel="stylesheet" href="build/css/lightbox.css">
+
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
     <!-- ? METAS -->
@@ -55,26 +85,6 @@
     <meta property="og:description" content="Registro de ventas, control de tratamientos, agenda, almacén, comisiones y mucho más." />
     <meta property="og:type" content="website" />
     
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-9FG8EFFN81');
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-1011948451');
-    </script>
-
 </head>
 
 <body>
@@ -126,90 +136,38 @@
                         <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/BDKSPA_PDV_01.png" alt="Terminal punto de venta">
                     </picture>
                 </div>
-                <div class="heroSoft_Titulo">
-                    <h1>Software para <span>salones de belleza</h1>
-                    <p>La solución ideal para todo tipo de salones de belleza, estéticas y SPAs</p>
+                <div class="soft_titulo">
+                    <h1>Software para salones de belleza</h1>
+                    <p>Sin duda uno de los mejores sistemas de belleza del mercado. Estéticas, Centros de Belleza y SPAs</p>
                 </div>
             </div>
 
-            <div class="anim-mouse-b3">
+            <div class="anim-mouse-b2">
                 <div class="mouse"></div>
             </div> 
     
         </div>
 
-        <!-- ! CARROUSEL DE IMAGENES DEL LADO DERECHO DEL HEADER -->
+        <!-- ! CARRUSEL DE IMAGENES DE LA DERECHA -->
         <div class="hero-right">
-            <div class="slide-fondos" id="slide-fondos">
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKSPA/FONDO_01.avif" type="image/avif">
-                        <source srcset="build/img/BDKSPA/FONDO_01.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/FONDO_01.jpg" alt="Imagen de presentación del software BDKSPA">
-                    </picture>
-                    <div class="heroR-leyenda"> 
-                        <h3>Punto de venta para salones de belleza</h3>
-                        <p>Sin duda uno de los mejores sistemas para estéticas, salones de belleza y SPAs.</p>
-                    </div>
-                </div> 
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKSPA/FONDO_02.avif" type="image/avif">
-                        <source srcset="build/img/BDKSPA/FONDO_02.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/FONDO_02.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
-                    </picture>
-                    <div class="heroR-leyenda"> 
-                        <h3>Recepción y caja</h3>
-                        <p>Lleva registro de tus ventas e ingresos, registra sesiones realizadas, abre una cuenta al cliente,  revisa la agenda y realiza el corte de turno.</p>
-                    </div>
-                </div> 
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKSPA/FONDO_03.avif" type="image/avif">
-                        <source srcset="build/img/BDKSPA/FONDO_03.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/FONDO_03.jpg" alt="Grupo de jovenes haciendo cardio">
-                    </picture>
-                    <div class="heroR-leyenda">
-                        <h3>Clientes</h3>
-                        <p>Otorga créditos, recompensa su lealtad, lleva su expediente, controla sus medidas y peso y mucho más.</p>
-                    </div>
-                </div>
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKSPA/FONDO_04.avif" type="image/avif">
-                        <source srcset="build/img/BDKSPA/FONDO_04.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/FONDO_04.jpg" alt="Joven instructor contando productos del gimnasio">
-                    </picture>
-                    <div class="heroR-leyenda">
-                        <h3>Control de almacén</h3>
-                        <p>Lleva un control de tus insumos y productos, captura tus inventarios para detectar faltantes de mercancía.</p>
-                    </div>
-                </div>
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKSPA/FONDO_05.avif" type="image/avif">
-                        <source srcset="build/img/BDKSPA/FONDO_05.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/FONDO_05.jpg" alt="Hermosa joven administradora de un gimnasio">
-                    </picture>
-                    <div class="heroR-leyenda">
-                        <h3>Administración</h3>
-                        <p>Evita el robo hormiga y lleva un perfecto control de tus ingresos y egresos.
-                            Obtén reportes de sesiones vendidas, reportes de ventas y más.</p>
-                    </div>
-                </div>
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKSPA/FONDO_06.avif" type="image/avif">
-                        <source srcset="build/img/BDKSPA/FONDO_06.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/FONDO_06.jpg" alt="Instructores analizando rutinas de gimnasio">
-                    </picture>
-                    <div class="heroR-leyenda">
-                        <h3>Empleados</h3>
-                        <p>Lleva la agenda de tus estilistas, registra comisiones y mucho más.</p>
-                    </div>
-                </div>
+
+            <div class="heroR-fondo">
+                <picture>
+                    <source srcset="build/img/FONDO_SPA_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/FONDO_SPA.avif" type="image/avif">
+                    <source srcset="build/img/FONDO_SPA_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/FONDO_SPA.webp" type="image/webp">
+                    <source srcset="build/img/FONDO_SPA_MOVIL.jpg" media="(max-width: 480px)">
+                    <img loading="lazy" width="350" height="150" src="build/img/FONDO_SPA.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
+                </picture>
+            </div>
+
+            <div class="heroR-leyenda"> 
+                <h2>La solución ideal para todo tipo de centros de belleza</h2>
+                <p>Ideal para proteger tu negocio contra malos manejos administrativos y el robo hormiga. Control de ventas, ventas a crédito, agenda, control de sesiones, ingresos, egresos, manejo de comisiones y más.</p>
             </div>
         </div>
+
     </header>
 
     <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
@@ -1256,8 +1214,7 @@
     <!-- ? LIGTHBOX PARA LA GALERÍA -->
     <script src="build/js/lightbox.js"></script>
 
-    <script aysnc src="build/js/app.js"></script>
-
+    <script src="build/js/app.js"></script>
     
 </body>
 </html>

@@ -8,7 +8,7 @@
     position: relative;
 
     @include m.mixMQ(v.$movil) {
-        height: auto;
+        height: auto; 
     };
 
     &::before {
@@ -19,8 +19,6 @@
         width: 100%;
         height: 100%;
         background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5970763305322129) 100%), url('../img/FondoSecPagWeb.jpg');
-        //background-size: cover;
-        //background-position: center center;
 
         background-repeat: no-repeat;
         background-size: cover;
@@ -28,6 +26,10 @@
         background-attachment: fixed;
 
         z-index: -1;
+
+        @include m.mixMQ(v.$movil) {
+            background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5970763305322129) 100%), url('../img/FondoSecPagWeb_Movil.jpg');
+        }
     }
 
     h3, p {

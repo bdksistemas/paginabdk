@@ -19,6 +19,16 @@
     list-style: none;  
 }
 
+@mixin mix-before{   
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 // MIXIN para agregar FLEXBOX a las cajas 
 // Si el parámetrio es igual a 0 no aplica el código
 // PARAMETROS:

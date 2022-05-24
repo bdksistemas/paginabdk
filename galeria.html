@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- ! CONFIGURACIONES DE GOOGLE -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1011948451');
+    </script>
+
+    <!-- ? Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9FG8EFFN81');
+    </script>
+
+    <!-- ! ----------------------------------------- -->
+
     <title>BDKSISTEMAS - Galería</title>
 
     <!-- FAVICON -->
@@ -26,13 +51,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- ? FONTAWESOM -->
+    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- ? LIGHTBOX: Galería -->
+    <link rel="preload" href="build/css/lightbox.css" as="style">
     <link rel="stylesheet" href="build/css/lightbox.css">
+
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
     <!-- ? METAS --> 
@@ -55,27 +85,6 @@
     <meta property="og:description" content="Software Punto de Venta para todo los giros de negocios" />
     <meta property="og:type" content="website" />
     
-
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-9FG8EFFN81');
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-1011948451');
-    </script>
-
 </head>
 
 <body>
@@ -709,7 +718,7 @@
     <!-- ? LIGTHBOX PARA LA GALERÍA -->
     <script src="build/js/lightbox.js"></script>
 
-    <script aysnc src="build/js/app.js"></script>
+    <script src="build/js/app.js"></script>
 
     
 </body>

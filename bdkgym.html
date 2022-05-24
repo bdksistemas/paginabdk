@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>BDKGYM</title>
+
+    <!-- ! CONFIGURACIONES DE GOOGLE -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1011948451');
+    </script>
+
+    <!-- ? Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9FG8EFFN81');
+    </script>
+
+    <!-- ! ----------------------------------------- -->
+
+    <title>BDKGYM - Software para gimnasios</title>
 
     <!-- FAVICON -->
 
@@ -26,13 +51,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- ? FONTAWESOM -->
+    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- ? LIGHTBOX: Galería -->
+    <link rel="preload" href="build/css/lightbox.css" as="style">
     <link rel="stylesheet" href="build/css/lightbox.css">
+
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
     <!-- ? METAS -->
@@ -54,29 +84,7 @@
     <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/PortadaCompartir.jpg" />
     <meta property="og:description" content="Control y registro de inscripciones, cobro de mensualidades, registro de asistencia y mucho más" />
     <meta property="og:type" content="website" />
-    
-
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-9FG8EFFN81');
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-1011948451');
-    </script>
-
-    
+        
 </head>
 
 <body>
@@ -128,91 +136,39 @@
                         <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/BDKGYM_PDV_01.png" alt="Terminal punto de venta">
                     </picture>
                 </div>
-                <div class="heroSoft_Titulo">
-                    <h1>Software para <span>gimnasios</h1>
-                    <p>La solución ideal para todo tipo de gimnasios y academias deportivas</p>
+                <div class="soft_titulo">
+                    <h1>Software para gimnasios</h1>
+                    <p>Sin duda uno de los mejores sistemas de gimnasios del mercado.</p>
                 </div>
             </div>
 
-            <div class="anim-mouse-b3">
+            <div class="anim-mouse-b2">
                 <div class="mouse"></div>
             </div>
     
         </div>
 
-        <!-- ! CARROUSEL DE IMAGENES DEL LADO DERECHO DEL HEADER -->
+        <!-- ! CARRUSEL DE IMAGENES DE LA DERECHA -->
         <div class="hero-right">
-            <div class="slide-fondos" id="slide-fondos">
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKGYM/FONDO_01.avif" type="image/avif">
-                        <source srcset="build/img/BDKGYM/FONDO_01.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_01.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
-                    </picture>
-                    <div class="heroR-leyenda"> 
-                        <h3>Recepción</h3>
-                        <p>Lleva un registro de las inscripciones y cobro de mensualidades. Registra la asistencia de tus clientes y controla el acceso a tus instalaciones.</p>
-                    </div>
-                </div> 
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKGYM/FONDO_02.avif" type="image/avif">
-                        <source srcset="build/img/BDKGYM/FONDO_02.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_02.jpg" alt="Grupo de jovenes haciendo cardio">
-                    </picture>
-                    <div class="heroR-leyenda">
-                        <h3>Clientes</h3>
-                        <p>Asigna rutinas y dietas personalizadas, control de medidas y peso, envío correos con recordatorios de pago, registro con huella y más.</p>
-                    </div>
-                </div>
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKGYM/FONDO_03.avif" type="image/avif">
-                        <source srcset="build/img/BDKGYM/FONDO_03.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_03.jpg" alt="Joven instructor contando productos del gimnasio">
-                    </picture>
-                    <div class="heroR-leyenda">
-                        <h3>Control de almacén</h3>
-                        <p>Lleva un control de tus insumos y productos, captura tus inventarios para detectar faltantes de mercancía. Ideal si vendes suplementos alimenticios en tu gimnasio.</p>
-                    </div>
-                </div>
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKGYM/FONDO_04.avif" type="image/avif">
-                        <source srcset="build/img/BDKGYM/FONDO_04.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_04.jpg" alt="Hermosa joven administradora de un gimnasio">
-                    </picture>
-                    <div class="heroR-leyenda">
-                        <h3>Administración</h3>
-                        <p>Evita el robo hormiga y lleva un perfecto control de tus ingresos y egresos. Obtén reportes de mensualidades vencidas y envía recordatorios de pago vía e-mail.</p>
-                    </div>
-                </div>
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKGYM/FONDO_05.avif" type="image/avif">
-                        <source srcset="build/img/BDKGYM/FONDO_05.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_05.jpg" alt="Instructores analizando rutinas de gimnasio">
-                    </picture>
-                    <div class="heroR-leyenda">
-                        <h3>Empleados</h3>
-                        <p>Lleva un control de las clases de tus instructores, agrega clases y registra horarios. Asigna alumnos a cada clase e instructor.
-                            Asignan rutinas y dietas para sus alumnos.</p>
-                    </div>
-                </div>
-                <div class="heroR-fondo">
-                    <picture>
-                        <source srcset="build/img/BDKGYM/FONDO_06.avif" type="image/avif">
-                        <source srcset="build/img/BDKGYM/FONDO_06.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FONDO_06.jpg" alt="Joven pareja dueños de un gimnasio">
-                    </picture>
-                    <div class="heroR-leyenda">
-                        <h3>Beneficios para el dueño</h3>
-                        <p>BDKGYM te permite monitorear tu negocio y te da la tranquilidad de delegar funciones.</p>
-                    </div>
-                </div>
 
+            <div class="heroR-fondo">
+                <picture>
+                    <source srcset="build/img/FONDO_GYM_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/FONDO_GYM.avif" type="image/avif">
+                    <source srcset="build/img/FONDO_GYM_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/FONDO_GYM.webp" type="image/webp">
+                    <source srcset="build/img/FONDO_GYM_MOVIL.jpg" media="(max-width: 480px)">
+                    <img loading="lazy" width="350" height="150" src="build/img/FONDO_GYM.jpg" alt="Control de acceso de un gimnasio">
+                </picture>
+            </div>
+
+            <div class="heroR-leyenda"> 
+                <h2>La solución ideal para todo tipo de gimnasios y academias deportivas</h2>
+                <p>Ideal para proteger tu negocio contra malos manejos administrativos y el robo hormiga. Control de mensualidades, inscripciones, control de ventas, registro de asistencia, control de acceso, registro con huellas y mucho más.</p>
             </div>
         </div>
+
+
     </header>
 
     <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
@@ -1323,8 +1279,7 @@
     <!-- ? LIGTHBOX PARA LA GALERÍA -->
     <script src="build/js/lightbox.js"></script>
 
-    <script aysnc src="build/js/app.js"></script>
-
+    <script src="build/js/app.js"></script>
     
 </body>
 </html>

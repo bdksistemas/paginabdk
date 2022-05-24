@@ -29,9 +29,6 @@
         })
         navBackground();
         
-        if (document.querySelector(".heroR-fondo")) {
-            setInterval(cambiaSlideFondo, 6000);
-        }
 
         if (document.querySelector(".video_software")) {            
             const videoPub = document.querySelector('.video_pub');
@@ -208,10 +205,10 @@
             $(location).attr('href','bdkpos.html');
         }            
 
-        // ? ICONO DEL MENÚ HAMBURGUESA
-        if ( objetoDom.matches('.botMueve')) {
-            cambiaSlideFondo();
-        }
+        // // ? ICONO DEL MENÚ HAMBURGUESA
+        // if ( objetoDom.matches('.botMueve')) {
+        //     cambiaSlideFondo();
+        // }
 
         // ? PUNTO DE INTERES DE UN MAPA DE SOFTWARE
         if ( objetoDom.matches('.punto_interes')) {
@@ -523,31 +520,6 @@
         }
     }
 
-    function cambiaSlideFondo() {
-        const sliderContainer = document.querySelector('.hero-right');
-        const sliderFondo = document.getElementById('slide-fondos');
-        const sliderHeight = sliderContainer.clientHeight;
-        const topActual = sliderFondo.style.top;
-        const slidersTotal = document.querySelectorAll('.heroR-fondo').length;
-        let ancho_screen = window.innerWidth;
-    
-        if (sliderAct === slidersTotal-1) {
-            sliderAct = 0;
-        } else {
-            sliderAct++;
-        }
-
-        if (ancho_screen > 768 ) {
-            sliderFondo.style.transform = `translateY(-${(sliderHeight-1) * sliderAct}px)`;
-        } else {
-            if (ancho_screen > 480 ) {
-                sliderFondo.style.transform = `translateY(-${(sliderHeight+.2) * sliderAct}px)`;
-            } else {
-                sliderFondo.style.transform = `translateY(-${(sliderHeight-1) * sliderAct}px)`;
-            }
-        }                
-    }
-
     // ! POPUP INFORMATIVO MÓDULO DE HOSTESS
     function muestraPopup(elem) {
         const popup = document.querySelector('.infoPopup');
@@ -569,17 +541,15 @@
 
         if ( desp_actual <= 300 ) {
 
-            nav.style.borderBottom = '';
+            nav.style.borderBottom = ''; 
 
             if (ancho_screen > 768 ) {
                 nav.style.background = 'rgba(0,0,0,0.5)';
             } else {
-                nav.style.background = '';
+                nav.style.background = 'linear-gradient(0deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 100%)';
             }
 
         } else {
-            // nav.style.background = 'rgba(0,0,0,1)';
-            // nav.style.background = '#0A0B0D';
             nav.style.background = '#1F2022';
             nav.style.borderBottom = '2px solid #cb001a';
         }

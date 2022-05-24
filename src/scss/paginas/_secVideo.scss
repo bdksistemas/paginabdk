@@ -13,12 +13,20 @@
     &::before {
         content: "";
         position: absolute;
+        top: 0;
         left: 0;
-        width: 100%; 
-        height: 100%;         
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    
         background: rgb(225,29,5);
-        background: radial-gradient(circle, rgba(225,29,5,0.5) 0%, rgba(5,5,6,0.8) 42%);        
-        z-index: 1;
+        background-image: radial-gradient(circle, rgba(225,29,5,0.5) 0%, rgba(5,5,6,0.8) 42%), url('../img/FondoVideo.jpg');        
+        background-position: center;
+
+        @include m.mixMQ(v.$movil) {
+            background-image: radial-gradient(circle, rgba(225,29,5,0.5) 0%, rgba(5,5,6,0.8) 42%), url('../img/FondoVideo_Movil.jpg');        
+        }
+
     }
 
     @include m.mixFlex(flex,flex-start,center,0,0);
@@ -36,7 +44,6 @@
             display: block; 
             transition: .5s;
             border-radius: 50%;
-            // margin-top: 7.5rem;
         
             -webkit-animation: ripple 2.5s linear 1s infinite;
             animation: ripple 2.5s linear 1s infinite;
@@ -87,17 +94,4 @@
         }    
         
     }        
-}
-
-@keyframes ripple {
-    0% {
-      box-shadow: 0 0 0 .7rem rgba(255,255,255, 0.2),
-                  0 0 0 1.5rem rgba(255,255,255, 0.2),
-                  0 0 0 5rem rgba(255,255,255, 0.2);
-    }
-    100% {
-      box-shadow: 0 0 0 1.5rem rgba(255,255,255, 0.2),
-                  0 0 0 4rem rgba(255,255,255, 0.2),
-                  0 0 0 8rem rgba(255,255,255, 0);
-    }
 }

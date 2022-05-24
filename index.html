@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- ! CONFIGURACIONES DE GOOGLE -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1011948451');
+    </script>
+
+    <!-- ? Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9FG8EFFN81');
+    </script>
+
+    <!-- ! ----------------------------------------- -->
+
     <title>BDKSistemas</title>
 
     <!-- FAVICON -->  
@@ -26,23 +51,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- ? FONTAWESOM -->
+    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- ? LIGHTBOX: Galería -->
+    <link rel="preload" href="build/css/lightbox.css" as="style">
     <link rel="stylesheet" href="build/css/lightbox.css">
+
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
-    <!-- ? METAS -->
+    <!-- ? METAS --> 
     
     <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="BDKSISTEMAS, Lo mejor en informática y puntos de venta"/>
-    <meta name="keywords" content="software para restaurantes, sistema de restaurantes, programa de restaurantes, software para gimnasios, sistema para gimnasios, programa para gimnasios, software para Lavanderias, sistema para Lavanderias, programa para Lavanderias, software para salones de belleza, sistema para salones de belleza, programa para salones de belleza, software para barberias, sistema para barberias, programa para barberias, software punto de venta, sistema punto de venta, programa punto de venta, punto de venta"/>
+    <meta name="keywords" content="software para restaurantes, sistema de restaurantes, programa de restaurantes, software para gimnasios, sistema para gimnasios, programa para gimnasios, software para lavanderias, sistema para Lavanderias, programa para Lavanderias, software para salones de belleza, sistema para salones de belleza, programa para salones de belleza, software para barberias, sistema para barberias, programa para barberias, software punto de venta, sistema punto de venta, programa punto de venta, punto de venta, soft restaurant"/>
     <meta name="author" content="BDKSISTEMAS" />
     <meta name="copyright" content="BDKSISTEMAS" />    
     <meta name="robots" content="index"/>
@@ -54,28 +84,7 @@
     <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/Fondo_Hero.jpg" />
     <meta property="og:description" content="Software Punto de Venta para todo los giros de negocios" />
     <meta property="og:type" content="website" />
-    
-
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-9FG8EFFN81');
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-1011948451');
-    </script>
-  
+      
 </head> 
 
 <body>
@@ -110,7 +119,7 @@
 
     <!-- ! HERO -->
     <header class="hero">    
-        <section class="hero_container">
+        <section class="formatoHero_Container">
             <h1>Tenemos el mejor software <span>punto de venta</span> para tu negocio</h1>
             <p>Nuestros productos cuentan con un sinfín de funcionalidades ideales para que lleves una excelente administración de todas los áreas de tu negocio.</p>
         </section>
@@ -118,7 +127,7 @@
             <ul class="dynamic-txts">
                 <li><span>Restaurantes</span></li> 
                 <li><span>Gimnasios</span></li>
-                <li><span>Salones de Belleza & SPA</span></li>
+                <li><span>Salones de Belleza</span></li>
                 <li><span>Lavanderías</span></li>
                 <li><span>Barberías</span></li>
                 <li><span>Todo tipo de negocio</span></li>
@@ -738,19 +747,8 @@
 
         <!-- ! VÍDEO -->   
         <section class="secVideo">
-            
-            <picture>
-                <source srcset="build/img/FondoVideo.avif" type="image/avif">
-                <source srcset="build/img/FondoVideo.webp" type="image/webp">
-                <img loading="lazy" src="build/img/FondoVideo.jpg" alt="" class="fondoSecciones">
-            </picture>
-                        
-
+                                    
             <div class="videoContent">
-                <!-- <div class="tituloWhite">
-                    <h2><span>Vídeo</span> de instalaciones</h2> 
-                    <p>Te presentamos algunas de nuestras instalaciones de software a nivel nacional e internacional</p>
-                </div>     -->
                 <a href="#" class="play" id="play"><img src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
             </div>
             <div class="videoPopup">
@@ -779,7 +777,7 @@
         
         </section> 
                  
-        <!-- ! DESPEDIDA -->
+        <!-- ! DESPEDIDA --> 
         <section class="bkgwhite secDespedida" id="reseñas"> 
 
             <div class="titulo"> 
@@ -808,6 +806,9 @@
     <!-- * LISTA DE SCRIPTS -->
     <!-- ! --------------------------------------------------------------------------------- -->
 
+    <!-- ? LIBRERÍA PARA LA LIBRERÍA MODERNIZR, PARA PODER APLICAR IMAGENES WEBP EN EL CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+
     <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
     <script src="build/js/include-html.min.js"></script> 
 
@@ -820,7 +821,7 @@
     <!-- ? LIGTHBOX PARA LA GALERÍA -->
     <script src="build/js/lightbox.js"></script>
 
-    <script async src="build/js/app.js"></script>
+    <script src="build/js/app.js"></script>
 
     
 </body>

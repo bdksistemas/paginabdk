@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- ! CONFIGURACIONES DE GOOGLE -->
+
+    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1011948451');
+    </script>
+
+    <!-- ? Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9FG8EFFN81');
+    </script>
+
+    <!-- ! ----------------------------------------- -->
+
     <title>BDKSISTEMAS - Contacto</title>
 
     <!-- FAVICON -->
@@ -29,13 +54,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <!-- ? FONTAWESOM -->
+    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
+    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- ? LIGHTBOX: Galería -->
+    <link rel="preload" href="build/css/lightbox.css" as="style">
     <link rel="stylesheet" href="build/css/lightbox.css">
+
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
     <!-- ? METAS -->
@@ -57,35 +87,6 @@
     <meta property="og:image" content="https://www.bdksistemas.com.mx/build/img/Fondo_Hero.jpg" />
     <meta property="og:description" content="Software Punto de Venta para todo los giros de negocios" />
     <meta property="og:type" content="website" />    
-
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-9FG8EFFN81');
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-1011948451');
-    </script>
-
-    <!-- Event snippet for Seguimiento conversion page -->
-    <script>
-        gtag('event', 'conversion', {
-            'send_to': 'AW-1011948451/LcWwCK2xiwQQo7fE4gM',
-            'value': 1.0,
-            'currency': 'MXN'
-        });
-    </script>
 
 </head>
 
@@ -332,8 +333,7 @@
     <!-- ? LIGTHBOX PARA LA GALERÍA -->
     <script src="build/js/lightbox.js"></script>
 
-    <script aysnc src="build/js/app.js"></script>
-
+    <script src="build/js/app.js"></script>
     
 </body>
 </html>

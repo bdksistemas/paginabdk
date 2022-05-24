@@ -5,11 +5,11 @@ html {
     font-size: 62.5%; 
     box-sizing: border-box;
     scroll-padding-top: 0rem; 
-    scroll-behavior: smooth; 
-} 
-
+    scroll-behavior: smooth;  
+}  
+ 
 *,    
-*:before,   
+*:before,    
 *:after {   
     box-sizing: inherit;   
     margin: 0;     
@@ -788,16 +788,8 @@ img {
     }
 }
 
-
-// .prueba {
-
-//     a[href]:empty::before{
-//         content:attr(href) ;
-//     }
-    
-// }
-
 .regresar {
     width: 200px;
     margin: 0 auto;
 }
+

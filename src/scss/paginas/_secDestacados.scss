@@ -20,6 +20,12 @@
         background-size: cover;
         background-position: center center;
         z-index: -1;
+
+        @include m.mixMQ(v.$movil) {
+            background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5970763305322129) 100%), url('../img/Fondo_Destacado_Movil.jpg');
+            background-position: center;
+        };
+
     }
 
     h3, p {
