@@ -7,6 +7,7 @@
     width: 75%; 
     text-align: left;   
     margin: auto 0; 
+    z-index: 100;
 
     @include m.mixMQ(v.$deskXXL) { 
         width: 80%; 
@@ -123,97 +124,27 @@
         @include m.mixMQ(v.$tablet) {
             width: 100%;
         };
-    
+
         &::before {
-            content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-size: cover;
-            background-position: center center;
             z-index: -1;
-        }
+        
+            content: "";
+            background: linear-gradient(270deg, rgba(0,0,0,.1) 20%, rgba(0,0,0,1) 100%);        
+            z-index: 100;    
 
+        }
+        
         .elLista {
 
             @include m.mixMQ(v.$movil414) {
                 padding: 2rem 0;
                 margin-left: 0;
             };
-        }
-    }
-
-    .secImg_fondo_rest {
-        @extend .secImg_fondo;
-
-        &::before {
-            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 10%, rgba(0,0,0,0.45) 40%, rgba(0,0,0,0) 55%), url('../img/BDKREST/SOLUCION.jpg');
-
-            @include m.mixMQ(v.$movil) {
-                background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 40%, rgba(0,0,0,.2) 100%), url('../img/BDKREST/SOLUCION.jpg');
-            };
-        }
-
-        .tituloWhite {
-            @include m.mixMQ(v.$movil) {
-                text-align: center;
-            };
-        }
-    }
-
-    .secImg_fondo_gym {
-        @extend .secImg_fondo;
-
-        &::before {
-            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKGYM/SOLUCION.jpg');
-        }
-    }
-
-    .secImg_fondo_tint {
-        @extend .secImg_fondo;
-
-        &::before {
-            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKTINT/SOLUCION.jpg');
-            background-size: cover;
-            background-position: center center;
-    
-            @include m.mixMQ(v.$deskXXL) {
-                background-position: left center;
-            };
-
-            @include m.mixMQ(v.$desk) {
-                background-position: 40%;
-            };
-        }
-    }
-
-    .secImg_fondo_spa {
-        @extend .secImg_fondo;
-
-        &::before { 
-            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKSPA/SOLUCION.jpg');
-        }
-    }
-
-    .secImg_fondo_barber {
-        @extend .secImg_fondo;
-
-        &::before {
-            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKBARBER/SOLUCION.jpg');
-        }
-    }
-
-    .secImg_fondo_pos {
-        @extend .secImg_fondo;
-
-        &::before {
-            background-image: linear-gradient(90deg, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0) 55%), url('../img/BDKPOS/SOLUCION.jpg');
-
-            @include m.mixMQ(v.$desk) {
-                background-position: 75%;
-            };    
         }
     }
 
@@ -276,11 +207,6 @@
                     top: 85%;
                 };
 
-                // @include m.mixMQ(v.$movil) {
-                //     left: 60%;
-                //     top: 85%;
-                // };
-
                 @include m.mixMQ(v.$movil414) {
                     left: 55%;
                     top: 87%;
@@ -337,7 +263,6 @@
         }
 
         .mapa_funciones_rest {
-            @extend .mapa_funciones;
             left: 68%;
             top: 28rem;
 
@@ -361,7 +286,6 @@
         }
 
         .mapa_funciones_gym {
-            @extend .mapa_funciones;
             left: 72%;
             top: 28rem;
 
@@ -389,7 +313,6 @@
         }
 
         .mapa_funciones_tint {
-            @extend .mapa_funciones;
             left: 10%;
             top: 32rem;
 
@@ -407,7 +330,6 @@
         }
 
         .mapa_funciones_spa {
-            @extend .mapa_funciones;
             left: 71%;
             top: 30rem;
 
@@ -431,7 +353,6 @@
         }
 
         .mapa_funciones_barber {
-            @extend .mapa_funciones;
             left: 65%;
             top: 28rem;
 
@@ -454,7 +375,6 @@
         }
 
         .mapa_funciones_pos {
-            @extend .mapa_funciones;
             left: 75%;
             top: 20rem;
 
@@ -583,6 +503,16 @@
 
 // ! SECCIÓN LISTA DE PRECIOS
 .precios_software {
+    position: relative;
+    
+    .pwPresentador {
+        position: absolute;
+        width: 300px;
+        height: auto;
+        top: -13.3rem;
+        left: calc(50vw - 125px);
+        margin: 0 auto;
+    }
     
     .precios_planes {        
         @include m.mixFlex(flex,center,center,wrap,0);
@@ -626,8 +556,7 @@
                 }
             }
 
-            .paquete_nombrePlanOro {
-                @extend .paquete_nombrePlan;
+            .oro {
                 background: v.$degradadoRed;
                 color: v.$blanco;
             }
@@ -1067,7 +996,7 @@
 
         .info_imagen {
             width: 40%;
-            height: 100%;
+            height: 100%; 
             overflow: hidden;
 
             @include m.mixMQ(v.$desk) {
@@ -1235,48 +1164,6 @@
         }
     }
 
-    // ! POPUS BDKREST
-
-    .popup_hostess {
-        @extend .popup_visible;
-    }
-
-    .popup_movil {
-        @extend .popup_visible;
-    }
-
-    .popup_meseros {
-        @extend .popup_visible;
-    }
-
-    .popup_caja {
-        @extend .popup_visible;
-    }
-
-    .popup_cocina {
-        @extend .popup_visible;
-    }
-
-    .popup_recetas {
-        @extend .popup_visible;
-    }
-
-    .popup_almacen {
-        @extend .popup_visible;
-    }
-
-    .popup_clientes {
-        @extend .popup_visible;
-    }
-
-    .popup_comedor {
-        @extend .popup_visible;
-    }
-
-    .popup_billar {
-        @extend .popup_visible;
-    }
-
     .close {
         position: absolute;
         top: 30px;  right: 30px;
@@ -1294,70 +1181,6 @@
         };
     }    
     
-    // ! POPUS BDKGYM
-
-    .popup_recepcion {
-        @extend .popup_visible;
-    }
-
-    .popup_asistencia {
-        @extend .popup_visible;
-    }
-
-    .popup_acceso {
-        @extend .popup_visible;
-    }
-
-    .popup_clases {
-        @extend .popup_visible;
-    }
-
-    .popup_gimnasio {
-        @extend .popup_visible;
-    }
-
-    .popup_pos {
-        @extend .popup_visible;
-    }
-
-    .popup_admon {
-        @extend .popup_visible;
-    }
-
-    // ! POPUS BDKTINT    
-
-    .popup_servicios {
-        @extend .popup_visible;
-    }
-
-    .popup_inventarios {
-        @extend .popup_visible;
-    }
-
-    .popup_empleados {
-        @extend .popup_visible;
-    }
-
-    .popup_cuentas {
-        @extend .popup_visible;
-    }
-
-    // ! POPUS BDKSPA
-
-    .popup_trats {
-        @extend .popup_visible;
-    }
-
-    .popup_nots {
-        @extend .popup_visible;
-    }
-
-    // ! POPUS BDKPOS
-
-    .popup_domicilio {
-        @extend .popup_visible;
-    }
-
 } 
 
 .soft_titulo {

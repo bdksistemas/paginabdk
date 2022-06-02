@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <!-- ! CONFIGURACIONES DE GOOGLE -->
+    <!-- ! CONFIGURACIONES DE GOOGLE --> 
 
     <!-- Global site tag (gtag.js) - Google Ads: 1011948451 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1011948451"></script>
@@ -14,21 +14,13 @@
         gtag('config', 'AW-1011948451');
     </script>
 
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-9FG8EFFN81');
-    </script>
 
     <!-- ! ----------------------------------------- -->
 
     <title>BDKSistemas</title>
 
-    <!-- FAVICON -->  
+    <!-- FAVICON -->    
 
     <link rel="apple-touch-icon" sizes="57x57" href="build/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="build/img/favicon/apple-icon-60x60.png">
@@ -40,32 +32,25 @@
     <link rel="apple-touch-icon" sizes="152x152" href="build/img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="build/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png"> 
+    <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png"> 
     <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
 
+
+    <!-- ! ESTILOS --> 
 
     <!-- ? FUENTE NUNITO DE GOOGLE FONTS --> 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- ? FONTAWESOM -->
-    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
-    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- ? LIGHTBOX: Galería -->
-    <link rel="preload" href="build/css/lightbox.css" as="style">
-    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
-    <!-- ? METAS --> 
+    <!-- ! METAS --> 
     
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">  
@@ -88,27 +73,30 @@
 </head> 
 
 <body>
-
+    
     <nav class="nav">
         <div class="nav_container"> 
 
             <div class="nav_logo">
                 <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
-                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.png" media="(max-width: 480px)">
+                    <img width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de BDKSISTEMAS" id="logoBDK">
                 </picture>
             </div> 
 
             <ul class="nav_principal" id="navPrincipal">
-                <li class="nav_item nav_active"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+                <li class="nav_item nav_active"><a href="index.html" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item"><a href="software.html" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="distribuidores.html" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="pagresenas.html" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="galeria.html" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="contacto.html" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="soporte.html" class="nav_links mnuSoporte">Soporte</a></li>
             </ul> 
 
             <div class="nav_social">
@@ -118,8 +106,20 @@
     </nav> 
 
     <!-- ! HERO -->
-    <header class="hero">    
-        <section class="formatoHero_Container">
+    <header class="formatoHero">    
+
+        <div class="hero-background">
+            <picture>
+                <source srcset="build/img/Fondo_Hero_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                <source srcset="build/img/Fondo_Hero.avif" type="image/avif">
+                <source srcset="build/img/Fondo_Hero_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                <source srcset="build/img/Fondo_Hero.webp" type="image/webp">
+                <source srcset="build/img/Fondo_Hero_Movil.jpg" media="(max-width: 480px)">
+                <img width="350" height="150" src="build/img/Fondo_Hero.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+            </picture>
+        </div>
+
+        <section class="formatoHero_Container ">
             <h1>Tenemos el mejor software <span>punto de venta</span> para tu negocio</h1>
             <p>Nuestros productos cuentan con un sinfín de funcionalidades ideales para que lleves una excelente administración de todas los áreas de tu negocio.</p>
         </section>
@@ -167,70 +167,79 @@
 
         <!-- ! NUESTROS CLIENTES -->
         <section class="seccionGris">
-            <div class="titulo">
+            <div class="titulo"> 
                 <h2><span>Nuestros</span> Clientes</h2> 
                 <p>Contamos con productos y servicios para una gran variedad de giros</p>
             </div>
 
-            <div class="container clientes">
-
-                <section class="clientes_content">
-                    <div class="ctes_img">
-                        <picture>
-                            <source srcset="build/img/Presentadora_clientes.avif" type="image/avif">
-                            <source srcset="build/img/Presentadora_clientes.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/Presentadora_clientes.jpg" alt="Imagen de la sección Quienes Somos">
-                        </picture>    
+            <section class="clientes_content">
+                <div class="ctes_img">
+                    <picture>
+                        <source srcset="build/img/Presentadora_clientes.avif" type="image/avif">
+                        <source srcset="build/img/Presentadora_clientes.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/Presentadora_clientes.jpg" alt="Imagen de la sección Quienes Somos">
+                    </picture>    
+                </div>
+                <div class="ctes_lista">
+                    <div class="giroctes">
+                        <p>- Restaurantes</p>
+                        <p>- Mariscos</p>
+                        <p>- Pizzerías</p>
+                        <p>- Bares y Antros</p>
+                        <p>- Taquerías</p>
                     </div>
-                    <div class="ctes_lista">
-                        <div class="giroctes">
-                            <p><i class="fas fa-check-circle"></i> Restaurantes</p>
-                            <p><i class="fas fa-check-circle"></i> Mariscos</p>
-                            <p><i class="fas fa-check-circle"></i> Pizzerías</p>
-                            <p><i class="fas fa-check-circle"></i> Bares y Antros</p>
-                            <p><i class="fas fa-check-circle"></i> Taquerías</p>
-                        </div>
-                        <div class="giroctes">
-                            <p><i class="fas fa-check-circle"></i> Gimnasios</p>
-                            <p><i class="fas fa-check-circle"></i> Centros de Pilates</p>
-                            <p><i class="fas fa-check-circle"></i> Estudios de Yoga</p>
-                            <p><i class="fas fa-check-circle"></i> Karate</p>
-                            <p><i class="fas fa-check-circle"></i> Escuelas deportivas</p>                            
-                        </div>
-                        <div class="giroctes">
-                            <p><i class="fas fa-check-circle"></i> Lavanderías</p>
-                            <p><i class="fas fa-check-circle"></i> Tintorerías</p>
-                            <p><i class="fas fa-check-circle"></i> Sastrerías</p>
-                        </div>
-                        <div class="giroctes">
-                            <p><i class="fas fa-check-circle"></i> Salones de belleza</p>
-                            <p><i class="fas fa-check-circle"></i> SPAs</p>
-                            <p><i class="fas fa-check-circle"></i> Estéticas</p>
-                            <p><i class="fas fa-check-circle"></i> Clínicas de belleza</p>
-                            <p><i class="fas fa-check-circle"></i> Salones de uñas</p>
-                        </div>
-                        <div class="giroctes">
-                            <p><i class="fas fa-check-circle"></i> Barber Shop</p>
-                            <p><i class="fas fa-check-circle"></i> Peluquerías</p>
-                        </div>
-                        <div class="giroctes">
-                            <p><i class="fas fa-check-circle"></i> Abarrotes</p>
-                            <p><i class="fas fa-check-circle"></i> Ferreterías</p>
-                            <p><i class="fas fa-check-circle"></i> Locales comerciales</p>
-                            <p><i class="fas fa-check-circle"></i> Boutiques</p>
-                            <p><i class="fas fa-check-circle"></i> Zapaterías</p>
-                        </div>
+                    <div class="giroctes">
+                        <p>- Gimnasios</p>
+                        <p>- Centros de Pilates</p>
+                        <p>- Estudios de Yoga</p>
+                        <p>- Karate</p>
+                        <p>- Escuelas deportivas</p>                            
                     </div>
-                </section>
+                    <div class="giroctes">
+                        <p>- Lavanderías</p>
+                        <p>- Tintorerías</p>
+                        <p>- Sastrerías</p>
+                    </div>
+                    <div class="giroctes">
+                        <p>- Salones de belleza</p>
+                        <p>- SPAs</p>
+                        <p>- Estéticas</p>
+                        <p>- Clínicas de belleza</p>
+                        <p>- Salones de uñas</p>
+                    </div>
+                    <div class="giroctes">
+                        <p>- Barber Shop</p>
+                        <p>- Peluquerías</p>
+                    </div>
+                    <div class="giroctes">
+                        <p>- Abarrotes</p>
+                        <p>- Ferreterías</p>
+                        <p>- Locales comerciales</p>
+                        <p>- Boutiques</p>
+                        <p>- Zapaterías</p>
+                    </div>
+                </div>
+            </section>
 
-                <p>¡ Y MUCHOS GIROS MÁS !</p>
-                <!-- <a href="#" class="boton">Contáctanos</a> -->
-            </div>
+            <p style="text-align: center;">¡ Y MUCHOS GIROS MÁS !</p>
 
         </section> 
 
+
         <!-- ! DESTACADOS -->
         <section class="seccion secDestacados">
+
+            <div class="container-bkg">
+                <picture>
+                    <source srcset="build/img/Fondo_Destacado_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Destacados.avif" type="image/avif">
+                    <source srcset="build/img/Fondo_Destacado_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Destacados.webp" type="image/webp">
+                    <source srcset="build/img/Fondo_Destacado_Movil.jpg" media="(max-width: 480px)">
+                    <img loading="lazy" width="350" height="150" src="build/img/Fondo_Destacados.jpg" alt="Imagen de fondo de una terminal punto de venta">
+                </picture>
+            </div>
+
             <div class="tituloWhite"> 
                 <h2><span>Lo que nos</span> Diferencía de los demás</h2> 
                 <p>Estas son algunas de las razones por la que los clientes nos prefieren</p>
@@ -327,7 +336,7 @@
                         </div>
                         <div class="acciones">
                             <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="#" class="acc-rest"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="bdkrest.html" class="acc-rest"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div> 
                 </div>
@@ -368,7 +377,7 @@
                         </div>
                         <div class="acciones">
                             <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="#" class="acc-tint"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="bdktint.html" class="acc-tint"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -409,7 +418,7 @@
                         </div>
                         <div class="acciones">
                             <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="#" class="acc-gym"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="bdkgym.html" class="acc-gym"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -450,7 +459,7 @@
                         </div>
                         <div class="acciones">
                             <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="#" class="acc-spa"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="bdkspa.html" class="acc-spa"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -491,7 +500,7 @@
                         </div>
                         <div class="acciones">
                             <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="#" class="acc-pos"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="bdkpos.html" class="acc-pos"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -532,7 +541,7 @@
                         </div>
                         <div class="acciones">
                             <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="#" class="acc-barber"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="bdkbarber.html" class="acc-barber"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -541,107 +550,12 @@
 
             <div class="prodFooter"> 
                 <p>Consulta la lista completa de software disponibles</p>
-                <a href="#" class="boton mnuSoftware">Ver todos los productos</a>
+                <a href="software.html" class="boton mnuSoftware">Ver todos los productos</a>
             </div>
         </section>
 
-        <!-- ! EQUIPO DE COMPUTO --> 
-        <section class="secEquipo seccion">
-
-            <div class="titulo">
-                <h2><span>Equipo</span> de cómputo</h2>  
-                <p>Tenemos la solución completa para tu negocio</p>
-            </div>
-
-            <div class="eqContent">
-
-                <picture>
-                    <source srcset="build/img/BDKREST/BDKREST_PDV_01.avif" type="image/avif">
-                    <source srcset="build/img/BDKREST/BDKREST_PDV_01.webp" type="image/webp">
-                    <img loading="lazy" width="350" height="150" src="build/img/BDKREST/BDKREST_PDV_01.jpg" alt="Imagen de la sección Quienes Somos">
-                </picture>   
-                
-                <div class="eqTextos"> 
-                    <h4>¡NO BATALLES MÁS!</h4>
-                    <p>En BDKSISTEMAS contamos con el software y también puedes adquirir todo el equipo de cómputo necesario para su implementación.</p>
-                    <p>
-                        <small><i class="fas fa-caret-right"></i> Computadoras</small>
-                        <small><i class="fas fa-caret-right"></i> Laptops</small>
-                        <small><i class="fas fa-caret-right"></i> Terminales POS</small>
-                        <small><i class="fas fa-caret-right"></i> Tablets</small>
-                        <small><i class="fas fa-caret-right"></i> Impresoras de tickets</small>
-                        <small><i class="fas fa-caret-right"></i> Rollos de papel</small>
-                        <small><i class="fas fa-caret-right"></i> Cajón de dinero</small>
-                        <small><i class="fas fa-caret-right"></i> Torniquetes</small>
-                        <small><i class="fas fa-caret-right"></i> Lectores de huella</small>
-                        <small><i class="fas fa-caret-right"></i> Lectores de proximidad</small>
-                        <small><i class="fas fa-caret-right"></i> Tarjetas de proximidad</small>
-                    </p>
-                </div>
-
-                <div class="hardware swiper container">
-                    <div class="swiper-wrapper"">
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_01.avif" type="image/avif">
-                                <source srcset="build/img/EQ_01.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_01.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_02.avif" type="image/avif">
-                                <source srcset="build/img/EQ_02.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_02.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_03.avif" type="image/avif">
-                                <source srcset="build/img/EQ_03.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_03.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_04.avif" type="image/avif">
-                                <source srcset="build/img/EQ_04.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_04.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_05.avif" type="image/avif">
-                                <source srcset="build/img/EQ_05.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_05.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_06.avif" type="image/avif">
-                                <source srcset="build/img/EQ_06.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_06.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_07.avif" type="image/avif">
-                                <source srcset="build/img/EQ_07.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_07.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_08.avif" type="image/avif">
-                                <source srcset="build/img/EQ_08.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_08.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>            
-        </section>
+        <!-- ! EQUIPO DE COMPUTO -->  
+        <div data-include="assets/equipocomputo.html"></div>
  
         <!-- ! PAGINAS WEB -->
         <div data-include="assets/promo_web.html"></div>
@@ -655,104 +569,71 @@
             </div>
 
             <div class="galeria_content">
-                <a href="build/img/GALERIA01.jpg" data-lightbox='galeria_content' data-title="Click a la derecha para pasar a la siguiente imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA01.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA01.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA01.jpg" alt="Fotos de la galería">
-                    </picture>    
-                </a>
-                <a href="build/img/GALERIA02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA02.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA02.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA02.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/GALERIA03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA03.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA03.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA03.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/GALERIA04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA04.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA04.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA04.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/GALERIA05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA05.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA05.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA05.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/GALERIA06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA06.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA06.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA06.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/GALERIA07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA07.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA07.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA07.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a> 
-                <a href="build/img/GALERIA08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA08.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA08.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA08.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/GALERIA09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA09.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA09.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA09.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/GALERIA10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA10.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA10.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA10.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/GALERIA11.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/GALERIA11.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA11.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA11.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/GALERIA12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
-                    <picture>
-                        <source srcset="build/img/GALERIA12.avif" type="image/avif">
-                        <source srcset="build/img/GALERIA12.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/GALERIA12.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
+                <picture>
+                    <source srcset="build/img/GALERIA01.avif" type="image/avif">
+                    <source srcset="build/img/GALERIA01.webp" type="image/webp">
+                    <img loading="lazy" width="450" height="450" src="build/img/GALERIA01.jpg" alt="Fotos de la galería">
+                </picture>    
+                <picture>
+                    <source srcset="build/img/GALERIA03.avif" type="image/avif">
+                    <source srcset="build/img/GALERIA03.webp" type="image/webp">
+                    <img loading="lazy" width="450" height="450" src="build/img/GALERIA03.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/GALERIA04.avif" type="image/avif">
+                    <source srcset="build/img/GALERIA04.webp" type="image/webp">
+                    <img loading="lazy" width="450" height="450" src="build/img/GALERIA04.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/GALERIA05.avif" type="image/avif">
+                    <source srcset="build/img/GALERIA05.webp" type="image/webp">
+                    <img loading="lazy" width="450" height="450" src="build/img/GALERIA05.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/GALERIA07.avif" type="image/avif">
+                    <source srcset="build/img/GALERIA07.webp" type="image/webp">
+                    <img loading="lazy" width="450" height="450" src="build/img/GALERIA07.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/GALERIA09.avif" type="image/avif">
+                    <source srcset="build/img/GALERIA09.webp" type="image/webp">
+                    <img loading="lazy" width="450" height="450" src="build/img/GALERIA09.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/GALERIA11.avif" type="image/avif">
+                    <source srcset="build/img/GALERIA11.webp" type="image/webp">
+                    <img loading="lazy" width="450" height="450" src="build/img/GALERIA11.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/GALERIA12.avif" type="image/avif">
+                    <source srcset="build/img/GALERIA12.webp" type="image/webp">
+                    <img loading="lazy" width="450" height="450" src="build/img/GALERIA12.jpg" alt="Fotos de la galería">
+                </picture>
             </div>
 
-            <a href="#" class="boton mnuGal"><i class="fas fa-images"></i> Galería completa</a>
+            <a href="galeria.html" class="boton mnuGal"><i class="fas fa-images"></i> Galería completa</a>
 
         </section> 
-
+ 
         <!-- ! VÍDEO -->   
         <section class="secVideo">
+
+            <div class="container-bkg">
+                <picture>
+                    <source srcset="build/img/FondoVideo_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/FondoVideo.avif" type="image/avif">
+                    <source srcset="build/img/FondoVideo_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/FondoVideo.webp" type="image/webp">
+                    <source srcset="build/img/FondoVideo_Movil.jpg" media="(max-width: 480px)">
+                    <img loading="lazy" width="350" height="150" src="build/img/FondoVideo.jpg" alt="Imagen de fondo de una terminal punto de venta">
+                </picture>
+            </div>
                                     
             <div class="videoContent">
-                <a href="#" class="play" id="play"><img src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
+                <a href="#" class="play" id="play"><img width="100" height="100" src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
             </div>
             <div class="videoPopup">
-                <video src="build/video/VIDEOWEB_GYM.mp4" controls="true"></video>
+                <!-- <video src="build/video/VIDEOWEB_GYM.mp4" controls="true"></video> -->
                 <img src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
             </div>
     
@@ -765,6 +646,7 @@
                 <h2>Lo que opinan nuestros <span>clientes</span></h2> 
                 <p>La mejor recomendación es tu opinión</p>
                 <small>Todas las fotos, logotipos y reseñas fueron autorizados por nuestros clientes.</small>
+                <small style="color: rgb(0,0,255);">Desplazate a la derecha para ver más reseñas.</small>
             </div>
     
             <div class="nva-resenas-container">
@@ -773,7 +655,7 @@
     
             </div>
     
-            <a href="#" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas</a>
+            <a href="pagresenas.html" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
         
         </section> 
                  
@@ -785,7 +667,7 @@
                 <p>Realiza hoy la mejor inversión que puedes regalarle a tu negocio y comienza a disfrutar de los beneficios de tener un excelente software de administración y página web</p>
                 <div class="despedida_contacto"> 
                     <h5>Solicitar informes por:</h5>
-                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="contacto.html" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
                     <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
@@ -793,7 +675,7 @@
             <picture>
                 <source srcset="build/img/FondoDespedidas.avif" type="image/avif">
                 <source srcset="build/img/FondoDespedidas.webp" type="image/webp">
-                <img loading="lazy" src="build/img/FondoDespedidas.jpg" alt="Imagen de una cajera frente a una terminal punto de venta">
+                <img loading="lazy" width="350" height="150" src="build/img/FondoDespedidas.jpg" alt="Imagen de una cajera frente a una terminal punto de venta">
             </picture>
         </section>
 
@@ -806,23 +688,12 @@
     <!-- * LISTA DE SCRIPTS -->
     <!-- ! --------------------------------------------------------------------------------- -->
 
-    <!-- ? LIBRERÍA PARA LA LIBRERÍA MODERNIZR, PARA PODER APLICAR IMAGENES WEBP EN EL CSS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
-
     <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
     <script src="build/js/include-html.min.js"></script> 
 
-    <!-- ? JQUERY -->
-    <script src="build/js/jquery.js"></script>
-            
-    <!-- ? SWIPER : Slider del hero -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <!-- ? LIGTHBOX PARA LA GALERÍA -->
-    <script src="build/js/lightbox.js"></script>
-
-    <script src="build/js/app.js"></script>
-
+    <script src="build/js/app.js"></script>  
+    <script defer src="build/js/clicks.js"></script>
     
 </body>
 </html>

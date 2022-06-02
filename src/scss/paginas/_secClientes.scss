@@ -1,72 +1,62 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.clientes {
+.clientes_content {
+    @include m.mixFlex(flex,center,center,nowrap,0);
+    padding: 4rem 2rem; 
+    // width: 95%;
+    margin: 0 auto;
 
-    @include m.mixFlex(flex,center,center,0,column);
-    width: 100%;
+    @include m.mixMQ(v.$movil) {
+        padding: 3rem;
+    };
 
-    .clientes_content {
-        padding: 4rem; 
-        width: 100%;
 
-        @include m.mixMQ(v.$movil) {
-            padding: 3rem;
+    .ctes_img {
+
+        @include m.mixMQ(v.$tablet) {
+            display: none;
+        };
+    }
+
+    .ctes_lista {
+
+        @include m.mixFlex(flex,flex-start,0,wrap,0);
+        margin-left: 2rem;
+
+        @include m.mixMQ(v.$tablet) {
+            width: 100%;
+            margin-left: 0;
         };
 
-        @include m.mixFlex(flex,center,center,wrap-reverse,0);
+        .giroctes {
+            @include m.mixFlex(flex,center,flex-start,wrap,column);
+            @include m.mixBox(25%,false,false,10px,v.$degradadoRed,v.$box-shadow);
+            padding: 15px;
+            margin: 1rem;
+            max-width: 250px;
 
-        .ctes_img {
-            width: 25%;
-
-            @include m.mixMQ(v.$movil) {
-                display: none;
-            };
-        }
-
-        .ctes_lista {
-            width: 75%;
-
-            @include m.mixFlex(flex,center,0,wrap,0);
-            gap: 2rem;
-
-            @include m.mixMQ(v.$movil) {
-                width: 100%;
+            @include m.mixMQ(v.$desk) {
+                width: 30%;
             };
 
-            .giroctes {
-                @include m.mixFlex(flex,center,0,wrap,column);
-                @include m.mixBox(25%,false,false,10px,v.$degradadoRed,v.$box-shadow);
-                padding: 15px;
+            @include m.mixMQ(v.$movil) {
+                width: 43%;
+            };
+            @include m.mixMQ(v.$movil360) {
+                width: 80%;
+            };
+
+            p {
+                font-family: v.$fuente_sec;
+                color: v.$blanco;
+                font-size: v.$descCon - .14rem;
+                text-align: left;
 
                 @include m.mixMQ(v.$desk) {
-                    width: 30%;
-                };
-
-                @include m.mixMQ(v.$movil) {
-                    width: 45%;
-                };
-
-                p {
-                    color: v.$blanco;
-                    font-size: v.$descCon - .15rem;
-
-                    @include m.mixMQ(v.$desk) {
-                        font-size: v.$descCon - .35rem;
-                    };                    
-                }
-                
-                i {
-                    margin-right: 5px;
-                }
-
+                    font-size: v.$descCon - .35rem;
+                };                    
             }
         }
-
     }
-
-    p {
-        font-weight: 800;
-    }
-
 }

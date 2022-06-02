@@ -14,16 +14,6 @@
         gtag('config', 'AW-1011948451');
     </script>
 
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-9FG8EFFN81');
-    </script>
-
     <!-- ! ----------------------------------------- -->
 
     <title>BDKTINT Software Lavanderías</title>
@@ -44,27 +34,20 @@
     <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
 
-    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ! ESTILOS -->
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- ? FONTAWESOM -->
-    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
-    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- ? LIGHTBOX: Galería -->
-    <link rel="preload" href="build/css/lightbox.css" as="style">
-    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
-    <!-- ? METAS -->
+    <!-- ! METAS -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -94,21 +77,24 @@
 
             <div class="nav_logo">
                 <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
-                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.png" media="(max-width: 480px)">
+                    <img width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de BDKSISTEMAS" id="logoBDK">
                 </picture>
             </div>
 
             <ul class="nav_principal" id="navPrincipal">
-                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+                <li class="nav_item"><a href="index.html" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item"><a href="software.html" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="distribuidores.html" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="pagresenas.html" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="galeria.html" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="contacto.html" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="soporte.html" class="nav_links mnuSoporte">Soporte</a></li>
             </ul> 
 
             <div class="nav_social">
@@ -118,21 +104,21 @@
     </nav>
 
     <!-- ! HERO -->
-    <header class="hero-sistema">
-        <div class="hero_container">
+    <header class="formatoHero hero-sistema">
+        <div class="formatoHero_Container hero_container">
             <div class="hero-content">
                 <div class="hero-logo">
                     <picture>
                         <source srcset="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.avif" type="image/avif">
                         <source srcset="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.png" alt="Logotipo de la empresa">
+                        <img width="350" height="150" src="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.png" alt="Logotipo de la empresa">
                     </picture>
                 </div>
                 <div class="hero-mockup">
                     <picture>
                         <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.avif" type="image/avif">
                         <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/BDKTINT_PDV_01.png" alt="Terminal punto de venta">
+                        <img width="350" height="150" src="build/img/BDKTINT/BDKTINT_PDV_01.png" alt="Terminal punto de venta">
                     </picture>
                 </div>
                 <div class="soft_titulo">
@@ -141,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="anim-mouse-b2">
+            <div class="anim-mouse mouse-b2">
                 <div class="mouse"></div>
             </div>
     
@@ -150,14 +136,14 @@
         <!-- ! CARRUSEL DE IMAGENES DE LA DERECHA -->
         <div class="hero-right">
 
-            <div class="heroR-fondo">
+            <div class="hero-background">
                 <picture>
                     <source srcset="build/img/FONDO_TINT_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
                     <source srcset="build/img/FONDO_TINT.avif" type="image/avif">
                     <source srcset="build/img/FONDO_TINT_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
                     <source srcset="build/img/FONDO_TINT.webp" type="image/webp">
                     <source srcset="build/img/FONDO_TINT_MOVIL.jpg" media="(max-width: 480px)">
-                    <img loading="lazy" width="350" height="150" src="build/img/FONDO_TINT.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
+                    <img width="350" height="150" src="build/img/FONDO_TINT.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
                 </picture>
             </div>
 
@@ -254,7 +240,15 @@
             </div>
             
             <!-- ! SOLUCIÓN --> 
-            <div class="secImg_fondo_tint">
+            <div class="secImg_fondo">
+
+                <div class="hero-background">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/SOLUCION.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/SOLUCION.webp" type="image/webp">
+                        <img width="350" height="150" src="build/img/BDKTINT/SOLUCION.jpg" alt="Imagen de una barbería">
+                    </picture>
+                </div>
 
                 <div class="tituloWhite tit_solucion">
                     <h2>Tenemos la <span>solución ideal</span> para tu lavandería</h2> 
@@ -310,7 +304,7 @@
 
                 </div>
 
-                <div class="mapa_funciones_tint"> 
+                <div class="mapa_funciones mapa_funciones_tint"> 
                     <div class="funcion_mapa" id="desc_tint_recepcion">
                         <h4><i class="fas fa-circle"></i> Módulo de Recepción</h4>
                         <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de recepción y entrega de prendas, cobra al recibir o entregar el servicio y realiza el corte de caja del día.</p>
@@ -353,7 +347,7 @@
             <div class="infoPopup">
 
                 <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE RECEPCIÓN -->
-                <div class="info_content popup_recepcion">
+                <div class="info_content popup_visible popup_recepcion">
                     <div class="info_imagen">
                         <picture>
                             <source srcset="build/img/BDKTINT/POP_01.avif" type="image/avif">
@@ -394,7 +388,7 @@
                 </div>
 
                 <!-- ! BLOQUE INFORMATIVO ASIGNACIÓN DE SERVICIOS -->
-                <div class="info_content popup_servicios">
+                <div class="info_content popup_visible popup_servicios">
                     <div class="info_imagen">
                         <picture>
                             <source srcset="build/img/BDKTINT/POP_02.avif" type="image/avif">
@@ -427,7 +421,7 @@
                 </div>
                 
                 <!-- ! BLOQUE INFORMATIVO INVENTARIOS -->
-                <div class="info_content popup_inventarios">
+                <div class="info_content popup_visible popup_inventarios">
                     <div class="info_imagen">
                         <picture>
                             <source srcset="build/img/BDKTINT/POP_03.avif" type="image/avif">
@@ -459,7 +453,7 @@
                 </div>
 
                 <!-- ! BLOQUE INFORMATIVO EMPLEADOS -->
-                <div class="info_content popup_empleados">
+                <div class="info_content popup_visible popup_empleados">
                     <div class="info_imagen">
                         <picture>
                             <source srcset="build/img/BDKTINT/POP_05.avif" type="image/avif">
@@ -489,7 +483,7 @@
                 </div>
 
                 <!-- ! BLOQUE INFORMATIVO CLIENTES -->
-                <div class="info_content popup_clientes">
+                <div class="info_content popup_visible popup_clientes">
                     <div class="info_imagen">
                         <picture>
                             <source srcset="build/img/BDKTINT/POP_06.avif" type="image/avif">
@@ -528,7 +522,7 @@
                 </div>
 
                 <!-- ! BLOQUE INFORMATIVO SOBRE ADMINISTRACIÓN -->
-                <div class="info_content popup_admon">
+                <div class="info_content popup_visible popup_admon">
                     <div class="info_imagen">
                         <picture>
                             <source srcset="build/img/BDKTINT/POP_04.avif" type="image/avif">
@@ -564,7 +558,7 @@
                 </div>
                 
                 <!-- ! BLOQUE INFORMATIVO SOBRE CUENTAS ABIERTAS -->
-                <div class="info_content popup_cuentas">
+                <div class="info_content popup_visible popup_cuentas">
                     <div class="info_imagen">
                         <picture>
                             <source srcset="build/img/BDKTINT/POP_07.avif" type="image/avif">
@@ -775,13 +769,13 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
                     </div>                 
                 </div>
 
                 <!-- ! VERSIÓN PROFESIONAL -->
                 <div class="planes_paquete">
-                    <div class="paquete_nombrePlanOro">
+                    <div class="paquete_nombrePlan oro">
                         <h4>PROFESIONAL</h4>
                         <h3>$3,425 mx</h3>
                         <small>Anuales</small>
@@ -806,7 +800,7 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="#" class="boton mnuContacto">Solicitar informes</a>
+                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
                     </div>                 
                 </div>
 
@@ -861,7 +855,7 @@
         <!-- ! SECCIÓN INFORMATIVA -->
         <section class="seccion sec-informes">
             <div class="tituloWhite">
-                <h2><span>Solicita una DEMOSTRACIÓN EN LÍNEA</span></h2> 
+                <h2>Solicita una DEMOSTRACIÓN EN LÍNEA</h2> 
                 <p>En BDKSISTEMAS queremos que estés seguro de nuestro producto</p>
             </div>    
             <div class="informes_content">                
@@ -870,7 +864,7 @@
                 <h5>DI NO A LA PIRATERÍA</h5>
             </div>
             <div class="informes-accion">
-                <a href="#" class="botonVerde mnuContacto">Solicitar Demostración</a>
+                <a href="contacto.html" class="botonVerde mnuContacto">Solicitar Demostración</a>
             </div>
         </section>
 
@@ -878,98 +872,7 @@
         <div data-include="assets/promocion_actual.html"></div>
 
         <!-- ! EQUIPO DE CÓMPUTO -->
-        <section class="secEquipo seccion">
-
-            <div class="titulo">
-                <h2><span>Equipo</span> de cómputo</h2>  
-                <p>Tenemos la solución completa para tu negocio</p>
-            </div>
-
-            <div class="eqContent">
-
-                <picture>
-                    <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.avif" type="image/avif">
-                    <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.webp" type="image/webp">
-                    <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/BDKTINT_PDV_01.jpg" alt="Imagen de una terminal punto de venta">
-                </picture>   
-                
-                <div class="eqTextos">
-                    <h4>¡NO BATALLES MÁS!</h4>
-                    <p>En BDKSISTEMAS contamos con el software y también puedes adquirir todo el equipo de cómputo necesario para su implementación.</p>
-                    <p>
-                        <small><i class="fas fa-caret-right"></i> Computadoras</small>
-                        <small><i class="fas fa-caret-right"></i> Laptops</small>
-                        <small><i class="fas fa-caret-right"></i> Terminales POS</small>
-                        <small><i class="fas fa-caret-right"></i> Computadoras ALL IN ONE</small>
-                        <small><i class="fas fa-caret-right"></i> Impresoras de tickets</small>
-                        <small><i class="fas fa-caret-right"></i> Rollos de papel</small>
-                        <small><i class="fas fa-caret-right"></i> Cajón de dinero</small>
-                    </p>
-                </div>
-
-                <div class="hardware swiper container">
-                    <div class="swiper-wrapper"">
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_01.avif" type="image/avif">
-                                <source srcset="build/img/EQ_01.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_01.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_02.avif" type="image/avif">
-                                <source srcset="build/img/EQ_02.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_02.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_03.avif" type="image/avif">
-                                <source srcset="build/img/EQ_03.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_03.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_04.avif" type="image/avif">
-                                <source srcset="build/img/EQ_04.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_04.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_05.avif" type="image/avif">
-                                <source srcset="build/img/EQ_05.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_05.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_06.avif" type="image/avif">
-                                <source srcset="build/img/EQ_06.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_06.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_07.avif" type="image/avif">
-                                <source srcset="build/img/EQ_07.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_07.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_08.avif" type="image/avif">
-                                <source srcset="build/img/EQ_08.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_08.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>            
-        </section>
+        <div data-include="assets/equipocomputo.html"></div>
 
         <!-- ! PROMOCIONANDO PAGINAS WEB -->
         <div data-include="assets/promo_web.html"></div>
@@ -983,130 +886,101 @@
             </div>
 
             <div class="galeria_content">
-                <a href="build/img/BDKTINT/GAL_01.jpg" data-lightbox='galeria_content' data-title="Click a la derecha para pasar a la siguiente imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_01.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_01.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_01.jpg" alt="Fotos de la galería">
-                    </picture>    
-                </a>
-                <a href="build/img/BDKTINT/GAL_02.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_02.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_02.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_02.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_03.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_03.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_03.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_03.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_04.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_04.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_04.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_04.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_05.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_05.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_05.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_05.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_06.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_06.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_06.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_06.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_07.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_07.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_07.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_07.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_08.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_08.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_08.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_08.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_09.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_09.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_09.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_09.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_10.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_10.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_10.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_10.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_11.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_11.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_11.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_11.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_12.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_12.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_12.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_12.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_13.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda o derecha para cambiar de imagen.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_13.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_13.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_13.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-                <a href="build/img/BDKTINT/GAL_14.jpg" data-lightbox='galeria_content' data-title="Click a la izquierda regresar a la imagen anterior.">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/GAL_14.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/GAL_14.webp" type="image/webp">
-                        <img loading="lazy" src="build/img/BDKTINT/GAL_14.jpg" alt="Fotos de la galería">
-                    </picture>
-                </a>
-
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_01.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_01.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_01.jpg" alt="Fotos de la galería">
+                </picture>    
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_02.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_02.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_02.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_03.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_03.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_03.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_04.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_04.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_04.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_05.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_05.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_05.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_06.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_06.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_06.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_07.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_07.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_07.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_08.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_08.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_08.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_09.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_09.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_09.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_10.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_10.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_10.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_11.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_11.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_11.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_12.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_12.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_12.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_13.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_13.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_13.jpg" alt="Fotos de la galería">
+                </picture>
+                <picture>
+                    <source srcset="build/img/BDKTINT/GAL_14.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/GAL_14.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/GAL_14.jpg" alt="Fotos de la galería">
+                </picture>
             </div>
 
-            <a href="#" class="boton mnuGal"><i class="fas fa-images"></i> Galería completa</a>
+            <a href="galeria.html" class="boton mnuGal"><i class="fas fa-images"></i> Galería completa</a>
             
         </section>
 
         <!-- ! VÍDEO EXPLICATIVO-->
         <section class="secVideo">
-            
-            <picture>
-                <source srcset="build/img/BDKTINT/FondoVideo.avif" type="image/avif">
-                <source srcset="build/img/BDKTINT/FondoVideo.webp" type="image/webp">
-                <img loading="lazy" src="build/img/BDKTINT/FondoVideo.jpg" alt="" class="fondoSecciones">
-            </picture>                        
-
+            <div class="container-bkg">
+                <picture>
+                    <source srcset="build/img/BDKTINT/FondoVideo.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/FondoVideo.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="350" src="build/img/BDKTINT/FondoVideo.jpg" alt="Fondo de pantalla">
+                </picture>
+            </div>
             <div class="videoContent">
                 <div class="tituloWhite">
                     <h2>Vídeo informativo</h2> 
                     <p>Date unos minutos para ver más a fondo las funciones de nuestro producto</p>
                 </div>    
-                <a href="#" class="play" id="play"><img src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
+                <a href="#" class="play" id="play"><img width="250" height="250" src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
             </div>
             <!-- <div class="videoPopup">
                 <video src="build/video/VIDEOWEB_REST.mp4" controls="true"></video>
-                <img src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
+                <img width="250" height="250" src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
             </div> -->
     
         </section>
@@ -1118,6 +992,7 @@
                 <h2>Lo que opinan nuestros <span>clientes</span></h2> 
                 <p>La mejor recomendación es tu opinión</p>
                 <small>Todas las fotos, logotipos y reseñas fueron autorizados por nuestros clientes.</small>
+                <small style="color: rgb(0,0,255);">Desplazate a la derecha para ver más reseñas.</small>
             </div>
     
             <div class="nva-resenas-container">
@@ -1126,7 +1001,7 @@
     
             </div>
     
-            <a href="#" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
+            <a href="pagresenas.html" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
     
     
         </section>
@@ -1142,7 +1017,7 @@
                 <p>Realiza hoy la mejor inversión que puedes regalarle a tu negocio y comienza a disfrutar de los beneficios de tener un excelente software de administración y página web</p>
                 <div class="despedida_contacto">
                     <h5>Solicitar informes por:</h5>
-                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="contacto.html" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
                     <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
@@ -1150,7 +1025,7 @@
             <picture>
                 <source srcset="build/img/FondoDespedidas.avif" type="image/avif">
                 <source srcset="build/img/FondoDespedidas.webp" type="image/webp">
-                <img loading="lazy" src="build/img/FondoDespedidas.jpg" alt="Imagen de una cajera frente a una terminal punto de venta">
+                <img loading="lazy" width="250" height="250" src="build/img/FondoDespedidas.jpg" alt="Imagen de una cajera frente a una terminal punto de venta">
             </picture>
         </section>
 
@@ -1166,16 +1041,8 @@
     <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
     <script src="build/js/include-html.min.js"></script> 
 
-    <!-- ? JQUERY -->
-    <script src="build/js/jquery.js"></script>
-            
-    <!-- ? SWIPER : Slider del hero -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <!-- ? LIGTHBOX PARA LA GALERÍA -->
-    <script src="build/js/lightbox.js"></script>
-
-    <script src="build/js/app.js"></script>
+    <script src="build/js/app.js"></script>  
+    <script defer src="build/js/clicks.js"></script>
     
 </body>
 </html>

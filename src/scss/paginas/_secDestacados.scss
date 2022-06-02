@@ -9,34 +9,11 @@
     width: 100%;
     position: relative;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5970763305322129) 100%), url('../img/Fondo_Destacados.jpg');
-        background-size: cover;
-        background-position: center center;
-        z-index: -1;
-
-        @include m.mixMQ(v.$movil) {
-            background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5970763305322129) 100%), url('../img/Fondo_Destacado_Movil.jpg');
-            background-position: center;
-        };
-
-    }
-
-    h3, p {
-        color: v.$blanco;
-    }
-
     .destacados { 
 
         @include m.mixFlex(flex,center,center,wrap,0);
         position: relative;
-        z-index: 1;
+        z-index: 100;
         width: 80%;
         margin: 2rem auto;
 
@@ -57,8 +34,8 @@
             overflow: hidden;
             border-top: 1px solid rgba(255, 255, 255, 0.5);
             border-left: 1px solid rgba(255, 255, 255, 0.5);
-            // backdrop-filter: blur(25px);
             background: rgba(0,0,0, 0.60);
+            max-width: 325px;
 
             @include m.mixMQ(v.$tablet) {
                 width: 29%;

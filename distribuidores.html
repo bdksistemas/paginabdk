@@ -14,16 +14,6 @@
         gtag('config', 'AW-1011948451');
     </script>
 
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-9FG8EFFN81');
-    </script>
-
     <!-- ! ----------------------------------------- -->
 
     <title>BDKSISTEMAS - Distribuidores</title>
@@ -45,27 +35,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
 
 
-    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ! ESTILOS -->
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- ? FONTAWESOM -->
-    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
-    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- ? LIGHTBOX: Galería -->
-    <link rel="preload" href="build/css/lightbox.css" as="style">
-    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
-    <!-- ? METAS -->
+    <!-- ! METAS -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -94,21 +77,24 @@
 
             <div class="nav_logo">
                 <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
-                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.png" media="(max-width: 480px)">
+                    <img width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de BDKSISTEMAS" id="logoBDK">
                 </picture>
             </div>
 
             <ul class="nav_principal" id="navPrincipal">
-                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
-                <li class="nav_item nav_active"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+                <li class="nav_item"><a href="index.html" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item"><a href="software.html" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item nav_active"><a href="distribuidores.html" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="pagresenas.html" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="galeria.html" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="contacto.html" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="soporte.html" class="nav_links mnuSoporte">Soporte</a></li>
             </ul> 
 
             <div class="nav_social">
@@ -118,8 +104,23 @@
     </nav>
 
     <!-- ! HERO -->
-    <header class="heroDistribuidores">    
-        <section class="hero_container">
+    <header class="formatoHero">    
+
+        <div class="hero-background">
+            <picture>
+                <source srcset="build/img/Fondo_Distribuidores_movil.avif" type="image/avif" media="(max-width: 480px)">
+                <source srcset="build/img/Fondo_Distribuidores_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                <source srcset="build/img/Fondo_Distribuidores.avif" type="image/avif">
+                <source srcset="build/img/Fondo_Distribuidores_movil.webp" type="image/webp" media="(max-width: 480px)">
+                <source srcset="build/img/Fondo_Distribuidores_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                <source srcset="build/img/Fondo_Distribuidores.webp" type="image/webp">
+                <source srcset="build/img/Fondo_Distribuidores_movil.jpg" media="(max-width: 480px)">
+                <source srcset="build/img/Fondo_Distribuidores_Tablet.webp" type="image/jpg" media="(max-width: 768px)">
+                <img width="350" height="150" src="build/img/Fondo_Distribuidores.jpg" alt="Fondo de pantalla Diseño de Pagonas Web">
+            </picture>
+        </div>
+
+        <section class="formatoHero_Container centra-titulo" id="secTituloH1">
             <h1>Únete a nuestro equipo de <span>Distribuidores</span> y gana comisiones de hasta <span>50%</span></h1>
             <p>Comienza hoy a generar increíbles ganancias con nuestros sorprendentes planes de comisiones que tenemos para ti.</p>
         </section>
@@ -357,13 +358,13 @@
                         </div>
                     </div>
                     <div class="paquete_footer">
-                        <a href="#" class="boton mnuContacto">Pedir informes</a>
+                        <a href="contacto.html" class="boton mnuContacto">Pedir informes</a>
                     </div>
 
                 </div>
 
                 <div class="planes_paquete">
-                    <div class="paquete_nombrePlanOro">
+                    <div class="paquete_nombrePlan oro">
                         <h4>Oro</h4>
                         <h3>$5,800 mx</h3>
                         <small>Anuales</small>
@@ -390,7 +391,7 @@
                         </div>
                     </div>
                     <div class="paquete_footer">
-                        <a href="#" class="boton mnuContacto">Pedir informes</a>
+                        <a href="contacto.html" class="boton mnuContacto">Pedir informes</a>
                     </div>
                 </div>
 
@@ -422,7 +423,7 @@
                         </div>
                     </div>
                     <div class="paquete_footer">
-                        <a href="#" class="boton mnuContacto">Pedir informes</a>
+                        <a href="contacto.html" class="boton mnuContacto">Pedir informes</a>
                     </div>
                 </div>
             </div>
@@ -463,7 +464,7 @@
         <!-- ! SECCIÓN DE INFORMES -->
         <div class="seccion sec-informes">
             <div class="tituloWhite">
-                <h2><span>Requisitos para ser Distribuidor Autorizado</span></h2> 
+                <h2>Requisitos para ser Distribuidor Autorizado</h2> 
                 <p>Para poder ser parte de nuestro equipo de Distribuidores, debes de cumplir con ciertos requisitos que a continuación te describimos:</p>
             </div>
             <div class="informes_content">
@@ -568,7 +569,7 @@
                 <h4>Gana comisiones de hasta <span>50%</span></h4>
                 <div class="despedida_contacto">
                     <h5>Solicitar informes por:</h5>
-                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="contacto.html" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
                     <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
@@ -594,17 +595,9 @@
     <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
     <script src="build/js/include-html.min.js"></script> 
 
-    <!-- ? JQUERY -->
-    <script src="build/js/jquery.js"></script>
             
-    <!-- ? SWIPER : Slider del hero -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <!-- ? LIGTHBOX PARA LA GALERÍA -->
-    <script src="build/js/lightbox.js"></script>
-
-    <script src="build/js/app.js"></script>
-
+    <script src="build/js/app.js"></script>  
+    <script defer src="build/js/clicks.js"></script>
     
 </body>
 </html>

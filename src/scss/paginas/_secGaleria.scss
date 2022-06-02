@@ -17,23 +17,8 @@
         object-fit: cover;
         margin: 3rem 0;    
 
-        a {
-
-            overflow: hidden;
+        img {
             border-radius: 10px;
-
-            img {
-                width: 100%;    
-                border-radius: 10px;
-                transition: transform 0.3s ease-in-out;
-            }
-
-            &:hover img {
-                // -webkit-filter: grayscale(0);
-                -webkit-transform: scale(1.05);
-                transform: scale(1.05);
-            }
-    
         }
 
         @include m.mixMQ(v.$tablet) {

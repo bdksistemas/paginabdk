@@ -14,16 +14,6 @@
         gtag('config', 'AW-1011948451');
     </script>
 
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-9FG8EFFN81');
-    </script>
-
     <!-- ! ----------------------------------------- -->
 
     <title>BDKSistemas - Productos BDK</title>
@@ -44,28 +34,20 @@
     <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
 
+    <!-- ! ESTILOS -->
 
-    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- ? FONTAWESOM -->
-    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
-    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- ? LIGHTBOX: Galería -->
-    <link rel="preload" href="build/css/lightbox.css" as="style">
-    <link rel="stylesheet" href="build/css/lightbox.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
-    <!-- ? METAS -->
+    <!-- ! METAS -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -93,21 +75,24 @@
         <div class="nav_container"> 
             <div class="nav_logo">
                 <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
-                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.png" media="(max-width: 480px)">
+                    <img loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de BDKSISTEMAS" id="logoBDK">
                 </picture>
             </div>
 
             <ul class="nav_principal" id="navPrincipal">
-                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
-                <li class="nav_item nav_active"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+                <li class="nav_item"><a href="index.html" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item nav_active"><a href="software.html" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="distribuidores.html" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="pagresenas.html" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="galeria.html" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="contacto.html" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="soporte.html" class="nav_links mnuSoporte">Soporte</a></li>
             </ul> 
 
             <div class="nav_social">
@@ -117,13 +102,13 @@
     </nav>
 
     <!-- ! HERO -->
-    <header class="heroSoftware">
-        <section class="hero_container"> 
+    <header class="formatoHero heroSoftware">
+        <section class="formatoHero_Container hero_container"> 
             <div class="heroSoft_mockup">
                 <picture>
                     <source srcset="build/img/MKP_SOFTWARE.avif" type="image/avif">
                     <source srcset="build/img/MKP_SOFTWARE.webp" type="image/webp">
-                    <img loading="lazy" width="350" height="150" src="build/img/MKP_SOFTWARE.png" alt="Foto de un restaurante">
+                    <img width="350" height="150" src="build/img/MKP_SOFTWARE.png" alt="Foto de un restaurante">
                 </picture>            
             </div>
 
@@ -131,7 +116,7 @@
                 <h1>Tenemos el mejor software <span>punto de venta</span> para tu negocio</h1>
             </div>
 
-            <div class="anim-mouse-b2">
+            <div class="anim-mouse mouse-b2">
                 <div class="mouse"></div>
             </div>
     
@@ -153,7 +138,7 @@
                             <picture>
                                 <source srcset="build/img/SLIDE_BDKREST.avif" type="image/avif">
                                 <source srcset="build/img/SLIDE_BDKREST.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/SLIDE_BDKREST.jpg" alt="Foto de un restaurante">
+                                <img width="350" height="150" src="build/img/SLIDE_BDKREST.jpg" alt="Foto de un restaurante">
                             </picture>            
                         </div>
                     </div>
@@ -170,7 +155,7 @@
                             <picture>
                                 <source srcset="build/img/SLIDE_BDKGYM.avif" type="image/avif">
                                 <source srcset="build/img/SLIDE_BDKGYM.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/SLIDE_BDKGYM.jpg" alt="Foto de un restaurante">
+                                <img width="350" height="150" src="build/img/SLIDE_BDKGYM.jpg" alt="Foto de un restaurante">
                             </picture>            
                         </div>
                     </div>
@@ -187,7 +172,7 @@
                             <picture>
                                 <source srcset="build/img/SLIDE_BDKTINT.avif" type="image/avif">
                                 <source srcset="build/img/SLIDE_BDKTINT.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/SLIDE_BDKTINT.jpg" alt="Foto de un restaurante">
+                                <img width="350" height="150" src="build/img/SLIDE_BDKTINT.jpg" alt="Foto de un restaurante">
                             </picture>            
                         </div>
                     </div>
@@ -204,7 +189,7 @@
                             <picture>
                                 <source srcset="build/img/SLIDE_BDKSPA.avif" type="image/avif">
                                 <source srcset="build/img/SLIDE_BDKSPA.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/SLIDE_BDKSPA.jpg" alt="Foto de un restaurante">
+                                <img width="350" height="150" src="build/img/SLIDE_BDKSPA.jpg" alt="Foto de un restaurante">
                             </picture>            
                         </div>
                     </div>
@@ -260,7 +245,7 @@
                                 <p>Control de ventas y mesas, ventas por mesero, comandas, manejo de cuentas, almacén y mucho más.</p>
                             </div>
                             <div class="softFooter">
-                                <a href="#" class="boton acc-rest">Más Información</a>
+                                <a href="bdkrest.html" class="boton acc-rest">Más Información</a>
                             </div>
                         </div>
                     </div>
@@ -281,7 +266,7 @@
                                 <p>Control de mensualidades, asistencia, ventas, clases, horarios, expediente de alumnos y mucho más.</p>
                             </div>
                             <div class="softFooter">
-                                <a href="#" class="boton acc-gym">Más Información</a>
+                                <a href="bdkgym.html" class="boton acc-gym">Más Información</a>
                             </div>
                         </div>
                     </div>
@@ -302,7 +287,7 @@
                                 <p>Lleva el control de tus ventas, seguimiento de pedidos, cortes de caja, control de prendas y mucho más.</p>
                             </div>
                             <div class="softFooter">
-                                <a href="#" class="boton acc-tint">Más Información</a>
+                                <a href="bdktint.html" class="boton acc-tint">Más Información</a>
                             </div>
                         </div>
                     </div>
@@ -323,7 +308,7 @@
                                 <p>Control de ventas, tratamientos y sesiones, agenda, almacén, comisiones y mucho más.</p>
                             </div>
                             <div class="softFooter">
-                                <a href="#" class="boton acc-spa">Más Información</a>
+                                <a href="bdkspa.html" class="boton acc-spa">Más Información</a>
                             </div>
                         </div>
                     </div>
@@ -344,7 +329,7 @@
                                 <p>Control de ventas e ingresos, sesiones, agenda, almacén, comisiones y mucho más.</p>
                             </div>
                             <div class="softFooter">
-                                <a href="#" class="boton acc-barber">Más Información</a>
+                                <a href="bdkbarber.html" class="boton acc-barber">Más Información</a>
                             </div>
                         </div>
                     </div>
@@ -365,7 +350,7 @@
                                 <p>Control de ventas e ingresos, almacén, cotizaciones, ventas a crédito, sistema de separado y mucho más.</p>
                             </div>
                             <div class="softFooter">
-                                <a href="#" class="boton acc-pos">Más Información</a>
+                                <a href="bdkpos.html" class="boton acc-pos">Más Información</a>
                             </div>
                         </div>
                     </div>
@@ -388,7 +373,7 @@
                                 </picture>                                    
                             </div>
                             <div class="titSoft">
-                                <h4>Software para el registro de asistencia</h4>
+                                <h4>Software para el registro de asistencia</h4> 
                                 <p>Control de entradas y salidas de empleados, retardos, ausentismos, pre-nómina, kardex de empleados y mucho más.</p>
                             </div>
                             <div class="softFooter">
@@ -460,89 +445,8 @@
         <div data-include="assets/promo_web.html"></div>
 
         <!-- ! EQUIPO DE COMPUTO -->
-        <section class="secEquipo seccion">
+        <div data-include="assets/equipocomputo.html"></div>
 
-            <div class="titulo">
-                <h2><span>Equipo</span> de cómputo</h2>  
-                <p>Tenemos la solución completa para tu negocio</p>
-            </div>
-
-            <div class="eqContent">
-
-                <picture>
-                    <source srcset="build/img/BDKREST/BDKREST_PDV_01.avif" type="image/avif">
-                    <source srcset="build/img/BDKREST/BDKREST_PDV_01.webp" type="image/webp">
-                    <img loading="lazy" width="350" height="150" src="build/img/BDKREST/BDKREST_PDV_01.jpg" alt="Imagen de la sección Quienes Somos">
-                </picture>   
-                
-                <div class="eqTextos">
-                    <h4>¡NO BATALLES MÁS!</h4>
-                    <p>Tenemos la solución completa para tu negocio, desde el software hasta todo el equipo de cómputo necesario para implementar un punto de venta en tu emppresa.</p>
-                </div>
-
-                <div class="hardware swiper container">
-                    <div class="swiper-wrapper"">
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_01.avif" type="image/avif">
-                                <source srcset="build/img/EQ_01.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_01.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_02.avif" type="image/avif">
-                                <source srcset="build/img/EQ_02.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_02.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_03.avif" type="image/avif">
-                                <source srcset="build/img/EQ_03.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_03.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_04.avif" type="image/avif">
-                                <source srcset="build/img/EQ_04.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_04.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_05.avif" type="image/avif">
-                                <source srcset="build/img/EQ_05.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_05.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_06.avif" type="image/avif">
-                                <source srcset="build/img/EQ_06.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_06.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_07.avif" type="image/avif">
-                                <source srcset="build/img/EQ_07.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_07.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                        <div class="element swiper-slide">
-                            <picture>
-                                <source srcset="build/img/EQ_08.avif" type="image/avif">
-                                <source srcset="build/img/EQ_08.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/EQ_08.jpg" alt="Imagen de la sección Quienes Somos">
-                            </picture>        
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>            
-        </section>
 
     </main>
 
@@ -555,18 +459,9 @@
 
     <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
     <script src="build/js/include-html.min.js"></script> 
-
-    <!-- ? JQUERY -->
-    <script src="build/js/jquery.js"></script>
             
-    <!-- ? SWIPER : Slider del hero -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <!-- ? LIGTHBOX PARA LA GALERÍA -->
-    <script src="build/js/lightbox.js"></script>
-
-    <script aysnc src="build/js/app.js"></script>
-
+    <script defer src="build/js/clicks.js"></script>
+    <script src="build/js/app.js"></script>  
     
 </body>
 </html>

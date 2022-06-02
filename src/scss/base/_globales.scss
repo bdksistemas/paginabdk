@@ -1,6 +1,8 @@
 @use 'variables' as v;
 @use 'mixins' as m; 
 
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap');
+
 html { 
     font-size: 62.5%; 
     box-sizing: border-box;
@@ -11,13 +13,13 @@ html {
 *,    
 *:before,    
 *:after {   
-    box-sizing: inherit;   
+    box-sizing: inherit;     
     margin: 0;     
-}
+} 
  
 body { 
     font-family: v.$fuente_principal;  
-    font-size: 1.6rem;
+    font-size: 16px;
 
     &::-webkit-scrollbar { 
         width: 8px;
@@ -26,7 +28,7 @@ body {
 
     &::-webkit-scrollbar-thumb {
         background: v.$color1;
-        border-radius: 5px;
+        border-radius: 5px; 
     }
 }  
 
@@ -41,7 +43,7 @@ p {
     line-height: 1.20;  
     margin: .25rem 0;
     font-family: v.$fuente_sec;   
-}
+} 
 
 .container {
     width: 90%;
@@ -176,9 +178,8 @@ img {
 .iconos-verde {
     @extend .iconos;
 
-    // background: v.$color6;
     background: v.$degradado4;
-    color: v.$blanco;
+    color: v.$blanco; 
 }
 
 .seccion {
@@ -231,7 +232,6 @@ img {
         font-weight: bold;
         margin: 1.5rem 0;
         display: block;
-        // text-transform: uppercase;        
     }
 
     .linea {
@@ -244,11 +244,12 @@ img {
 
 .tituloWhite {
     @extend .titulo;
+
     h2, p {
         color: v.$blanco;
 
         span {
-            color: v.$blanco;
+            color: v.$color1;
         }
     }
 }
@@ -262,7 +263,7 @@ img {
 }
 
 .txtM5 {
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 .boton {
@@ -318,14 +319,14 @@ img {
     z-index: 10000;
 }
 
-.fondoSecciones {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+// .fondoSecciones {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
 
 .bannerPub {
     padding: 0;
@@ -366,10 +367,6 @@ img {
     display: flex;
     justify-content: center;
     padding-right: 3rem;
-
-    // @include m.mixMQ(v.$tablet) {
-    //     justify-content: flex-end;
-    // };
 
     .mouse {
         @include m.bgGradient;
@@ -415,22 +412,8 @@ img {
     }
 }
 
-.anim-mouse-b2 {
-    @extend .anim-mouse;
+.mouse-b2 {
     bottom: 2rem;
-}
-
-.anim-mouse-b3 {
-    @extend .anim-mouse;
-    justify-content: flex-end;
-    bottom: 2rem;
-    right: -4rem;
-
-    @include m.mixMQ(v.$tablet) {
-        justify-content: center;
-        right: 0;
-        padding-right: 0;
-    };
 }
 
 .formasPago {    
@@ -764,8 +747,9 @@ img {
     
 }
 
-.elLista {
+.elLista {  
     padding: 2rem;
+    z-index: 100;
 
     @include m.mixMQ(v.$movil) {
         margin-left: 2rem;        
@@ -793,3 +777,26 @@ img {
     margin: 0 auto;
 }
 
+.container-bkg { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5970763305322129) 100%);
+    }
+
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+}

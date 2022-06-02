@@ -14,16 +14,6 @@
         gtag('config', 'AW-1011948451');
     </script>
 
-    <!-- ? Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FG8EFFN81"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-9FG8EFFN81');
-    </script>
-
     <!-- ! ----------------------------------------- -->
 
     <title>BDKSISTEMAS - Páginas Web</title>
@@ -45,27 +35,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
 
 
-    <!-- ? FUENTE NUNITO DE GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ! ESTILOS -->
+
+    <!-- ? FUENTE NUNITO DE GOOGLE FONTS --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- ? FONTAWESOM -->
-    <link rel="preconnect" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" as="style">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
-    <!-- ? LIBRERÍA PARA EL SLIDER : SWIPER = Tiene también JS -->
-    <link rel="preconnect" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" as="style">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- ? LIGHTBOX: Galería -->
-    <link rel="preload" href="build/css/lightbox.css" as="style">
-    <link rel="stylesheet" href="build/css/lightbox.css">
 
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
-    <!-- ? METAS -->
+    <!-- ! METAS -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -93,22 +77,24 @@
         <div class="nav_container">
             <div class="nav_logo">
                 <picture>
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.avif" type="image/avif">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
                     <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO.webp" type="image/webp">
-                    <img id="logoBDK" loading="lazy" width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de la empresa">
+                    <source srcset="build/img/LOGO_BDK_GENERAL_BLANCO_MOVIL.png" media="(max-width: 480px)">
+                    <img width="350" height="150" src="build/img/LOGO_BDK_GENERAL_BLANCO.png" alt="Logotipo de BDKSISTEMAS" id="logoBDK">
                 </picture>
             </div>
 
-
             <ul class="nav_principal" id="navPrincipal">
-                <li class="nav_item"><a href="#" class="nav_links mnuInicio">Inicio</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuSoftware">Productos</a></li>
-                <li class="nav_item nav_active"><a href="#" class="nav_links mnuPagWeb">Páginas Web</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuDist">Distribuidores</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuRese">Reseñas</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuGal">Galería</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuContacto">Contacto</a></li>
-                <li class="nav_item"><a href="#" class="nav_links mnuSoporte">Soporte</a></li>
+                <li class="nav_item"><a href="index.html" class="nav_links mnuInicio">Inicio</a></li>
+                <li class="nav_item"><a href="software.html" class="nav_links mnuSoftware">Productos</a></li>
+                <li class="nav_item nav_active"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <li class="nav_item"><a href="distribuidores.html" class="nav_links mnuDist">Distribuidores</a></li>
+                <li class="nav_item"><a href="pagresenas.html" class="nav_links mnuRese">Reseñas</a></li>
+                <li class="nav_item"><a href="galeria.html" class="nav_links mnuGal">Galería</a></li>
+                <li class="nav_item"><a href="contacto.html" class="nav_links mnuContacto">Contacto</a></li>
+                <li class="nav_item"><a href="soporte.html" class="nav_links mnuSoporte">Soporte</a></li>
             </ul> 
 
             <div class="nav_social">
@@ -118,8 +104,20 @@
     </nav>
 
     <!-- ! HERO -->
-    <header class="heroPaginas">    
-        <section class="hero_container">
+    <header class="formatoHero">    
+
+        <div class="hero-background">
+            <picture>
+                <source srcset="build/img/Fondo_PagWeb_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                <source srcset="build/img/FondoPaginasWeb.avif" type="image/avif">
+                <source srcset="build/img/Fondo_PagWeb_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                <source srcset="build/img/FondoPaginasWeb.webp" type="image/webp">
+                <source srcset="build/img/Fondo_PagWeb_Movil.jpg" media="(max-width: 480px)">
+                <img width="350" height="150" src="build/img/FondoPaginasWeb.jpg" alt="Fondo de pantalla Diseño de Pagonas Web">
+            </picture>
+        </div>
+        
+        <section class="formatoHero_Container centra-titulo">
             <h1>Diseñamos <span>Páginas Web</span> modernas y profesionales</h1>
             <p>Destaca tu presencia en la nube y sorprende a tus clientes y competidores.</p>
         </section>
@@ -415,7 +413,7 @@
                         <p>Página web demostrativa para todo tipo de restaurantes y bares.</p>
                     </div>
                     <div class="demoFooter">
-                        <a href="#" class="link-demorest">Ver Demo</a>
+                        <a href="https://www.bdkclientes.com/paginasweb/restaurantes/demo1/" class="link-demorest">Ver Demo</a>
                     </div>
                 </div>
 
@@ -432,7 +430,7 @@
                         <p>Página web demostrativa para todo tipo de lavanderías y tintorerías.</p>
                     </div>
                     <div class="demoFooter">
-                        <a href="#" class="link-demotint">Ver Demo</a>
+                        <a href="https://bdkclientes.com/paginasweb/lavanderias/demo1/" class="link-demotint">Ver Demo</a>
                     </div>
                 </div>
 
@@ -449,7 +447,7 @@
                         <p>Página web demostrativa para todo tipo de gimnasios y academias deportivas.</p>
                     </div>
                     <div class="demoFooter">
-                        <a href="#" class="link-demogym">Ver Demo</a>
+                        <a href="https://bdkclientes.com/paginasweb/gimnasios/demo1/" class="link-demogym">Ver Demo</a>
                     </div>
                 </div>
 
@@ -466,7 +464,7 @@
                         <p>Página web demostrativa para salones de belleza, SPAs y estéticas.</p>
                     </div>
                     <div class="demoFooter">
-                        <a href="#" class="link-demospa">Ver Demo</a>
+                        <a href="https://bdkclientes.com/paginasweb/spa/demo1/" class="link-demospa">Ver Demo</a>
                     </div>
                 </div>
 
@@ -483,7 +481,7 @@
                         <p>Página web demostrativa para barberías y peluquerías.</p>
                     </div>
                     <div class="demoFooter">
-                        <a href="#" class="link-demobarber">Ver Demo</a>
+                        <a href="https://bdkclientes.com/paginasweb/barber/demo1/" class="link-demobarber">Ver Demo</a>
                     </div>
                 </div>
 
@@ -500,155 +498,125 @@
                         <p>Ejemplo de una landing page, sirve para todo tipo de negocio.</p>
                     </div>
                     <div class="demoFooter">
-                        <a href="#" class="link-demopos">Ver Demo</a>
+                        <a href="https://www.bdkclientes.com/paginasweb/otros/demo1/" class="link-demopos">Ver Demo</a>
                     </div>
                 </div>
 
             </div>
 
-            <div class="portaFooter">
-                <!-- <p>¿Quieres ver todo nuestro trabajo?</p>
-                <a href="#" class="boton">Portafolio Completo</a> -->
-            </div>
+            <!-- <div class="portaFooter">
+                <p>¿Quieres ver todo nuestro trabajo?</p>
+                <a href="#" class="boton">Portafolio Completo</a>
+            </div> -->
 
         </section>
 
         <!-- ! PRECIOS PAGINAS WEB -->
-        <section class="seccion secPreciosWeb">
-            <div class="pwPresentador">
-                <picture>
-                    <source srcset="build/img/PRECIOS_BOY.avif" type="image/avif">
-                    <source srcset="build/img/PRECIOS_BOY.webp" type="image/webp">
-                    <img loading="lazy" width="350" height="150" src="build/img/PRECIOS_BOY.jpg" alt="Imagen de la sección Quienes Somos">
-                </picture>    
-            </div>
+        <!-- ! LISTA DE PRECIOS -->
+        <section class="precios_software seccionGrisOscuro">
+
             <div class="tituloWhite ">
                 <h2>Lista de <span>precios</span></h2> 
                 <p>Elije la versión que más se adapte a las necesidades de tu negocio</p>
                 <p>Contamos con planes de renta anual y compra definitiva</p>
             </div> 
 
-            <div class="checkPrecios">
-                <input type="checkbox" value="0" id="slideThree" name="check"/>
-                <label for="slideThree" id="checkPreWeb"></label>
+            <div class="precios_planes">
+
+                <!-- ! LANDING PAGE -->
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlan">
+                        <h4>PÁGINA BÁSICA</h4>
+                        <h3>$2,900 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Página Web con 1 pestaña</p></div>                                
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>De 5 a 7 secciones dentro de la pestaña inicial.</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Incluye hosting</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Incluye dominio web .com o .mx</p></div>                            
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Hasta 10 correos corporativos </p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>                            
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Optimizado para SEO orgánico</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Sitio web responsivo para móvil, tablet y PC</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Incluye soporte técnico todo el año</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Incluye modificaciones básicas.</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>INCLUYE MANTENIMIENTO DE TU SITIO WEB</p></div>
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
+                <!-- ! VERSIÓN PROFESIONAL -->
+                <div class="planes_paquete">
+                    <div class="paquete_nombrePlan oro">
+                        <h4>PÁGINA PYME</h4>
+                        <h3>$4,930 mx</h3>
+                        <small>Anuales</small>
+                    </div>
+
+                    <div class="paquete_contenidoPlan">
+                        <div class="paqContenido_header">
+                            <h5>Incluye todas las funciones de la versión ESTÁNDAR, más:</h5>
+                        </div>
+                        <div class="paqContenido_main">
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Página Web con 5 a 7 pestaña</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Hasta 5 secciones por pestaña</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Incluye hosting</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Incluye dominio web .com o .mx</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Correos corporativos ilimitados</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Optimizado para SEO orgánico</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Sitio web responsivo para móvil, tablet y PC</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Incluye soporte técnico todo el año</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>Incluye modificaciones básicas.</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>INCLUYE MANTENIMIENTO DE TU SITIO WEB</p></div>
+                            <div class="pqElement"><i class="fas fa-check-circle"></i><p>INCLUYE MANTENIMIENTO DE TU SITIO WEB</p></div>
+                        </div>
+                    </div>
+
+                    <div class="paquete_footer">
+                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                    </div>                 
+                </div>
+
             </div>
 
-            <section class="preciosWeb">
-
-                <div class="preciosCompra preciosAct" id="pwCompra">
-                    <div class="paqueteWeb">
-                        <div class="pwHeader">
-                            <h4>LANDING PAGE</h4>
-                            <h3>$5,500 mx</h3>
-                        </div>
-                        <div class="pwContent">
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Página Web con 1 pestaña</p></div>                                
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>De 5 a 7 secciones dentro de la pestaña inicial.</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de hosting </p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de dominio .com o .mx</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Hasta 10 correos corporativos </p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>                            
-                        </div>
-                        <div class="pwFooter">
-                            <a href="#" class="boton mnuContacto">Pedir informes</a>
-                        </div>
-                    </div>
-                    <div class="paqueteWeb">
-                        <span></span>
-                        <div class="pwHeader">
-                            <h4>PÁGINA PYME</h4>
-                            <h3>$7,500 mx</h3>
-                        </div>
-                        <div class="pwContent">
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Página Web con 5 a 7 pestaña</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Hasta 5 secciones por pestaña</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de hosting</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de dominio .com o .mx</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Correos corporativos ilimitados</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>
-                        </div>
-                        <div class="pwFooter">
-                            <a href="#" class="boton mnuContacto">Pedir informes</a>
-                        </div>
-                    </div>
-    
-                </div>
-
-                <div class="preciosRenta" id="pwRenta">
-                    <div class="paqueteWeb">
-                        <div class="pwHeader">
-                            <h4>LANDING PAGE</h4>
-                            <h3>$3,500 mx</h3>
-                            <small>ANUALES</small>
-                        </div>
-                        <div class="pwContent">
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Página Web con 1 pestaña</p></div>                                
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>De 5 a 7 secciones dentro de la pestaña inicial.</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de hosting </p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de dominio .com o .mx</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Hasta 10 correos corporativos </p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
-                                <div class="pwElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>                            
-                        </div>
-                        <div class="pwFooter">
-                            <a href="#" class="boton mnuContacto">Pedir informes</a>
-                        </div>
-                    </div>
-                    <div class="paqueteWeb">
-                        <span></span>
-                        <div class="pwHeader">
-                            <h4>PÁGINA PYME</h4>
-                            <h3>$5,500 mx</h3>
-                            <small>ANUALES</small>
-                        </div>
-                        <div class="pwContent">
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Página Web con 5 a 7 pestaña</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Hasta 5 secciones por pestaña</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de hosting</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Incluye 1 año de dominio .com o .mx</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Certificado de Seguridad SSL</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Correos corporativos ilimitados</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Enlace a redes sociales</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Mapa de Google</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Galería</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Sección de Servicios y Productos</p></div>
-                            <div class="pwElement"><i class="fas fa-check-circle"></i><p>Captura de hasta 15 productos</p></div>
-                        </div>
-                        <div class="pwFooter">
-                            <a href="#" class="boton mnuContacto">Pedir informes</a>
-                        </div>
-                    </div>
-    
-                </div>
-
-            </section>
-
-            <div class="formasPago container">
-                <div class="fpIndicaciones"> 
+            <div class="formasPago">
+                <div class="fpIndicaciones">
                     <p>
                         <small><i class="fas fa-caret-right"></i> Precios en pesos mexicanos</small>
-                        <small><i class="fas fa-caret-right"></i> Precios más impuestos</small>
-                        <small><i class="fas fa-caret-right"></i> Aceptamos transferencia electrónica</small>
-                        <small><i class="fas fa-caret-right"></i> Aceptamos pagos mediante liga de pago</small>
+                        <small><i class="fas fa-caret-right"></i> Impuestos incluidos</small>
+                        <small><i class="fas fa-caret-right"></i> Incluye soporte técnico todo el año</small>
+                        <small><i class="fas fa-caret-right"></i> Incluye actualizaciones gratuitas</small>
+                        <small><i class="fas fa-caret-right"></i> Garantía de satisfacción</small>
                     </p>
-                </div> 
+                    <p>
+                        <small><i class="fas fa-exclamation-triangle"></i> NO incluye tienda en línea</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> NO es autoadministrable</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> NO incluye modificaciones a gran escala</small>
+                    </p>
+                </div>
+
                 <div class="fpTiposTar">
                     <div class="fpTarjetas">
-                        <small>Aceptamos todas las</small>
+                        <small>Aceptamos</small>
+                        <h4>Transferencias SPEI</h4>
                         <h4>Tarjetas de crédito y débito</h4>
                         <div class="imgTarjetas">
                             <picture>
@@ -661,15 +629,16 @@
                     <div class="fpMSI">
                         <small>Solicita tu compra a</small>
                         <h4>MESES SIN INTERESES</h4>
-                        <small>con plazos de</small>
+                        <small>con plazos de</small> 
                         <h4>3, 6 Y 9 MSI</h4>
-                        <small>Válido con tarjetas participantes.</small>
+                        <small>Válido con tarjetas participantes</small>
                         <small>Aplica cargo extra por comisión MSI</small>
                     </div>
                 </div>
             </div>
-            
         </section>
+
+
 
         <!-- ! PROMOCIONES PAGINAS WEB -->
         <section class="secPromoWeb">
@@ -735,7 +704,7 @@
                 <h4>Sí tu negocio no tiene página web <span>¡NO EXISTE!</span></h4>
                 <div class="despedida_contacto">
                     <h5>Solicitar informes por:</h5>
-                    <a href="#" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
+                    <a href="contacto.html" class="boton mnuContacto"><i class="fas fa-envelope"></i> Correo</a>
                     <a href="#" class="botonVerde botWP"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
@@ -761,16 +730,9 @@
     <!-- ? LIBRERÍA PARA COLOCAR ARCHIVOS HTML DENTRO DE OTRO HTML -->
     <script src="build/js/include-html.min.js"></script> 
 
-    <!-- ? JQUERY -->
-    <script src="build/js/jquery.js"></script>
             
-    <!-- ? SWIPER : Slider del hero -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-    <!-- ? LIGTHBOX PARA LA GALERÍA -->
-    <script src="build/js/lightbox.js"></script>
-
-    <script src="build/js/app.js"></script>
+    <script defer src="build/js/clicks.js"></script>
+    <script src="build/js/app.js"></script>  
     
 </body>
 </html>

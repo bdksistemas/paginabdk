@@ -16,9 +16,24 @@
     };
 
     @include m.mixMQ(v.$movil) {
-        height: 60vh;
+        height: 60vh; 
         min-height: 20rem; 
     };
+
+    &::before {
+        @extend .clsBefore;
+        content: "";
+        background-image: linear-gradient(270deg, rgba(0,0,0,.1) 20%, rgba(0,0,0,1) 100%);        
+        z-index: 100;    
+
+        @include m.mixMQ(v.$deskXL) {
+            background-image: linear-gradient(270deg, rgba(0,0,0,.1) 45%, rgba(0,0,0,1) 100%);
+        };
+
+        @include m.mixMQ(v.$movil) {
+            background-image: linear-gradient(270deg, rgba(0,0,0,.1) 10%, rgba(0,0,0,1) 100%);
+        };
+    }
 
 }
 
@@ -38,7 +53,7 @@
     color: v.$blanco;
     width: 85rem;
     left: 5rem;
-    top: 65%;
+    top: 50%;
 
     @include m.mixMQ(v.$deskXL) {
         width: 75rem;        
@@ -88,42 +103,43 @@
     }
 }
 
+.top-dist {
+    @include m.mixMQ(v.$deskSuper) {
+        top: 55%;        
+    };
+}
+
+.centra-titulo {
+    transform: translateY(-50%);
+
+    @include m.mixMQ(v.$tablet) {
+        transform: none;
+    };
+
+
+}
+
+.hero-background { 
+    width: 100%;
+    height: 100%; 
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+
 // ! ===========================================================================================================
 
-.hero {
-
-    @extend .formatoHero;
-
-    &::before {
-        @extend .clsBefore;
-        content: "";
-        background-image: linear-gradient(287deg, rgba(0,0,0,.1) 20%, rgba(0,0,0,1) 100%), url('../img/Fondo_Hero.jpg');
-        background-size: cover;
-        background-position: center center;
-
-        @include m.mixMQ(v.$deskXL) {
-            background-image: linear-gradient(287deg, rgba(0,0,0,.1) 45%, rgba(0,0,0,1) 100%), url('../img/Fondo_Hero.jpg');
-            background-position: left center;
-        };
-
-        @include m.mixMQ(v.$desk) {
-            background-position: center center;            
-        };
-
-        @include m.mixMQ(v.$movil) {
-            background-image: linear-gradient(287deg, rgba(0,0,0,.1) 10%, rgba(0,0,0,1) 100%), url('../img/Fondo_Hero_Movil.jpg');
-            background-position: center;
-        };
-    }
-    
-}
 
 .heroSoftware {
 
-    @extend .formatoHero;
-    height: 68vh;
-    
-    
+    height: 68vh;    
     flex-direction: row;
 
     @include m.mixMQ(v.$tablet) {
@@ -132,7 +148,6 @@
     };
 
     .hero_container {
-        @extend .formatoHero_Container;
         width: 50%;
         background: v.$degradadoRed;
         height: 100%;
@@ -207,233 +222,16 @@
             background-size: cover;
             background-position: center center;
             z-index: 1000;
-        } 
-    
+        }     
     }
 
-}
-
-
-// ! HERO DE LA PESTAÑA: PAGINAS WEB
-.heroPaginas {
-
-    @extend .formatoHero;
-
-    &::before {
-        @extend .clsBefore;
-        content: "";
-        background-image: linear-gradient(270deg, rgba(0,0,0,0) 35%, rgba(0,0,0,1) 100%), url('../img/FondoPaginasWeb.jpg');
-        background-size: cover;
-        background-position: center center;
-        // animation: animHero 8s cubic-bezier(0.11, 0, 0.5, 0) 0s infinite alternate both;        
-
-        @include m.mixMQ(v.$deskXL) {
-            background-image: linear-gradient(270deg, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 100%), url('../img/FondoPaginasWeb.jpg');
-            background-position: left center;            
-        };
-
-        @include m.mixMQ(v.$deskXL) {
-            background-position: 70%;            
-        };
-
-        @include m.mixMQ(v.$movil) {
-            background-image: linear-gradient(270deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,1) 100%), url('../img/Fondo_PagWeb_Movil.jpg');
-            background-position: 80%;
-        };
-
-    }
-    
-    .hero_container {
-        @extend .formatoHero_Container;
-        top: 70%;
-
-        @include m.mixMQ(v.$movil) {
-            top: 0%;
-        };
-
-        p {
-            text-shadow: v.$box-shadow2;
-        }
-    }
-
-}
-
-// ! HERO DE LA PESTAÑA: DISTRIBUIDORES
-.heroDistribuidores {
-
-    @extend .formatoHero;
-
-    &::before {
-        @extend .clsBefore;
-        content: "";
-        background-image: linear-gradient(270deg, rgba(0,0,0,0) 35%, rgba(0,0,0,1) 100%), url('../img/Fondo_Distribuidores.jpg');
-        background-size: cover;
-        background-position: center center;
-
-        @include m.mixMQ(v.$deskXL) {
-            background-position: 70%; 
-        };
-
-        @include m.mixMQ(v.$movil) {
-            background-image: linear-gradient(270deg, rgba(0,0,0,0) 35%, rgba(0,0,0,1) 100%), url('../img/Fondo_Distribuidores_movil.jpg');            
-        };
-    }
-    
-    .hero_container {
-        @extend .formatoHero_Container;
-        top: 40%;
-
-        @include m.mixMQ(v.$movil) {
-            top: 0%;
-        };
-
-        p {
-            text-shadow: v.$box-shadow2;
-        }
-    }
-}
-
-// ! HERO DE LA PESTAÑA: SOPORTE
-.heroContacto {
-
-    @extend .formatoHero;
-
-    &::before {
-        @extend .clsBefore;
-        content: "";
-        background-image: linear-gradient(270deg, rgba(0,0,0,0) 35%, rgba(0,0,0,1) 100%), url('../img/PaginaContacto.jpg');
-        background-size: cover;
-        background-position: top top;
-        // animation: animHero 8s cubic-bezier(0.11, 0, 0.5, 0) 0s infinite alternate both;        
-
-        @include m.mixMQ(v.$desk) {
-            background-position: 85%;            
-        };
-
-        @include m.mixMQ(v.$movil) {
-            background-image: linear-gradient(270deg, rgba(0,0,0,0.2) 30%, rgba(0,0,0,1) 100%), url('../img/Fondo_Contacto_Movil.jpg');
-        };
-    }
-    
-    .hero_container {
-        @extend .formatoHero_Container;
-        top: 40%;
-
-        @include m.mixMQ(v.$movil) {
-            top: 0;
-        };
-
-        p {
-            text-shadow: v.$box-shadow2;
-        }
-    }
-}
-
-// ! HERO DE LA PESTAÑA: SOPORTE
-.heroSoporte {
-
-    @extend .formatoHero;
-
-    &::before {
-        @extend .clsBefore;
-        content: "";
-        background-image: linear-gradient(270deg, rgba(0,0,0,0) 35%, rgba(0,0,0,1) 100%), url('../img/FONDO_SOPORTE.jpg');
-        background-size: cover;
-        background-position: top top;
-
-        @include m.mixMQ(v.$movil) {
-            background-image: linear-gradient(270deg, rgba(0,0,0,0) 35%, rgba(0,0,0,1) 100%), url('../img/Fondo_Soporte_Movil.jpg');            
-        };
-    }
-    
-    .hero_container {
-        @extend .formatoHero_Container;
-        top: 40%;
-
-        p {
-            text-shadow: v.$box-shadow2;
-        }
-    }
-}
-
-// ! HERO DE LA PESTAÑA: RESEÑAS
-.heroResenas {
-
-    @extend .formatoHero;
-
-    &::before {
-        @extend .clsBefore;
-        content: "";
-        background-image: linear-gradient(270deg, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url('../img/FONDO_RESENAS2.jpg');
-        background-size: cover;
-        background-position: center center;
-
-        @include m.mixMQ(v.$deskXXL) {
-            background-position: 70%;
-        };
-
-        @include m.mixMQ(v.$movil) {
-            background-image: linear-gradient(270deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,1) 100%), url('../img/Fondo_Resenas_Movil.jpg');            
-            background-position: 80%;            
-        };
-    }
-    
-    .hero_container {
-        @extend .formatoHero_Container;
-        top: 40%;
-
-        @include m.mixMQ(v.$movil) {
-            top: 0;
-        };
-
-        p {
-            text-shadow: v.$box-shadow2;
-        }
-    }
-}
-
-// ! HERO DE LA PESTAÑA: GALERÍA
-.heroGaleria {
-
-    @extend .formatoHero;
-
-    &::before {
-        @extend .clsBefore;
-        content: "";
-        background-image: linear-gradient(270deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 90%), url('../img/FONDO_GALERIA.jpg');
-        background-size: cover;
-        background-position: top top;
-
-        @include m.mixMQ(v.$desk) {
-            background-position: 75%;            
-        };
-
-        @include m.mixMQ(v.$movil) {
-            background-image: linear-gradient(270deg, rgba(0,0,0,0) 5%, rgba(0,0,0,1) 90%), url('../img/Fondo_Galeria_Movil.jpg');            
-        };
-    }
-    
-    .hero_container {
-        @extend .formatoHero_Container;
-        top: 40%;
-
-        @include m.mixMQ(v.$movil) {
-            top: 0;
-        };
-
-        p {
-            text-shadow: v.$box-shadow2;
-        }
-    }
 }
 
 // ! HERO para todos los sistemas
 
 .hero-sistema {
 
-    @extend .formatoHero;
-    justify-content: space-between;
-        
+    justify-content: space-between;        
     flex-direction: row;
     
     @include m.mixMQ(v.$deskXL) {
@@ -449,7 +247,6 @@
     };
 
     .hero_container {
-        @extend .formatoHero_Container;
         width: 40%;
         background-image: v.$degradadoRed;
         height: 100%;
@@ -539,7 +336,7 @@
         
         @include m.mixMQ(v.$tablet) {
             height: 60%;
-            width: 100%;
+            width: 100%; 
             top: 0;
             left: 0;
         };
@@ -548,25 +345,17 @@
             height: 50%;
         };
 
-         &::before {
-             @extend .clsBefore;
-             content: "";
-             background-image: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 100%);
-             background-size: cover;
-             background-position: center center;
-             z-index: 100;    
-         }
-    
-        .heroR-fondo {
-            width: 100%;
-            height: 100%;
+        &::before {
+            @extend .clsBefore;
+            content: "";
+            background-image: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 100%);
+            z-index: 100;    
 
-            img {
-                object-fit: cover;
-                height: 100%;
-            }
+            @include m.mixMQ(v.$movil) {
+                background-image: linear-gradient(180deg, rgba(0,0,0,0) 80%, rgba(0,0,0,1) 100%);                
+            };
         }
-
+    
         .heroR-leyenda {
             position: absolute;
             bottom: 0;
@@ -596,6 +385,11 @@
                 @include m.mixMQ(v.$desk) {
                     font-size: 1.6rem;
                 };
+
+                @include m.mixMQ(v.$movil360) {
+                    font-size: 1.4rem;
+                };
+
             }
         }
     }
