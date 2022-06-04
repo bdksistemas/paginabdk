@@ -39,3 +39,11 @@
 * Se optimiza el HTML del index.
 * Se optimiza parte del código CSS
 * se cambian los estilos de la sección de precios de PAGINASWEB.HTML por los estilos de las paginas de los sistemas para ahorrar código.
+
+## RAMA OptimizaV5
+### Optimización de la página web : Se optimiza página para móviles ya que hay textos muy largos y con tamaño de letra muy pequeño
+
+* BDKBARBER: Se analiza página para ver que textos se pueden ocultar en la versión móvil
+* Se sigue encontrando código CSS que se puede optimizar
+* Se unifican las listas de opciones con una sola clase de estilos llamada: LISTA_ELEMENTOS en el archivo GLOBALES.SASS y se eliminan todas las otras clases como elLista que hacian referencia a diseños de listas
+* Se crea una sola clase llamada filtro-negro que sirve para poner una imagen de fondo en cualquier contenedor y lleva un filtro negro degradado encima de la imagen. 

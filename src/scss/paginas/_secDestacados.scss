@@ -39,16 +39,16 @@
 
             @include m.mixMQ(v.$tablet) {
                 width: 29%;
+                height: 320px;
             };
 
             @include m.mixMQ(v.$movil) {
                 width: 42%;
-                height: 250px;
                 margin: 1rem;
             };
-            @include m.mixMQ(v.$movilSM) {
+            @include m.mixMQ(v.$movil414) {
                 width: 95%;
-                height: 120px;
+                height: 200px;
             };
 
         
@@ -79,12 +79,7 @@
                 }
 
                 p {
-                    font-size: v.$descCon - .2rem;
                     color: v.$blanco;
-
-                    @include m.mixMQ(v.$tablet) {
-                        font-size: 1.2rem;
-                    };
                 }                        
             }
         }    

@@ -18,18 +18,17 @@ footer {
             min-height: 30vh;            
         };
 
-        &::before {
-            @include m.mix-before;
+        // &::before {
+        //     @include m.mix-before;
 
-            background: rgb(225,29,5);
-            background-image: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(5,5,6,0.9) 42%), url('../img/FondoFooter.jpg');        
-            background-position: center;
+        //     background-image: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(5,5,6,0.9) 42%), url('../img/FondoFooter.jpg');        
+        //     background-position: center;
     
-            @include m.mixMQ(v.$movil) {
-                background-image: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(5,5,6,0.9) 42%), url('../img/Fondo_Footer_Movil.jpg');        
-            }
+        //     @include m.mixMQ(v.$movil) {
+        //         background-image: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(5,5,6,0.9) 42%), url('../img/Fondo_Footer_Movil.jpg');        
+        //     }
     
-        }
+        // }
         
         .footer_content {
             position: relative;

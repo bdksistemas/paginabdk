@@ -29,23 +29,6 @@
             width: 90%;
             margin-top: 1rem;
         };
-
-        .phCElement {
-            @include m.mixFlex(flex,0,center,nowrap,0);
-
-            i {
-                color: v.$color1;
-                font-size: 2rem;
-                margin-right: 1rem;
-            }
-
-            p {
-                margin: 10px 0;
-                line-height: 1.25;
-                font-size: 1.5rem;
-                text-align: justify;
-            }
-        }
     }    
 }
 

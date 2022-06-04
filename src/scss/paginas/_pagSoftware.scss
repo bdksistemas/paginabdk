@@ -10,7 +10,7 @@
     z-index: 100;
 
     @include m.mixMQ(v.$deskXXL) { 
-        width: 80%; 
+        width: 80%;  
     };
 
     @include m.mixMQ(v.$desk) {
@@ -33,6 +33,7 @@
         padding: 5rem 3rem; 
         height: 100%;
         border-right: 5px solid v.$color1;
+        @include m.mixFlex(flex,center,center,0,column);
 
         @include m.mixMQ(v.$tablet) {
             width: 100%;
@@ -44,72 +45,18 @@
             padding: 5rem 2rem;
         };
 
-        .titulo {
- 
-            p {
-                @include m.mixMQ(v.$desk) {
-                    font-size: 1.4rem;
-                };
-            }
-        }
-
         .lista_problemas {
-            width: 60%;
-            overflow: hidden;
-            margin: 0 auto;
-            border-radius: 10px;
+            width: 80%;
+            height: 60%;
             position: relative;
-            margin-top: 1.5rem;
+            margin-top: 3rem;
+            z-index: 100;
+            @include m.mixFlex(flex,0,center,0,0);
 
             @include m.mixMQ(v.$deskXL) {
-                width: 70%;
-            };
-
-            @include m.mixMQ(v.$desk) {
                 width: 90%;
+                height: 320px;
             };
-
-            .problema_fondo {
-                width: 100%;
-                height: 310px;
-                overflow: hidden;
-                position: relative;
-
-                @include m.mixMQ(v.$deskXL) {
-                    height: 280px;
-                };
-
-                &::after {
-                    position: absolute;
-                    content: "";
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(0,0,0,.45);
-                }
-        
-                img {
-                    height: 100%;
-                    border-radius: 10px;
-                    object-fit: cover;
-                }
-            }
-
-            .elLista {
-                position: absolute;
-                top: 5rem;
-                left: 2rem;
-
-                @include m.mixMQ(v.$deskXL) {
-                    top: 2.5rem;
-                };
-
-                @include m.mixMQ(v.$movil414) {
-                    top: 1rem;
-                    left: -2rem;
-                };
-            }
         }
 
     }
@@ -119,33 +66,16 @@
         position: relative;
         padding: 3rem;
         height: 100%;  
-        @include m.mixFlex(flex,space-around,false,nowrap,column);
+        @include m.mixFlex(flex,center,0,nowrap,column);
 
         @include m.mixMQ(v.$tablet) {
             width: 100%;
         };
-
-        &::before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
         
-            content: "";
-            background: linear-gradient(270deg, rgba(0,0,0,.1) 20%, rgba(0,0,0,1) 100%);        
-            z-index: 100;    
-
+        .lista_elementos_white {
+            margin-left: 0;
         }
-        
-        .elLista {
 
-            @include m.mixMQ(v.$movil414) {
-                padding: 2rem 0;
-                margin-left: 0;
-            };
-        }
     }
 
 }
@@ -523,148 +453,6 @@
             width: 100%;
         };
 
-        .planes_paquete {
-            @include m.mixBox(30%,600px,0,10px,v.$blanco,v.$box-shadow4);
-            margin: 1rem;
-            padding: 2rem;
-
-            @include m.mixMQ(v.$desk) {
-                padding: 1rem;
-            };
-
-            @include m.mixMQ(v.$tablet) {
-                width: 85%;
-                height: auto;
-            };
-
-            @include m.mixMQ(v.$movilSM) {
-                width: 90%;
-            };
-
-            .paquete_nombrePlan { 
-                @include m.mixBox(100%,20%,0,10px,v.$color5,false);
-                padding: 1rem 0;
-                text-align: center;
-                color: v.$color1;
-
-                @include m.mixMQ(v.$deskXL) {
-                    height: 17.5%;
-                };
-                
-                h3 {
-                    margin-bottom: 0;
-                }
-            }
-
-            .oro {
-                background: v.$degradadoRed;
-                color: v.$blanco;
-            }
-
-            .paquete_contenidoPlan {
-                padding: 2rem 0;
-                height: 70%;
-                overflow: hidden;
-
-                @include m.mixMQ(v.$desk) {
-                    height: 72%; 
-                };
-
-                .paqContenido_header {
-                    text-align: center;
-                    margin: 0 auto;
-
-                    @include m.mixMQ(v.$movil) {
-                        width: 90%;
-                        margin-top: 2rem;
-                    };
-
-                    h5 {
-                        font-size: 1.2rem;
-                        width: 85%;
-                        margin: 0 auto;
-                    }
-                    h4 {
-                        font-weight: normal;
-
-                        @include m.mixMQ(v.$tablet) {
-                            margin-bottom: .5rem;
-                        };
-
-                    }
-                    h3 {
-                        font-size: v.$titParrafo;
-                        color: v.$color1;
-
-                        @include m.mixMQ(v.$tablet) {
-                            font-size: v.$titParrafo - .5rem; 
-                            margin-bottom: .3rem;                           
-                        };
-                    }
-                }
-
-                .paqContenido_main {
-                    padding: 1rem 0;
-                    margin: 1rem 0;
-
-                    @include m.mixMQ(v.$tablet) {
-                        padding: 0 2rem;
-                    };
-                    @include m.mixMQ(v.$movilSM) {
-                        padding: 0 1rem;
-                    };
-            
-                    .pqElement {
-                        @include m.mixFlex(flex,0,center,nowrap,0);
-            
-                        i {
-                            color: v.$color6;
-                            font-size: 1.4rem;
-                            margin-right: 1rem;
-                        }
-
-                        .fa-exclamation-triangle {
-                            color: v.$color1;
-                        }
-            
-                        p {
-                            margin: 2px 0;
-                            line-height: 1.25;
-                            font-size: 1.4rem;
-
-                            @include m.mixMQ(v.$desk) {
-                                font-size: 1.3rem;
-                            };
-
-                            span {
-                                font-weight: bold;
-                            }    
-                        }
-
-                    }
-
-                    .pqElementAlert {
-                        @extend .pqElement;
-                        
-                        p {
-                            font-size: 1.2rem;
-                        }
-                    }
-                }
-            }    
-
-            .paquete_footer {
-                margin-top: 1rem;
-                text-align: center;
-                height: 10%;
-
-                @include m.mixMQ(v.$tablet) {
-                    margin: 0;
-                    height: auto;
-                };
-            }
-        
-        }
     }
 }
 
@@ -700,45 +488,6 @@
         h5 {
             color: v.$blanco;
             margin-top: 2rem;
-        }
-
-        .informes_lista {
-            width: 45%;
-            margin: 1rem; 
-            padding: 0;
-
-            @include m.mixMQ(v.$tablet) {
-                width: 90%;
-            };
-    
-            .pwElement {
-                @include m.mixFlex(flex,0,center,nowrap,0);
-    
-                i {
-                    color: v.$color6;
-                    font-size: 1.4rem;
-                    margin-right: 1rem;
-                }
-    
-                p {
-                    margin: 3px 0;
-                    line-height: 1.25;
-                    font-size: 1.4rem;
-                    text-align: justify;
-                    color: v.$blanco;
-
-                    span {
-                        font-weight: bold;
-                    }    
-                }
-            }
-
-            small {
-                display: block;
-                margin-top: 2rem;
-                color: v.$blanco;
-                text-align: center;
-            }
         }
 
         .informes_text {
@@ -1064,6 +813,7 @@
                 height: 85%;
                 overflow: hidden;
                 overflow-y: auto;
+                padding-bottom: 2rem;
 
                 &::-webkit-scrollbar {
                     width: 8px;     /* Tamaño del scroll en vertical */
@@ -1099,58 +849,17 @@
                     background: #d4d4d4;
                 }        
         
+                @include m.mixMQ(v.$tablet) {
+                    height: 80%;
+                };
                 @include m.mixMQ(v.$movil) {
                     margin-top: 1rem;
-                    width: 100%;
                 };
 
                 p {
                     @include m.mixMQ(v.$movil) {
                         font-size: 1.4rem;
                     };
-                    @include m.mixMQ(v.$movil) {
-                        font-size: 1.2rem;
-                    };
-                }
-
-                .elLista {
-                
-                    @include m.mixMQ(v.$tablet) {
-                        padding-left: 0;
-                    };
-
-                    @include m.mixMQ(v.$movil) {
-                        padding: 0;
-                        margin: 1rem 0;
-                    };
-                    
-                    ul li {
-                        
-                        @include m.mixMQ(v.$desk) {
-                            font-size: 1.3rem;
-                            line-height : 20px;
-                            margin-bottom: .5rem;
-                        };
-
-                        @include m.mixMQ(v.$tablet) {
-                            font-size: 1.2rem;                            
-                            margin-bottom: .25rem;
-                        };
-
-                        @include m.mixMQ(v.$movilSM) {
-                            font-size: 1.1rem;
-                        };
-
-
-                        .fa-exclamation-triangle {
-                            color: v.$negro;
-                        }
-
-                        span {
-                            color: v.$color1;
-                            font-size: 1.2rem;
-                        }
-                    }
                 }
             }
         }
