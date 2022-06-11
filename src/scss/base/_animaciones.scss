@@ -313,3 +313,8 @@
   }
 }
 
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}

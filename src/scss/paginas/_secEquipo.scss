@@ -4,7 +4,7 @@
 .secEquipo {
 
     .eqContent {
-        width: 70%;
+        width: 90%;
         margin: 3rem auto;
         @include m.mixFlex(flex,0,center,0,column);
 
@@ -17,9 +17,6 @@
             };
         }
 
-        @include m.mixMQ(v.$desk) {
-            width: 90%; 
-        };
         @include m.mixMQ(v.$movil) {
             width: 98%;
         };
@@ -65,58 +62,70 @@
             }
         }
     }
+
+    .paquetes_botones {
+        width: 300px;
+        margin: 3rem auto 0;
+        @include m.mixFlex(flex,center,0,0,0);
+    }
+      
+    .paquetes_container {
+        margin: 10rem auto 1rem;        
+        max-width: 900px;
+        padding: 2rem;
+        position: relative;
+        height: 500px;
+
+        @include m.mixMQ(v.$tablet) {
+            max-width: 700px;
+            height: 400px;
+        };
+
+        @include m.mixMQ(v.$movil) {
+            width: 90%;
+            height: 600px;
+        };
+
+        @include m.mixMQ(v.$movil414) {
+            height: 530px;
+        };
+
+        @include m.mixMQ(v.$movilSM) {
+            height: 480px;
+        };
+
+        .progress-bar {
+            position: absolute;
+            bottom: -1rem;
+            left: 2px;
+            z-index: 10000;
+            background-color: v.$color1;
+            height: 4px;
+            width: 98%;
+            border-radius: 10px;
+            animation: grow 20s linear infinite;
+            transform-origin: left;
+        }
+    
+        .paquete_hardware {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            filter: brightness(0%);
+            transition: all 1.25s ease-in-out;
+                
+            img {
+                border-radius: 10px;
+                box-shadow: v.$box-shadow2;
+            }
+        }
+
+        .paq_visible {
+            opacity: 1;
+            filter: brightness(100%);
+        }
+
+    }
 }
 
-// .secEquipo {
-
-//     .eqContent {
-//         width: 70%;
-//         margin: 3rem auto;
-//         @include m.mixFlex(flex,0,center,0,column);
-
-//         img {
-//             width: 350px;
-//             object-fit: cover;
-
-//             @include m.mixMQ(v.$desk) {
-//                 width: 280px;
-//             };
-//         }
-
-//         @include m.mixMQ(v.$desk) {
-//             width: 90%;
-//         };
-
-//         .eqTextos {
-//             width: 60%;
-//             text-align: center;
-//             margin: 3rem 0;
-
-//             @include m.mixMQ(v.$tablet) {
-//                 width: 90%;
-//             };
-
-//             .eqLista {
-//                 margin-top: 1rem;
-//             }
-
-//             p small {
-//                 color: v.$color1;
-//                 margin: 0 .2rem;
-//             }
-
-//         }
-
-//         .hardware {
-
-//             .element {
-//                 @include m.mixBox(100px,false,0,6px,v.$color1,v.$box-shadow3);
-//                 //height: 100%;
-//                 img {
-//                     width: 100%;
-//                     object-fit: cover;
-//                 }
-//             }
-//         }
-//     }
-// }

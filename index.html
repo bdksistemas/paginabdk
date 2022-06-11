@@ -14,7 +14,13 @@
         gtag('config', 'AW-1011948451');
     </script>
 
-
+    <!-- ! Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PXD5M7B');</script>
+        <!-- ! End Google Tag Manager -->    
 
     <!-- ! ----------------------------------------- --> 
 
@@ -47,6 +53,11 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
+    <!-- ? NORMALIZE -->
+    <link rel="preload" href="build/css/normalize.css" as="style">
+    <link rel="stylesheet" href="build/css/normalize.css"> 
+
+    <!-- ? ESTILOS GENERALES -->
     <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
@@ -74,6 +85,11 @@
 
 <body>
     
+    <!-- ! Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXD5M7B"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->    
+
     <nav class="nav">
         <div class="nav_container"> 
 
@@ -552,9 +568,115 @@
             </div>
         </section>
 
-        <!-- ! EQUIPO DE COMPUTO -->  
-        <div data-include="assets/equipocomputo.html"></div>
+        <!-- ! EQUIPO DE COMPUTO --> 
+        <section class="secEquipo seccion">
+
+            <div data-include="assets/equipocomputo.html"></div>
  
+            <!-- ! PAQUETES DE EQUIPO -->
+            <div class="paquetes_container" id="paquetes_cont">
+                <div class="progress-bar"></div> 
+                
+                <div class="paquete_hardware paq_visible">
+                    <a href="">
+                        <picture>
+                            <source srcset="build/img/Paquetes/MINIPC_COREBOX_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/MINIPC_COREBOX.avif" type="image/avif">
+                            <source srcset="build/img/Paquetes/MINIPC_COREBOX_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/MINIPC_COREBOX.webp" type="image/webp">
+                            <source srcset="build/img/Paquetes/MINIPC_COREBOX_MOVIL.jpg" media="(max-width: 480px)">
+                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/MINIPC_COREBOX.jpg" alt="Imagen promocional de equipo de cómputo">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="paquete_hardware">
+                    <a href="">
+                        <picture>
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-MONITOR-NORMAL_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-MONITOR-NORMAL.avif" type="image/avif">
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-MONITOR-NORMAL_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-MONITOR-NORMAL.webp" type="image/webp">
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-MONITOR-NORMAL_MOVIL.jpg" media="(max-width: 480px)">
+                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/COMPUTADORA-MINI-MONITOR-NORMAL.jpg" alt="Imagen promocional de equipo de cómputo">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="paquete_hardware">
+                    <a href="">
+                        <picture>
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-TOUCH_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-TOUCH.avif" type="image/avif">
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-TOUCH_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-TOUCH.webp" type="image/webp">
+                            <source srcset="build/img/Paquetes/COMPUTADORA-MINI-TOUCH_MOVIL.jpg" media="(max-width: 480px)">
+                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/COMPUTADORA-MINI-TOUCH.jpg" alt="Imagen promocional de equipo de cómputo">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="paquete_hardware">
+                    <a href="">
+                        <picture>
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-NORMAL__MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-NORMAL.avif" type="image/avif">
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-NORMAL__MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-NORMAL.webp" type="image/webp">
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-NORMAL__MOVIL.jpg" media="(max-width: 480px)">
+                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/KIT-COMPLETO-MONITOR-NORMAL.jpg" alt="Imagen promocional de equipo de cómputo">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="paquete_hardware">
+                    <a href="">
+                        <picture>
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-TOUCH_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-TOUCH.avif" type="image/avif">
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-TOUCH_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-TOUCH.webp" type="image/webp">
+                            <source srcset="build/img/Paquetes/KIT-COMPLETO-MONITOR-TOUCH_MOVIL.jpg" media="(max-width: 480px)">
+                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/KIT-COMPLETO-MONITOR-TOUCH.jpg" alt="Imagen promocional de equipo de cómputo">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="paquete_hardware">
+                    <a href="">
+                        <picture>
+                            <source srcset="build/img/Paquetes/TORNIQUETE_1_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/TORNIQUETE_1.avif" type="image/avif">
+                            <source srcset="build/img/Paquetes/TORNIQUETE_1_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/TORNIQUETE_1.webp" type="image/webp">
+                            <source srcset="build/img/Paquetes/TORNIQUETE_1_MOVIL.jpg" media="(max-width: 480px)">
+                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/TORNIQUETE_1.jpg" alt="Imagen promocional de equipo de cómputo">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="paquete_hardware">
+                    <a href="">
+                        <picture>
+                            <source srcset="build/img/Paquetes/TORNIQUETE_2_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/TORNIQUETE_2.avif" type="image/avif">
+                            <source srcset="build/img/Paquetes/TORNIQUETE_2_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                            <source srcset="build/img/Paquetes/TORNIQUETE_2.webp" type="image/webp">
+                            <source srcset="build/img/Paquetes/TORNIQUETE_2_MOVIL.jpg" media="(max-width: 480px)">
+                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/TORNIQUETE_2.jpg" alt="Imagen promocional de equipo de cómputo">
+                        </picture>
+                    </a>
+                </div>
+    
+            </div>
+
+            <div class="paquetes_botones">
+                <button class="boton botEqIzq"><i class="fas fa-angle-left botEqIzq"></i></button>
+                <button class="boton botEqDer"><i class="fas fa-angle-right botEqDer"></i></button>
+            </div>
+
+        </section>
+
         <!-- ! PAGINAS WEB -->
         <div data-include="assets/promo_web.html"></div>
 
@@ -655,7 +777,7 @@
     
             <a href="pagresenas.html" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
         
-        </section> 
+        </section>  
                  
         <!-- ! DESPEDIDA --> 
         <section class="bkgwhite secDespedida" id="reseñas"> 

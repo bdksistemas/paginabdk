@@ -47,3 +47,9 @@
 * Se sigue encontrando código CSS que se puede optimizar
 * Se unifican las listas de opciones con una sola clase de estilos llamada: LISTA_ELEMENTOS en el archivo GLOBALES.SASS y se eliminan todas las otras clases como elLista que hacian referencia a diseños de listas
 * Se crea una sola clase llamada filtro-negro que sirve para poner una imagen de fondo en cualquier contenedor y lleva un filtro negro degradado encima de la imagen. 
+
+## RAMA Version2
+### En esta versión se cambiará la parte del mapa para que en lugar de puntos de referencia, agregaremos CARDS con las diferentes funcionalidades, esto para evitar que los visitantes den clic ya que no suelen hacerlo.
+
+* Se agrega NORMALIZE.CSS al proyecto
+* Se agrega Google Tag Manager

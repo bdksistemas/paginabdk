@@ -5,6 +5,9 @@
     var cerrado     = true;
     var menuLat     = false;
 
+    let promociones = [];
+    let idxEq = 0;
+
     document.addEventListener('DOMContentLoaded', function(){
         iniciarClicks();
     });
@@ -20,6 +23,13 @@
             navBackground();
         })
         navBackground();
+
+        if (document.getElementById("paquetes_cont")) {            
+            
+            promociones = document.querySelectorAll('.paquete_hardware')
+            
+            setInterval(siguiente_promo, 20000);
+        }
         
     }
 
@@ -203,19 +213,19 @@
         } 
 
         // ? LINK A WHATSAPP DE SOPORTE 1
-        if ( objetoDom.matches('.botWPSop1')) {
+        if ( objetoDom.matches('.botSop1')) {
             let url = 'https://api.whatsapp.com/send?phone=528116261326&text=Hola,%20buen%20día,%20%20necesito%20soporte%20técnico';
             window.open(url, '_blank');
         } 
 
         // ? LINK A WHATSAPP DE SOPORTE 2
-        if ( objetoDom.matches('.botWPSop2')) {
+        if ( objetoDom.matches('.botSop2')) {
             let url = 'https://api.whatsapp.com/send?phone=528126004868&text=Hola,%20buen%20día,%20%20necesito%20soporte%20técnico';
             window.open(url, '_blank');
         } 
 
         // ? LINK A WHATSAPP DE SOPORTE 3
-        if ( objetoDom.matches('.botWPSop3')) {
+        if ( objetoDom.matches('.botSop3')) {
             let url = 'https://api.whatsapp.com/send?phone=528129233142&text=Hola,%20buen%20día,%20%20necesito%20soporte%20técnico';
             window.open(url, '_blank');
         } 
@@ -287,6 +297,20 @@
             apertura();
         }
 
+        // ? BOTON PARA MOVER A LA IZQUIERDA UNA IMAGEN DE PAQUETE DE EQUIPO
+        if ( objetoDom.matches('.botEqIzq')) { 
+            --idxEq;
+            if (idxEq < 0) {
+                idxEq = promociones.length - 1;
+            }
+            visualiza_promo();
+            // console.log(idxEq);            
+        }
+
+        // ? BOTON PARA MOVER A LA IZQUIERDA UNA IMAGEN DE PAQUETE DE EQUIPO
+        if ( objetoDom.matches('.botEqDer')) { 
+            siguiente_promo();
+        }
 
     }
 
@@ -515,9 +539,24 @@
             nav.style.borderBottom = '2px solid #cb001a';
         }
         nav.style.transition = '.5s';
+    }
 
+    function siguiente_promo() {
+        idxEq++;
+        if (idxEq > promociones.length - 1) {
+            idxEq = 0;
+        }
+        
+        visualiza_promo();
+    }
 
+    function visualiza_promo() {
+        let paq_visible = document.querySelector('.paq_visible');
+        paq_visible.classList.remove('paq_visible');
+
+        let ver_promo = promociones[idxEq];
+        ver_promo.classList.add('paq_visible');
+        
     }
     
-
 })();

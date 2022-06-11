@@ -5,7 +5,7 @@
 
 html { 
     font-size: 62.5%; 
-    box-sizing: border-box;
+    box-sizing: border-box; 
     scroll-padding-top: 0rem; 
     scroll-behavior: smooth;  
 }  
@@ -19,7 +19,7 @@ html {
  
 body { 
     font-family: v.$fuente_principal;  
-    font-size: 16px;
+    font-size: 16px; 
 
     &::-webkit-scrollbar { 
         width: 8px;
@@ -40,7 +40,7 @@ body {
 p {
     font-size: v.$descCon;      
     color: v.$negro; 
-    line-height: 1.20;  
+    line-height: 1.20;   
     margin: .25rem 0;
     font-family: v.$fuente_sec;   
 } 
@@ -280,7 +280,7 @@ img {
 // Clase del botón que moverse al inicio de la pantalla
 .botInicio {
     position: fixed;
-    right: 20px;
+    right: 20px; 
     bottom: 20px;
     z-index: 10000;
 }

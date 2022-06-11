@@ -8,6 +8,7 @@
         @include m.mixFlex(flex,center,0,Wrap,0);
         z-index: 1000;
         width: 80%;
+        max-width: 120rem;
         margin-top: 2rem;
 
         @include m.mixMQ(v.$deskXXL) {
