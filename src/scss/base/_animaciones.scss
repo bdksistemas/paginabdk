@@ -318,3 +318,13 @@
     transform: scaleX(0);
   }
 }
+
+
+@keyframes dragico {
+    0% {
+      transform: translateX(45%);
+    }
+    100% {
+      transform: translateX(-45%);
+    }
+}

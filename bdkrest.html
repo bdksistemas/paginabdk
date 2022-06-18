@@ -43,21 +43,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
 
 
-    <!-- ! ESTILOS -->
+    <!-- ! ESTILOS --> 
 
     <!-- ? FUENTE NUNITO DE GOOGLE FONTS --> 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- ? FONTAWESOM -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="stylesheet preload prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
     <!-- ? NORMALIZE -->
-    <link rel="preload" href="build/css/normalize.css" as="style">
+    <link rel="stylesheet preload prefetch" href="build/css/normalize.css" as="style">
     <link rel="stylesheet" href="build/css/normalize.css"> 
 
-    <link rel="preload" href="build/css/app.css" as="style">
+    <!-- ? ESTILOS GENERALES -->
+    <link rel="stylesheet preload prefetch" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
     <!-- ! METAS -->
@@ -282,446 +283,531 @@
 
         </section>
 
-        <!-- ! MAPA DEL TIPO DE NEGOCIO -->
-        <section class="mapa_soft seccion" id="mapaRest"> 
+        <!-- ! FUNCIONES DEL SOFTWARE --> 
+        <section class="funciones_soft seccion"> 
 
             <div class="titulo container">
                 <h2>Beneficios directos para <span>todas las áreas</span> de tu negocio</h2> 
                 <p>Con nuestro software, todas las áreas de tu negocio obtienen beneficios directa e indirectamente</p>
-                <small>Da un clic sobre los puntos informativos</small>
-                <div class="linea"></div>
             </div>     
+            
+            <div class="sliderbar_container">
 
-            <div class="content_mapa container"> 
+                <!-- ! CAJA -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_04.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_04.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_04.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
 
-                <div class="mapa_imagen mapa_rest">
-                    <!-- La clase mapa_rest se utiliza solo en JavaScript -->
+                                <h4 class="funciones_titulo">Caja y Recepción</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Lleva registro de las ventas para llevar, ventas directas, servicio a domicilio, cuentas abiertas, realiza el corte de caja, salidas de efectivo, consulta mapa de mesas, consulta ocupación de mesas y muchas funciones más.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro y control de ventas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ventas en sitio, para llevar y ventas a domicilio</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de pedidos de los meseros</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de cuentas abiertas, por mesa o por comensal</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Comandas a cocina y barra</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de salidas de efectivo</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de cancelaciones de tickets</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cada venta descuenta del almacén los insumos generados</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de propinas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cortes de caja por turno o cajero</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 1 ] Facturación electrónica</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] El corte de caja se manda por correo automáticamente al dueño</p></div>
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! COMANDERO MÓVIL -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_02.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_02.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_02.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Comandero Móvil</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Agiliza la forma de tomar los pedidos de tus clientes y ahorra hasta 5 minutos por mesa. <br><br>
+                                    Con el comandero móvil tus meseros podrán tomar la orden de una forma rápida y sencilla.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Toma de ordenes por medio de tablets</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ahorro de tiempo en la toma de la orden</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ahorra de 5 a 10 minutos entre cada orden</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Impresión automática de comandas en cocina y barra</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Mapa de mesas asignadas a cada mesero</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica visualmente las mesas libres y ocupadas</p></div>
+    
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Se vende por separado</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Compatible con la versión PRO</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_blanco"></i><p>No requieres de internet</p></div>
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! MÓDULO DE MESEROS -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_03.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_03.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_03.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Módulo de meseros</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Ideal para negocios que cuentan con muchas mesas y con gran afluencia de clientes.<br><br>
+                                    Identifica en el mapa las mesas libres y ocupadas, además de que tus meseros podrán realizar diversas operaciones.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de nuevas ordenes</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Lleva cuentas por mesa o por cliente</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Impresión de pre cuentas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envío automático de comandas a cocina y barra</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agrega separadores en una misma comanda</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra la cantidad de comensales en una misma mesa</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Asignación de mesas a cada mesero</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporte de ventas por mesero</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporte de cuentas pendientes de cobrar o cuentas abiertas</p></div>
+    
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible a partir de la versión PROFESIONAL</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! COCINA Y BARRA -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_05.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_05.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_05.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Cocina y barra</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Coloca una impresora en tu cocina o barra y recibe las comandas que se generan en caja, en el comandero móvil y en el módulo de meseros.<br><br>
+                                    Nunca más se confundirán los pedidos en tu cocina.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Recibe las comandas impresas en el orden en que se registran</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica si son para comer en sitio, para llevar o para envío a domicilio</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica lo que ordena cada comensal</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agerga separadores a las comandas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] MULTI COCINA: Puedes tener 2 cocinas y al generar una orden se imprimen las comandas en la cocina correspondiente</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 3-6 ] Monitor de Pedidos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 6 ] Agrupa por tipo de platillo</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 6 ] Marca los platillos en espera, en proceso y terminados</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 6 ] Escucha una alerta sonora con cada nuevo pedido</p></div>    
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! ALMACÉN -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_07.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_07.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_07.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Control de Almacén</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Sí en tu negocio deseas llevar un buen control de tu almacén y tener perfectamente controlados tus inventarios, BDKREST es para ti.<br><br>
+                                    Genera entradas y salidas de almacén, genera órdenes de compra, realiza conteo de inventarios y mucho más.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de entradas y salidas de almacén</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ordenes de compra a proveedores</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Genera O. de C. en base a mínimos y máximos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de salidas por merma</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Conteo de existencias</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de recetas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de productos e insumos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Salidas de almacén en base a ventas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica si hubo faltantes o sobrantes</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 3 ] Almacén compartido entre matriz y sucursales *</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 3 ] Pedidos de mercancía entre sucursales</p></div>    
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! ALMACÉN COMPARTIDO -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_11.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_11.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_11.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Almacén compartido</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Ahora compartir producto entre la matriz y tus sucursales es mucho más fácil.<br><br>
+                                    Envía producto de matriz a sucursal, de sucursal a sucursal o de sucursal a matriz.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>La sucursal realiza una orden de compra a matriz</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Matriz revisa existencias y genera una salida de almacén a la sucursal</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>La sucursal genera una entrada de lo que recibió y deja pendiente lo que no</p></div>
+
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Funcionalidad exclusiva de la versión PLUS</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CONTROL DE RECETAS -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_06.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_06.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_06.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Control de recetas e insumos</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>El control de tus insumos es sumamente importante para tener un registro de las mermas y los faltantes de mercancía.<br><br>
+                                    Al dar de alta tus comidas y bebidas puedes agregar su receta y especificar las cantidades de cada insumos.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agrega a tus platillos o bebidas el contenido de insumos </p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Al registrar una venta de ese platillo, se rebaja automáticamente del almacén todos los insumos de la receta</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Puedes crear productos armados como pizzas de diferentes ingredientes</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Lleva control de tus mermas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Armado de combos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de insumos</p></div>
+    
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible a partir de la versión PROFESIONAL</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CLIENTES -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_08.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_08.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_08.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Beneficios para tu cliente</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Tus clientes tendrán seguridad de pagar solamente su consumo sin cargos fantasma, además que sentirán que la atención recibida es mucho más rápida en comparación con el comandeo tradicional, sin duda tus clientes estarán encantados con tu servicio.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Menos tiempo de espera</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Confianza al ordenar y pagar</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Rapidez al solicitar un mesero</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Recompensas al ser cliente frecuente</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Monedero Electrónico</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Envío de correo masivo a tu lista de clientes con promociones o anuncios</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! MÓDULO DE HOSTES -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_01.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_01.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_01.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Módulo de Hostess</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Lleva un registro y control de las reservaciones y la lista de espera de tus clientes.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de reservaciones</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de lista de espera</p></div>
+    
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible en la versión plus</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! MODO BILLAR -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_10.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_10.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_10.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Modalidad para billares</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Combina el poder de BDKREST y lleva un perfecto control de tus rentas de mesas de billar.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Renta de mesas de billar</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agrega consumos en las mesas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de tiempos de renta</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Combina mesas normales y mesas de billar</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cobra el tiempo por hora completa o fracción</p></div>
+    
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible en la versión PROFESIONAL</p></div>
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! COMEDOR INDUSTRIAL -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_09.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_09.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_09.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Comedor Industrial</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>BDKREST cuenta la funcionalidad para comedores industriales, en donde se puede otorgar crédito a los empleados y cobrar por semana o quincena.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra el consumo de tus empleados y realiza el cargo en la nómina</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Los empleados se identifican por medio de su número de empleado</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Al registrar las ventas a tus empleados, éstas se hacen a crédito</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Corte semanal o quincenal para realizar la interfaz con la nómina</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Interfaz con tu sistema de nómina por medio de archivos TXT o XLS</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Realiza ventas a crédito o al contado</p></div>
+    
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible en la versión PROFESIONAL</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_blanco"></i><p>BDKREST no se conecta a la base de datos de tu sistema de nómina</p></div>
+                                </div>
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="formasPago">
+                <div class="animacion_drag">
                     <picture>
-                        <source srcset="build/img/BDKREST/MAPA.avif" type="image/avif">
-                        <source srcset="build/img/BDKREST/MAPA.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/MAPA.png" alt="Mapa de un restaurante">
+                        <source srcset="build/img/drag-ico.avif" type="image/avif">
+                        <source srcset="build/img/drag-ico.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/drag-ico.png" alt="Funciones de una barbería" class="bor10sup">
                     </picture>    
-
-                    <i class="fas fa-circle punto_interes" id="pt_rest_hostess"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_rest_comMovil"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_rest_comDesk"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_rest_caja"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_rest_cocina"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_rest_recetas"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_rest_almacen"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_rest_clientes"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_rest_comedor"></i> 
-                    <i class="fas fa-circle punto_interes" id="pt_rest_billar"></i>
-
-                    <div class="mapa_otros">
-                        <p>Comedor Industrial</p>
-                        <p>Modalidad Billar</p>
-                    </div>   
-                </div>
-
-                <div class="mapa_funciones mapa_funciones_rest">
-                    <div class="funcion_mapa" id="desc_rest_hostess">
-                        <h4><i class="fas fa-circle"></i> Módulo de Hostess</h4>
-                        <p>Lleva un registro y control de las reservaciones y la lista de espera de tus clientes.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_res_hostess">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_rest_comMovil">
-                        <h4><i class="fas fa-circle"></i> Comandero Móvil</h4>
-                        <p>Agiliza la forma de tomar los pedidos de tus clientes y ahorra hasta 10 minutos por mesa. Con el comandero móvil tus meseros podrán tomar la orden de una forma rápida y sencilla.</p>
-                        <small>* Se vende por separado</small>
-                        <a href="#" class="boton btnLeerMas" id="id_res_movil">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_rest_comDesk">
-                        <h4><i class="fas fa-circle"></i> Módulo de Meseros</h4>
-                        <p>Tus meseros podrán identificar sus mesas ocupadas y disponibles, registrar nuevas órdenes, agregar productos a una mesa, separar mesas, mandar imprimir comandas a cocina y barra, imprimir la precuenta y mucho más.</p>
-                        <small>* Se recomienda utilizar computadoras touchscreen.</small>
-                        <a href="#" class="boton btnLeerMas" id="id_res_meseros">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_rest_caja">
-                        <h4><i class="fas fa-circle"></i> Módulo de Caja</h4>
-                        <p>En caja lleva un registro de las ventas para llevar, ventas directas, servicio a domicilio, realiza el corte de caja, salidas de efectivo, consulta mapa de mesas, consulta ocupación de mesas y muchas funciones más.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_res_caja">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_rest_cocina">
-                        <h4><i class="fas fa-circle"></i> Cocina y Barra</h4>
-                        <p>Coloca una impresora en tu cocina o barra y recibe las comandas que se generan tanto en caja como en el comandero móvil y de escritorio.</p>
-                        <small>En la versión PLUS tienes la posibilidad de colocar una computadora que realiza la función de Monitor de Comandas.</small>
-                        <a href="#" class="boton btnLeerMas" id="id_res_cocina">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_rest_recetas">
-                        <h4><i class="fas fa-circle"></i> Recetas</h4>
-                        <p>Al dar de alta tus comidas y bebidas puedes agregar su receta y especificar las cantidades de cada insumo. Al generar una venta se descuenta de inventario el contenido de la receta.</p>
-                        <small>También puedes dar de alta combos y productos armados</small>
-                        <a href="#" class="boton btnLeerMas" id="id_res_recetas">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_rest_almacen">
-                        <h4><i class="fas fa-circle"></i> Control de almacén</h4>
-                        <p>Genera entradas y salidas de almacén, genera órdenes de compra, realiza conteo de inventarios y mucho más.</p>
-                        <small>Lleva control de productos e insumos.</small>
-                        <a href="#" class="boton btnLeerMas" id="id_res_almacen">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_rest_clientes">
-                        <h4><i class="fas fa-circle"></i> Clientes</h4>
-                        <p>Recompenza la lealtar de tus clientes con Monedero Electrónico.</p>
-                        <small>Lleva control de productos e insumos.</small>
-                        <a href="#" class="boton btnLeerMas" id="id_res_clientes">Leer más</a> 
-                    </div>
-                    <div class="funcion_mapa" id="desc_rest_comedor">
-                        <h4><i class="fas fa-circle"></i> Comedor Industrial</h4>
-                        <p>BDKREST tiene la funcionalidad para comedores industriales, en donde se puede otorgar crédito a los empleados y cobrar por semana o quincena.</p>
-                        <small>Disponible en la versión PROFESIONAL</small>
-                        <a href="#" class="boton btnLeerMas" id="id_res_comedor">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_rest_billar">
-                        <h4><i class="fas fa-circle"></i> Modalidad Billar</h4>
-                        <p>Combina el poder de BDKREST y lleva un perfecto control de tus rentas de mesas de billar.</p>
-                        <small>Disponible en la versión PROFESIONAL</small>
-                        <a href="#" class="boton btnLeerMas" id="id_res_billar">Leer más</a>
-                    </div>
+                </div>    
+                <div class="fpIndicaciones">
+                    <p>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 1 ] Solo en México</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 2 ] Disponible en la versión Profesional</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 3 ] Disponible en la versión Plus</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 4 ] Requiere el Concentrador Web</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 5 ] Los SMS se venden por separado</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 6 ] Se requiere monitor touchscreen y bocinas</small>
+                    </p>    
                 </div>
             </div>
-
-            <div class="infoPopup">
-                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE HOSTESS -->
-                <div class="info_content popup_visible popup_hostess">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_01.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_01.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_01.jpg" alt="Joven mujer dando la bienvenida a su cliente">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Módulo de Hostess</h2> 
-                            <p>Nunca más pierdas una reservación</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Lleva un registro y control de las reservaciones y la lista de espera de tus clientes.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de reservaciones</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de lista de espera</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Disponible en la versión plus</p></div>
-                            </div>        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DEL COMANDERO MÓVIL -->
-                <div class="info_content popup_visible popup_movil">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_02.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_02.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_02.jpg" alt="Hermosa joven mesera sonriente">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Comandero Móvil</h2> 
-                            <p>Modernidad y practicidad para tus meseros</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Agiliza la forma de tomar los pedidos de tus clientes y ahorra hasta 10 minutos por mesa. Con el comandero móvil tus meseros podrán tomar la orden de una forma moderna, rápida y sencilla.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de comandas por medio de tablets</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ahorro de tiempo en la toma de la orden</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agiliza de 5 a 10 minutos entre cada orden</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Impresión automática de comandas en cocina y barra</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Mapa de mesas asignadas a cada mesero</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica visualmente las mesas libres y ocupadas</p></div>
-                                
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Es necesario tener la versión PRO</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>El comandero móvil se adquiere por separado</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>No requieres de internet</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-                
-                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE MESEROS ESCRITORIO -->
-                <div class="info_content popup_visible popup_meseros">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_03.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_03.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_03.jpg" alt="Mesera ingresando una cuenta en la terminal">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Módulo de Meseros</h2> 
-                            <p>Control total de las cuentas y tus mesas</p>
-                        </div>
-                        <div class="info_main">
-                            <p>El módulo de meseros es ideal para aquellos negocios que cuentan con muchas mesas y con gran afluencia de clientes.</p>
-                            <p>No volverás a tener confusiones en las cuentas de tus clientes.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de comandas por medio de una terminal touch screen</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Manejo de cuentas individuales o grupales</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Impresión de pre cuentas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envío automático de comandas a cocina y barra</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Pueden agregar separadores en una misma comanda</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra la cantidad de comensales en una misma cuenta</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Asignación de mesas a cada mesero</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporte de ventas por mesero</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporte de cuentas pendientes de cobrar o cuentas abiertas</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Disponible a partir de la versión PROFESIONAL</p></div>
-                            </div>        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE CAJA -->
-                <div class="info_content popup_visible popup_caja">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_04.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_04.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_04.jpg" alt="Joven cajera viendo la computadora">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Módulo de Caja</h2> 
-                            <p>El corazón de las operaciones de tu negocio</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de cobro de tus cuentas abiertas, controla las ventas para llevar, en sitio y hasta el servicio a domicilio.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro y control de ventas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ventas en sitio, para llevar y ventas a domicilio</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de pedidos de los meseros</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de cuentas abiertas, por mesa o por comensal</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Comandas a cocina y barra</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de salidas de efectivo de caja</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de cancelaciones de tickets</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cada venta descuenta del almacén los insumos generados</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de propinas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cortes de caja por turno o cajero</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>* El corte de caja se manda por correo automáticamente al dueño</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>** Facturación electrónica</li>                                                                   </p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>* Disponible en la versión PROFESIONAL</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>** Disponible solo en México</p></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE COCINA -->
-                <div class="info_content popup_visible popup_cocina">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_05.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_05.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_05.jpg" alt="Cocineros preparando la centa">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Cocina y Barra</h2> 
-                            <p>Adiós a la confusión entre pedidios</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Nunca más se confundirán los pedidos en tu cocina, con BDKREST todo estará perfectamente organizado.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Recibe las comandas impresas en el orden que van siendo registradas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica si la comanda es para comer en sitio o para llevar</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica las ordenes para enviar a domicilio</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica lo que ordena cada comensal</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica los diferentes tiempos de comida por medio de separadores</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Opción de colocar un Monitor de Pedidos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>En el monitor de cocina, agrupa por tipo de platillo (2)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>En el monitor, marca los platillos en espera, en proceso y listos (3)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>El monitor recibe una alerta sonora con cada nuevo pedido (4)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>MULTI COCINA: Puedes tener 2 cocinas y al generar una orden se imprimen las comandas en la cocina correspondiente (1)</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>(1) Disponible en la versión PROFESIONAL</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>(2) Disponible en la versión PLUS</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>(3) Se requiere computadora con monitor touchscreen</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>(4) Requiere tener bocinas para PC</p></div>
-                            </div>
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO SOBRE LAS RECETAS -->
-                <div class="info_content popup_visible popup_recetas">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_06.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_06.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_06.jpg" alt="Joven cocinero realizando una receta">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Control de Recetas</h2> 
-                            <p>Evita el robo hormiga y ten control de tus insumos</p>
-                        </div>
-                        <div class="info_main">
-                            <p>El control de tus insumos es sumamente importante para ahorrar gastos y tener control de las mermas y los faltantes de mercancía.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agrega a tus platillos o bebidas el contenido de insumos </p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Al registrar una venta de ese platillo, se rebaja automáticamente del almacén los insumos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Puedes crear productos armados como pizzas de diferentes ingredientes</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Lleva control de tus mermas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Armado de combos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de insumos</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Disponible a partir de la versión PROFESIONAL</p></div>
-                            </div>        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO SOBRE EL ALMACEN -->
-                <div class="info_content popup_visible popup_almacen">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_07.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_07.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_07.jpg" alt="Varios productos e insumos de un restaurante">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Control de Almacén</h2> 
-                            <p>Lleva un perfecto control de tu mercancía</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Sí en tu negocio deseas llevar un buen control de tu almacén y tener perfectamente controlados tus inventarios, BDKREST es para ti.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de entradas y salidas de almacén</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ordenes de compra a proveedores</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Genera O. de C. en base a mínimos y máximos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de salidas por merma</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Conteo de existencias</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de recetas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de productos e insumos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Salidas de almacén en base a registro de ventas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica si hubo faltantes o sobrantes de mercancía</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Pedidos de mercancía entre sucursales *</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Almacén compartido entre matriz y sucursales *</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>El ALMACÉN COMPARTIDO se encuentra disponible en la versión PLUS</p></div>
-                            </div>        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO SOBRE EL CLIENTES -->
-                <div class="info_content popup_visible popup_clientes">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_08.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_08.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_08.jpg" alt="Cliente de un restaurante disfrutando su comida">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Clientes</h2> 
-                            <p>Clientes felicices, negocio lleno</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Gracias al comandeo digital tus clientes tendrán plena seguridad de pagar solamente sus consumos además que sentirán que la atención recibida es mucho más rápida en comparación con el comandeo tradicional, sin duda tus clientes regresarán estarán encantados con tu servicio.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Menos tiempo de espera</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Confianza al ordenar y pagar</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Rapidez al solicitar un mesero</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Recompensas al ser cliente frecuente</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Seguridad en su cuenta</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Monedero Electrónico *</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envío de correo masivo a tu lista de clientes con promociones o anuncios *</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>* Disponible en la versión PROFESIONAL</p></div>
-                            </div>        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO SOBRE COMEDOR INDUSTRIAL -->
-                <div class="info_content popup_visible popup_comedor">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_09.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_09.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_09.jpg" alt="Grupo de empleados haciendo fila en el comedor">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Modalidad Comedor Industrial</h2> 
-                            <p>Control en los consumos de tus empleados</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Otorga crédito a tus empleados y une por medio de una interfaz BDKREST con tu sistema de nómina.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra cada consumo de tus empleados y realiza el cargo en tu nómina</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Los empleados se identifican por medio de su número de empleado</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Al registrar las ventas a tus empleados, éstas se hacen a crédito</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Corte semanal o quincenal para la interfaz con tu nómina</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Interfaz con tu sistema de nómina por medio de archivos TXT o XLS</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Realiza ventas a crédito o al contado</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Disponible en la versión PROFESIONAL</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>BDKREST no se conecta a la base de datos de tu sistema de nómina</p></div>
-                            </div>        
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO SOBRE BILLAR -->
-                <div class="info_content popup_visible popup_billar">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKREST/POP_10.avif" type="image/avif">
-                            <source srcset="build/img/BDKREST/POP_10.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_10.jpg" alt="Personas jugando billar">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Modalidad Billar</h2> 
-                            <p>Control de tiempos y renta de mesas</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Combina el poder de BDKREST y lleva un perfecto control de tus rentas de mesas de billar.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Renta de mesas de billar</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra consumos en las mesas de billar</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de tiempos de renta</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Combina mesas normales y mesas de billar</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cobra el tiempo por hora completa o fracción</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Disponible en la versión PROFESIONAL</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-
-                <img src="build/img/close.png" alt="Cerrar la pantalla" class="close" id="close">
-            </div>
-
-
 
         </section> 
 
@@ -1284,6 +1370,11 @@
                     <source srcset="build/img/BDKREST/GAL26.webp" type="image/webp">
                     <img loading="lazy" src="build/img/BDKREST/GAL26.jpg" alt="Fotos de la galería">
                 </picture>
+                <picture>
+                    <source srcset="build/img/BDKREST/GAL27.avif" type="image/avif">
+                    <source srcset="build/img/BDKREST/GAL27.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/BDKREST/GAL27.jpg" alt="Fotos de la galería">
+                </picture>
             </div>
 
             <a href="galeria.html" class="boton mnuGal"><i class="fas fa-images"></i> Galería completa</a>
@@ -1322,12 +1413,18 @@
                 <small style="color: rgb(0,0,255);">Desplazate a la derecha para ver más reseñas.</small>
             </div>
     
-            <div class="nva-resenas-container">
-    
-                <div data-include="assets/resenas.html"></div>
-    
+            <div class="sliderbar_container">    
+                <div data-include="assets/resenas.html"></div>    
             </div>
-    
+
+            <div class="animacion_drag">
+                <picture>
+                    <source srcset="build/img/drag-ico.avif" type="image/avif">
+                    <source srcset="build/img/drag-ico.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/drag-ico.png" alt="Funciones de una barbería" class="bor10sup">
+                </picture>    
+            </div>    
+        
             <a href="pagresenas.html" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
         
         </section>

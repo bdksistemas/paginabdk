@@ -36,8 +36,10 @@
     function rotarCard(elem, faceCard) {
         
         let card = {};
-        card = elem.parentNode.parentNode.parentNode.childNodes;
+        card = elem.parentNode.parentNode.parentNode.parentNode.childNodes;
 
+        // console.log(card);
+        
         const front = card[1];
         const back = card[3];
         
@@ -66,12 +68,8 @@
 
         // console.log(objetoDom);
 
-        if ( objetoDom.matches('#opCard') || objetoDom.matches('#clCard')) {
+        if ( objetoDom.matches('.opCard') || objetoDom.matches('.clCard')) {
             rotarCard(objetoDom);
-        }
-
-        if ( objetoDom.matches('#checkPreWeb')) {
-            cambiaPreciosWeb(objetoDom);
         }
 
         if ( objetoDom.matches('.btnFaq') || objetoDom.matches('.accordion-title') || objetoDom.matches('.iconFaq') ) {
@@ -181,28 +179,10 @@
             window.open(url,'_self');
         }            
 
-        // ? PUNTO DE INTERES DE UN MAPA DE SOFTWARE
-        if ( objetoDom.matches('.punto_interes')) {
-            let nomSoft = objetoDom.id;
-            mapaNegocio(nomSoft);
-        }
-
-        // ? BOTÓN LEER MÁS EN EL MAPA DEL NEGOCIO - HOSTESS
-        if (objetoDom.matches('.btnLeerMas')) {
-            muestraPopup(objetoDom);
-        }
-
         // ? BOTÓN PARA CERRAR LOS POPUP INFORMATIVOS
         if (objetoDom.matches('#close')) {
             const popup = document.querySelector('.infoPopup');
-            popup.classList.toggle('active');
-
-            let popups = document.querySelectorAll('.info_content');
-            
-            popups.forEach( e => {
-                e.classList.remove('active');
-            })
-            
+            popup.classList.toggle('active');            
         }
 
         // ? LINK A WHATSAPP DE VENTAS
@@ -356,130 +336,6 @@
         menu.classList.toggle('menu2');
     };   
 
-    // ! FUNCIÓN PARA MARCAR EN ROJO O EN VERDE LOS PUNTOS DE INTERES DEL MAPA DE FUNCIONES
-    function mapaNegocio(elem) {
-
-        const tipoMapa = elem.substring(0,6);
-        let puntosInteres = {};
-
-        switch (tipoMapa) {
-
-            case 'pt_res':
-                puntosInteres = {
-                    pt_rest_hostess:'desc_rest_hostess',
-                    pt_rest_comMovil:'desc_rest_comMovil',
-                    pt_rest_comDesk:'desc_rest_comDesk',
-                    pt_rest_caja:'desc_rest_caja',
-                    pt_rest_cocina:'desc_rest_cocina',
-                    pt_rest_recetas:'desc_rest_recetas',
-                    pt_rest_almacen:'desc_rest_almacen',
-                    pt_rest_clientes:'desc_rest_clientes',
-                    pt_rest_comedor:'desc_rest_comedor',
-                    pt_rest_billar:'desc_rest_billar', 
-                };
-                break;
-         
-            case 'pt_gym':
-                puntosInteres = {
-                    pt_gym_recepcion:'desc_gym_recepcion',
-                    pt_gym_asistencia:'desc_gym_asistencia',
-                    pt_gym_acceso:'desc_gym_acceso',
-                    pt_gym_clientes:'desc_gym_clientes',
-                    pt_gym_clases:'desc_gym_clases',
-                    pt_gym_pos:'desc_gym_pos',
-                    pt_gym_admon:'desc_gym_admon',
-                    pt_gym_gimnasio:'desc_gym_gimnasio',
-                };
-                break;
-
-            case 'pt_tin':
-                puntosInteres = {
-                    pt_tint_recepcion:'desc_tint_recepcion',
-                    pt_tint_servicios:'desc_tint_servicios',
-                    pt_tint_inventarios:'desc_tint_inventarios',
-                    pt_tint_empleados:'desc_tint_empleados',
-                    pt_tint_clientes:'desc_tint_clientes',
-                    pt_tint_admon:'desc_tint_admon',
-                    pt_tint_cuentas:'desc_tint_cuentas',
-                };
-                break;
-
-            case 'pt_spa':
-                puntosInteres = {
-                    pt_spa_recepcion:'desc_spa_recepcion',
-                    pt_spa_empleados:'desc_spa_empleados',
-                    pt_spa_clientes:'desc_spa_clientes',
-                    pt_spa_pos:'desc_spa_pos',
-                    pt_spa_almacen:'desc_spa_almacen',
-                    pt_spa_trats:'desc_spa_trats',
-                    pt_spa_admon:'desc_spa_admon',
-                    pt_spa_nots:'desc_spa_nots',
-                };
-                break;
-
-            case 'pt_bar':
-                puntosInteres = {
-                    pt_bar_recepcion:'desc_bar_recepcion',
-                    pt_bar_empleados:'desc_bar_empleados',
-                    pt_bar_clientes:'desc_bar_clientes',
-                    pt_bar_pos:'desc_bar_pos',
-                    pt_bar_almacen:'desc_bar_almacen',
-                    pt_bar_trats:'desc_bar_trats',
-                    pt_bar_admon:'desc_bar_admon',
-                    pt_bar_nots:'desc_bar_nots',
-                };
-                break; 
-
-            case 'pt_pos':
-                puntosInteres = {
-                    pt_pos_recepcion:'desc_pos_recepcion',
-                    pt_pos_almacen:'desc_pos_almacen',
-                    pt_pos_clientes:'desc_pos_clientes',
-                    pt_pos_admon:'desc_pos_admon',
-                    pt_pos_domicilio:'desc_pos_domicilio',
-                    pt_pos_empleados:'desc_pos_empleados',
-                };
-                break;
-
-            }            
-
-        let descrip = '';
-        let puntoSel = {};
-        let descripSel = {}; 
-
-        // * Quitando las clases activas de todos los objetos
-        Object.keys(puntosInteres).forEach( key => {
-
-            descrip = puntosInteres[`${key}`];
-            puntoSel = document.getElementById(`${key}`);
-            descripSel = document.getElementById(`${descrip}`);
-
-            // console.log(key, ' - ', descrip);
-            
-            if (key === elem) {
-                puntoSel.classList.add('punto_activo');
-                descripSel.classList.add('desc_activa');        
-            } else {
-                puntoSel.classList.remove('punto_activo');
-                descripSel.classList.remove('desc_activa');        
-            }
-
-        })
-        
-    }
-
-    // ! FUNCIÓN PARA HACER EL EFECTO EN LA PÁGINA <PaginasWeb> EN LA SECCIÓN DE PRECIOS.
-    function cambiaPreciosWeb(elem) {       
-        let tipPrecio = {};
-        tipPrecio = elem.parentNode.childNodes;
-        tipPrecio[1].checked = tipPrecio[1].checked ? false : true; 
-        
-        let preciosRenta = document.getElementById('pwRenta');
-        let preciosCompra = document.getElementById('pwCompra');
-
-        preciosCompra.classList.toggle('preciosAct');
-        preciosRenta.classList.toggle('preciosAct');
-    }
 
     // ! FUNCIÓN PARA ACTIVAR EL EFECTO DE LAS PREGUNTAS FRECUENTES
     function toggleAccordion(elem) {
@@ -503,19 +359,6 @@
         if (itemToggle == 'false') {
           elemFaq.setAttribute('aria-expanded', 'true');
         }
-    }
-
-    // ! POPUP INFORMATIVO MÓDULO DE HOSTESS
-    function muestraPopup(elem) {
-        const popup = document.querySelector('.infoPopup');
-        popup.classList.toggle('active');
-
-        let txtSeccion = elem.id.substring(6);
-        let txtBloqueInfo = '.popup' + txtSeccion;
-        let bloqueInfo = document.querySelector(`${txtBloqueInfo}`);
-        
-        bloqueInfo.classList.add('active');
-        
     }
     
     function navBackground() {

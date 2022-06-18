@@ -43,22 +43,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
 
 
-    <!-- ! ESTILOS -->
+    <!-- ! ESTILOS --> 
 
     <!-- ? FUENTE NUNITO DE GOOGLE FONTS --> 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- ? FONTAWESOM -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="stylesheet preload prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
     <!-- ? NORMALIZE -->
-    <link rel="preload" href="build/css/normalize.css" as="style">
+    <link rel="stylesheet preload prefetch" href="build/css/normalize.css" as="style">
     <link rel="stylesheet" href="build/css/normalize.css"> 
 
-    <link rel="preload" href="build/css/app.css" as="style">
+    <!-- ? ESTILOS GENERALES -->
+    <link rel="stylesheet preload prefetch" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
+
 
     <!-- ! METAS -->
 
@@ -286,274 +288,388 @@
 
         </section>
 
-        <!-- ! MAPA DEL TIPO DE NEGOCIO --> 
-        <section class="mapa_soft seccion" id="mapaPos"> 
+        <!-- ! FUNCIONES DEL SOFTWARE --> 
+        <section class="funciones_soft seccion"> 
 
             <div class="titulo container">
                 <h2>Beneficios directos para <span>todas las áreas</span> de tu negocio</h2> 
                 <p>Con nuestro software, todas las áreas de tu negocio obtienen beneficios directa e indirectamente</p>
-                <small>Da un clic sobre los puntos informativos</small>
-                <div class="linea"></div>
             </div>     
+            
+            <div class="sliderbar_container">
 
-            <div class="content_mapa container">
+                <!-- ! CAJA -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKPOS/POP_01.avif" type="image/avif">
+                                        <source srcset="build/img/BDKPOS/POP_01.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_01.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
 
-                <div class="mapa_imagen mapa_pos">
-                    <!-- ? La clase mapa_gym se utiliza solo en JavaScript -->
+                                <h4 class="funciones_titulo">Caja y Recepción</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Sin duda una de las áreas más beneficiadas de tu negocio. <br><br> Agiliza el proceso de cobro a tus clientes, controla las ventas en sitio y hasta el servicio a domicilio. Protege en todo momento tus ingresos y egresos de caja.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
 
-                    <picture>
-                        <source srcset="build/img/BDKPOS/MAPA.avif" type="image/avif">
-                        <source srcset="build/img/BDKPOS/MAPA.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/MAPA.png" alt="Dibujo de una barbería">
-                    </picture>    
-
-                    <i class="fas fa-circle punto_interes" id="pt_pos_recepcion"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_pos_almacen"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_pos_empleados"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_pos_admon"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_pos_domicilio"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_pos_clientes"></i>
-
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control y registro de ventas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ventas a domicilio</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ventas a crédito y sistema de separado</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Descuenta de almacén automáticamente</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de salidas de efectivo</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control en la cancelación de tickets</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Módulo de cotizaciones</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Manejo de tallas, medidas y colores</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Acepta 2 formas de pago</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 1 ] Facturación electrónica</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cortes de caja</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Y mucho más</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="mapa_funciones mapa_funciones_pos"> 
-                    <div class="funcion_mapa" id="desc_pos_recepcion">
-                        <h4><i class="fas fa-circle"></i> Módulo de Caja</h4>
-                        <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de cobro a tus clientes, controla las ventas en sitio y hasta el servicio a domicilio. Protege en todo momento tus ingresos y egresos de caja.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_pos_recepcion">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_pos_almacen">
-                        <h4><i class="fas fa-circle"></i> Almacén</h4>
-                        <p>Lleva un buen control de tu inventario, controla las entradas y salidas de almacén y mucho más.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_pos_almacen">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_pos_clientes">
-                        <h4><i class="fas fa-circle"></i> Clientes</h4>
-                        <p>Agiliza el proceso de cobro, registra productos rápidamente, recompensa la lealtad del cliente, ofrece créditos y además, implementa el sistema de separado y administra los pagos desde el software.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_pos_clientes">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_pos_admon">
-                        <h4><i class="fas fa-circle"></i> Administración</h4>
-                        <p>Lleva una buena administración de tu negocio, control de ingresos y egresos, reporteo general, consulta ventas a crédito y mucho más.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_pos_admon">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_pos_domicilio">
-                        <h4><i class="fas fa-circle"></i> Servicio a domicilio</h4>
-                        <p>Lleva un buen control de las ventas con servicio a domicilio.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_pos_domicilio">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_pos_empleados">
-                        <h4><i class="fas fa-circle"></i> Control de empleados</h4>
-                        <p>Lleva un control de tus empleados.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_pos_empleados">Leer más</a>
+                <!-- ! ALMACÉN -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKPOS/POP_02.avif" type="image/avif">
+                                        <source srcset="build/img/BDKPOS/POP_02.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_02.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Almacén</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Sí en tu negocio deseas llevar un buen control de tu almacén y tener perfectamente controlados tus inventarios, BDKPOS es para ti. <br><br> 
+                                    Lleva un buen control de tu inventario, controla las entradas y salidas de almacén y mucho más.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
                     </div>
 
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Entradas y salidas de almacén</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Órdenes de compra a proveedores</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Genera órdenes de compra en base a mínimos y máximos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Realiza conteos de existencias</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra las salidas por merma</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de insumos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Salidas de almacén en base a registro de ventas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica si hubo faltantes o sobrantes de mercancía</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Entre muchas funciones más</p></div>
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- ! SERVICIO A DOMICILIO -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKPOS/POP_05.avif" type="image/avif">
+                                        <source srcset="build/img/BDKPOS/POP_05.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_05.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Servicio a domicilio</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>BDKPOS te permite llevar un buen control sobre los pedidos con servicio a domicilio</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Toma el pedido</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Regístralo en el sistema</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Indica el repartidor</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra la venta completa cuando el repartidor regrese con el pago</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! SISTEMA DE SEPARADO -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKPOS/POP_08.avif" type="image/avif">
+                                        <source srcset="build/img/BDKPOS/POP_08.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_08.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Sistema de separado</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Gana más clientes con el sistema de separado. <br><br> BDKPOS te permite llevar un registro de las ventas con este modelo de negocio. <br><br> 
+                                Tu cliente separa el producto con un enganche y lo termina de pagar en determinado lapso tiempo.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>El cliente separa su producto con un % que tu establezcas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Determinas el plazo que tendrás el artículo separado</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>El cliente puede realizar X cantidad de abonos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Entregas el producto hasta que el cliente termina de pagar</p></div>
+
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible en la versión PROFESIONAL</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! COTIZACIONES-->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKPOS/POP_07.avif" type="image/avif">
+                                        <source srcset="build/img/BDKPOS/POP_07.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_07.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Cotizaciones</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Realiza cotizaciones completas y envíalas en formato PDF por correo electrónico a tu cliente final. <br><br> Crea notas de venta a partir de una cotización.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Crea la cotización e imprímela o envíala por correo</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Crea una nota de venta o ticket indicando el número de cotización</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cancela cotizaciones o recotiza tus productos</p></div>
+
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible en la versión PROFESIONAL</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CLIENTES-->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKPOS/POP_06.avif" type="image/avif">
+                                        <source srcset="build/img/BDKPOS/POP_06.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_06.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Clientes</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Agiliza el proceso de cobro al cliente, registra productos rápidamente, recompensa su lealtad con el monedero electrónico, ofrece crédito y lleva el control en el sistema y además, implementa el sistema de separado y administra los pagos desde el software.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elementos">
+                                        <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Otorga crédito a tus clientes y lleva el control de pagos</p></div>
+                                        <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Ofrece Monedero electrónico</p></div>
+                                        <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ofrece descuentos a productos seleccionados</p></div>
+                                        <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Imprime tickets de venta y comprobantes de pago</p></div>
+                                        <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Envía recordatorios de pago por correo electrónico</p></div>
+                                        <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Envía correos promocionales masivos</p></div>
+                                        <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Lleva un historial de las compras de cada cliente</p></div>
+                                        <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Entre muchas funciones más</p></div>
+                                    </div>        
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ! EMPLEADOS -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKPOS/POP_03.avif" type="image/avif">
+                                        <source srcset="build/img/BDKPOS/POP_03.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_03.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Empleados</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>BDKPOS también te ayuda a llevar un registro de la asistencia de tus empleados y a pagar correctamente la nómina. <br><br> * No es un sistema de nóiminas pero contiene un módulo de pre nómina.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Asistencia de empleados</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de incidencias de nómina</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de préstamos a empleados</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Pre Nómina</p></div>
+
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible en la versión PLUS</p></div>
+                                </div>
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! ADMINISTRACIÓN -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKPOS/POP_04.avif" type="image/avif">
+                                        <source srcset="build/img/BDKPOS/POP_04.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_04.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Administración</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Olvídate de que las cuentas no te cuadren, con BDKPOS podrás llevar una perfecta administración de tu negocio. <br><br>
+                                    Evita el robo hormiga, control de ingresos y egresos, reporteo general, consulta ventas a crédito y mucho más.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporteo general</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de gastos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Alta y configuración de productos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Alta de usuarios y asignación de permisos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 1 ] Facturación electrónica</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Estadísticas diversas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Envío de correos promocionales al cliente</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Envío por correo de corte de caja al dueño</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Envío por correo de recordatorios de pago</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Entre muchas funciones más</p></div>
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- ! BLOQUES INFORMATIVOS POPUP -->
-            <div class="infoPopup">
-
-                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE RECEPCIÓN -->
-                <div class="info_content popup_visible popup_recepcion">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKPOS/POP_01.avif" type="image/avif">
-                            <source srcset="build/img/BDKPOS/POP_01.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_01.jpg" alt="Joven cajera al frente de un negocio">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Caja y Recepción</h2> 
-                            <p>Lleva un estricto control de tus ventas</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de cobro a tus clientes, controla las ventas en sitio y hasta el servicio a domicilio. Protege en todo momento tus ingresos y egresos de caja.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control y registro de ventas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de ventas a domicilio</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Maneja ventas a crédito y sistema de separado</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Descuenta de almacén automáticamente</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de salidas de efectivo</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control en la cancelación de tickets</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Módulo de cotizaciones (*)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Manejo de tallas, medidas y colores (*)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Acepta 2 formas de pago</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Facturación electrónica (**)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cortes de caja</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Y mucho más</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>(**) Disponible solo en México</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>(*) Disponoble en la versión PROFESIONAL</p></div>
-                            </div>        
-                        </div>            
-                    </div>
+            <div class="formasPago">
+                <div class="animacion_drag">
+                    <picture>
+                        <source srcset="build/img/drag-ico.avif" type="image/avif">
+                        <source srcset="build/img/drag-ico.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/drag-ico.png" alt="Funciones de una barbería" class="bor10sup">
+                    </picture>    
+                </div>    
+                <div class="fpIndicaciones">
+                    <p>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 1 ] Solo en México</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 2 ] Disponible en la versión Profesional</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 3 ] Disponible en la versión Plus</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 4 ] Requiere el Concentrador Web</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 5 ] Los SMS se venden por separado</small>
+                    </p>    
                 </div>
-
-                <!-- ! BLOQUE INFORMATIVO ALMACÉN -->
-                <div class="info_content popup_visible popup_almacen">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKPOS/POP_02.avif" type="image/avif">
-                            <source srcset="build/img/BDKPOS/POP_02.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_02.jpg" alt="Joven realizando un conteo de inventarios">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Control de almacén</h2> 
-                            <p>Evita el robo hormiga y reduce tus mermas</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Sí en tu negocio deseas llevar un buen control de tu almacén y tener perfectamente controlados tus inventarios, BDKPOS es para ti.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de entradas y salidas de almacén</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Genera órdenes de compra a proveedores</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Genera órdenes de compra en base a mínimos y máximos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Realiza conteos de existencias</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra las salidas por merma</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de insumos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Salidas de almacén en base a registro de ventas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica si hubo faltantes o sobrantes de mercancía</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Entre muchas funciones más</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO EMPLEADOS -->
-                <div class="info_content popup_visible popup_empleados">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKPOS/POP_06.avif" type="image/avif">
-                            <source srcset="build/img/BDKPOS/POP_06.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_06.jpg" alt="Jovenes disfrutando una bebida en un SPA">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Empleados</h2> 
-                            <p>Lleva un buen control de tu nómina y empleados.</p>
-                        </div>
-                        <div class="info_main">
-                            <p>BDKPOS también te ayuda a llevar un registro de la asistencia de tus empleados y a pagar correctamente la nómina.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Asistencia de empleados</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de incidencias de nómina</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de préstamos a empleados</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Pre Nómina</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Disponible en la versión PLUS</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-
-                 <!-- ! BLOQUE INFORMATIVO ADMINISTRACIÓN -->
-                 <div class="info_content popup_visible popup_admon">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKPOS/POP_04.avif" type="image/avif">
-                            <source srcset="build/img/BDKPOS/POP_04.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_04.jpg" alt="Dueña de negocio haciendo cuentas y registrando gastos">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Administración</h2> 
-                            <p>La administración de un negocio nunca fue tan fácil</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Olvídate de que las cuentas no te cuadren, con BDKPOS podrás llevar una perfecta administración de tu negocio.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporteo general</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de gastos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>(**) Facturación electrónica</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Estadísticas diversas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>(*) Envío de correos promocionales al cliente</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>(*) Envío por correo de corte de caja al dueño</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>(*) Envío por correo de recordatorios de pago</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Entre muchas funciones más</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>(*) Disponible en la versión PROFESIONAL</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>(**) Disponible solo en México</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-
-                 <!-- ! BLOQUE INFORMATIVO SERVICIO A DOMICILIO -->
-                 <div class="info_content popup_visible popup_domicilio">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKPOS/POP_05.avif" type="image/avif">
-                            <source srcset="build/img/BDKPOS/POP_05.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_05.jpg" alt="Joven cajera tomando una orden por teléfono">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Servicio a domicilio</h2> 
-                            <p>Nunca más vuelvas a confundir los pedidos</p>
-                        </div>
-                        <div class="info_main">
-                            <p>BDKPOS te permite llevar un buen control sobre los pedidos con servicio a domicilio.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Toma el pedido</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Regístralo en el sistema</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Indica el repartidor</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra la venta completa cuando el repartidor regrese con el pago</p></div>
-                            </div>        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO CLIENTES -->
-                <div class="info_content popup_visible popup_clientes">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKPOS/POP_03.avif" type="image/avif">
-                            <source srcset="build/img/BDKPOS/POP_03.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/POP_03.jpg" alt="Hermosa mujer cliente de un negocio recibiendo su mercancía">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Clientes</h2> 
-                            <p>Cliente feliz, negocio lleno</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Agiliza el proceso de cobro al cliente, registra los productos rápidamente, recompensa su lealtad con dinero electrónico, ofrece crédito y lleva el control en el sistema y además, implementa el sistema de separado y administra los pagos desde el software.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Otorga crédito a tus clientes y lleva el control en el sistema (*)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Implementa el control de ventas con sistema de separado (*)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Realiza cotizaciones y envíalas por correo (*)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Lleva control del Monedero electrónico (*)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ofrece descuentos a productos seleccionados</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Imprime tickets de venta y comprobantes de pago</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envía recordatorios de pago (*)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envía correos promocionales masivos (*)</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Lleva un historial de las compras de cada cliente</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Entre muchas funciones más</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>(*) Disponible en la versión PROFESIONAL</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
- 
-                <img src="build/img/close.png" alt="Cerrar la pantalla" class="close" id="close">
             </div>
 
         </section> 
@@ -1103,12 +1219,20 @@
                 <small style="color: rgb(0,0,255);">Desplazate a la derecha para ver más reseñas.</small>
             </div>
     
-            <div class="nva-resenas-container">
+            <div class="sliderbar_container">
     
                 <div data-include="assets/resenas.html"></div>
     
             </div>
-    
+
+            <div class="animacion_drag">
+                <picture>
+                    <source srcset="build/img/drag-ico.avif" type="image/avif">
+                    <source srcset="build/img/drag-ico.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/drag-ico.png" alt="Funciones de una barbería" class="bor10sup">
+                </picture>    
+            </div>    
+        
             <a href="pagresenas.html" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas</a>
         
         </section>

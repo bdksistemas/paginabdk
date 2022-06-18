@@ -51,14 +51,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- ? FONTAWESOM -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="stylesheet preload prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
     <!-- ? NORMALIZE -->
-    <link rel="preload" href="build/css/normalize.css" as="style">
+    <link rel="stylesheet preload prefetch" href="build/css/normalize.css" as="style">
     <link rel="stylesheet" href="build/css/normalize.css"> 
 
-    <link rel="preload" href="build/css/app.css" as="style">
+    <!-- ? ESTILOS GENERALES -->
+    <link rel="stylesheet preload prefetch" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
     <!-- ! METAS -->
@@ -288,357 +289,434 @@
 
         </section>
 
-        <!-- ! MAPA DEL TIPO DE NEGOCIO --> 
-        <section class="mapa_soft seccion" id="mapaGym"> 
+        <!-- ! FUNCIONES DEL SOFTWARE --> 
+        <section class="funciones_soft seccion"> 
 
             <div class="titulo container">
                 <h2>Beneficios directos para <span>todas las áreas</span> de tu negocio</h2> 
                 <p>Con nuestro software, todas las áreas de tu negocio obtienen beneficios directa e indirectamente</p>
-                <small>Da un clic sobre los puntos informativos</small>
-                <div class="linea"></div>
             </div>     
+            
+            <div class="sliderbar_container">
 
-            <div class="content_mapa container">
+                <!-- ! RECEPCIÓN -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKGYM/POP_01.avif" type="image/avif">
+                                        <source srcset="build/img/BDKGYM/POP_01.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_01.jpg" alt="Funciones de una barbería" class="bor10sup">
+                                    </picture>    
+                                </div>
 
-                <div class="mapa_imagen mapa_gym">
-                    <!-- La clase mapa_gym se utiliza solo en JavaScript -->
+                                <h4 class="funciones_titulo">Recepción</h4>                 
+                            </div>
+                            <div class="funcion--main">
+                                <p>Sin duda una de las áreas más beneficiadas de tu negocio. <br><br> Agiliza el proceso de inscripciones y el cobro de mensualidades, evita las filas en la asistencia y bloquea el acceso a personas con adeudos y personas no registradas.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
 
-                    <picture>
-                        <source srcset="build/img/BDKGYM/MAPA.avif" type="image/avif">
-                        <source srcset="build/img/BDKGYM/MAPA.webp" type="image/webp">
-                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/MAPA.png" alt="Imagén de un centro comercial">
-                    </picture>    
-
-                    <i class="fas fa-circle punto_interes" id="pt_gym_recepcion"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_gym_asistencia"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_gym_acceso"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_gym_clientes"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_gym_clases"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_gym_gimnasio"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_gym_pos"></i>
-                    <i class="fas fa-circle punto_interes" id="pt_gym_admon"></i>
-
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de inscripciones</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cobro de mensualidades</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica accesos no autorizados</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Autoriza acceso a visitantes y prospectos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta de expedientes de clientes</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta cupo de clases</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Realiza cortes de caja</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envío de correos masivos de publicidad</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envío de recordatorios de pago</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta reporte de asistencia</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="mapa_funciones mapa_funciones_gym">
-                    <div class="funcion_mapa" id="desc_gym_recepcion">
-                        <h4><i class="fas fa-circle"></i> Módulo de Recepción</h4>
-                        <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de inscripciones y el cobro de mensualidades, evita las filas en la asistencia y evita el acceso a personas con adeudos y personas no registradas.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_gym_recepcion">Leer más</a>
+                <!-- ! REGISTRO DE ASISTENCIA -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKGYM/POP_02.avif" type="image/avif">
+                                        <source srcset="build/img/BDKGYM/POP_02.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_02.jpg" alt="Funciones de una barbería" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Registro de asistencia</h4>                 
+                            </div>
+                            <div class="funcion--main">
+                                <p>Permite el registro de asistencia por medio de tarjeta con código de barras, próximidad o huella digital. <br><br>
+                                    Identifica de forma visual y sonora, si un socio tiene adeudos o está al corriente.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="funcion_mapa" id="desc_gym_asistencia">
-                        <h4><i class="fas fa-circle"></i> Módulo de asistencia</h4>
-                        <p>Permite el registro de asistencia por medio de tarjeta con código de barras, próximidad o huella digital.<br>
-                        Identifica de forma visual y sonora, si un socio tiene adeudos o está al corriente.</p>
-                        <small>* Registro con huella o próximidad disponible en la versión profesional</small>
-                        <a href="#" class="boton btnLeerMas" id="id_gym_asistencia">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_gym_acceso">
-                        <h4><i class="fas fa-circle"></i> Control de acceso</h4>
-                        <p>De la mano con el registro de asistencia, adicionalmente puedes bloquear el acceso a tus instalaciones por medio de torniquetes o electro imanes.</p>
-                        <small>* El control de acceso se encuentra disponible en la versión PLUS.</small>
-                        <a href="#" class="boton btnLeerMas" id="id_gym_acceso">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_gym_clientes">
-                        <h4><i class="fas fa-circle"></i> Beneficios para tu cliente</h4>
-                        <p>Con BDKGYM hasta tus clientes salen beneficiados ya que gracias a su expediente electrónico podrán llevar un control de su progreso, controlar sus medidas y peso y revisar rutinas y dietas generales y personalizadas.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_gym_clientes">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_gym_clases">
-                        <h4><i class="fas fa-circle"></i> Clases y horarios</h4>
-                        <p>Lleva un control de tus clases con sus diferentes horarios y asigna el instructor de cada clase.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_gym_clases">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_gym_gimnasio">
-                        <h4><i class="fas fa-circle"></i> Acceso a gimnasio</h4>
-                        <p>También puedes agregar clases con horario libre, sin control de horas como el acceso a pesas.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_gym_gimnasio">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_gym_pos">
-                        <h4><i class="fas fa-circle"></i> Punto de venta</h4>
-                        <p>Lleva un control de la venta de accesorios, suplementos y snack y registra cada una de tus ventas. Además lleva un control de almacén.</p>
-                        <small>Lleva control de productos e insumos.</small>
-                        <a href="#" class="boton btnLeerMas" id="id_gym_pos">Leer más</a>
-                    </div>
-                    <div class="funcion_mapa" id="desc_gym_admon">
-                        <h4><i class="fas fa-circle"></i> Administración</h4>
-                        <p>Lleva un control de reportes muy completo. Genera facturas, envía recordatorio de pagos y promociones por correo y mucho más.</p>
-                        <a href="#" class="boton btnLeerMas" id="id_gym_admon">Leer más</a>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica visualmente si un socio tiene el acceso libre o bloqueado.</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Alerta sonora para clientes con acceso no permitido.</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Muestra en pantalla recordatorios de pago y fecha de próxima mensualidad.</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Acepta diferentes métodos de registro de asistencia:</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p> - Número de socio</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p> - Tarjeta con código de barras</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p> - [ 2 ] Tarjetas de próximidad personalizadas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p> - [ 2 ] Registro con huella digital</p></div>
+    
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Se recomienda una computadora exclusiva para asistencia</p></div>
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- ! ACCESO ENTRE SUCURSALES -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKGYM/POP_09.avif" type="image/avif">
+                                        <source srcset="build/img/BDKGYM/POP_09.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_09.jpg" alt="Funciones de una barbería" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Acceso entre sucursales</h4>                 
+                            </div>
+                            <div class="funcion--main">
+                                <p>Con BDKGYM tus clientes pueden entrar con un mismo registro en todas tus sucursales, con su misma huella o tarjeta.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Tus socios se inscriben en la sucursal más cercana.</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Con su misma huella pueden registrar asistencia en cualquier sucursal.</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>El pago de las mensualidades es en la sucursal de origen.</p></div>
+    
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Se requiere la versión PLUS en las diferentes sucursales</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Esta funcionalidad requiere tener contratado el CW en cada sucursal</p></div>
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CONTROL DE ACCESO -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKGYM/POP_03.avif" type="image/avif">
+                                        <source srcset="build/img/BDKGYM/POP_03.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_03.jpg" alt="Funciones de una barbería" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Control de acceso con torniquete o electro imanes</h4>                 
+                            </div>
+                            <div class="funcion--main">
+                                <p>De la mano con el registro de asistencia, adicionalmente puedes bloquear el acceso a tus instalaciones por medio de torniquetes o electro imanes.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Controla la entrada a tus instalaciones</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Compatible con torniquetes</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Compatible con electro imanes</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Bloqueo en caso de adeudos o personas no inscritas</p></div>
+    
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Se requiere la versión PLUS</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_blanco"></i><p>No registramos la salida del cliente</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Contamos con la venta de torniquetes y electro imanes</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Requiere controladora de acceso la cual también tenemos a la venta</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_blanco"></i><p>No realizamos instalaciones pero te ponemos en contacto con expertos</p></div>
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CLIENTES -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKGYM/POP_04.avif" type="image/avif">
+                                        <source srcset="build/img/BDKGYM/POP_04.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_04.jpg" alt="Funciones de una barbería" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Beneficios para tus clientes</h4>                 
+                            </div>
+                            <div class="funcion--main">
+                                <p>Tus clientes salen beneficiados ya que gracias a su expediente electrónico podrán llevar un control de su progreso, controlar sus medidas y peso y revisar rutinas y dietas generales y personalizadas.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Tu cliente siempre se mantiene informado sobre sus fechas de pago</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 3 ] Asigna rutinas y dietas personalizadas y genéricas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 3 ] Agrega una PC QUIOSCO dentro de tu gimnasio para la consulta de rutinas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Expediente electrónico con todo su historial</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de medidas y peso</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Historial de compras y pagos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Crédito en tu snack o tienda de accesorios</p></div>
+                                </div>
+                            </div>
+                            <div>                              
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! CLASES Y HORARIOS -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKGYM/POP_05.avif" type="image/avif">
+                                        <source srcset="build/img/BDKGYM/POP_05.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_05.jpg" alt="Funciones de una barbería" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Control de clases y horarios</h4>                 
+                            </div>
+                            <div class="funcion--main">
+                                <p>Adiós a las clases sobre saturadas y al descontrol de horarios. <br><br> Lleva un control de tus clases con sus diferentes horarios y asigna el instructor de cada clase. <br><br> 
+                                        Agrega clases libres sin control de horario</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de clases y horarios</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Asigna el total de socios permitidos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de instructores</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta la inasistencia de socios</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agrega tolerancia de minutos en la hora de entrada</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta el límite de socios por clase</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agrega áreas sin control de horario como la sección de pesas</p></div>
+                                </div>    
+                            </div>
+                            <div>                              
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ! PUNTO DE VENTA -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKGYM/POP_07.avif" type="image/avif">
+                                        <source srcset="build/img/BDKGYM/POP_07.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_07.jpg" alt="Funciones de una barbería" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Punto de Venta</h4>                 
+                            </div>
+                            <div class="funcion--main">
+                                <p>Sí en tu gimnasio tienes un snack en el que vendes suplementos alimenticios, accesorios, agua o cualquier otro producto, BDKGYM cuenta con un módulo PUNTO DE VENTA en el cual puedes llevar registro de las ventas y control de las existencias.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control y registro de ventas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ventas al contado y a crédito para socios</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cortes de caja</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Venta de paquetes de visitas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra la renta de lockers</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reportes de venta de productos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de almacén</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de entradas y salidas de almacén</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Genera ordenes de compra</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Realiza conteos de existencias</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifíca si hubo faltantes o sobrantes de mercancía</p></div>
+                                </div>
+                            </div>
+                            <div>                              
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! PAQUETES DE VISITAS -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKGYM/POP_06.avif" type="image/avif">
+                                        <source srcset="build/img/BDKGYM/POP_06.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_06.jpg" alt="Funciones de una barbería" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Paquetes de visitas</h4>                 
+                            </div>
+                            <div class="funcion--main">
+                                <p>Vende por PAQUETES DE VISITAS para clientes que no quieren estar sujetos a una mensualidad. <br><br> Configura tus paquetes como tu desees.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Configura tus paquetes de visitas de la cantidad que desees, por ejemplpo: PAQUETE DE 10 VISITAS.</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Puedes configurar los paquetes con o sin vigencia.</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Los socios en esta modalidad no estarán sujetos a mensualidades.</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cuando un cliente se termina sus visitas te compra otro paquete.</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Atrae más clientes con esta modalidad.</p></div>
+                                </div>
+                            </div>
+                            <div>                              
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! ADMINISTRACIÓN -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKGYM/POP_08.avif" type="image/avif">
+                                        <source srcset="build/img/BDKGYM/POP_08.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_08.jpg" alt="Funciones de una barbería" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Administración</h4>                 
+                            </div>
+                            <div class="funcion--main">
+                                <p>Evita el robo hormiga y lleva una excelente administración de tu gimnasio controlando todas las áreas del mismo. <br><br> Lleva un control de reportes muy completo. Genera facturas, envía recordatorio de pagos y promociones por correo y mucho más.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Lleva control de las mensualidades vencidas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporteo general y estadísticas</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reportes de asistencia e inasistencia</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Envía recordatorios de pago vía e-mail</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Detecta clientes morosos y envía correo masivo de recordatorio</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 1 ] Facturación electrónica</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Y mucho más...</p></div>
+                                </div>    
+                            </div>
+                            <div>                              
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- ! BLOQUES INFORMATIVOS POPUP -->
-            <div class="infoPopup">
-                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE RECEPCIÓN -->
-                <div class="info_content popup_visible popup_recepcion">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKGYM/POP_01.avif" type="image/avif">
-                            <source srcset="build/img/BDKGYM/POP_01.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_01.jpg" alt="Joven recepcionista atendiendo a un cliente en el gimnasio">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Módulo de Recepción</h2>  
-                            <p>Administra perfectamente tus inscripciones y mensualidades</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Sin duda una de las áreas más beneficiadas de tu negocio. Agiliza el proceso de inscripciones y el cobro de mensualidades, evita las filas en la asistencia y evita el acceso a personas con adeudos y personas no registradas.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de inscripciones</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de pagos de mensualidades</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica accesos no autorizados</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Autoriza acceso a visitantes y prospectos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta de expedientes de clientes</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta cupo de clases</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Realiza cortes de caja</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envío de correos masivos de publicidad</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envío de correos con recordatorios de pago</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta reporte de asistencia</p></div>
-                            </div>        
-                        </div>            
-                    </div>
+            <div class="formasPago">
+                <div class="animacion_drag">
+                    <picture>
+                        <source srcset="build/img/drag-ico.avif" type="image/avif">
+                        <source srcset="build/img/drag-ico.webp" type="image/webp">
+                        <img loading="lazy" width="350" height="150" src="build/img/drag-ico.png" alt="Funciones de una barbería" class="bor10sup">
+                    </picture>    
+                </div>    
+                <div class="fpIndicaciones">
+                    <p>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 1 ] Solo en México</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 2 ] Disponible en la versión Profesional</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 3 ] Disponible en la versión Plus</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 4 ] Requiere el Concentrador Web</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> [ 5 ] Los SMS se venden por separado</small>
+                    </p>    
                 </div>
-
-                <!-- ! BLOQUE INFORMATIVO DEL MÓDULO DE ASISTENCIA -->
-                <div class="info_content popup_visible popup_asistencia">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKGYM/POP_02.avif" type="image/avif">
-                            <source srcset="build/img/BDKGYM/POP_02.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_02.jpg" alt="Joven en la recepción de un gimnasio">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Módulo de asistencia</h2> 
-                            <p>Nunca más permitas accesos no autorizados</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Si en tu gimnasio no cuentas con un control de acceso, por ejemplo, torniquetes o puertas con electro imanes, tus clientes pueden registrar asistencia al entrar a tu gimnasio y por medio de un monitor y una alerta sonora puedes darte cuenta de los clientes que tienen adeudos, esto te permite restringir el acceso a tus instalaciones y/o dar recordatorios de pago.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifica visualmente si un socio tiene acceso libre o bloqueado por adeudos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Alerta sonora para clientes con acceso no permitido</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Muestra en pantalla recordatorios de pago y fecha de próxima mensualidad</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Acepta diferentes métodos de registro de asistencia:</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Número de socio</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Tarjeta con código de barras</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Tarjetas de próximidad personalizadas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro con huella digital</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Acceso entre sucursales</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>El acceso con huella y próximidad, disponible en la versión profesional</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Requiere de una computadora exclusiva para asistencia</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-                
-                <!-- ! BLOQUE INFORMATIVO DEL CONTROL DE ACCESO -->
-                <div class="info_content popup_visible popup_acceso">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKGYM/POP_03.avif" type="image/avif">
-                            <source srcset="build/img/BDKGYM/POP_03.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_03.jpg" alt="Imagén de unos toriniquetes de acceso">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Control de acceso</h2> 
-                            <p>Seguridad en el acceso a tu negocio</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Controla de manera eficiente el acceso a tus instalaciones mediante torniquetes o puertas con electro imanes.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Se conecta directamente con el registro de asistencia</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Controla la entrada a tus instalaciones</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Compatible con torniquetes</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Compatible con electro imanes</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Bloqueo en caso de adeudos o socio no identificado</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra la cantidad de comensales en una misma cuenta</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Asignación de mesas a cada mesero</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporte de ventas por mesero</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporte de cuentas pendientes de cobrar o cuentas abiertas</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Compatible con la versión PLUS</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>No registramos la salida del cliente</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Contamos con la venta de torniquetes y electro imanes</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>Requiere controladora de acceso la cual también tenemos a la venta</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>No realizamos instalaciones pero te ponemos en contacto con expertos</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO CLIENTES -->
-                <div class="info_content popup_visible popup_clientes">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKGYM/POP_04.avif" type="image/avif">
-                            <source srcset="build/img/BDKGYM/POP_04.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_04.jpg" alt="Foto de un grupo de jovenes tomándose una selfie">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Beneficios para tus clientes</h2> 
-                            <p>Clientes contentos, negocio lleno</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Con BDKGYM hasta tus clientes salen beneficiados ya que gracias a su expediente electrónico podrán llevar un control de su progreso, controlar sus medidas y peso y revisar rutinas y dietas generales y personalizadas.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Tu cliente siempre se mantiene informado sobre sus fechas de pago</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Asigna rutinas y dietas personalizadas y genéricas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>* Agrega una PC QUIOSCO dentro de tu gimnasio para la consulta de rutinas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Expediente electrónico con todo su historial</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de medidas y peso</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Historial de compras y pagos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Crédito en tu snack o tienda de accesorios</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>* Disponible en la versión PLUS</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>PRÓXIMAMENTE: Agenda en línea</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>PRÓXIMAMENTE: Expediente en línea para socios</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO CLASES Y HORARIOS -->
-                <div class="info_content popup_visible popup_clases">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKGYM/POP_05.avif" type="image/avif">
-                            <source srcset="build/img/BDKGYM/POP_05.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_05.jpg" alt="Instructora impartiendo una clase de gimnasia">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Clases y horarios</h2> 
-                            <p>Control total de tus horarios</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Adiós a las clases sobre saturadas y al descontrol de horarios.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de clases y sus horarios</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Asigna el total de socios permitidos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de instructores</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta la inasistencia de socios</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agrega tolerancia de minutos en la hora de entrada</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Consulta el límite de socios por clase</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO SOBRE ACCESO A GIMNASIO -->
-                <div class="info_content popup_visible popup_gimnasio">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKGYM/POP_06.avif" type="image/avif">
-                            <source srcset="build/img/BDKGYM/POP_06.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_06.jpg" alt="Joven haciendo ejercicio con pesas">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Acceso a gimnasio</h2> 
-                            <p>Clases sin horarios</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Agrega clases sin control de horario y con acceso libre como el acceso al área de pesas y cardio.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agrega clases sin control de horario</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Agrega rutinas en el módulo de QUIOSCO</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO SOBRE EL ALMACEN Y EL PUNTO DE VENTA-->
-                <div class="info_content popup_visible popup_pos">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKGYM/POP_07.avif" type="image/avif">
-                            <source srcset="build/img/BDKGYM/POP_07.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_07.jpg" alt="Instructor de gimnasio acomodando suplementos de proteínas">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Punto de Venta</h2> 
-                            <p>Control de la venta de productos, accesorios y suplementos</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Sí en tu gimnasio tienes un snack en el que vendes suplementos alimenticios, accesorios deportivos, refrescos, agua o cualquier otro producto, BDKGYM es lo que necesitas, ya que cuenta con un módulo punto de venta en el cual puedes tener un control de tu almacén e inventario de productos.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control y registro de ventas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Ventas al contado y a crédito para socios</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Cortes de caja</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Venta de paquetes de visitas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra la renta de lockers</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reportes de venta de productos</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Control de almacén</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registro de entradas y salidas de almacén</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Genera ordenes de compra</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Registra salidas por mermas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Realiza conteos de existencias</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Identifíca si hubo faltantes o sobrantes de mercancía</p></div>
-                            </div>        
-                        </div>            
-                    </div>
-                </div>
-
-                <!-- ! BLOQUE INFORMATIVO SOBRE ADMINISTRACIÓN -->
-                <div class="info_content popup_visible popup_admon">
-                    <div class="info_imagen">
-                        <picture>
-                            <source srcset="build/img/BDKGYM/POP_08.avif" type="image/avif">
-                            <source srcset="build/img/BDKGYM/POP_08.webp" type="image/webp">
-                            <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/POP_08.jpg" alt="Encargado de gimnasio haciendo cuentas">
-                        </picture>        
-                    </div>
-                    <div class="info_descrip">
-                        <div class="titulo">
-                            <h2>Administración</h2> 
-                            <p>Deja tu negocio en las manos de BDKGYM</p>
-                        </div>
-                        <div class="info_main">
-                            <p>Evita el robo hormiga y lleva una excelente administración de tu gimnasio controlando todas las áreas del mismo.</p>
-
-                            <div class="lista_elementos">
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Lleva control de las mensualidades vencidas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reporteo general y estadísticas</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Reportes de asistencia e inasistencia</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Envía recordatorios de pago vía e-mail</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Detecta clientes morosos y envía correo masivo de recordatorio</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Facturación electrónica</p></div>
-                                <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Y mucho más...</p></div>
-
-                                <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p>La facturación se encuentra disponible solo en México</p></div>
-                                <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p>El envío de correos disponible en la versión PROFESIONAL</p></div>
-                            </div>
-        
-                        </div>            
-                    </div>
-                </div>
-                
-                <img src="build/img/close.png" alt="Cerrar la pantalla" class="close" id="close">
             </div>
 
         </section> 
@@ -1171,6 +1249,11 @@
                     <source srcset="build/img/BDKGYM/GAL20.webp" type="image/webp">
                     <img loading="lazy" src="build/img/BDKGYM/GAL20.jpg" alt="Fotos de la galería">
                 </picture>
+                <picture>
+                    <source srcset="build/img/BDKGYM/GAL21.avif" type="image/avif">
+                    <source srcset="build/img/BDKGYM/GAL21.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/BDKGYM/GAL21.jpg" alt="Fotos de la galería">
+                </picture>
             </div>
 
             <a href="galeria.html" class="boton mnuGal"><i class="fas fa-images"></i> Galería completa</a>
@@ -1201,7 +1284,7 @@
             </div> -->    
         </section>
 
-        <!-- ! RESEÑAS -->
+        <!-- ! RESEÑAS --> 
         <section class="seccion bkgwhite sec-opiniones">
 
             <div class="titulo"> 
@@ -1211,12 +1294,20 @@
                 <small style="color: rgb(0,0,255);">Desplazate a la derecha para ver más reseñas.</small>
             </div>
     
-            <div class="nva-resenas-container">
+            <div class="sliderbar_container">
     
                 <div data-include="assets/resenas.html"></div>
     
             </div>
-    
+
+            <div class="animacion_drag">
+                <picture>
+                    <source srcset="build/img/drag-ico.avif" type="image/avif">
+                    <source srcset="build/img/drag-ico.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/drag-ico.png" alt="Funciones de una barbería" class="bor10sup">
+                </picture>    
+            </div>    
+
             <a href="pagresenas.html" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
         
         </section>

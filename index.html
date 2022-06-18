@@ -50,15 +50,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- ? FONTAWESOM -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+    <link rel="stylesheet preload prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
     <!-- ? NORMALIZE -->
-    <link rel="preload" href="build/css/normalize.css" as="style">
+    <link rel="stylesheet preload prefetch" href="build/css/normalize.css" as="style">
     <link rel="stylesheet" href="build/css/normalize.css"> 
 
     <!-- ? ESTILOS GENERALES -->
-    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet preload prefetch" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
 
     <!-- ! METAS --> 
@@ -197,15 +197,15 @@
                 </div>
                 <div class="ctes_lista">
                     <div class="giroctes">
-                        <p>- Restaurantes</p>
+                        <p>- Restaurantes</p> 
                         <p>- Mariscos</p>
                         <p>- Pizzerías</p>
-                        <p>- Bares y Antros</p>
+                        <p>- Bares y Antros</p> 
                         <p>- Taquerías</p>
                     </div>
                     <div class="giroctes">
                         <p>- Gimnasios</p>
-                        <p>- Centros de Pilates</p>
+                        <p>- Centros de Pilates</p> 
                         <p>- Estudios de Yoga</p>
                         <p>- Karate</p>
                         <p>- Escuelas deportivas</p>                            
@@ -316,247 +316,276 @@
             <div class="productos ">
 
                 <!-- ! CARD BDKREST -->
-                <div class="prodCard">
-                    <div class="front">
-                        <div class="fondoCard">
-                            <picture>
-                                <source srcset="build/img/BDKREST/FRONTCARD.avif" type="image/avif">
-                                <source srcset="build/img/BDKREST/FRONTCARD.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKREST/FRONTCARD.jpg" alt="Imagén el producto BDKREST">
-                           </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <picture>
-                                <source srcset="build/img/BDKREST/LOGO_BCO.avif" type="image/avif">
-                                <source srcset="build/img/BDKREST/LOGO_BCO.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKREST/LOGO_BCO.jpg" alt="Logotipo BDKREST">
-                            </picture>
-                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                <div class="card_giratoria">
+                    <div class="front">                        
+                        <div class="card_producto--frente">
+                            <div class="fondoCard">
+                                <picture>
+                                    <source srcset="build/img/BDKREST/FRONTCARD.avif" type="image/avif">
+                                    <source srcset="build/img/BDKREST/FRONTCARD.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKREST/FRONTCARD.jpg" alt="Imagén el producto BDKREST">
+                               </picture>
+                            </div>
+                            <div class="cardprod_content">
+                                <picture>
+                                    <source srcset="build/img/BDKREST/LOGO_BCO.avif" type="image/avif">
+                                    <source srcset="build/img/BDKREST/LOGO_BCO.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKREST/LOGO_BCO.jpg" alt="Logotipo BDKREST">
+                                </picture>
+                                <i class="fas fa-arrow-alt-circle-right opCard"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="back rotar">
-                        <div class="card_BH"> 
-                            <picture>
-                                <source srcset="build/img/BDKREST/CARD_HEADER.avif" type="image/avif">
-                                <source srcset="build/img/BDKREST/CARD_HEADER.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKREST/CARD_HEADER.jpg" alt="Imagén del producto BDKREST">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <div class="titSoft">
-                                <h4>Software para Restaurantes y Bares</h4>
-                                <p>Control de ventas y mesas, ventas por mesero, comandas, manejo de cuentas, almacén y mucho más.</p>
+                        <div class="card_producto--reverso">
+                            <div class="card_BH"> 
+                                <picture>
+                                    <source srcset="build/img/BDKREST/CARD_HEADER.avif" type="image/avif">
+                                    <source srcset="build/img/BDKREST/CARD_HEADER.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKREST/CARD_HEADER.jpg" alt="Imagén del producto BDKREST">
+                                </picture>
                             </div>
-                        </div>
-                        <div class="acciones">
-                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="bdkrest.html" class="acc-rest"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="cardprod_descrip">
+                                <div class="titSoft">
+                                    <h4>Software para Restaurantes y Bares</h4>
+                                    <p>Control de ventas y mesas, ventas por mesero, comandas, manejo de cuentas, almacén y mucho más.</p>
+                                </div>
+                            </div>
+                            <div class="cardprod_botones">
+                                <i class="fas fa-arrow-alt-circle-left clCard"></i>
+                                <a href="bdkrest.html" class="acc-rest"><i class="fas fa-external-link-alt acc-rest"></i></a>
+                            </div>
                         </div>
                     </div> 
                 </div>
 
                 <!-- ! CARD BDKTINT -->                
-                <div class="prodCard">
+                <div class="card_giratoria">
+
                     <div class="front">
-                        <div class="fondoCard">
-                            <picture>
-                                <source srcset="build/img/BDKTINT/FRONTCARD.avif" type="image/avif">
-                                <source srcset="build/img/BDKTINT/FRONTCARD.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/FRONTCARD.jpg" alt="Imagén el producto BDKTINT">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <picture>
-                                <source srcset="build/img/BDKTINT/LOGO_BCO.avif" type="image/avif">
-                                <source srcset="build/img/BDKTINT/LOGO_BCO.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/LOGO_BCO.jpg" alt="Logotipo BDKTINT">
-                            </picture>
-                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        <div class="card_producto--frente">
+                            <div class="fondoCard">
+                                <picture>
+                                    <source srcset="build/img/BDKTINT/FRONTCARD.avif" type="image/avif">
+                                    <source srcset="build/img/BDKTINT/FRONTCARD.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/FRONTCARD.jpg" alt="Imagén el producto BDKTINT">
+                                </picture>
+                            </div>
+                            <div class="cardprod_content">
+                                <picture>
+                                    <source srcset="build/img/BDKTINT/LOGO_BCO.avif" type="image/avif">
+                                    <source srcset="build/img/BDKTINT/LOGO_BCO.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/LOGO_BCO.jpg" alt="Logotipo BDKTINT">
+                                </picture>
+                                <i class="fas fa-arrow-alt-circle-right opCard"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="back rotar">
-                        <div class="card_BH">
-                            <picture>
-                                <source srcset="build/img/BDKTINT/CARD_HEADER.avif" type="image/avif">
-                                <source srcset="build/img/BDKTINT/CARD_HEADER.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/CARD_HEADER.jpg" alt="Imagén del producto BDKTINT">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <div class="titSoft">
-                                <h4>Software para Lavanderías y Tintorerías</h4>
-                                <p>Lleva el control de tus ventas, seguimiento de pedidos, cortes de caja, control de prendas y mucho más.</p>
+                        <div class="card_producto--reverso">
+                            <div class="card_BH">
+                                <picture>
+                                    <source srcset="build/img/BDKTINT/CARD_HEADER.avif" type="image/avif">
+                                    <source srcset="build/img/BDKTINT/CARD_HEADER.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKTINT/CARD_HEADER.jpg" alt="Imagén del producto BDKTINT">
+                                </picture>
                             </div>
-                        </div>
-                        <div class="acciones">
-                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="bdktint.html" class="acc-tint"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="cardprod_descrip">
+                                <div class="titSoft">
+                                    <h4>Software para Lavanderías y Tintorerías</h4>
+                                    <p>Lleva el control de tus ventas, seguimiento de pedidos, cortes de caja, control de prendas y mucho más.</p>
+                                </div>
+                            </div>
+                            <div class="cardprod_botones">
+                                <i class="fas fa-arrow-alt-circle-left clCard"></i>
+                                <a href="bdktint.html" class="acc-tint"><i class="fas fa-external-link-alt acc-tint"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ! CARD BDKGYM -->                
-                <div class="prodCard">
+                <div class="card_giratoria">
+
                     <div class="front">
-                        <div class="fondoCard">
-                            <picture>
-                                <source srcset="build/img/BDKGYM/FRONTCARD.avif" type="image/avif">
-                                <source srcset="build/img/BDKGYM/FRONTCARD.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FRONTCARD.jpg" alt="Imagén el producto BDKGYM">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <picture>
-                                <source srcset="build/img/BDKGYM/LOGO_BCO.avif" type="image/avif">
-                                <source srcset="build/img/BDKGYM/LOGO_BCO.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/LOGO_BCO.jpg" alt="Logotipo BDKGYM">
-                            </picture>
-                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        <div class="card_producto--frente">
+                            <div class="fondoCard">
+                                <picture>
+                                    <source srcset="build/img/BDKGYM/FRONTCARD.avif" type="image/avif">
+                                    <source srcset="build/img/BDKGYM/FRONTCARD.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/FRONTCARD.jpg" alt="Imagén el producto BDKGYM">
+                                </picture>
+                            </div>
+                            <div class="cardprod_content">
+                                <picture>
+                                    <source srcset="build/img/BDKGYM/LOGO_BCO.avif" type="image/avif">
+                                    <source srcset="build/img/BDKGYM/LOGO_BCO.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/LOGO_BCO.jpg" alt="Logotipo BDKGYM">
+                                </picture>
+                                <i class="fas fa-arrow-alt-circle-right opCard"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="back rotar">
-                        <div class="card_BH">
-                            <picture>
-                                <source srcset="build/img/BDKGYM/CARD_HEADER.avif" type="image/avif">
-                                <source srcset="build/img/BDKGYM/CARD_HEADER.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/CARD_HEADER.jpg" alt="Imagén del producto BDKGYM">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <div class="titSoft">
-                                <h4>Software para Gimnasios y Estudios deportivos</h4>
-                                <p>Control de mensualidades, asistencia, ventas, clases, horarios, expediente de alumnos y mucho más.</p>
+                        <div class="card_producto--reverso">
+                            <div class="card_BH">
+                                <picture>
+                                    <source srcset="build/img/BDKGYM/CARD_HEADER.avif" type="image/avif">
+                                    <source srcset="build/img/BDKGYM/CARD_HEADER.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKGYM/CARD_HEADER.jpg" alt="Imagén del producto BDKGYM">
+                                </picture>
                             </div>
-                        </div>
-                        <div class="acciones">
-                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="bdkgym.html" class="acc-gym"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="cardprod_descrip">
+                                <div class="titSoft">
+                                    <h4>Software para Gimnasios y Estudios deportivos</h4>
+                                    <p>Control de mensualidades, asistencia, ventas, clases, horarios, expediente de alumnos y mucho más.</p>
+                                </div>
+                            </div>
+                            <div class="cardprod_botones">
+                                <i class="fas fa-arrow-alt-circle-left clCard"></i>
+                                <a href="bdkgym.html" class="acc-gym"><i class="fas fa-external-link-alt acc-gym"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ! CARD BDKSPA --> 
-                <div class="prodCard">
+                <div class="card_giratoria">
+
                     <div class="front">
-                        <div class="fondoCard">
-                            <picture>
-                                <source srcset="build/img/BDKSPA/FRONTCARD.avif" type="image/avif">
-                                <source srcset="build/img/BDKSPA/FRONTCARD.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/FRONTCARD.jpg" alt="Imagén el producto BDKSPA">
-                           </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <picture>
-                                <source srcset="build/img/BDKSPA/LOGO_BCO.avif" type="image/avif">
-                                <source srcset="build/img/BDKSPA/LOGO_BCO.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/LOGO_BCO.jpg" alt="Logotipo BDKSPA">
+                        <div class="card_producto--frente">
+                            <div class="fondoCard">
+                                <picture>
+                                    <source srcset="build/img/BDKSPA/FRONTCARD.avif" type="image/avif">
+                                    <source srcset="build/img/BDKSPA/FRONTCARD.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/FRONTCARD.jpg" alt="Imagén el producto BDKSPA">
                             </picture>
-                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                            </div>
+                            <div class="cardprod_content">
+                                <picture>
+                                    <source srcset="build/img/BDKSPA/LOGO_BCO.avif" type="image/avif">
+                                    <source srcset="build/img/BDKSPA/LOGO_BCO.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/LOGO_BCO.jpg" alt="Logotipo BDKSPA">
+                                </picture>
+                                <i class="fas fa-arrow-alt-circle-right opCard"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="back rotar">
-                        <div class="card_BH">
-                            <picture>
-                                <source srcset="build/img/BDKSPA/CARD_HEADER.avif" type="image/avif">
-                                <source srcset="build/img/BDKSPA/CARD_HEADER.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/CARD_HEADER.jpg" alt="Imagén del producto BDKSPA">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <div class="titSoft">
-                                <h4>Software para Salones de Belleza & SPA</h4>
-                                <p>Control de ventas, tratamientos y sesiones, agenda, almacén, comisiones y mucho más.</p>
+                        <div class="card_producto--reverso">
+                            <div class="card_BH">
+                                <picture>
+                                    <source srcset="build/img/BDKSPA/CARD_HEADER.avif" type="image/avif">
+                                    <source srcset="build/img/BDKSPA/CARD_HEADER.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKSPA/CARD_HEADER.jpg" alt="Imagén del producto BDKSPA">
+                                </picture>
                             </div>
-                        </div>
-                        <div class="acciones">
-                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="bdkspa.html" class="acc-spa"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="cardprod_descrip">
+                                <div class="titSoft">
+                                    <h4>Software para Salones de Belleza & SPA</h4>
+                                    <p>Control de ventas, tratamientos y sesiones, agenda, almacén, comisiones y mucho más.</p>
+                                </div>
+                            </div>
+                            <div class="cardprod_botones">
+                                <i class="fas fa-arrow-alt-circle-left clCard"></i>
+                                <a href="bdkspa.html" class="acc-spa"><i class="fas fa-external-link-alt acc-spa"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ! CARD BDKPOS -->
-                <div class="prodCard">
+                <div class="card_giratoria">
+
                     <div class="front">
-                        <div class="fondoCard">
-                            <picture>
-                                <source srcset="build/img/BDKPOS/FRONTCARD.avif" type="image/avif">
-                                <source srcset="build/img/BDKPOS/FRONTCARD.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/FRONTCARD.jpg" alt="Imagén del producto BDKPOS">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <picture>
-                                <source srcset="build/img/BDKPOS/LOGO_BCO.avif" type="image/avif">
-                                <source srcset="build/img/BDKPOS/LOGO_BCO.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/LOGO_BCO.jpg" alt="Logotipo BDKPOS">
-                            </picture>
-                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        <div class="card_producto--frente">
+                            <div class="fondoCard">
+                                <picture>
+                                    <source srcset="build/img/BDKPOS/FRONTCARD.avif" type="image/avif">
+                                    <source srcset="build/img/BDKPOS/FRONTCARD.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/FRONTCARD.jpg" alt="Imagén del producto BDKPOS">
+                                </picture>
+                            </div>
+                            <div class="cardprod_content">
+                                <picture>
+                                    <source srcset="build/img/BDKPOS/LOGO_BCO.avif" type="image/avif">
+                                    <source srcset="build/img/BDKPOS/LOGO_BCO.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/LOGO_BCO.jpg" alt="Logotipo BDKPOS">
+                                </picture>
+                                <i class="fas fa-arrow-alt-circle-right opCard"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="back rotar">
-                        <div class="card_BH">
-                            <picture>
-                                <source srcset="build/img/BDKPOS/CARD_HEADER.avif" type="image/avif">
-                                <source srcset="build/img/BDKPOS/CARD_HEADER.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/CARD_HEADER.jpg" alt="Imagén del producto BDKPOS">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <div class="titSoft">
-                                <h4>Software POS para todo tipo de comercio</h4>
-                                <p>Control de ventas e ingresos, almacén, cotizaciones, ventas a crédito, sistema de separado y mucho más.</p>
+                        <div class="card_producto--reverso">
+                            <div class="card_BH">
+                                <picture>
+                                    <source srcset="build/img/BDKPOS/CARD_HEADER.avif" type="image/avif">
+                                    <source srcset="build/img/BDKPOS/CARD_HEADER.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKPOS/CARD_HEADER.jpg" alt="Imagén del producto BDKPOS">
+                                </picture>
                             </div>
-                        </div>
-                        <div class="acciones">
-                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="bdkpos.html" class="acc-pos"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="cardprod_descrip">
+                                <div class="titSoft">
+                                    <h4>Software POS para todo tipo de comercio</h4>
+                                    <p>Control de ventas e ingresos, almacén, cotizaciones, ventas a crédito, sistema de separado y mucho más.</p>
+                                </div>
+                            </div>
+                            <div class="cardprod_botones">
+                                <i class="fas fa-arrow-alt-circle-left clCard"></i>
+                                <a href="bdkpos.html" class="acc-pos"><i class="fas fa-external-link-alt acc-pos"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ! CARD BDKBARBER -->
-                <div class="prodCard">
+                <div class="card_giratoria">
+
                     <div class="front">
-                        <div class="fondoCard">
-                            <picture>
-                                <source srcset="build/img/BDKBARBER/FRONTCARD.avif" type="image/avif">
-                                <source srcset="build/img/BDKBARBER/FRONTCARD.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/FRONTCARD.jpg" alt="Imagén del producto BDKBARBER">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <picture>
-                                <source srcset="build/img/BDKBARBER/LOGO_BCO.avif" type="image/avif">
-                                <source srcset="build/img/BDKBARBER/LOGO_BCO.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/LOGO_BCO.jpg" alt="Logotipo BDKBARBER">
-                            </picture>
-                            <i class="fas fa-arrow-alt-circle-right" id="opCard"></i>
+                        <div class="card_producto--frente">
+                            <div class="fondoCard">
+                                <picture>
+                                    <source srcset="build/img/BDKBARBER/FRONTCARD.avif" type="image/avif">
+                                    <source srcset="build/img/BDKBARBER/FRONTCARD.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/FRONTCARD.jpg" alt="Imagén del producto BDKBARBER">
+                                </picture>
+                            </div>
+                            <div class="cardprod_content">
+                                <picture>
+                                    <source srcset="build/img/BDKBARBER/LOGO_BCO.avif" type="image/avif">
+                                    <source srcset="build/img/BDKBARBER/LOGO_BCO.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/LOGO_BCO.jpg" alt="Logotipo BDKBARBER">
+                                </picture>
+                                <i class="fas fa-arrow-alt-circle-right opCard"></i>
+                            </div>
                         </div>
                     </div>
 
                     <div class="back rotar">
-                        <div class="card_BH"> 
-                            <picture>
-                                <source srcset="build/img/BDKBARBER/CARD_HEADER.avif" type="image/avif">
-                                <source srcset="build/img/BDKBARBER/CARD_HEADER.webp" type="image/webp">
-                                <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/CARD_HEADER.jpg" alt="Imagén del producto BDKBARBER">
-                            </picture>
-                        </div>
-                        <div class="cardprod_content">
-                            <div class="titSoft">
-                                <h4>Software para barberías y peluquerías</h4>
-                                <p>Control de ventas e ingresos, sesiones, agenda, almacén, comisiones y mucho más.</p>
+                        <div class="card_producto--reverso">
+                            <div class="card_BH"> 
+                                <picture>
+                                    <source srcset="build/img/BDKBARBER/CARD_HEADER.avif" type="image/avif">
+                                    <source srcset="build/img/BDKBARBER/CARD_HEADER.webp" type="image/webp">
+                                    <img loading="lazy" width="350" height="150" src="build/img/BDKBARBER/CARD_HEADER.jpg" alt="Imagén del producto BDKBARBER">
+                                </picture>
                             </div>
-                        </div>
-                        <div class="acciones">
-                            <i class="fas fa-arrow-alt-circle-left" id="clCard"></i>
-                            <a href="bdkbarber.html" class="acc-barber"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="cardprod_descrip">
+                                <div class="titSoft">
+                                    <h4>Software para barberías y peluquerías</h4>
+                                    <p>Control de ventas e ingresos, sesiones, agenda, almacén, comisiones y mucho más.</p>
+                                </div>
+                            </div>
+                            <div class="cardprod_botones">
+                                <i class="fas fa-arrow-alt-circle-left clCard"></i>
+                                <a href="bdkbarber.html" class="acc-barber"><i class="fas fa-external-link-alt acc-barber"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -573,7 +602,7 @@
 
             <div data-include="assets/equipocomputo.html"></div>
  
-            <!-- ! PAQUETES DE EQUIPO -->
+            <!-- ! PAQUETES DE EQUIPO --> 
             <div class="paquetes_container" id="paquetes_cont">
                 <div class="progress-bar"></div> 
                 
@@ -769,11 +798,19 @@
                 <small style="color: rgb(0,0,255);">Desplazate a la derecha para ver más reseñas.</small>
             </div>
     
-            <div class="nva-resenas-container">
+            <div class="sliderbar_container">
     
                 <div data-include="assets/resenas.html"></div>
     
             </div>
+
+            <div class="animacion_drag">
+                <picture>
+                    <source srcset="build/img/drag-ico.avif" type="image/avif">
+                    <source srcset="build/img/drag-ico.webp" type="image/webp">
+                    <img loading="lazy" width="350" height="150" src="build/img/drag-ico.png" alt="Funciones de una barbería" class="bor10sup">
+                </picture>    
+            </div>    
     
             <a href="pagresenas.html" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
         

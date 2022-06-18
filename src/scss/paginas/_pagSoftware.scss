@@ -6,7 +6,7 @@
 .tit_solucion { 
     width: 75%; 
     text-align: left;   
-    margin: auto 0; 
+    margin: 5rem 0 1rem; 
     z-index: 100;
 
     @include m.mixMQ(v.$deskXXL) { 
@@ -20,7 +20,8 @@
 
 .secProSol { 
     @include m.mixFlex(flex,center,center,0,row);
-    height: 600px;
+    height: 60vh;
+    min-height: 575px; 
     overflow: hidden;   
     
     @include m.mixMQ(v.$tablet) {
@@ -46,8 +47,7 @@
         };
 
         .lista_problemas {
-            width: 80%;
-            max-width: 500px;
+            width: 90%;
             height: 60%;
             position: relative;
             margin-top: 3rem;
@@ -62,12 +62,13 @@
 
     }
 
+    // ! SOLUCIÓN
     .secImg_fondo {
         width: 50%;
         position: relative;
         padding: 3rem;
         height: 100%;  
-        @include m.mixFlex(flex,center,0,nowrap,column);
+        @include m.mixFlex(flex,center,flex-start,nowrap,column);
 
         @include m.mixMQ(v.$tablet) {
             width: 100%;
@@ -81,271 +82,38 @@
 
 }
 
-.mapa_soft {
+.funciones_soft {
     overflow: hidden; 
+    .formasPago {
+        @include m.mixFlex(flex,center,0,0,0);
+        margin-top: 1rem;
 
-    .content_mapa {
-        @include m.mixFlex(flex,space-around,center,wrap,row);
-        margin: 1rem auto;
-        position: relative;
+        // .funciones_drag {
+        //     width: 40px;
+        //     margin: 0 auto;
 
-        .mapa_imagen {
-            width: 50%;
-            position: relative;
-
-            @include m.mixMQ(v.$movil) {
-                width: 80%;
-            };
-            @include m.mixMQ(v.$movil414) {
-                width: 90%;
-            };
-            @include m.mixMQ(v.$movilSM) {
-                width: 100%;
-            };
-
-            img {
-                width: 100%;
-                object-fit: cover;
-            }
-
-            .punto_interes {
-                position: absolute; 
-                cursor: pointer;
-                color: v.$color6;
-                animation: parpadeo 1.5s linear .5s infinite; 
-
-                &:hover {
-                    color: v.$color1;
-                } 
-            }
-
-            .punto_activo {
-                color: v.$color1; 
-            }
-
-            .mapa_otros {
-                position: absolute;
-                top: 2rem;
-                left: 3rem;
-
-                @include m.mixMQ(v.$tablet) {
-                    left: -5rem;
-                    top: 3rem;
-                };
-
-                @include m.mixMQ(v.$movil) {
-                    left: 60%;
-                    top: 85%;
-                };
-
-                @include m.mixMQ(v.$movil414) {
-                    left: 55%;
-                    top: 87%;
-                };
-            }
-        }
-
-        .mapa_funciones {
-            position: absolute;
-            width: 450px;
-
-            @include m.mixMQ(v.$tablet) {
-                position: relative; 
-            };
-
-            .funcion_mapa {
-                display: none;
-
-                h4 {
-                    i {
-                        color: v.$color1;
-                        font-size: 1.5rem;
-                    }
-                }
-
-                p {
-                    border-top: 1px solid v.$color1;
-                    padding-top: 1rem;
-
-                    @include m.mixMQ(v.$desk) {
-                        font-size: 1.3rem;
-                    };
-                }
-
-                small {
-                    color: v.$color1;
-
-                    @include m.mixMQ(v.$desk) {
-                        font-size: 1.2rem;
-                    };
-                }
-                
-                a {
-                    display: block;
-                    width: 15rem;
-                    text-align: center;
-                }
-            }
-
-            .desc_activa {
-                display: inline-block; 
-            }
+        //     img {
+        //         width: 40px;
+        //         animation: dragico 2s infinite;
+        //     }
+        // }
     
+        .fpIndicaciones {    
+            width: 90%;
+            p small {
+                color: v.$negro;
+            }
         }
-
-        .mapa_funciones_rest {
-            left: 68%;
-            top: 28rem;
-
-            @include m.mixMQ(v.$deskXL) {
-                top: 26rem;
-                left: 63%;
-                width: 425px;
-            };
-
-            @include m.mixMQ(v.$desk) {
-                top: 21rem;
-                width: 360px;
-            };
-
-            @include m.mixMQ(v.$tablet) {
-                top: 2rem;
-                left: 0;
-                width: 100%;
-            };
-        
-        }
-
-        .mapa_funciones_gym {
-            left: 72%;
-            top: 28rem;
-
-            @include m.mixMQ(v.$deskXXL) {
-                left: 70%;
-            };
-
-            @include m.mixMQ(v.$deskXL) {
-                left: 66%;
-                width: 400px;
-            };
-
-            @include m.mixMQ(v.$desk) {
-                top: 22rem;
-                left: 0;
-                width: 380px;
-            };
-
-            @include m.mixMQ(v.$tablet) {
-                top: 2rem;
-                left: 0;
-                width: 100%;
-            };
-        
-        }
-
-        .mapa_funciones_tint {
-            left: 10%;
-            top: 32rem;
-
-            @include m.mixMQ(v.$desk) {
-                top: 28rem;
-                width: 400px;
-            };
-        
-            @include m.mixMQ(v.$tablet) {
-                top: 2rem;
-                left: 0;
-                width: 100%;
-            };
-
-        }
-
-        .mapa_funciones_spa {
-            left: 71%;
-            top: 30rem;
-
-            @include m.mixMQ(v.$deskXL) {
-                left: 66%;
-                width: 415px;
-            };
-
-            @include m.mixMQ(v.$desk) {
-                left: 0;
-                top: 24rem;
-                width: 360px;
-            };
-        
-            @include m.mixMQ(v.$tablet) {
-                top: 2rem;
-                left: 0;
-                width: 100%;
-            };
-
-        }
-
-        .mapa_funciones_barber {
-            left: 65%;
-            top: 28rem;
-
-            @include m.mixMQ(v.$deskXL) {
-                left: 60%;
-            };
-
-            @include m.mixMQ(v.$desk) {
-                top: 24rem;
-                left: 58%;
-                width: 400px;
-            };        
-
-            @include m.mixMQ(v.$tablet) {
-                top: 2rem;
-                left: 0;
-                width: 100%;
-            };
-
-        }
-
-        .mapa_funciones_pos {
-            left: 75%;
-            top: 20rem;
-
-            @include m.mixMQ(v.$deskXXL) {
-                left: 71%;
-                top: 22rem; 
-            };
-
-            @include m.mixMQ(v.$deskXL) {
-                left: 66%;
-                width: 420px;
-            };
-        
-            @include m.mixMQ(v.$desk) {
-                top: 15rem;
-                left: 0;
-                width: 300px;
-            };
-        
-            @include m.mixMQ(v.$tablet) {
-                top: 2rem;
-                left: 0;
-                width: 100%;
-            };
-
-        }
-
     }
 }
 
 .video_software {
     width: 100%;
-    height: 450px ;
+    height: 45vh;
+    min-height: 400px ;
     background: v.$degradadoRed;
     @include m.mixFlex(flex,center,center,wrap,row);
   
-    @include m.mixMQ(v.$tablet) {
-        height: 350px;
-    };
-
     @include m.mixMQ(v.$movil) {
         flex-direction: column;
         height: auto;
@@ -703,195 +471,6 @@
     }
 }
 
-// ! SECCIÓN DE LA PANTALLA INFORMATIVA TIPO POPUP DEL MAPA DE MESAS
-.infoPopup {
-    position: fixed;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0) rotate(180deg);
-    background: v.$degradadoRed;
-    z-index: 10000;
-    width: 100%;
-    height: 100%;
-    @include m.mixFlex(flex,center,center,0,0);
-    transition: 0.3s;
-
-    &.active {
-        transition-delay: 0.1s;
-        transform: translate(-50%, -50%) scale(1) rotate(0);
-    }
-        
-    .info_content {
-        width: 90%;
-        height: 75vh;
-        max-width: 1200px;
-        background-color: v.$blanco;
-        border-radius: 10px;
-        box-shadow: v.$box-shadow2;
-        padding-right: 1rem;
-        overflow: hidden;
-
-        @include m.mixFlex(flex,center,center,wrap,row);
-
-        @include m.mixMQ(v.$tablet) {
-            width: 95%;
-            height: 80vh;
-        };
-
-        @include m.mixMQ(v.$movil) {
-            flex-direction: column;
-            padding-right: 0;
-            height: 90vh;
-        };
-
-        .info_imagen {
-            width: 40%;
-            height: 100%; 
-            overflow: hidden;
-
-            @include m.mixMQ(v.$desk) {
-                width: 45%;
-            };
-
-            @include m.mixMQ(v.$movil) {
-                width: 100%;
-                height: 35%;
-            };
-
-            img { 
-                height: 100%;
-                object-fit: cover;
-                border-radius: 10px 0 0 10px;
-                border-right: 1px solid v.$color5;
-
-                box-shadow: v.$box-shadow4;
-
-                @include m.mixMQ(v.$movil) {
-                    border-radius: 10px 10px 0 0;
-                };
-
-            }
-        }
-
-        .info_descrip {
-            width: 60%;
-            padding: 3rem;
-            height: 100%;
-
-            @include m.mixMQ(v.$desk) {
-                width: 55%;
-                padding: 2rem 0 2rem 2rem;
-            };
-
-            @include m.mixMQ(v.$movil) {
-                width: 100%;
-                height: 65%;
-                padding: 2rem;
-            };
-            @include m.mixMQ(v.$movilSM) {
-                padding: 1rem;
-            };
-
-            .titulo {
-                text-align: left;
-                margin-left: 0;
-
-                h2 {
-                    border-bottom: 1px solid v.$color1;
-
-                    @include m.mixMQ(v.$movilSM) {
-                        font-size: 1.8rem;
-                    };
-                }
-
-                p {
-                    font-family: v.$fuente_principal;
-                }
-            }
-
-            .info_main {
-                margin-top: 2rem;
-                height: 85%;
-                overflow: hidden;
-                overflow-y: auto;
-                padding-bottom: 2rem;
-
-                &::-webkit-scrollbar {
-                    width: 8px;     /* Tamaño del scroll en vertical */
-                    height: 8px;    /* Tamaño del scroll en horizontal */
-                    /* display: none;  Ocultar scroll */
-                }
-                
-                /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
-                &::-webkit-scrollbar-thumb {
-                    background: v.$color1;
-                    border-radius: 4px;
-                }
-        
-                /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
-                &::-webkit-scrollbar-thumb:hover {
-                    // background: #b3b3b3;
-                    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-                }
-        
-                /* Cambiamos el fondo cuando esté en active */
-                &::-webkit-scrollbar-thumb:active {
-                    background: v.$color1;
-                }
-                
-                &::-webkit-scrollbar-track {
-                    /* background: #e1e1e1; */
-                    border-radius: 4px;
-                }
-        
-                /* Cambiamos el fondo cuando esté en active o hover */
-                &::-webkit-scrollbar-track:hover,
-                &::-webkit-scrollbar-track:active {
-                    background: #d4d4d4;
-                }        
-        
-                @include m.mixMQ(v.$tablet) {
-                    height: 80%;
-                };
-                @include m.mixMQ(v.$movil) {
-                    margin-top: 1rem;
-                };
-
-                p {
-                    @include m.mixMQ(v.$movil) {
-                        font-size: 1.4rem;
-                    };
-                }
-            }
-        }
-    }
-
-    .popup_visible {
-        display: none;
-
-        &.active {
-            display: flex;
-        }
-    }
-
-    .close {
-        position: absolute;
-        top: 30px;  right: 30px;
-        cursor: pointer;
-        max-width: 32px;
-        filter: invert(1);
-
-        @include m.mixMQ(v.$movil) {
-            filter: none;
-            background: v.$blanco;
-            border-radius: 50%;
-            padding: .8rem;
-            color: v.$blanco;
-            border: 1px solid v.$color1;
-        };
-    }    
-    
-} 
 
 .soft_titulo {
     width: 85%;

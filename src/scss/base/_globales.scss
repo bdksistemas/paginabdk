@@ -14,7 +14,7 @@ html {
 *:before,    
 *:after {   
     box-sizing: inherit;     
-    margin: 0;     
+    margin: 0;      
 } 
  
 body { 
@@ -23,7 +23,7 @@ body {
 
     &::-webkit-scrollbar { 
         width: 8px;
-        height: 8px;
+        height: 8px; 
     }
 
     &::-webkit-scrollbar-thumb {
@@ -40,8 +40,8 @@ body {
 p {
     font-size: v.$descCon;      
     color: v.$negro; 
-    line-height: 1.20;   
-    margin: .25rem 0;
+    line-height: 1.20;    
+    margin: .25rem 0; 
     font-family: v.$fuente_sec;   
 } 
 
@@ -237,6 +237,10 @@ img {
 
 .bor10 {
     border-radius: 10px;
+}
+
+.bor10sup {
+    border-radius: 10px 10px 0 0;
 }
 
 .boton {
@@ -743,6 +747,9 @@ img {
             color: v.$color6;
         }
 
+        .color_blanco {
+            color: v.$blanco;
+        }
         p {
             margin: 0;
             line-height: 1.20;
@@ -804,6 +811,15 @@ img {
         height: 100%;
     }
 }
+
+.filtro-negro-border {
+    @extend .filtro-negro;
+
+    &::before {
+        border-radius: 10px 10px 0 0;
+    }    
+}
+
 
 .filtro-negro-deg2 {
     @extend .filtro-negro;
@@ -968,3 +984,335 @@ img {
 
 }    
 
+.sliderbar_container {
+    width: 90%;
+    margin: 3rem auto 0;
+    padding: 1rem; 
+    overflow: hidden;
+    @include m.mixFlex(flex,0,0,nowrap,0);
+    position: relative;
+
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        width: 8px;     /* Tamaño del scroll en vertical */
+        height: 8px;    /* Tamaño del scroll en horizontal */
+        /* display: none;  Ocultar scroll */
+    }
+    
+    /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+    &::-webkit-scrollbar-thumb {
+        background: v.$color1;
+        border-radius: 4px;
+    }
+
+    /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+    &::-webkit-scrollbar-thumb:hover {
+        // background: #b3b3b3;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Cambiamos el fondo cuando esté en active */
+    &::-webkit-scrollbar-thumb:active {
+        background: v.$color1;
+    }
+    
+    &::-webkit-scrollbar-track {
+        /* background: #e1e1e1; */
+        border-radius: 4px;
+    }
+
+    /* Cambiamos el fondo cuando esté en active o hover */
+    &::-webkit-scrollbar-track:hover,
+    &::-webkit-scrollbar-track:active {
+        background: #d4d4d4;
+    }        
+
+    .mode-screen {
+        flex-wrap: wrap;
+        scroll-snap-type: y mandatory;
+        background-color: #fff;
+        height: 80%;
+    }
+}
+
+.card_giratoria {
+    @include m.mixBox(350px,460px,0,10px,0,0);
+    flex-shrink: 0;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: 2rem 1rem;
+    z-index: 2000;
+    
+
+    @include m.mixMQ(v.$tablet) {
+        width: 45%;
+        height: 480px;
+    };
+
+    @include m.mixMQ(v.$movil) {
+        width: 90%;
+    };
+    
+    .front {
+        transform-style: preserve-3d;
+        transition: 1s;
+        backface-visibility: hidden;
+        width: 100%;
+        height: 100%;
+       
+        .card_producto--frente {
+            @include m.mixFlex(flex,center,0,0,0);
+            height: 100%;
+            width: 100%;
+
+            .fondoCard {
+                width: 100%;
+                height: 100%;
+                top: 0;
+
+                img {
+                    border-radius: 10px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .cardprod_content {
+                position: absolute;
+                top: 0;
+                width: 80%;
+                height: 100%;
+                overflow: hidden;
+                @include m.mixFlex(flex,center,center,0,column);
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                i {
+                    position: absolute;
+                    bottom: 5rem;
+                    color: v.$blanco;
+                    font-size: 2.5rem;
+                    cursor: pointer;
+                    transition: .5s;
+                    border-radius: 50%;
+
+                    @include m.mixMQ(v.$movil) {
+                        bottom: 3rem;
+                    };
+                                
+                    &:active {
+                        transform: scale(0.95);
+                    }
+
+                    &:hover {
+                        color: v.$color1;
+                    }
+                }
+                
+            }
+        }
+
+        .card_funciones--frente {
+            width: 100%;
+            height: 100%;
+            background-color: v.$color4;
+            border-radius: 15px;
+            box-shadow: v.$box-shadow;
+
+            .funcion--header {
+                position: relative;
+                height: 43%;
+                z-index: 100;
+                
+                .funciones_titulo {
+                    position: absolute;
+                    color: v.$blanco;                    
+                    top: 50%;
+                    left: 2rem;
+                    transform: translateY(-50%);
+                    text-transform: uppercase;
+                    text-align: center;
+                    width: 90%;
+                }
+            }
+
+            .funcion--main {
+                height: 57%;
+                border-top: solid 3px v.$color1;
+                padding: 2rem;
+                position: relative;
+
+                p {
+                    color: v.$blanco;
+                }
+
+            }
+        }
+    }
+
+    .back {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: 1s;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+
+        .card_producto--reverso {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -10;
+            
+            .card_BH {
+                height: 30%;
+            
+                img {
+                    border-radius: 10px 10px 0 0;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .cardprod_descrip {
+                position: absolute;
+                top: 35%;
+                background: linear-gradient(0deg, rgba(141,0,18,1) 28%, rgba(205,0,26,1) 83%, rgba(205,0,26,0) 100%);
+                width: 100%;
+                height: 60%;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                padding: 1rem 2rem;
+
+                @include m.mixMQ(v.$desk) {
+                    top: 32%;
+                    height: 62%;
+                };
+
+                @include m.mixMQ(v.$movil) {
+                    top: 40%;                        
+                    height: 55%;
+                };
+
+                .titSoft {
+                    height: 80%;
+                    margin-top: 3rem;
+                    overflow: hidden;
+
+                    @include m.mixMQ(v.$desk) {
+                        margin-top: .8rem;                            
+                    };
+                    @include m.mixMQ(v.$movil) {
+                        margin-top: 0;
+                    };
+
+                    h4 {
+                        color: v.$blanco;
+                        margin: 2.5rem 0 0.8rem 0;
+                    }
+
+                    p {
+                        color: v.$blanco;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .cardprod_botones {
+                position: absolute;
+                bottom: 0;
+                height: 10%;
+                width: 100%;
+                border-radius: 0 0 10px 10px;
+                @include m.mixFlex(flex,space-between,center,0,0);
+                background-color: v.$negro;
+                padding: 0 2.5rem;
+                z-index: 100;
+
+                i {
+                    display: block;
+                    color: v.$blanco;
+                    font-size: 2rem;
+                    cursor: pointer;
+                    padding: 8px 8px;
+                
+                    &:active {
+                        transform: scale(0.95);
+                    }    
+
+                    &:hover {
+                        color: v.$color1;
+                    }
+
+                }
+            }
+        }
+
+        // ! Reverso de las card para mostrar las diferentes funciones de los módulos de los sistemas
+        .card_funciones--reverso {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background-image: v.$degradadoRed;
+            border-radius: 10px;
+            box-shadow: v.$box-shadow;
+
+            .funcion--caracteristicas {
+                width: 100%;
+                height: 90%;
+                padding: 1.5rem;
+
+                .lista_elemento {
+                    p {
+                        color: v.$blanco;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.opCard {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    color: v.$blanco;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+
+    @include m.mixMQ(v.$tablet) {
+        bottom: 1rem;
+    };
+                
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:hover {
+        color: v.$color1;
+    }
+}
+
+.animacion_drag {
+    width: 40px;
+    margin: 0 auto;
+
+    img {
+        width: 40px;
+        animation: dragico 2s infinite;
+    }
+}
