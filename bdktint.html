@@ -52,10 +52,6 @@
     <link rel="stylesheet preload prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
-    <!-- ? NORMALIZE -->
-    <link rel="stylesheet preload prefetch" href="build/css/normalize.css" as="style">
-    <link rel="stylesheet" href="build/css/normalize.css"> 
-
     <!-- ? ESTILOS GENERALES -->
     <link rel="stylesheet preload prefetch" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
@@ -122,54 +118,101 @@
     </nav>
 
     <!-- ! HERO -->
-    <header class="formatoHero hero-sistema">
-        <div class="formatoHero_Container hero_container">
-            <div class="hero-content">
-                <div class="hero-logo">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.webp" type="image/webp">
-                        <img width="350" height="150" src="build/img/BDKTINT/LOGO_BDKTINT_BLANCO.png" alt="Logotipo de la empresa">
-                    </picture>
-                </div>
-                <div class="hero-mockup">
-                    <picture>
-                        <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.avif" type="image/avif">
-                        <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.webp" type="image/webp">
-                        <img width="350" height="150" src="build/img/BDKTINT/BDKTINT_PDV_01.png" alt="Terminal punto de venta">
-                    </picture>
-                </div>
-                <div class="soft_titulo">
-                    <h1>Software para lavanderías</h1>
-                    <p>Sin duda uno de los mejores sistemas de lavanderías del mercado.</p>
-                </div>
-            </div>
+    <header class="formatoHero">    
 
-            <div class="anim-mouse mouse-b2">
-                <div class="mouse"></div>
-            </div>
-    
-        </div>
-
-        <!-- ! CARRUSEL DE IMAGENES DE LA DERECHA -->
-        <div class="hero-right">
-
-            <div class="filtro-negro">
+        <div class="filtro-negro" id="fondosHero">
+            <div class="fondo_hero banner_visible">
                 <picture>
-                    <source srcset="build/img/FONDO_TINT_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
-                    <source srcset="build/img/FONDO_TINT.avif" type="image/avif">
-                    <source srcset="build/img/FONDO_TINT_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
-                    <source srcset="build/img/FONDO_TINT.webp" type="image/webp">
-                    <source srcset="build/img/FONDO_TINT_MOVIL.jpg" media="(max-width: 480px)">
-                    <img width="350" height="150" src="build/img/FONDO_TINT.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_1_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_1_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_1.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_1_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_1_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_1.webp" type="image/webp">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_1_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_1_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/BDKTINT/Fondo_Tint_1.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
                 </picture>
             </div>
-
-            <div class="heroR-leyenda"> 
-                <h2>La solución ideal para todo tipo de lavanderías y tintorerías</h2>
-                <p>Ideal para proteger tu negocio contra malos manejos administrativos y el robo hormiga. Control de ventas, seguimiento de servicios, ingresos, egresos, cortes de caja y mucho más</p>
+            <div class="fondo_hero">
+                <picture>
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_2_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_2_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_2.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_2_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_2_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_2.webp" type="image/webp">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_2_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_2_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/BDKTINT/Fondo_Tint_2.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>
+            </div>
+            <div class="fondo_hero">
+                <picture>
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_3_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_3_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_3.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_3_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_3_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_3.webp" type="image/webp">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_3_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_3_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/BDKTINT/Fondo_Tint_3.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>
+            </div>
+            <div class="fondo_hero">
+                <picture>
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_4_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_4_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_4.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_4_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_4_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_4.webp" type="image/webp">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_4_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_4_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/BDKTINT/Fondo_Tint_4.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>
+            </div>
+            <div class="fondo_hero">
+                <picture>
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_5_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_5_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_5.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_5_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_5_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_5.webp" type="image/webp">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_5_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKTINT/Fondo_Tint_5_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/BDKTINT/Fondo_Tint_5.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>
             </div>
         </div>
+
+        <section class="formatoHero_Container centra-titulo">
+            <div class="hero-logo">
+                <picture>
+                    <source srcset="build/img/BDKTINT/LOGO_BCO.avif" type="image/avif">
+                    <source srcset="build/img/BDKTINT/LOGO_BCO.webp" type="image/webp">
+                    <img width="350" height="150" src="build/img/BDKTINT/LOGO_BCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+            <h1>El mejor software para lavanderías y tintorerías</h1>
+            <p>Ideal para llevar el control de tus ventas, seguimiento a servicios, inventarios, administración y mucho más.</p>
+        </section>
+        <div class="wrapper">
+            <ul class="dynamic-txts">
+                <li><span>Control de ventas</span></li> 
+                <li><span>Seguimiento de servicios</span></li>
+                <li><span>Asignación de servicios</span></li>
+                <li><span>Control de almacén</span></li>
+                <li><span>Cortes de caja</span></li>
+                <li><span>Y muchas funciones más</span></li>
+            </ul>                
+        </div>   
+
+        <div class="anim-mouse">
+            <div class="mouse"></div> 
+        </div> 
 
     </header>
 
@@ -181,6 +224,16 @@
         <!-- ! PRINCIPALES BENEFICIOS -->
         <section class="seccion">
             <div class="titulo container">
+                <div class="mockup">
+                    <picture>
+                        <source srcset="build/img/BDKTINT/BDKTINT_PDV_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                        <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKTINT/BDKTINT_PDV_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                        <source srcset="build/img/BDKTINT/BDKTINT_PDV_01.webp" type="image/webp">
+                        <source srcset="build/img/BDKTINT/BDKTINT_PDV_MOVIL.jpg" media="(max-width: 480px)">
+                        <img width="350" height="150" src="build/img/BDKTINT/BDKTINT_PDV_01.jpg" alt="Terminal punto de venta">
+                    </picture>    
+                </div>    
                 <h2><span>¡LA SOLUCIÓN IDEAL!</span> <br> para lavanderías y tintorerías</h2> 
                 <p>BDKTINT es el software para lavanderías con el que estarás protegido contra malos manejos administrativos, lleva un control de tus ventas y un buen seguimiento a cada uno de tus servicios en proceso, mejora cada área de tu negocio y obtén grandes beneficios.</p>
             </div> 
@@ -901,10 +954,10 @@
             <div data-include="assets/equipocomputo.html"></div>
  
             <!-- ! PAQUETES DE EQUIPO -->
-            <div class="paquetes_container" id="paquetes_cont">
+            <div class="banners_fade" id="banners_equipo">
                 <div class="progress-bar"></div> 
                 
-                <div class="paquete_hardware paq_visible">
+                <div class="paquete_hardware banner_visible">
                     <a href="">
                         <picture>
                             <source srcset="build/img/Paquetes/MINIPC_COREBOX_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
@@ -967,34 +1020,7 @@
                             <img loading="lazy" width="350" height="150" src="build/img/Paquetes/KIT-COMPLETO-MONITOR-TOUCH.jpg" alt="Imagen promocional de equipo de cómputo">
                         </picture>
                     </a>
-                </div>
-
-                <div class="paquete_hardware">
-                    <a href="">
-                        <picture>
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1.avif" type="image/avif">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1.webp" type="image/webp">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1_MOVIL.jpg" media="(max-width: 480px)">
-                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/TORNIQUETE_1.jpg" alt="Imagen promocional de equipo de cómputo">
-                        </picture>
-                    </a>
-                </div>
-
-                <div class="paquete_hardware">
-                    <a href="">
-                        <picture>
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2.avif" type="image/avif">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2.webp" type="image/webp">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2_MOVIL.jpg" media="(max-width: 480px)">
-                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/TORNIQUETE_2.jpg" alt="Imagen promocional de equipo de cómputo">
-                        </picture>
-                    </a>
-                </div>
-    
+                </div>    
             </div>
 
             <div class="paquetes_botones">

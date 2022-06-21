@@ -53,10 +53,6 @@
     <link rel="stylesheet preload prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
-    <!-- ? NORMALIZE -->
-    <link rel="stylesheet preload prefetch" href="build/css/normalize.css" as="style">
-    <link rel="stylesheet" href="build/css/normalize.css"> 
-
     <!-- ? ESTILOS GENERALES -->
     <link rel="stylesheet preload prefetch" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
@@ -123,57 +119,75 @@
     </nav>
 
     <!-- ! HERO -->
-    <header class="formatoHero hero-sistema">
-        <div class="formatoHero_Container hero_container">
-            <div class="hero-content">
-                <div class="hero-logo">
-                    <picture>
-                        <source srcset="build/img/BDKBARBER/LOGO_BDKBARBER_BLANCO.avif" type="image/avif">
-                        <source srcset="build/img/BDKBARBER/LOGO_BDKBARBER_BLANCO.webp" type="image/webp">
-                        <img width="350" height="150" src="build/img/BDKBARBER/LOGO_BDKBARBER_BLANCO.png" alt="Logotipo de la empresa">
-                    </picture>
-                </div>
-                <div class="hero-mockup">
-                    <picture>
-                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
-                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_01.avif" type="image/avif">
-                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
-                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_01.webp" type="image/webp">
-                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_MOVIL.jpg" media="(max-width: 480px)">
-                        <img width="350" height="150" src="build/img/BDKBARBER/BDKBARBER_PDV_01.jpg" alt="Terminal punto de venta">
-                    </picture>    
-                </div>
-                <div class="soft_titulo">
-                    <h1>Software para barberías</h1>
-                    <p>Sin duda uno de los mejores sistemas de barberías y peluquerías</p>
-                </div>
-            </div>
+    <header class="formatoHero">    
 
-            <div class="anim-mouse mouse-b2">
-                <div class="mouse"></div>
-            </div>
-    
-        </div>
-
-        <!-- ! CARRUSEL DE IMAGENES DE LA DERECHA -->
-        <div class="hero-right">
-            <div class="filtro-negro">
+        <div class="filtro-negro" id="fondosHero">
+            <div class="fondo_hero banner_visible">
                 <picture>
-                    <source srcset="build/img/FONDO_BARBER_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
-                    <source srcset="build/img/FONDO_BARBER.avif" type="image/avif">
-                    <source srcset="build/img/FONDO_BARBER_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
-                    <source srcset="build/img/FONDO_BARBER.webp" type="image/webp">
-                    <source srcset="build/img/FONDO_BARBER_MOVIL.jpg" media="(max-width: 480px)">
-                    <img width="350" height="150" src="build/img/FONDO_BARBER.jpg" alt="Recepcionista de un gimnasio atendiendo a un cliente">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_1_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_1_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_1.avif" type="image/avif">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_1_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_1_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_1.webp" type="image/webp">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_1_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_1_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/BDKBARBER/Fondo_Barber_1.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
                 </picture>
             </div>
-
-            <div class="heroR-leyenda"> 
-                <h2>La solución ideal para todo tipo de barberías</h2>
-                <p>Ideal para proteger tu negocio contra malos manejos administrativos y el robo hormiga. Control de ventas, ventas a crédito, agenda, control de sesiones, ingresos, egresos, manejo de comisiones y más.</p>
-            </div> 
+            <div class="fondo_hero">
+                <picture>
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_2_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_2_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_2.avif" type="image/avif">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_2_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_2_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_2.webp" type="image/webp">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_2_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_2_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/BDKBARBER/Fondo_Barber_2.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>
+            </div>
+            <div class="fondo_hero">
+                <picture>
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_3_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_3_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_3.avif" type="image/avif">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_3_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_3_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_3.webp" type="image/webp">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_3_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/BDKBARBER/Fondo_Barber_3_Tablet.jpg" media="(max-width: 768px)">
+                    <img class="move_left" width="350" height="150" src="build/img/BDKBARBER/Fondo_Barber_3.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>
+            </div>
         </div>
 
+        <section class="formatoHero_Container centra-titulo">
+            <div class="hero-logo">
+                <picture>
+                    <source srcset="build/img/BDKBARBER/LOGO_BCO.avif" type="image/avif">
+                    <source srcset="build/img/BDKBARBER/LOGO_BCO.webp" type="image/webp">
+                    <img width="350" height="150" src="build/img/BDKBARBER/LOGO_BCO.png" alt="Logotipo de la empresa">
+                </picture>
+            </div>
+            <h1>El mejor software para barberías y peluquerías</h1>
+            <p>Ideal para llevar el control de tus ventas, citas, comisiones, cortes, almacén y mucho más.</p>
+        </section>
+        <div class="wrapper">
+            <ul class="dynamic-txts">
+                <li><span>Control de ventas</span></li> 
+                <li><span>Agenda y Citas</span></li>
+                <li><span>Comisiones</span></li>
+                <li><span>Control de almacén</span></li>
+                <li><span>Cortes de caja</span></li>
+                <li><span>Y muchas funciones más</span></li>
+            </ul>                
+        </div>   
+
+        <div class="anim-mouse">
+            <div class="mouse"></div> 
+        </div> 
 
     </header>
 
@@ -185,6 +199,16 @@
         <!-- ! PRINCIPALES BENEFICIOS -->
         <section class="seccion">
             <div class="titulo container">
+                <div class="mockup">
+                    <picture>
+                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
+                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_01.avif" type="image/avif">
+                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
+                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_01.webp" type="image/webp">
+                        <source srcset="build/img/BDKBARBER/BDKBARBER_PDV_MOVIL.jpg" media="(max-width: 480px)">
+                        <img width="350" height="150" src="build/img/BDKBARBER/BDKBARBER_PDV_01.jpg" alt="Terminal punto de venta">
+                    </picture>    
+                </div>    
                 <h2><span>¡LA SOLUCIÓN IDEAL!</span> <br> para barberías y peluquerías</h2> 
                 <p>BDKBARBER es un software para barberías con el que estarás protegido contra malos manejos administrativos y contra el robo hormiga.
                     Te permite llevar el control de tus ventas, ingresos, tratamientos y sesiones, además lleva un registro de tu agenda, controla tu almacén, registrar comisiones y mucho más.</p>
@@ -997,10 +1021,11 @@
             <div data-include="assets/equipocomputo.html"></div>
  
             <!-- ! PAQUETES DE EQUIPO -->
-            <div class="paquetes_container" id="paquetes_cont">
+            <div class="banners_fade promos_equipo" id="banners_equipo">
+
                 <div class="progress-bar"></div> 
                 
-                <div class="paquete_hardware paq_visible">
+                <div class="paquete_hardware banner_visible">
                     <a href="">
                         <picture>
                             <source srcset="build/img/Paquetes/MINIPC_COREBOX_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
@@ -1063,34 +1088,7 @@
                             <img loading="lazy" width="350" height="150" src="build/img/Paquetes/KIT-COMPLETO-MONITOR-TOUCH.jpg" alt="Imagen promocional de equipo de cómputo">
                         </picture>
                     </a>
-                </div>
-
-                <div class="paquete_hardware">
-                    <a href="">
-                        <picture>
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1.avif" type="image/avif">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1.webp" type="image/webp">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_1_MOVIL.jpg" media="(max-width: 480px)">
-                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/TORNIQUETE_1.jpg" alt="Imagen promocional de equipo de cómputo">
-                        </picture>
-                    </a>
-                </div>
-
-                <div class="paquete_hardware">
-                    <a href="">
-                        <picture>
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2_MOVIL.avif" type="image/avif" media="(max-width: 480px)">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2.avif" type="image/avif">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2_MOVIL.webp" type="image/webp" media="(max-width: 480px)">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2.webp" type="image/webp">
-                            <source srcset="build/img/Paquetes/TORNIQUETE_2_MOVIL.jpg" media="(max-width: 480px)">
-                            <img loading="lazy" width="350" height="150" src="build/img/Paquetes/TORNIQUETE_2.jpg" alt="Imagen promocional de equipo de cómputo">
-                        </picture>
-                    </a>
-                </div>
-    
+                </div>    
             </div>
 
             <div class="paquetes_botones">

@@ -21,7 +21,7 @@ body {
     font-family: v.$fuente_principal;  
     font-size: 16px; 
 
-    &::-webkit-scrollbar { 
+    &::-webkit-scrollbar {  
         width: 8px;
         height: 8px; 
     }
@@ -34,7 +34,7 @@ body {
 
 .body-noscroll {
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 p {
@@ -63,12 +63,12 @@ h1, h2, h3, h4 {
 h1 {
     font-size: v.$titHero;  
 
-    @include m.mixMQ(v.$deskXL) {
-        font-size: v.$titHero - 2rem;                    
+    @include m.mixMQ(v.$deskXXL) {
+        font-size: v.$titHero - 1.5rem;                    
     };
 
-    @include m.mixMQ(v.$desk) {
-        font-size: v.$titHero - 2.2rem;
+    @include m.mixMQ(v.$deskXL) {
+        font-size: v.$titHero - 2rem;                    
     };
 
     @include m.mixMQ(v.$movil414) {
@@ -172,6 +172,15 @@ img {
     margin: 0 auto;
     text-align: center;
     width: 85%;
+
+    .mockup {
+        width: 300px;
+        margin: 0 auto 3rem;
+
+        @include m.mixMQ(v.$movil) {
+            width: 250px;
+        };
+    }
 
     h2 {
         text-transform: uppercase;
@@ -801,7 +810,7 @@ img {
         content: "";
         background: linear-gradient(270deg, rgba(0,0,0,.1) 20%, rgba(0,0,0,1) 100%);        
 
-        @include m.mixMQ(v.$movil) {
+        @include m.mixMQ(v.$tablet) {
             background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);            
         };
     }

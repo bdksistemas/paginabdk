@@ -6,7 +6,9 @@
     var menuLat     = false;
 
     let promociones = [];
-    let idxEq = 0;
+    let heros = [];
+
+    // let idxEq = 0;
 
     document.addEventListener('DOMContentLoaded', function(){
         iniciarClicks();
@@ -24,11 +26,14 @@
         })
         navBackground();
 
-        if (document.getElementById("paquetes_cont")) {            
-            
-            promociones = document.querySelectorAll('.paquete_hardware')
-            
-            setInterval(siguiente_promo, 20000);
+        if (document.getElementById("banners_equipo")) {
+            promociones = document.querySelectorAll('.paquete_hardware')            
+            setInterval(next_promo, 10000); 
+        }
+
+        if (document.getElementById("fondosHero")) {
+            heros = document.querySelectorAll('.fondo_hero')
+            setInterval(next_fondo, 5000); 
         }
         
     }
@@ -279,17 +284,18 @@
 
         // ? BOTON PARA MOVER A LA IZQUIERDA UNA IMAGEN DE PAQUETE DE EQUIPO
         if ( objetoDom.matches('.botEqIzq')) { 
-            --idxEq;
-            if (idxEq < 0) {
-                idxEq = promociones.length - 1;
-            }
-            visualiza_promo();
-            // console.log(idxEq);            
+            back_promo();
+            // --idxEq;
+            // if (idxEq < 0) {
+            //     idxEq = promociones.length - 1;
+            // }
+            // visualiza_promo();
+            // // console.log(idxEq);            
         }
 
         // ? BOTON PARA MOVER A LA IZQUIERDA UNA IMAGEN DE PAQUETE DE EQUIPO
         if ( objetoDom.matches('.botEqDer')) { 
-            siguiente_promo();
+            next_promo();
         }
 
     }
@@ -384,22 +390,46 @@
         nav.style.transition = '.5s';
     }
 
-    function siguiente_promo() {
-        idxEq++;
-        if (idxEq > promociones.length - 1) {
-            idxEq = 0;
-        }
-        
-        visualiza_promo();
+    function next_fondo() {
+        let idxHero = actBanner(heros, 0);      
+        nextBanner(heros, idxHero, '+');        
     }
 
-    function visualiza_promo() {
-        let paq_visible = document.querySelector('.paq_visible');
-        paq_visible.classList.remove('paq_visible');
+    function next_promo() {      
+        let idxPromo = actBanner(promociones, 0);      
+        nextBanner(promociones, idxPromo, '+');        
+    }
 
-        let ver_promo = promociones[idxEq];
-        ver_promo.classList.add('paq_visible');
-        
+    function back_promo() {      
+        let idxPromo = actBanner(promociones, 0);      
+        nextBanner(promociones, idxPromo, '-');
+    }
+
+    function actBanner(array, idxBan) {
+        while (idxBan < array.length) {
+            if (array[idxBan].classList.contains('banner_visible')) {
+                break;
+            }
+            idxBan++;
+        }
+        return idxBan;
+    }
+
+    function nextBanner(array, idx, opr) {
+        let idxNext = idx;
+        if (opr==='+') {
+            idxNext++;
+            if (idxNext > array.length - 1) {
+                idxNext = 0;
+            }    
+        } else {
+            --idxNext;
+            if (idxNext < 0) {
+                idxNext = array.length - 1;
+            }
+        }
+        array[idx].classList.remove('banner_visible');
+        array[idxNext].classList.add('banner_visible');
     }
     
 })();

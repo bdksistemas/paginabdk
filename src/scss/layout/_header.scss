@@ -5,20 +5,54 @@
     width: 100%; 
     height: 100vh;
     min-height: 57rem;
-    max-height: 95rem;  
-    position: relative; 
+    position: relative;  
     color: #fff;
     overflow: hidden; 
     @include m.mixFlex(flex,center,0,0,column);
 
-    @include m.mixMQ(v.$tablet) {
-        height: 70vh;  
-    };
+    .fondo_hero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
 
-    @include m.mixMQ(v.$movil) {
-        height: 60vh; 
-        min-height: 20rem; 
-    };
+        opacity: 0;
+        filter: brightness(0%);
+        transition: all 1.25s ease-in-out;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            object-position: 50% 50%;
+        }
+
+        .move_right {
+            @include m.mixMQ(v.$deskXXL) {
+                object-position: 1% 50%;                
+            };
+            @include m.mixMQ(v.$tablet) {
+                object-position: 50% 50%;                
+            };
+        };
+
+        .move_left {
+            @include m.mixMQ(v.$deskXXL) {
+                object-position: 100% 50%;                
+            };
+            @include m.mixMQ(v.$tablet) {
+                object-position: 50% 50%;                
+            };
+        };
+
+    }
+
+    .banner_visible {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+
 }
 
 .clsBefore {
@@ -27,7 +61,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1; 
 }
 
 
@@ -36,7 +70,7 @@
     @include m.mixFlex(flex,center,0,0,column);    
     color: v.$blanco;
     width: 85rem;
-    left: 5rem;
+    left: 10rem;
     top: 50%;
 
     @include m.mixMQ(v.$deskXL) {
@@ -45,18 +79,16 @@
 
     @include m.mixMQ(v.$tablet) {
         width: 70%;
-        top: 60%;
+        text-align: center;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
     };
 
     @include m.mixMQ(v.$movil) {
         width: 85%;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        text-align: center
-    };
+    };    
 
     h1 {
         text-transform: uppercase;    
@@ -64,7 +96,7 @@
         text-shadow: v.$box-shadow;
         text-align: left;
 
-        @include m.mixMQ(v.$movil) {
+        @include m.mixMQ(v.$tablet) {
             text-align: center;            
         };
         
@@ -78,13 +110,44 @@
     p {
         font-family: v.$fuente_sec;
         color: v.$blanco;
-        font-size: v.$titParrafo;
+        font-size: v.$titParrafo + .3rem;
         margin-top: 0; 
 
+        @include m.mixMQ(v.$deskXL) {
+            font-size: v.$titParrafo + .2rem;            
+        };
+        
         @include m.mixMQ(v.$tablet) {
-            font-size: v.$titParrafo - .5rem;            
+            font-size: v.$titParrafo - .3rem;            
         };
     }
+
+    .hero-logo {
+        height: 65px;
+        margin-bottom: 2rem;
+
+        @include m.mixMQ(v.$deskXL) {
+            height: 55px;
+        };
+
+        @include m.mixMQ(v.$tablet) {
+            margin: 0 auto 3rem;
+            height: 45px;
+        };
+
+        @include m.mixMQ(v.$movil) {
+            height: 35px;
+        };
+
+        img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
 }
 
 .top-dist {
@@ -95,12 +158,6 @@
 
 .centra-titulo {
     transform: translateY(-50%);
-
-    @include m.mixMQ(v.$tablet) {
-        transform: none;
-    };
-
-
 }
 
 
@@ -175,15 +232,15 @@
         };
 
         @include m.mixMQ(v.$tablet) {
-            left: 0;
             top: 0;
+            left: 0;
+            margin: 0;
             width: 100%;
             height: 60%;
         };
 
         @include m.mixMQ(v.$movil) {
             height: 50%;
-            margin: 0;
         };
 
         &::before {
@@ -194,164 +251,6 @@
             background-position: center center;
             z-index: 1000;
         }     
-    }
-
-}
-
-// ! HERO para todos los sistemas
-
-.hero-sistema {
-
-    justify-content: space-between;        
-    flex-direction: row;
-    
-    @include m.mixMQ(v.$deskXL) {
-        height: 75vh;
-    };
-
-    @include m.mixMQ(v.$desk) {
-        height: 68vh;
-    };
-
-    @include m.mixMQ(v.$tablet) {
-        height: 100vh;
-    };
-
-    .hero_container {
-        width: 40%;
-        background-image: v.$degradadoRed;
-        height: 100%;
-        z-index: 100;
-
-        top: 0;
-        left: 0;
-
-        @include m.mixMQ(v.$tablet) {
-            height: 40%;
-            width: 100%;
-            top: 60%;
-        };
-
-        @include m.mixMQ(v.$movil) {
-            height: 50%;
-            top: 50%;
-        };
-            
-        .hero-content {
-
-            height: 80%;
-            @include m.mixFlex(flex,center,center,no-wrap,column);
-            padding-top: 10rem;
-
-            @include m.mixMQ(v.$tablet) {
-                flex-direction: row;
-                padding: 2rem;
-            };
-
-            @include m.mixMQ(v.$movil) {
-                flex-direction: column;
-            };
-
-            .hero-logo {
-                width: 50%;
-                margin-bottom: 3rem;
-
-                @include m.mixMQ(v.$deskXL) {
-                    width: 40%;
-                };
-
-                @include m.mixMQ(v.$tablet) {
-                    display: none;
-                };
-
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            .hero-mockup {
-                width: 50%;
-                margin-bottom: 3rem;
-
-                @include m.mixMQ(v.$deskXL) {
-                    width: 40%;
-                };
-
-                @include m.mixMQ(v.$tablet) {
-                    margin-right: 2rem;
-                    width: 35%;
-                };
-
-                @include m.mixMQ(v.$movil) {
-                    width: 45%;
-                    margin: 0 0 2rem 0;
-                };
-
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    
-    .hero-right {
-        overflow: hidden; 
-        width: 60%;
-        height: 100%;
-        position: relative;
-        left: 40%;
-        display: flex;
-        flex-direction: column;
-        
-        @include m.mixMQ(v.$tablet) {
-            height: 60%;
-            width: 100%; 
-            top: 0;
-            left: 0;
-        };
-
-        @include m.mixMQ(v.$movil) {
-            height: 50%;
-        };
-    
-        .heroR-leyenda {
-            position: absolute;
-            bottom: 0;
-            color: v.$blanco;
-            width: 75%;
-            padding: 5rem;
-            z-index: 200;
-
-            @include m.mixMQ(v.$desk) {
-                padding: 3rem;
-                width: 85%;
-            };
-
-            @include m.mixMQ(v.$movil) {
-                width: 100%;
-                text-align: center;
-            };
-
-            p {
-                color: v.$blanco;
-                font-size: 2rem;
-
-                @include m.mixMQ(v.$deskXL) {
-                    width: 100%;
-                };
-
-                @include m.mixMQ(v.$desk) {
-                    font-size: 1.6rem;
-                };
-
-                @include m.mixMQ(v.$movil360) {
-                    font-size: 1.4rem;
-                };
-
-            }
-        }
     }
 
 }

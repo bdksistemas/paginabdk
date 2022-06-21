@@ -53,10 +53,6 @@
     <link rel="stylesheet preload prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all"/>    
 
-    <!-- ? NORMALIZE -->
-    <link rel="stylesheet preload prefetch" href="build/css/normalize.css" as="style">
-    <link rel="stylesheet" href="build/css/normalize.css"> 
-
     <!-- ? ESTILOS GENERALES -->
     <link rel="stylesheet preload prefetch" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css"> 
@@ -124,18 +120,62 @@
     <!-- ! HERO -->
     <header class="formatoHero">    
 
-        <div class="filtro-negro">
-            <picture>
-                <source srcset="build/img/Fondo_Hero_Movil.avif" type="image/avif" media="(max-width: 480px)">
-                <source srcset="build/img/Fondo_Hero.avif" type="image/avif">
-                <source srcset="build/img/Fondo_Hero_Movil.webp" type="image/webp" media="(max-width: 480px)">
-                <source srcset="build/img/Fondo_Hero.webp" type="image/webp">
-                <source srcset="build/img/Fondo_Hero_Movil.jpg" media="(max-width: 480px)">
-                <img width="350" height="150" src="build/img/Fondo_Hero.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
-            </picture>
+        <div class="filtro-negro" id="fondosHero">
+            <div class="fondo_hero banner_visible">
+                <picture>
+                    <source srcset="build/img/Fondo_Hero_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/Fondo_Hero.avif" type="image/avif">
+                    <source srcset="build/img/Fondo_Hero_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/Fondo_Hero.webp" type="image/webp">
+                    <source srcset="build/img/Fondo_Hero_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/Fondo_Hero.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>
+            </div>
+            <div class="fondo_hero">
+                <picture>
+                    <source srcset="build/img/Fondo_Hero_2_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_2_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/Fondo_Hero_2.avif" type="image/avif">
+                    <source srcset="build/img/Fondo_Hero_2_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_2_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/Fondo_Hero_2.webp" type="image/webp">
+                    <source srcset="build/img/Fondo_Hero_2_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_2_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/Fondo_Hero_2.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>
+            </div>
+            <div class="fondo_hero">
+                <picture>
+                    <source srcset="build/img/Fondo_Hero_3_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_3_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/Fondo_Hero_3.avif" type="image/avif">
+                    <source srcset="build/img/Fondo_Hero_3_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_3_Tablet.webp" type="image/webp" media="(max-width: 768px)"> 
+                    <source srcset="build/img/Fondo_Hero_3.webp" type="image/webp">
+                    <source srcset="build/img/Fondo_Hero_3_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_3_Tablet.jpg" media="(max-width: 768px)">
+                    <img class="move_right"  width="350" height="150" src="build/img/Fondo_Hero_3.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>
+            </div>
+            <div class="fondo_hero">
+                <picture>
+                    <source srcset="build/img/Fondo_Hero_4_Movil.avif" type="image/avif" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_4_Tablet.avif" type="image/avif" media="(max-width: 768px)">
+                    <source srcset="build/img/Fondo_Hero_4.avif" type="image/avif">
+                    <source srcset="build/img/Fondo_Hero_4_Movil.webp" type="image/webp" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_4_Tablet.webp" type="image/webp" media="(max-width: 768px)">
+                    <source srcset="build/img/Fondo_Hero_4.webp" type="image/webp">
+                    <source srcset="build/img/Fondo_Hero_4_Movil.jpg" media="(max-width: 480px)">
+                    <source srcset="build/img/Fondo_Hero_4_Tablet.jpg" media="(max-width: 768px)">
+                    <img width="350" height="150" src="build/img/Fondo_Hero_4.jpg" alt="Fondo de Pantalla BDKSISTEMAS">
+                </picture>    
+            </div>
         </div>
 
-        <section class="formatoHero_Container">
+        <section class="formatoHero_Container centra-titulo">
             <h1>Tenemos el mejor software <span>punto de venta</span> para tu negocio</h1>
             <p>Nuestros productos cuentan con un sinfín de funcionalidades ideales para que lleves una excelente administración de todas los áreas de tu negocio.</p>
         </section>
@@ -603,10 +643,10 @@
             <div data-include="assets/equipocomputo.html"></div>
  
             <!-- ! PAQUETES DE EQUIPO --> 
-            <div class="paquetes_container" id="paquetes_cont">
+            <div class="banners_fade promos_equipo" id="banners_equipo">
                 <div class="progress-bar"></div> 
                 
-                <div class="paquete_hardware paq_visible">
+                <div class="paquete_hardware banner_visible">
                     <a href="">
                         <picture>
                             <source srcset="build/img/Paquetes/MINIPC_COREBOX_MOVIL.avif" type="image/avif" media="(max-width: 480px)">

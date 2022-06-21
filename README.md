@@ -53,3 +53,11 @@
 
 * Se agrega NORMALIZE.CSS al proyecto
 * Se agrega Google Tag Manager
+* Se elimina el mapa de funciones y en su lugar se agregan cards informativas
+* Se optimza código CSS
+* Se agregan banners para venta de equipo de cómputo con diferentes paquetes
+
+### COMMIT V2.0.1
+
+* Se elimina NORMALIZE.CSS ya que ya estaba agregado dentro del contenido SASS.
+* Se modifica el HERO para hacer que la imagen de fondo sea dinámica 
