@@ -1,0 +1,145 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+ /* ! PÁGINA INSTALACIÓN */
+/* !__________________________________________________________________________________________________________________________________________ */
+
+.sec-instalar {
+
+    .titulo {
+        margin-bottom: 4rem;
+    }
+    
+    .aviso {
+        margin-bottom: 3rem;
+        @include m.mixFlex(flex,center,center,wrap,0);        
+    }
+
+    .contenedor_pasos {
+        max-width: 100%;
+        padding: 2rem; 
+
+        @include m.mixMQ(v.$movil) {
+            padding: .5rem;
+        };
+
+        .cnt_pasos_video {
+            width: 560px;
+            height: 315px;
+            margin: 2rem auto; 
+
+            @include m.mixMQ(v.$movil) {
+                width: 100%;
+                height: 250px;
+            };
+
+            // @include m.mixMQ(v.$movil) {
+            //     width: 400px;
+            //     height: 250px;
+            // };
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+
+.contenedor_capa {
+     @include m.mixFlex(flex,center,center,wrap,row);
+
+    width: 100%;
+
+    .capa_menu {
+        width: 30%;
+        height: 100%;
+        overflow: hidden;      
+        // box-shadow: v.$box-shadow;
+        border-radius: 5px;
+        border: 1px solid v.$color5;
+        overflow: hidden; 
+        display: block;
+        
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;  
+        overflow-x: hidden;  
+
+        @include m.mixMQ(v.$tablet) {
+            width: 100%;
+            height: 100%;
+        };
+        
+
+        &::-webkit-scrollbar {
+            width: 8px;     /* Tamaño del scroll en vertical */
+            height: 8px;    /* Tamaño del scroll en horizontal */
+            /* display: none;  Ocultar scroll */
+        }
+        
+        /* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+        &::-webkit-scrollbar-thumb {
+            background: v.$color1;
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+        &::-webkit-scrollbar-thumb:hover {
+            // background: #b3b3b3;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cambiamos el fondo cuando esté en active */
+        &::-webkit-scrollbar-thumb:active {
+            background: v.$color1;
+        }
+        
+        &::-webkit-scrollbar-track {
+            /* background: #e1e1e1; */
+            border-radius: 4px;
+        }
+
+        /* Cambiamos el fondo cuando esté en active o hover */
+        &::-webkit-scrollbar-track:hover,
+        &::-webkit-scrollbar-track:active {
+            background: #d4d4d4;
+        }        
+
+        
+    }
+
+    .capa_video {
+        width: 70%;
+        // height: auto;
+        padding: 1rem;
+
+        @include m.mixMQ(v.$tablet) {
+            width: 100%;
+        };
+
+        @include m.mixMQ(v.$movil) {
+            width: 400px;
+            height: 250px;
+            padding: 0;
+            margin-bottom: 2rem;
+        };
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border-radius: 5px;
+
+            @include m.mixMQ(v.$tablet) {
+                height: 400px;
+            };
+
+            @include m.mixMQ(v.$movil) {
+                height: 100%;
+            };
+        }
+    }
+
+}

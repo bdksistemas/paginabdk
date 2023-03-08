@@ -104,7 +104,7 @@
             <ul class="nav_principal" id="navPrincipal">
                 <li class="nav_item"><a href="index.html" class="nav_links mnuInicio">Inicio</a></li>
                 <li class="nav_item"><a href="software.html" class="nav_links mnuSoftware">Productos</a></li>
-                <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <!-- <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li> -->
                 <li class="nav_item"><a href="distribuidores.html" class="nav_links mnuDist">Distribuidores</a></li>
                 <li class="nav_item"><a href="pagresenas.html" class="nav_links mnuRese">Reseñas</a></li>
                 <li class="nav_item"><a href="galeria.html" class="nav_links mnuGal">Galería</a></li>
@@ -173,6 +173,10 @@
             </div>
             <h1>El mejor software para barberías y peluquerías</h1>
             <p>Ideal para llevar el control de tus ventas, citas, comisiones, cortes, almacén y mucho más.</p>
+
+            <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+            <div data-include="assets/promo_buenfin.html"></div>
+
         </section>
         <div class="wrapper">
             <ul class="dynamic-txts">
@@ -885,8 +889,13 @@
                 <div class="planes_paquete_2col">
                     <div class="paquete_nombrePlan">
                         <h4>ESTÁNDAR</h4>
-                        <h3>$3,160 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio PREMIUM</h5>
+                                <h3>$2,262 <span>mx</span></h3>
+                                <small>Anuales</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -911,7 +920,8 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a> -->
+                        <a href="#" class="boton link_pago" id="barber_estandar">Comprar</a> 
                     </div>                 
                 </div>
 
@@ -919,8 +929,13 @@
                 <div class="planes_paquete_2col">
                     <div class="paquete_nombrePlan oro">
                         <h4>PROFESIONAL</h4>
-                        <h3>$4,565 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio PREMIUM</h5>
+                                <h3>$3,422 <span>mx</span></h3>
+                                <small>Anuales</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -943,25 +958,40 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a> -->
+                        <a href="#" class="boton link_pago" id="barber_pro">Comprar</a> 
                     </div>                 
                 </div>
 
             </div>
 
+            <div class="botones_descarga container">
+                <a href="#" class="boton dwn_file" id="barber_presenta"><i class="fas fa-download"></i> Presentación</a>
+                <a href="#" class="boton dwn_file" id="barber_ficha"><i class="fas fa-download"></i> Ficha Técnica</a>
+                <a href="#" class="boton dwn_file" id="barber_precios"><i class="fas fa-download"></i> Lista de Precios</a>
+                <a href="#" class="boton link_demos" id="link_barber"><i class="fas fa-download"></i> DEMO y Vídeos demostrativos</a>
+                <a href="#" class="boton dwn_file" id="link_tyc"><i class="fas fa-download"></i> Términos y Condiciones</a>
+            </div>
+
             <div class="formasPago">
+
                 <div class="fpIndicaciones">
                     <p>
                         <small><i class="fas fa-caret-right"></i> Precios en pesos mexicanos</small>
                         <small><i class="fas fa-caret-right"></i> Impuestos incluidos</small>
                         <small><i class="fas fa-caret-right"></i> Precios por sucursal</small>
-                        <small><i class="fas fa-caret-right"></i> Incluye soporte técnico todo el año</small>
-                        <small><i class="fas fa-caret-right"></i> Incluye actualizaciones gratuitas</small>
                         <small><i class="fas fa-caret-right"></i> Precio válido para 3 equipos en la misma red</small>
                         <small><i class="fas fa-caret-right"></i> Incluye vídeos de auto capacitación</small>
                         <small><i class="fas fa-caret-right"></i> Incluye instalación vía remota</small>
                         <small><i class="fas fa-caret-right"></i> Garantía de satisfacción</small>
-                        <small><i class="fas fa-caret-right"></i> Instalación a domicilio se cotiza por separado</small>
+                    </p>
+                    <p> SERVICIO BÁSICO: 
+                        <small><i class="fas fa-exclamation-triangle"></i> Soporte técnico solo por correo</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> NO incluye actualizaciones</small>
+                    </p>
+                    <p> SERVICIO PREMIUM: 
+                        <small><i class="fas fa-caret-right"></i> Incluye soporte técnico todo el año</small>
+                        <small><i class="fas fa-caret-right"></i> Incluye actualizaciones gratuitas</small>
                     </p>
                     <p>
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye equipo de cómputo</small>
@@ -969,7 +999,12 @@
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye configuración de computadoras en red</small>
                         <small><i class="fas fa-exclamation-triangle"></i> La capacitación se cotiza por separado</small>
                     </p>
+                    <p> INSTALACIÓN A DOMICILIO: <br>
+                        <small><i class="fas fa-caret-right"></i> Servicio disponible solo en algunas ciudades de México</small>
+                        <small><i class="fas fa-caret-right"></i> Se cotiza por separado</small>
+                    </p>
                 </div>
+
 
                 <div class="fpTiposTar">
                     <div class="fpTarjetas">
@@ -996,7 +1031,7 @@
             </div>
         </section>
 
-        <!-- ! SECCIÓN INFORMATIVA -->
+        <!-- ! SECCIÓN INFORMATIVA --> 
         <section class="seccion sec-informes">
             <div class="tituloWhite">
                 <h2>Solicita un DEMO 100% funcional</h2> 
@@ -1008,7 +1043,9 @@
                 <h5>Si lo prefieres, puedes solicitar una DEMOSTRACIÓN EN LÍNEA</h5>
             </div>
             <div class="informes-accion">
-                <a href="contacto.html" class="botonVerde mnuContacto">Solicitar DEMO</a>
+                <!-- <a href="contacto.html" class="botonVerde mnuContacto">Solicitar DEMO</a> -->
+                <a href="#" class="botonVerde link_demos" id="link_barber">DEMO y Vídeos</a>
+
             </div>
         </section>
 
@@ -1021,7 +1058,7 @@
             <div data-include="assets/equipocomputo.html"></div>
  
             <!-- ! PAQUETES DE EQUIPO -->
-            <div class="banners_fade promos_equipo" id="banners_equipo">
+            <!-- <div class="banners_fade promos_equipo" id="banners_equipo">
 
                 <div class="progress-bar"></div> 
                 
@@ -1094,7 +1131,7 @@
             <div class="paquetes_botones">
                 <button class="boton botEqIzq"><i class="fas fa-angle-left botEqIzq"></i></button>
                 <button class="boton botEqDer"><i class="fas fa-angle-right botEqDer"></i></button>
-            </div>
+            </div> -->
 
         </section>
 
@@ -1187,17 +1224,23 @@
                 </picture>
             </div>
 
-            <div class="videoContent">
+            <div class="videoContent"> 
                 <div class="tituloWhite">
                     <h2>Vídeo informativo</h2> 
-                    <p>Date unos minutos para ver más a fondo las funciones de nuestro producto</p>
+                    <p>Date unos minutos para ver más a fondo las funciones de nuestro producto</p>                    
+                    
                 </div>    
                 <a href="#" class="play" id="play"><img width="250" height="250" src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
             </div>
-            <!-- <div class="videoPopup">
-                <video src="build/video/VIDEOWEB_REST.mp4" controls="true"></video>
+            
+            <div class="videoPopup">
+
+                <!-- <iframe src="https://www.youtube.com/embed/-zg7RJpyLbU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <iframe src="https://www.youtube.com/embed/-zg7RJpyLbU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <!-- <video src="https://www.youtube.com/watch?v=-zg7RJpyLbU" controls="true"></video> -->
                 <img width="250" height="250" src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
-            </div> -->    
+            </div>    
         </section>
 
         <!-- ! RESEÑAS -->

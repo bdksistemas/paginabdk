@@ -42,7 +42,6 @@
     <link rel="icon" type="image/png" sizes="96x96" href="build/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
 
-
     <!-- ! ESTILOS --> 
 
     <!-- ? FUENTE NUNITO DE GOOGLE FONTS --> 
@@ -105,7 +104,7 @@
             <ul class="nav_principal" id="navPrincipal">
                 <li class="nav_item"><a href="index.html" class="nav_links mnuInicio">Inicio</a></li>
                 <li class="nav_item"><a href="software.html" class="nav_links mnuSoftware">Productos</a></li>
-                <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <!-- <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li> -->
                 <li class="nav_item"><a href="distribuidores.html" class="nav_links mnuDist">Distribuidores</a></li>
                 <li class="nav_item"><a href="pagresenas.html" class="nav_links mnuRese">Reseñas</a></li>
                 <li class="nav_item"><a href="galeria.html" class="nav_links mnuGal">Galería</a></li>
@@ -187,7 +186,12 @@
             </div>
             <h1>El mejor software punto de venta para todo tipo de comercios</h1>
             <p>Ideal para llevar el control de ventas, inventarios, cortes de caja, cotizaciones, administración y mucho más.</p>
+
+            <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+            <div data-include="assets/promo_buenfin.html"></div>
+
         </section>
+        
         <div class="wrapper">
             <ul class="dynamic-txts">
                 <li><span>Control de ventas</span></li> 
@@ -618,7 +622,7 @@
                                 <h4 class="funciones_titulo">Empleados</h4>
                             </div>
                             <div class="funcion--main">
-                                <p>BDKPOS también te ayuda a llevar un registro de la asistencia de tus empleados y a pagar correctamente la nómina. <br><br> * No es un sistema de nóiminas pero contiene un módulo de pre nómina.</p>
+                                <p>BDKPOS también te ayuda a llevar un registro de la asistencia de tus empleados y a pagar correctamente la nómina. <br><br> * No es un sistema de nóminas pero contiene un módulo de pre nómina.</p>
                                 <i class="fas fa-info-circle opCard"></i>
                             </div>
                         </div>
@@ -861,8 +865,13 @@
                 <div class="planes_paquete_3col">
                     <div class="paquete_nombrePlan">
                         <h4>ESTÁNDAR</h4>
-                        <h3>$1,755 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio PREMIUM</h5>
+                                <h3>$2,262 <span>mx</span></h3>
+                                <small>Anuales</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -885,7 +894,8 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a> -->
+                        <a href="#" class="boton link_pago" id="pos_est">Comprar</a>
                     </div>                 
                 </div>
 
@@ -893,8 +903,13 @@
                 <div class="planes_paquete_3col">
                     <div class="paquete_nombrePlan oro">
                         <h4>PROFESIONAL</h4>
-                        <h3>$3,160 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio PREMIUM</h5>
+                                <h3>$3,422 <span>mx</span></h3>
+                                <small>Anuales</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -918,7 +933,8 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a> -->
+                        <a href="#" class="boton link_pago" id="pos_pro">Comprar</a>
                     </div>                 
                 </div>
 
@@ -926,8 +942,13 @@
                 <div class="planes_paquete_3col">
                     <div class="paquete_nombrePlan">
                         <h4>PLUS</h4>
-                        <h3>$4,560 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio PREMIUM</h5>
+                                <h3>$4,582 <span>mx</span></h3>
+                                <small>Anuales</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -943,25 +964,39 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a> -->
+                        <a href="#" class="boton link_pago" id="pos_plus">Comprar</a>
                     </div>                 
                 </div>
 
             </div>
 
-            <div class="formasPago container">
+            <div class="botones_descarga container">
+                <a href="#" class="boton dwn_file" id="pos_presenta"><i class="fas fa-download"></i> Presentación</a>
+                <a href="#" class="boton dwn_file" id="pos_ficha"><i class="fas fa-download"></i> Ficha Técnica</a>
+                <a href="#" class="boton dwn_file" id="pos_precios"><i class="fas fa-download"></i> Lista de Precios</a>
+                <a href="#" class="boton link_demos" id="link_pos"><i class="fas fa-download"></i> DEMO y Vídeos demostrativos</a>
+                <a href="#" class="boton dwn_file" id="link_tyc"><i class="fas fa-download"></i> Términos y Condiciones</a>
+            </div>
+
+            <div class="formasPago">
                 <div class="fpIndicaciones">
                     <p>
                         <small><i class="fas fa-caret-right"></i> Precios en pesos mexicanos</small>
                         <small><i class="fas fa-caret-right"></i> Impuestos incluidos</small>
                         <small><i class="fas fa-caret-right"></i> Precios por sucursal</small>
-                        <small><i class="fas fa-caret-right"></i> Incluye soporte técnico todo el año</small>
-                        <small><i class="fas fa-caret-right"></i> Incluye actualizaciones gratuitas</small>
                         <small><i class="fas fa-caret-right"></i> Precio válido para 3 equipos en la misma red</small>
                         <small><i class="fas fa-caret-right"></i> Incluye vídeos de auto capacitación</small>
                         <small><i class="fas fa-caret-right"></i> Incluye instalación vía remota</small>
                         <small><i class="fas fa-caret-right"></i> Garantía de satisfacción</small>
-                        <small><i class="fas fa-caret-right"></i> Instalación a domicilio se cotiza por separado</small>
+                    </p>
+                    <p> SERVICIO BÁSICO: 
+                        <small><i class="fas fa-exclamation-triangle"></i> Soporte técnico solo por correo</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> NO incluye actualizaciones</small>
+                    </p>
+                    <p> SERVICIO PREMIUM: 
+                        <small><i class="fas fa-caret-right"></i> Incluye soporte técnico todo el año</small>
+                        <small><i class="fas fa-caret-right"></i> Incluye actualizaciones gratuitas</small>
                     </p>
                     <p>
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye equipo de cómputo</small>
@@ -969,7 +1004,12 @@
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye configuración de computadoras en red</small>
                         <small><i class="fas fa-exclamation-triangle"></i> La capacitación se cotiza por separado</small>
                     </p>
+                    <p> INSTALACIÓN A DOMICILIO: <br>
+                        <small><i class="fas fa-caret-right"></i> Servicio disponible solo en algunas ciudades de México</small>
+                        <small><i class="fas fa-caret-right"></i> Se cotiza por separado</small>
+                    </p>
                 </div>
+
                 <div class="fpTiposTar">
                     <div class="fpTarjetas"> 
                         <small>Aceptamos</small>
@@ -995,7 +1035,7 @@
             </div>
         </section>
 
-        <!-- ! SECCIÓN INFORMATIVA -->
+        <!-- ! SECCIÓN INFORMATIVA --> 
         <section class="seccion sec-informes">
             <div class="tituloWhite">
                 <h2>Solicita un DEMO 100% funcional</h2> 
@@ -1007,7 +1047,9 @@
                 <h5>Si lo prefieres, puedes solicitar una DEMOSTRACIÓN EN LÍNEA</h5>
             </div>
             <div class="informes-accion">
-                <a href="contacto.html" class="botonVerde mnuContacto">Solicitar DEMO</a>
+                <!-- <a href="contacto.html" class="botonVerde mnuContacto">Solicitar DEMO</a> -->
+                <a href="#" class="botonVerde link_demos" id="link_pos">DEMO y Vídeos</a>
+
             </div>
         </section>
 
@@ -1020,7 +1062,7 @@
             <div data-include="assets/equipocomputo.html"></div>
  
             <!-- ! PAQUETES DE EQUIPO -->
-            <div class="banners_fade" id="banners_equipo">
+            <!-- <div class="banners_fade" id="banners_equipo">
                 <div class="progress-bar"></div> 
                 
                 <div class="paquete_hardware banner_visible">
@@ -1093,7 +1135,7 @@
             <div class="paquetes_botones">
                 <button class="boton botEqIzq"><i class="fas fa-angle-left botEqIzq"></i></button>
                 <button class="boton botEqDer"><i class="fas fa-angle-right botEqDer"></i></button>
-            </div>
+            </div> -->
 
         </section>
 
@@ -1209,7 +1251,7 @@
                     <img loading="lazy" width="350" height="350" src="build/img/BDKPOS/FondoVideo.jpg" alt="Fondo de pantalla">
                 </picture>
             </div>
-
+            
             <div class="videoContent">
                 <div class="tituloWhite">
                     <h2>Vídeo informativo</h2> 
@@ -1217,10 +1259,12 @@
                 </div>    
                 <a href="#" class="play" id="play"><img width="250" height="250" src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
             </div>
-            <!-- <div class="videoPopup">
-                <video src="build/video/VIDEOWEB_REST.mp4" controls="true"></video>
+
+            <div class="videoPopup">
+                <iframe src="https://www.youtube.com/embed/XjVVUXm7gII" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <img width="250" height="250" src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
-            </div> -->    
+            </div>    
+
         </section>
 
         <!-- ! RESEÑAS -->

@@ -70,7 +70,7 @@
 @mixin mixBox ($anc, $lar, $br, $borR, $bgc, $bxs ) {
     @if $anc { width: $anc; }
     @if $lar { height: $lar; }
-    @if $br { border: $br; }
+    @if $br { border: $br solid; }
     @if $borR { border-radius: $borR; }
     @if $bgc { background: $bgc; }
     @if $bxs { box-shadow: $bxs; }

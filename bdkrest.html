@@ -63,7 +63,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Software para restaurantes: registro de ventas, control de comandas, control de mesas y más./>
+    <meta name="description" content="Software para restaurantes: registro de ventas, control de comandas, control de mesas y más."/>
     <meta name="keywords" content="software para restaurante, sistema de restaurantes, sistema de restaurante, sistema para restaurante, software para resturantes, programa para restaurantes, programa de restaurante, soft restaurant"/>
     <meta name="author" content="BDKSISTEMAS" />
     <meta name="copyright" content="BDKSISTEMAS" />    
@@ -104,7 +104,7 @@
             <ul class="nav_principal" id="navPrincipal">
                 <li class="nav_item"><a href="index.html" class="nav_links mnuInicio">Inicio</a></li>
                 <li class="nav_item"><a href="software.html" class="nav_links mnuSoftware">Productos</a></li>
-                <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <!-- <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li> -->
                 <li class="nav_item"><a href="distribuidores.html" class="nav_links mnuDist">Distribuidores</a></li>
                 <li class="nav_item"><a href="pagresenas.html" class="nav_links mnuRese">Reseñas</a></li>
                 <li class="nav_item"><a href="galeria.html" class="nav_links mnuGal">Galería</a></li>
@@ -199,7 +199,12 @@
             </div>
             <h1>El mejor software para restaurantes y bares</h1>
             <p>Ideal para llevar el control de tus ventas, mesas, comandas, almacén, recetas, meseros y mucho más.</p>
+
+            <!-- ! Se agrega el icono para enviar WP y subir al inicio -->
+            <div data-include="assets/promo_buenfin.html"></div>
+
         </section>
+        
         <div class="wrapper">
             <ul class="dynamic-txts">
                 <li><span>Control de ventas</span></li> 
@@ -239,7 +244,7 @@
                 <p>BDKREST es el software ideal para tu restaurante, con el que estarás protegido contra malos manejos administrativos y te permite llevar un excelente control de tu administración, tus ventas y tu almacén, además obtienes grandes beneficios para cada área de tu restaurante.</p>
             </div> 
 
-            <div class="gpoCaracteristicas container">
+            <!-- <div class="gpoCaracteristicas container">
                 <div class="elementoCar">
                     <i class="fas fa-cash-register"></i>
                     <h5>ÁREA DE CAJA</h5>
@@ -270,8 +275,15 @@
                     <h5>BENEFICIOS PARA TI</h5>
                     <p>Te da la tranquilidad de delegar funciones, lo que te dará más tiempo para tu familia y para ti.</p>
                 </div>
-            </div>
+            </div> -->
 
+            <div class="video_presentacion container" id="funcionesRest">
+                <div class="video_container">
+                    <iframe src="https://www.youtube.com/embed/9gAS_kZ7uQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                    <p>CONOCE TODO LO QUE TIENES QUE SABER SOBRE BDKREST.</p>
+                    <small> Solo te tomará 5 minutos.</small>
+                </div>    
+            </div>
 
         </section> 
 
@@ -326,17 +338,19 @@
                 <div class="lista_elementos_white">
                     <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Control total de todo tipo de ventas</p></div>
                     <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Comandeo electrónico por PC o Tablet</p></div>
+                    <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Comandas a cocina y barra</p></div>
                     <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Servicio a domicilio</p></div>
                     <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Control de almacén, inventarios, conteos y recetas</p></div>
                     <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Cortes de caja</p></div>
-                    <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Control de mesas y cuentas abiertas</p></div>
+                    <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Control de mesas y cuentas abiertas</p></div>                    
+                    <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Monedero electrónico</p></div>
                     <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Facturación y reportes diversos</p></div>
                 </div>
             </div>
 
         </section>
 
-        <!-- ! FUNCIONES DEL SOFTWARE --> 
+        <!-- ! FUNCIONES DEL SOFTWARE -->  
         <section class="funciones_soft seccion"> 
 
             <div class="titulo container">
@@ -535,6 +549,51 @@
                     </div>
                 </div>
 
+                <!-- ! MONITOR DE COCINA -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_12.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_12.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_12.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Monitor de Cocina</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Olvídate del papel en la cocina y coloca una computadora touchscreen en donde tus cocineros podrán ver en pantalla los pedidos que les van realizando.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Se levanta una nueva orden en mesa o caja</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>En el monitor de cocina aparece el pedido en estatus EN ESPERA</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Además se recibe una alerta sonora con cada nuevo pedido</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Se agrupan los pedidos del mismo tipo de platillo</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>El encargado va marcando los pedidos en proceso y los terminados</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Los meseros pueden ver el estatus de sus pedidos</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Se visualiza el tiempo que lleva en espera o en proceso cada platillo</p></div>
+
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible en la versión PLUS</p></div>
+                                </div>    
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- ! ALMACÉN -->
                 <div class="card_giratoria">
                     <div class="front">
@@ -702,6 +761,49 @@
                                     <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Recompensas al ser cliente frecuente</p></div>
                                     <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Monedero Electrónico</p></div>
                                     <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>[ 2 ] Envío de correo masivo a tu lista de clientes con promociones o anuncios</p></div>
+                                </div>            
+                            </div>
+                            <div>  
+                                <!-- ! Este elemento debe de ir dentro de un DIV aunque no tenga ninguna clase, esto para que pueda activar la funcionalidad de ROTAR CARD -->
+                                <i class="fas fa-arrow-alt-circle-left opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ! MONEDERO ELECTRÓNICO -->
+                <div class="card_giratoria">
+                    <div class="front">
+                        <div class="card_funciones--frente">
+                            <div class="funcion--header">
+                                <div class="filtro-negro-border">
+                                    <picture>
+                                        <source srcset="build/img/BDKREST/POP_13.avif" type="image/avif">
+                                        <source srcset="build/img/BDKREST/POP_13.webp" type="image/webp">
+                                        <img loading="lazy" width="350" height="150" src="build/img/BDKREST/POP_13.jpg" alt="Funciones de una negocio" class="bor10sup">
+                                    </picture>    
+                                </div>
+
+                                <h4 class="funciones_titulo">Monedero Electrónico</h4>
+                            </div>
+                            <div class="funcion--main">
+                                <p>Recompensa la lealtad de tus clientes ofreciéndoles dinero electrónico en cada una de sus compras y dándoles la posibilidad de pagar con dinero electrónico parte de su cuenta.</p>
+                                <i class="fas fa-info-circle opCard"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="back rotar">
+                        <div class="card_funciones--reverso">
+                            <div class="funcion--caracteristicas">
+                                <div class="lista_elementos">
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Elije que productos ofrecen dinero electrónico</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>Especifica la cantidad de dinero que regala cada producto</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>En cada compra se acumula el dinero en el monedero del cliente</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-chevron-circle-right color_ver"></i><p>El cliente tiene la posibilidad de elejir pagar con dinero real y electrónico</p></div>
+
+                                    <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_blanco"></i><p>Disponible a partir de la versión PROFESIONAL</p></div>
+                                    <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_blanco"></i><p>El uso de tarjetas de próximidad es opcional, ya que el monedero es virtual</p></div>
                                 </div>            
                             </div>
                             <div>  
@@ -1007,11 +1109,17 @@
 
             <div class="precios_planes">
 
+                <!-- ! Estándar -->
                 <div class="planes_paquete_3col h700">
                     <div class="paquete_nombrePlan">
                         <h4>ESTÁNDAR</h4>
-                        <h3>$5,615 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio PREMIUM</h5>
+                                <h3>$5,626 <span>mx</span></h3>
+                                <small>Anuales</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -1035,15 +1143,22 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Pedir informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Pedir informes</a> -->
+                        <a href="#" class="boton link_pago" id="rest_estandar">Comprar</a>
                     </div>                 
                 </div>
 
+                <!-- ! Profesional -->
                 <div class="planes_paquete_3col h700">
                     <div class="paquete_nombrePlan oro">
                         <h4>PROFESIONAL</h4>
-                        <h3>$7,020 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio PREMIUM</h5>
+                                <h3>$7,018 <span>mx</span></h3>
+                                <small>Anuales</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -1070,15 +1185,22 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Pedir informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Pedir informes</a> -->
+                        <a href="#" class="boton link_pago" id="rest_pro">Comprar</a>
                     </div>                 
                 </div>
 
+                <!-- ! Plus -->
                 <div class="planes_paquete_3col h700">
                     <div class="paquete_nombrePlan">
                         <h4>PLUS</h4>
-                        <h3>$9,125 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio PREMIUM</h5>
+                                <h3>$9,123.40 <span>mx</span></h3>
+                                <small>Anuales</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -1099,31 +1221,49 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Pedir informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Pedir informes</a> -->
+                        <a href="#" class="boton link_pago" id="rest_plus">Comprar</a>
                     </div>                 
                 </div>
 
             </div>
 
+            <div class="botones_descarga container"> 
+                <a href="#" class="boton dwn_file" id="rest_presenta"><i class="fas fa-download"></i> Presentación</a>
+                <a href="#" class="boton dwn_file" id="rest_ficha"><i class="fas fa-download"></i> Ficha Técnica</a>
+                <a href="#" class="boton dwn_file" id="rest_precios"><i class="fas fa-download"></i> Lista de Precios</a>
+                <a href="#" class="boton link_demos" id="link_rest"><i class="fas fa-download"></i> DEMO y Vídeos demostrativos</a>
+                <a href="#" class="boton dwn_file" id="link_tyc"><i class="fas fa-download"></i> Términos y Condiciones</a>
+            </div>
+
             <div class="formasPago">
-                <div class="fpIndicaciones">
+                <div class="fpIndicaciones"> 
                     <p>
                         <small><i class="fas fa-caret-right"></i> Precios en pesos mexicanos</small>
                         <small><i class="fas fa-caret-right"></i> Impuestos incluidos</small>
                         <small><i class="fas fa-caret-right"></i> Precios por sucursal</small>
-                        <small><i class="fas fa-caret-right"></i> Incluye soporte técnico todo el año</small>
-                        <small><i class="fas fa-caret-right"></i> Incluye actualizaciones gratuitas</small>
                         <small><i class="fas fa-caret-right"></i> Precio válido para 3 equipos en la misma red</small>
                         <small><i class="fas fa-caret-right"></i> Incluye vídeos de auto capacitación</small>
                         <small><i class="fas fa-caret-right"></i> Incluye instalación vía remota</small>
                         <small><i class="fas fa-caret-right"></i> Garantía de satisfacción</small>
-                        <small><i class="fas fa-caret-right"></i> Instalación a domicilio se cotiza por separado</small>
+                    </p>
+                    <p> SERVICIO BÁSICO: 
+                        <small><i class="fas fa-exclamation-triangle"></i> Soporte técnico solo por correo</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> NO incluye actualizaciones</small>
+                    </p>
+                    <p> SERVICIO PREMIUM: 
+                        <small><i class="fas fa-caret-right"></i> Incluye soporte técnico todo el año</small>
+                        <small><i class="fas fa-caret-right"></i> Incluye actualizaciones gratuitas</small>
                     </p>
                     <p>
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye equipo de cómputo</small>
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye configuración de impresoras en Windows</small>
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye configuración de computadoras en red</small>
                         <small><i class="fas fa-exclamation-triangle"></i> La capacitación se cotiza por separado</small>
+                    </p>
+                    <p> INSTALACIÓN A DOMICILIO <br>
+                        <small><i class="fas fa-caret-right"></i> Servicio disponible solo en algunas ciudades de México</small>
+                        <small><i class="fas fa-caret-right"></i> Se cotiza por separado</small>
                     </p>
                 </div>
 
@@ -1156,16 +1296,17 @@
         <!-- ! SECCIÓN INFORMATIVA -->
         <section class="seccion sec-informes">
             <div class="tituloWhite">
-                <h2>Solicita un DEMO 100% funcional</h2> 
-                <p>En BDKSISTEMAS primero te instalamos y después realizas el pago</p>
+                <h2>Descarga un DEMO 100% funcional</h2> 
+                <p>En BDKSISTEMAS primero te instalamos y después negociamos</p>
             </div>    
             <div class="informes_content">                
                 <p>En BDKSISTEMAS no queremos vender por vender, queremos que estés 100% seguro que nuestro producto es lo que tu negocio necesita, por lo que te recomendamos solicites a tu ejecutivo de ventas un DEMO 100% funcional antes de realizar tu compra.</p>
                 <p>De esta forma puedes probar las funcionalidades del sistema y comprobar si cumple con los requerimientos de tu negocio.</p>
-                <h5>Si lo prefieres, puedes solicitar una DEMOSTRACIÓN EN LÍNEA</h5>
+                <h5>En el siguiente enlace podrás descargar el demo, ver vídeos demostrativos y de capacitación.</h5>
+                <h5><i class="fas fa-hand-point-down"></i></h5> 
             </div>
             <div class="informes-accion">
-                <a href="contacto.html" class="botonVerde mnuContacto">Solicitar DEMO</a>
+                <a href="contacto.html" class="botonVerde link_demos" id="link_rest">DEMO y Vídeos</a>
             </div>
         </section>
 
@@ -1178,7 +1319,7 @@
             <div data-include="assets/equipocomputo.html"></div>
  
             <!-- ! PAQUETES DE EQUIPO -->
-            <div class="banners_fade" id="banners_equipo">
+            <!-- <div class="banners_fade" id="banners_equipo">
                 <div class="progress-bar"></div> 
                 
                 <div class="paquete_hardware banner_visible">
@@ -1251,7 +1392,7 @@
             <div class="paquetes_botones">
                 <button class="boton botEqIzq"><i class="fas fa-angle-left botEqIzq"></i></button>
                 <button class="boton botEqDer"><i class="fas fa-angle-right botEqDer"></i></button>
-            </div>
+            </div> -->
 
         </section>
 
@@ -1424,6 +1565,12 @@
                 </div>    
                 <a href="#" class="play" id="play"><img width="250" height="250" src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
             </div>
+
+            <div class="videoPopup">
+                <iframe src="https://www.youtube.com/embed/0c6XTc6zwfA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img width="250" height="250" src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
+            </div>    
+
             <!-- <div class="videoPopup">
                 <video src="build/video/VIDEOWEB_REST.mp4" controls="true"></video>
                 <img width="250" height="250" src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
@@ -1455,7 +1602,6 @@
             <a href="pagresenas.html" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
         
         </section>
-
 
         <!-- ! PREGUNTAS FRECUENTES -->
         <div data-include="assets/faqs.html"></div>

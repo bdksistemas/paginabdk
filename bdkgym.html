@@ -105,7 +105,7 @@
             <ul class="nav_principal" id="navPrincipal">
                 <li class="nav_item"><a href="index.html" class="nav_links mnuInicio">Inicio</a></li>
                 <li class="nav_item"><a href="software.html" class="nav_links mnuSoftware">Productos</a></li>
-                <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li>
+                <!-- <li class="nav_item"><a href="paginasweb.html" class="nav_links mnuPagWeb">Páginas Web</a></li> -->
                 <li class="nav_item"><a href="distribuidores.html" class="nav_links mnuDist">Distribuidores</a></li>
                 <li class="nav_item"><a href="pagresenas.html" class="nav_links mnuRese">Reseñas</a></li>
                 <li class="nav_item"><a href="galeria.html" class="nav_links mnuGal">Galería</a></li>
@@ -177,7 +177,7 @@
             </div>
         </div>
 
-        <section class="formatoHero_Container centra-titulo">
+        <section class="formatoHero_Container centra-titulo"> 
             <div class="hero-logo">
                 <picture>
                     <source srcset="build/img/BDKGYM/LOGO_BCO.avif" type="image/avif">
@@ -187,6 +187,10 @@
             </div>
             <h1>El mejor software para gimnasios y academias deportivas</h1>
             <p>Ideal para llevar el control de inscripciones, mensualidades, asistencia, acceso, ventas, clases, horarios y mucho más.</p>
+
+            <!-- ! Se agrega anuncio para promoción del buen fin -->
+            <div data-include="assets/promo_buenfin.html"></div>
+
         </section>
         <div class="wrapper">
             <ul class="dynamic-txts">
@@ -225,10 +229,10 @@
                 </div>    
                 <h2><span>¡LA SOLUCIÓN IDEAL!</span> <br> para todo tipo de gimnasios y academias deportivas</h2> 
                 <p>BDKGYM es un software para gimnasios con el que estarás protegido contra malos manejos administrativos y contra el robo hormiga.
-                    <br>Te permite llevar un control de tus inscripciones y mensualidades, así como administrar tu punto de venta, ingresos, egresos, asistencia, control de acceso, horarios, clases y mucho más.</p>
+                    Te permite llevar un control de tus inscripciones y mensualidades, así como administrar tu punto de venta, ingresos, egresos, asistencia, control de acceso, horarios, clases y mucho más.</p>
             </div> 
 
-            <div class="gpoCaracteristicas container">
+            <!-- <div class="gpoCaracteristicas container">
                 <div class="elementoCar">
                     <i class="fas fa-cash-register"></i>
                     <h5>RECEPCIÓN</h5>
@@ -262,8 +266,15 @@
                     <h5>BENEFICIOS PARA TI</h5>
                     <p>Te da la tranquilidad de delegar funciones, lo que te dará más tiempo para tu familia y para ti.</p>
                 </div>
-            </div>
+            </div> -->
 
+            <div class="video_presentacion container" id="funcionesGym">
+                <div class="video_container">
+                    <iframe src="https://www.youtube.com/embed/v8gfe4xAhjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                    <p>Conoce todo lo que tienes que saber sobre BDKGYM</p>
+                    <small> Solo te tomará 5 minutos.</small>
+                </div>    
+            </div>
 
         </section>
 
@@ -905,14 +916,20 @@
 
             <div class="precios_planes">
 
+                <!-- ! Estándar -->
                 <div class="planes_paquete_3col h650">
                     <div class="paquete_nombrePlan">
                         <h4>ESTÁNDAR</h4>
-                        <h3>$2,530 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio Premium</h5>
+                                <h3>$3,190 <span>mx</span></h3>
+                                <small>Anuales | 300 socios</small>
+                            </div>    
+                        </div>
                     </div>
 
-                    <div class="paquete_contenidoPlan">
+                    <div class="paquete_contenidoPlan"> 
                         <div class="paqContenido_header">
                             <h5>Incluye todas las funcionalidades básicas para la operación de tu negocio.</h5>
                         </div>
@@ -929,20 +946,28 @@
                             <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Cortes de caja</p></div>
                             <div class="lista_elemento"><i class="fas fa-check-circle color_ver"></i><p>Seguridad y permisos de usuario</p></div>
 
-                            <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p> Solicita un DEMO 100% funcional antes de realizar tu compra</p></div>                            
+                            <div class="lista_elemento txtM2"><i class="fas fa-exclamation-triangle color_rojo"></i><p> En caso de requerir una licencia para más socios, contacta a uno de nuestros ejecutivos de ventas.</p></div>                            
+                            <div class="lista_elemento"><i class="fas fa-exclamation-triangle color_rojo"></i><p> PRECIOS VÁLIDO PARA 300 SOCIOS ACTIVOS</p></div>
                         </div>
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a> -->
+                        <a href="#" class="boton link_pago" id="gym_estandar">Comprar</a>
                     </div>                 
                 </div>
 
+                <!-- ! Profesional -->
                 <div class="planes_paquete_3col h650">
                     <div class="paquete_nombrePlan oro">
                         <h4>PROFESIONAL</h4>
-                        <h3>$3,370 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio Premium</h5>
+                                <h3>$4,060 <span>mx</span></h3>
+                                <small>Anuales | 300 socios</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -965,15 +990,22 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a> -->
+                        <a href="#" class="boton link_pago" id="gym_pro">Comprar</a>
                     </div>                 
                 </div>
 
+                <!-- ! Plus -->
                 <div class="planes_paquete_3col h650">
                     <div class="paquete_nombrePlan">
                         <h4>PLUS</h4>
-                        <h3>$4,775 mx</h3>
-                        <small>Anuales</small>
+                        <div class="paquete_nombre_tipo">
+                            <div class="paq_nom_tipoplan">
+                                <h5>Servicio Premium</h5>
+                                <h3>$5,510 <span>mx</span></h3>
+                                <small>Anuales | 300 socios</small>
+                            </div>    
+                        </div>
                     </div>
 
                     <div class="paquete_contenidoPlan">
@@ -994,34 +1026,51 @@
                     </div>
 
                     <div class="paquete_footer">
-                        <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a>
+                        <!-- <a href="contacto.html" class="boton mnuContacto">Solicitar informes</a> -->
+                        <a href="#" class="boton link_pago" id="gym_plus">Comprar</a>
                     </div>                 
                 </div>
 
             </div>
 
+            <div class="botones_descarga container">
+                <a href="#" class="boton dwn_file" id="gym_presenta"><i class="fas fa-download"></i> Presentación</a>
+                <a href="#" class="boton dwn_file" id="gym_ficha"><i class="fas fa-download"></i> Ficha Técnica</a>
+                <a href="#" class="boton dwn_file" id="gym_precios"><i class="fas fa-download"></i> Lista de Precios</a>
+                <a href="#" class="boton link_demos" id="link_gym"><i class="fas fa-download"></i> DEMO y Vídeos demostrativos</a>
+                <a href="#" class="boton dwn_file" id="link_tyc"><i class="fas fa-download"></i> Términos y Condiciones</a>
+            </div>
+
             <div class="formasPago">
                 <div class="fpIndicaciones">
                     <p>
-                        <small><i class="fas fa-caret-right"></i> Precios validos para 100 socios activos</small>
-                        <small><i class="fas fa-caret-right"></i> Pregunta por el precio para más socios activos</small>
+                        <small><i class="fas fa-caret-right"></i> PRECIOS VÁLIDO PARA 300 SOCIOS ACTIVOS</small>
                         <small><i class="fas fa-caret-right"></i> Precios en pesos mexicanos</small>
                         <small><i class="fas fa-caret-right"></i> Impuestos incluidos</small>
                         <small><i class="fas fa-caret-right"></i> Precios por sucursal</small>
-                        <small><i class="fas fa-caret-right"></i> Incluye soporte técnico todo el año</small>
-                        <small><i class="fas fa-caret-right"></i> Incluye actualizaciones gratuitas</small>
                         <small><i class="fas fa-caret-right"></i> Precio válido para 3 equipos en la misma red</small>
                         <small><i class="fas fa-caret-right"></i> Incluye vídeos de auto capacitación</small>
                         <small><i class="fas fa-caret-right"></i> Incluye instalación vía remota</small>
                         <small><i class="fas fa-caret-right"></i> Garantía de satisfacción</small>
-                        <small><i class="fas fa-caret-right"></i> Instalación a domicilio se cotiza por separado</small>
-                    </p>    
+                    </p>
+                    <p> SERVICIO BÁSICO: 
+                        <small><i class="fas fa-exclamation-triangle"></i> Soporte técnico solo por correo</small>
+                        <small><i class="fas fa-exclamation-triangle"></i> NO incluye actualizaciones</small>
+                    </p>
+                    <p> SERVICIO PREMIUM: 
+                        <small><i class="fas fa-caret-right"></i> Incluye soporte técnico todo el año</small>
+                        <small><i class="fas fa-caret-right"></i> Incluye actualizaciones gratuitas</small>
+                    </p>
                     <p>
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye equipo de cómputo</small>
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye configuración de impresoras en Windows</small>
                         <small><i class="fas fa-exclamation-triangle"></i> NO incluye configuración de computadoras en red</small>
                         <small><i class="fas fa-exclamation-triangle"></i> La capacitación se cotiza por separado</small>
-                    </p>    
+                    </p>
+                    <p> INSTALACIÓN A DOMICILIO <br>
+                        <small><i class="fas fa-caret-right"></i> Servicio disponible solo en algunas ciudades de México</small>
+                        <small><i class="fas fa-caret-right"></i> Se cotiza por separado</small>
+                    </p>
                 </div>
 
                 <div class="fpTiposTar">
@@ -1052,21 +1101,22 @@
         <!-- ! SECCIÓN INFORMATIVA -->
         <section class="seccion sec-informes">
             <div class="tituloWhite">
-                <h2>Solicita un DEMO 100% funcional</h2> 
-                <p>En BDKSISTEMAS primero te instalamos y después realizas el pago</p>
+                <h2>Descarga un DEMO 100% funcional</h2> 
+                <p>En BDKSISTEMAS primero te instalamos y después negociamos</p>
             </div>    
             <div class="informes_content">                
                 <p>En BDKSISTEMAS no queremos vender por vender, queremos que estés 100% seguro que nuestro producto es lo que tu negocio necesita, por lo que te recomendamos solicites a tu ejecutivo de ventas un DEMO 100% funcional antes de realizar tu compra.</p>
                 <p>De esta forma puedes probar las funcionalidades del sistema y comprobar si cumple con los requerimientos de tu negocio.</p>
-                <h5>Si lo prefieres, puedes solicitar una DEMOSTRACIÓN EN LÍNEA</h5>
+                <h5>En el siguiente enlace podrás descargar el demo, ver vídeos demostrativos y de capacitación.</h5>
+                <h5><i class="fas fa-hand-point-down"></i></h5>
             </div>
             <div class="informes-accion">
-                <a href="contacto.html" class="botonVerde mnuContacto">Solicitar DEMO</a>
+                <a href="contacto.html" class="botonVerde link_demos" id="link_gym">DEMO y Vídeos</a>
             </div>
         </section>
 
-        <!-- ! ESPACIO PARA LA PROMOCIÓN ACTUAL -->
-        <div data-include="assets/promocion_actual.html"></div>
+        <!-- ! ESPACIO PARA LA PROMOCIÓN ACTUAL --> 
+        <div data-include="assets/promocion_actual.html"></div> 
 
         <!-- ! EQUIPO DE COMPUTO --> 
         <section class="secEquipo seccion">
@@ -1074,7 +1124,7 @@
             <div data-include="assets/equipocomputo.html"></div>
  
             <!-- ! PAQUETES DE EQUIPO -->
-            <div class="banners_fade" id="banners_equipo">
+            <!-- <div class="banners_fade" id="banners_equipo">
                 <div class="progress-bar"></div> 
 
                 <div class="paquete_hardware banner_visible">
@@ -1173,7 +1223,7 @@
             <div class="paquetes_botones">
                 <button class="boton botEqIzq"><i class="fas fa-angle-left botEqIzq"></i></button>
                 <button class="boton botEqDer"><i class="fas fa-angle-right botEqDer"></i></button>
-            </div>
+            </div> -->
 
         </section>
 
@@ -1318,10 +1368,12 @@
                 </div>    
                 <a href="#" class="play" id="play"><img width="250" height="250" src="build/img/play.png" alt="Dale PLAY al vídeo" id="imgPlay"></a>
             </div>
-            <!-- <div class="videoPopup">
-                <video src="build/video/VIDEOWEB_REST.mp4" controls="true"></video>
+
+            <div class="videoPopup">
+                <iframe src="https://www.youtube.com/embed/XX3ucRQJ0s4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                 <img width="250" height="250" src="build/img/close.png" alt="Cerrar la pantalla del vídeo" class="close" id="close">
-            </div> -->    
+            </div>    
+
         </section>
 
         <!-- ! RESEÑAS --> 

@@ -229,6 +229,33 @@
   }
 }
 
+@keyframes colorRecord {
+  21% {
+    color: v.$color6;
+  }
+
+  30% {
+    color: v.$blanco;
+  }
+
+  51% {
+    color: v.$color6;
+  }
+
+  60% {
+    color: v.$blanco;
+  }
+
+  81% {
+    color: v.$color6;
+  }
+
+  90% {
+    color: v.$blanco;
+  }
+}
+
+
 // Animation
 @keyframes scrollCar {
   0% {
@@ -289,27 +316,39 @@
   }
 }
 
-
-@keyframes parpadeo {
+@keyframes ripple2 {
   0% {
-      transform: scale(1);
-      opacity: 1;
-  }
-  25% {
-      transform: scale(1.25);
-      opacity: .90;
-  }
-  50% {
-      transform: scale(1.5);
-      opacity: .5;
-  }
-  75% {
-      transform: scale(1.75);
-      opacity: .25;
+    box-shadow: 0 0 0 .2rem rgba(255,255,255, 0.2),
+                0 0 0 .7rem rgba(255,255,255, 0.2),
+                0 0 0 1.5rem rgba(255,255,255, 0.2);
   }
   100% {
-      transform: scale(2);
-      opacity: .25;
+    box-shadow: 0 0 0 .4rem rgba(255,255,255, 0.2),
+                0 0 0 1.5rem rgba(255,255,255, 0.2),
+                0 0 0 3rem rgba(255,255,255, 0);
+  }
+}
+
+@keyframes parpadeo { 
+  0% {
+      transform: scale(1);
+      // opacity: 1;
+  }
+  25% {
+      transform: scale(1.10);
+      // opacity: .90;
+  }
+  50% {
+      transform: scale(1.15);
+      // opacity: .5;
+  }
+  75% {
+      transform: scale(1.20);
+      // opacity: .25;
+  }
+  100% {
+      transform: scale(1.25);
+      // opacity: .25;
   }
 }
 

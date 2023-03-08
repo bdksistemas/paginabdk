@@ -57,7 +57,12 @@
 * Se optimza código CSS
 * Se agregan banners para venta de equipo de cómputo con diferentes paquetes
 
-### COMMIT V2.0.1
+### COMMIT V2.0.0
 
 * Se elimina NORMALIZE.CSS ya que ya estaba agregado dentro del contenido SASS.
 * Se modifica el HERO para hacer que la imagen de fondo sea dinámica 
+
+## RAMA v2.0.1
+### Se agregará funcionalidad para que el widget del whatsapp se pueda ver los datos del vendedor.
+
+* Se agregan 2 nuevas cards en BDKREST

@@ -11,13 +11,13 @@ html {
 }  
  
 *,    
-*:before,    
+*:before,     
 *:after {   
     box-sizing: inherit;     
     margin: 0;      
 } 
  
-body { 
+body {  
     font-family: v.$fuente_principal;  
     font-size: 16px; 
 
@@ -295,14 +295,52 @@ img {
     position: fixed;
     right: 20px; 
     bottom: 20px;
-    z-index: 10000;
+    z-index: 10000; 
 }
 
-#botWP {
+.widgetWP {
     position: fixed;
     left: 20px;
     bottom: 20px;
     z-index: 10000;
+}
+
+#widgetEnVivo {
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    z-index: 10000;
+    padding: .7rem 5px;
+    background: v.$degradadoRed;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+
+
+    &:hover {
+        // box-shadow: inset -10em 0 0 0 v.$color4, inset 10em 0 0 0 v.$color4;
+        background: v.$color4;
+        border: 2px solid v.$color1;
+    }
+
+    a {
+        font-size: 1.2rem;
+        color: v.$blanco;
+        padding: 2px 5px; 
+    }
+}
+
+
+#enVivo {
+
+    i {
+        margin-right: 2px;
+    }
+
+}
+
+.onRecording {
+    -webkit-animation: colorRecord 4s linear 1s infinite;
+    animation: colorRecord 4s linear 1s infinite;
 }
 
 .bannerPub {
@@ -414,7 +452,7 @@ img {
     .fpIndicaciones {
         width: 50%;
         padding: 2rem;
-        @include m.mixFlex(flex,center,center,wrap,0);
+        @include m.mixFlex(flex,center,center,wrap,column);
 
         @include m.mixMQ(v.$desk) {
             width: 95%;
@@ -425,26 +463,33 @@ img {
             padding-top: 0;
         };
 
-        p small {
+        p {
+
             color: v.$blanco;
-            margin: 0 .3rem;
-            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        
+            small {
+                color: v.$blanco;
+                margin: 0 .3rem;
+                font-size: 1.4rem;
 
-            @include m.mixMQ(v.$tablet) {
-                font-size: 1.5rem;
-            };
+                @include m.mixMQ(v.$tablet) {
+                    font-size: 1.5rem;
+                };
 
-            @include m.mixMQ(v.$movil) {
-                font-size: 1.2rem;
-            }; 
+                @include m.mixMQ(v.$movil) {
+                    font-size: 1.2rem;
+                }; 
 
-            .fa-caret-right {
-                font-size: 1.6rem;
-                color: v.$color6;
-            }
+                .fa-caret-right {
+                    font-size: 1.6rem;
+                    color: v.$color6;
+                }
 
-            .fa-exclamation-triangle {
-                color: v.$color1;
+                .fa-exclamation-triangle {
+                    color: v.$color1;
+                }
             }
         }
     }
@@ -737,6 +782,7 @@ img {
     height: auto;
     margin: 1.5rem 0;
     z-index: 500;
+    overflow: hidden;    
 
     .lista_elemento {
         @include m.mixFlex(flex,0,center,nowrap,0);
@@ -766,6 +812,23 @@ img {
             text-align: left!important;
             width: 100%;
         }
+
+        a {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:link {
+                color: #265301;
+            }
+              
+            &:visited {
+                color: #0a07b5;
+            }            
+        }
+
     }
 
     small {
@@ -847,24 +910,52 @@ img {
     }    
 }
 
-
+ 
 .planes_paquete {
-    @include m.mixBox(10%,625px,0,10px,v.$blanco,v.$box-shadow4);
+    @include m.mixBox(10%,680px,0,10px,v.$blanco,v.$box-shadow4);
     margin: 1rem;
     padding: 2rem;
+    position: relative; 
 
     .paquete_nombrePlan { 
-        @include m.mixBox(100%,20%,0,10px,v.$color5,false);
-        padding: 1rem 0;
-        text-align: center;
-        color: v.$color1;
+        @include m.mixBox(100%,auto,0,10px,v.$color5,false);
+        padding: 1rem 0; 
+        text-align: center;  
+        color: v.$color1; 
 
-        @include m.mixMQ(v.$deskXL) {
-            height: 17.5%;
-        };
-        
         h3 {
             margin-bottom: 0;
+        }
+
+        .paquete_nombre_tipo {
+            @include m.mixFlex(flex,center,center,nowrap,row);
+            width: 95%;
+            margin: 0 auto;
+
+            .paq_nom_tipoplan {
+                @include m.mixBox(95%,auto,0,10px,v.$blanco,v.$box-shadow4);
+                padding: 1rem;
+                margin: 1rem;
+
+                h5 {
+                    font-size: 1.3rem; 
+                    color: v.$negro;
+                    margin-bottom: .5rem;
+                }
+                h3 {
+                    font-size: 2rem;
+                    color: v.$color2;
+
+                    span {
+                        font-size: 1.2rem;
+                        color: v.$color2;
+                    }
+                }
+                small {
+                    font-size: 1.2rem;
+                    color: v.$color2;
+                }
+            }
         }
     }
 
@@ -875,7 +966,7 @@ img {
 
     .paquete_contenidoPlan {
         padding: 2rem 0;
-        height: 70%;
+        height: auto;
         overflow: hidden;
 
         @include m.mixMQ(v.$desk) {
@@ -918,9 +1009,13 @@ img {
     }    
 
     .paquete_footer {
-        margin-top: 1rem;
+        width: 220px;
         text-align: center;
         height: 10%;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
 
         @include m.mixMQ(v.$tablet) {
             margin: 0;
@@ -968,7 +1063,7 @@ img {
 .h650 {
 
     @include m.mixMQ(v.$desk) {
-        height: 650px;        
+        height: 720px;
     };
 
     @include m.mixMQ(v.$movil) {
@@ -1324,4 +1419,162 @@ img {
         width: 40px;
         animation: dragico 2s infinite;
     }
+}
+
+.promo_buenfin {
+    margin-top: 3rem;
+    @include m.mixFlex(flex,left,center,nowrap,row);
+
+    @include m.mixMQ(v.$tablet) {
+        justify-content: center;
+        flex-direction: column;
+    };
+
+    .logo_buenfin {
+        width: 200px;
+        height: 200px;
+
+        @include m.mixMQ(v.$movil516) {
+            width: 100px;
+            height: 100px;
+        };
+    }
+
+    .texto_buenfin {
+        margin-left: 2rem;
+        
+        h3 {
+            width: 80%;
+
+            @include m.mixMQ(v.$tablet) {
+                width: 100%;
+            };
+
+            @include m.mixMQ(v.$movil) {
+                font-size: 2rem;
+            };
+        }
+    }
+}
+
+
+.video_presentacion {
+    margin-top: 3rem;
+
+    @include m.mixFlex(flex,center,center,nowrap,column);
+
+    .video_container {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        @include m.mixBox(840px,472px,false,false,false,v.$box-shadow);
+
+        @include m.mixMQ(v.$tablet) {
+            width: 560px;
+            height: 315px;
+        };
+
+        @include m.mixMQ(v.$movil) {
+            width: 420px;
+            height: 236px;
+            margin-bottom: 5rem;
+            text-align: center;
+        };
+
+        @include m.mixMQ(v.$movil414) {
+            width: 357px;
+            height: 200px;
+        };
+
+        @include m.mixMQ(v.$movilSM) {
+            width: 357px;
+            height: 200px;
+        };
+
+        @include m.mixMQ(v.$movil360) {
+            width: 322px;
+            height: 180px;
+        };
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-top: 1rem;
+        }
+    }
+
+}
+
+.popupStriming {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    @include m.mixFlex(flex,center,center,0,column);        
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    border-radius: 50%;
+    visibility: hidden;
+    // opacity: 0;
+    transition: 0.5s;
+    color: v.$blanco;
+    text-align: center;
+    
+    &.active {
+        visibility: visible;
+        // opacity: 1;
+
+        border-radius: 0;
+        transition-delay: 0.5s;
+        transform: translate(-50%, -50%) scale(1);    
+    
+    }
+
+    .avisoStriming {
+        @include m.mixBox(450px,544px,2px,0,0,v.$box-shadow);
+        border: 5px solid v.$blanco;
+        margin-bottom: 1rem;
+
+        img {
+            object-fit: contain;
+        }
+     
+        @include m.mixMQ(v.$movil414) {
+            width: 375px;
+            height: 455px;
+        };
+
+        @include m.mixMQ(v.$movilSM) {
+            width: 320px;
+            height: 388px;
+        };
+
+    }
+    
+    .close {
+        position: absolute;
+        top: 30px;  right: 30px;
+        cursor: pointer;
+        max-width: 32px;
+        filter: invert(1);
+    }    
+    
+}       
+
+.botones_descarga {
+    @include m.mixFlex(flex,center,center,wrap,0);
+}
+
+.pasos_aseguir {
+    width: 100%;
+    padding: .5rem 2rem;
+    margin-bottom: 3rem;
+    // border: 1px solid v.$color5;
+    border-radius: 10px;
+    box-shadow: v.$box-shadow;
 }
