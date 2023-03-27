@@ -28,7 +28,7 @@ body {
 
     &::-webkit-scrollbar-thumb {
         background: v.$color1; 
-        border-radius: 5px; 
+        border-radius: 5px;  
     } 
 }  
 
@@ -135,6 +135,13 @@ img {
     &:hover {
         transform: rotate(360deg);
     }    
+}
+
+.icono_peq {
+    @extend .iconos;
+
+    @include m.mixIcono(2rem, 1.2rem);
+    margin-right: .5rem;
 }
 
 .iconos-blanco {

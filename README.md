@@ -64,5 +64,10 @@
 
 ## RAMA v2.0.1
 ### Se agregará funcionalidad para que el widget del whatsapp se pueda ver los datos del vendedor.
-
 * Se agregan 2 nuevas cards en BDKREST
+
+## RAMA v2.1.0
+### En esta rama se agregarán las reseñas en vídeo y se quitará el slider de las reseñas
+
+* Se cambia el slider de las reseñas por las vídeo reseñas. (Quedó un respaldo del slider en la rama V2.0.1)
+* En la página de DISTRIBUIDORES ya sale la lista de los distribuidores autorizados.

@@ -4,9 +4,10 @@
     // ? VARIABLES 
     var cerrado     = true;
     var menuLat     = false;
+    var resEnPantalla = 0;
 
     let promociones = [];
-    let heros = [];
+    let heros = [];    
 
     // LISTA DE VÍDEOS DE CAPACITACIÓN
 
@@ -310,12 +311,50 @@
 
     ];
 
+    let resenas = [
+        "https://www.youtube.com/embed/uL_I3JI2KQc",
+        "https://www.youtube.com/embed/7beugBqD-zw",
+        "https://www.youtube.com/embed/pWG55X1M1tg",
+        "https://www.youtube.com/embed/uwX0HxNRnv8",
+        "https://www.youtube.com/embed/Rd9HRleR40M",
+        "https://www.youtube.com/embed/fDYEL4ZAbFc",
+        "https://www.youtube.com/embed/4sM6lWkE1bM",
+        "https://www.youtube.com/embed/UdChnCB23jw",
+        "https://www.youtube.com/embed/9U3TD3RzY8A",
+        "https://www.youtube.com/embed/8LVCTRGv1oo",
+        "https://www.youtube.com/embed/fveBrs73L-4",
+        "https://www.youtube.com/embed/g7MVCKfT_P0",
+        "https://www.youtube.com/embed/TOueYQiiAWk",
+        "https://www.youtube.com/embed/ye-xHhe8b5w",
+        "https://www.youtube.com/embed/PaQDlW-XURU",
+        "https://www.youtube.com/embed/xf9e6eDqUiU",
+        "https://www.youtube.com/embed/hsyCYGJfG7s",
+        "https://www.youtube.com/embed/9c74TebX9Z4",
+        "https://www.youtube.com/embed/tYcaqe0E340",
+        "https://www.youtube.com/embed/lbINUUBnEXk"
+    ];
+
     // let idxEq = 0;
 
     // document.addEventListener('DOMContentLoaded', function(){
     // window.addEventListener("load", function(event) {        
     window.onload = (event) => {
         iniciarClicks();
+
+        // CÓDIGO PARA VISUALIZAR LAS RESEÑAS DE VIDEO 
+        const vid_resenas = document.getElementById('div_resenas');
+        vid_resenas.innerHTML = '';
+        
+        if (vid_resenas !== null) {
+            resenas.forEach(e => {
+                const divResena = document.createElement('div')
+                divResena.classList.add('resenaVideo')
+                divResena.innerHTML = `
+                        <iframe src="${e}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                `;
+                vid_resenas.appendChild(divResena);
+            });
+        }
     };
 
     function iniciarClicks() {
@@ -674,8 +713,31 @@
         // ? LINK PARA COMPRAR SOFTWARE
         if ( objetoDom.matches('.link_pago')) {
             pagina_pago(objetoDom.id);
-        }            
+        }
 
+        // ? LINK PARA REGRESAR A UNA RESEÑA ANTERIOR
+        if ( objetoDom.matches('.botResIzq')) {
+
+            resEnPantalla = (resEnPantalla === 0) ? resenas.length - 1 : resEnPantalla - 1;
+            visualiza_resena(resEnPantalla);
+            
+        }
+
+        // ? LINK PARA PASAR A LA SIGUIENTE RESEÑA
+        if ( objetoDom.matches('.botResDer')) {
+
+            resEnPantalla = (resEnPantalla === resenas.length - 1) ? 0 : resEnPantalla + 1;
+            visualiza_resena(resEnPantalla);
+
+        }
+
+    } 
+
+    // ! FUNCION PARA VISUALIZAR UNA RESEÑA EN BASE AL ARREGLO DE RESEÑAS
+    function visualiza_resena(resIdx) {
+        let resEnPantalla = document.getElementById('resEnPantalla');
+        resEnPantalla.src = resenas[resIdx] + "?autoplay=1";
+        // resEnPantalla.autoplay = 1;
     }
 
     // ! FUNCIÓN PARA MEDIR LAS CONVERSIONES Y CLICS EN LOS BOTONES DE CONTACTO - CÓDIGO DE GOOGLE ADS

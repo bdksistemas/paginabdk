@@ -1263,30 +1263,29 @@
         </section>
 
         <!-- ! RESEÑAS -->
-        <section class="seccion bkgwhite sec-opiniones">
+        <section class="seccion bkgwhite sec-opiniones"> 
 
             <div class="titulo"> 
                 <h2>Lo que opinan nuestros <span>clientes</span></h2> 
                 <p>La mejor recomendación es tu opinión</p>
                 <small>Todas las fotos, logotipos y reseñas fueron autorizados por nuestros clientes.</small>
-                <small style="color: rgb(0,0,255);">Desplazate a la derecha para ver más reseñas.</small>
             </div>
-    
-            <div class="sliderbar_container">
-                <div data-include="assets/resenas.html"></div>
-            </div>
-    
-            <div class="animacion_drag">
-                <picture>
-                    <source srcset="build/img/drag-ico.avif" type="image/avif">
-                    <source srcset="build/img/drag-ico.webp" type="image/webp">
-                    <img loading="lazy" width="350" height="150" src="build/img/drag-ico.png" alt="Funciones de una barbería" class="bor10sup">
-                </picture>    
-            </div>    
 
+            <div class="video_presentacion container">
+                <div class="video_container">
+                    <iframe id="resEnPantalla" src="https://www.youtube.com/embed/uL_I3JI2KQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>    
+
+                <div class="paquetes_botones">
+                    <button class="boton botResIzq"><i class="fas fa-angle-left botResIzq"></i></button>
+                    <button class="boton botResDer"><i class="fas fa-angle-right botResDer"></i></button>
+                </div>
+    
+            </div>
+    
             <a href="pagresenas.html" class="boton" id="verResenas"><i class="fas fa-th-list"></i> Ver todas las reseñas</a>
         
-        </section>
+        </section>  
 
         <!-- ! PREGUNTAS FRECUENTES -->
         <div data-include="assets/faqs.html"></div>
